@@ -13,7 +13,7 @@ Deyler, Omar Vivas:
 
 García, Gastón Maximiliano:
 
-Patiño, María Camila:
+Patiño, María Camila: 22 años, soy de Colombia, Medellín. Inicié el tema de programación hace poco ya que hace mucho tiempo me ha llamado la atención pero me daba un poco de miedo, pero me arriesgué.
 
 Suarez, Ricardo Javier:
 
