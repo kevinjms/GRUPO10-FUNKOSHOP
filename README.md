@@ -17,7 +17,7 @@ Patiño, María Camila:
 
 Suarez, Ricardo Javier:
 
-Sturtz, Kevin Joel:
+Sturtz, Kevin Joel: 30 años, vivo en San Fernando, y empece a estudiar programación proyectando un cambio en mi profesión 
 
 Vilca, Andrea Florencia:
 
