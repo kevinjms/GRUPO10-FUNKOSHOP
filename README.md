@@ -1,6 +1,6 @@
 # GRUPO10-FUNKOSHOP
 
-La idea del SITIO WEB es desarrollar un e-commerce de venta de FUNKO-POP. Estos serán muñecos con un diseño particular, tendrán cabezas grandes y cuerpos reducidos. Aquí podrán encontrar funkos de personajes destacados del cine, la música, los deportes, farándula, y más). En el sitio se podrá acceder a distintos personajes, o bien solicitar alguno en especial. 
+La idea del SITIO WEB es desarrollar un e-commerce de venta de FUNKO-POP. Estos serán muñecos con un diseño particular, tendrán cabezas grandes y cuerpos reducidos. Aquí podrán encontrar funkos de personajes destacados del cine, la música, los deportes, farándula, y más. En el sitio se podrá acceder a distintos personajes, o bien solicitar alguno en especial. 
 El sitio está destinado a un público en general, creemos que no hay edad y que cualquier persona puede coleccionar o adquirir uno por primera vez. 
 
 Los integrantes del grupo son:
