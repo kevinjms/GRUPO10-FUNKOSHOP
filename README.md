@@ -13,7 +13,7 @@ Deyler, Omar Vivas:
 
 García, Gastón Maximiliano:
 
-Patiño, María Camila: 22 años, soy de Colombia, Medellín. Inicié el tema de programación hace poco ya que hace mucho tiempo me ha llamado la atención pero me daba un poco de miedo, pero me arriesgué.
+Patiño, María Camila: 22 años, soy de Colombia, Medellín. Inicié el tema de programación hace poco ya que hace mucho tiempo me ha llamado la atención pero me daba un poco de miedo, aunque es un campo totalmente diferente a todo lo que he hecho, me arriesgué, y a aunque a veces se me dificulta, me gusta aprender. 
 
 Suarez, Ricardo Javier: 25 años, Buenos Aires, Argentina. Estudiante de Lic. en Ciencias de Datos. Tuve contacto con programación relacionada a la matemática, y desde allí me llamó la atención la idea de programar algo distinto, como páginas web.
 
