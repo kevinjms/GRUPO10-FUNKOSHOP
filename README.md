@@ -9,7 +9,7 @@ Artz, Valentino Roberto:
 
 Berto, Micaela: 32 años, comencé hace muy poco con la programación, ya que mi profesión es totalmente distinta.
 
-Deyler, Omar Vivas:
+Deyler, Omar Vivas: Tengo 26 años Soy de venezuela pero vivo en colombia , actualmente trabajo para una multinacional canadiense en la parte de logistica y desde niño siempre me ha apasionado el area de la tecnologia pero en los dos ultimos años he sentido ese llamado interno, ese 6to sentido que me dice hacele y estoy muy ilusionado con poder sacar esta carrera adelante, para desarrollarme mucho mas profesionalmente.
 
 García, Gastón Maximiliano:
 
