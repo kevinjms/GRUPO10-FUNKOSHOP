@@ -5,7 +5,7 @@ El sitio está destinado a un público en general, creemos que no hay edad y que
 
 Los integrantes del grupo son:
 
-Artz, Valentino Roberto:
+Arzt, Valentino Roberto: Tengo 16 años, ya hice un curso de digital house de html, css y un poco de js, y ahora estoy haciendo este para profundizar mas en js y seguir aprendiendo.
 
 Berto, Micaela: 32 años, comencé hace muy poco con la programación, ya que mi profesión es totalmente distinta.
 
