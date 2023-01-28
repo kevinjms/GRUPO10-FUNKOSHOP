@@ -1,0 +1,27 @@
+{
+  "name": "grupo10-funkoshop",
+  "version": "1.0.0",
+  "description": "La idea del SITIO WEB es desarrollar un e-commerce de venta de FUNKO-POP. Estos serán muñecos con un diseño particular, tendrán cabezas grandes y cuerpos reducidos. Aquí podrán encontrar funkos de personajes destacados del cine, la música, los deportes, farándula, y más. En el sitio se podrá acceder a distintos personajes, o bien solicitar alguno en especial. \r El sitio está destinado a un público en general, creemos que no hay edad y que cualquier persona puede coleccionar o adquirir uno por primera vez.",
+  "main": "app.js",
+  "scripts": {
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kevinjms/GRUPO10-FUNKOSHOP.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kevinjms/GRUPO10-FUNKOSHOP/issues"
+  },
+  "homepage": "https://github.com/kevinjms/GRUPO10-FUNKOSHOP#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
