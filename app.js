@@ -10,6 +10,10 @@ app.get('/', (req, res) =>{
 });
 
 app.get('/carrito-de-compras', (req, res) =>{
+    res.sendFile(path.join(__dirname,'/views/detalle-de-producto.html'))
+});
+
+app.get('/carrito-de-compras', (req, res) =>{
     res.sendFile(path.join(__dirname,'/views/carrito-de-compras.html'))
 });
 

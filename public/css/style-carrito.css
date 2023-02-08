@@ -1,0 +1,154 @@
+.favoritas{
+    position: relative;
+    left: 128px;
+    bottom: 27px;
+    
+}
+h2{
+    font-size: 14px;
+    margin-left: 15px;
+}
+input[type="text"]{
+    max-width: 16px;
+}
+button[id="menos"]{
+    max-width: 20px;
+}
+button[id="mas"]{
+    max-width: 20px;
+}
+.descripcion{
+    position: relative;
+    left: 334px;
+    bottom: 212px;
+    font-size: 14px;
+}
+.descripcion2{
+    position: relative;
+    left: 424px;
+    bottom: 280px;
+    font-size: 14px;
+}
+.contador{
+    position: relative;
+    left: 332px;
+    bottom: 205px;
+}
+.precio{
+    position: relative;
+    left: 428px;
+    bottom: 270px;
+    font-size: 14px;
+}
+.envio{
+    position: relative;
+    left: 348px;
+    bottom: 240px;
+    font-size: 14px;
+}
+.precio2{
+    position: relative;
+    left: 105px;
+    bottom: 30px;
+}
+.total{
+    position: relative;
+    left: 376px;
+    bottom: 251px;
+    font-size: 14px;
+}
+.precio3{
+    position: relative;
+    left: 67px;
+    bottom: 31px;
+}
+img{
+    width: 90%;
+    margin: 5px;
+}
+.funko-carrito{
+    margin: 15px;
+}
+.fa-truck{
+    display: none;
+}
+.funko-caja{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 15px 15px 15px 15px;
+    height: 138px;
+    width: 37%;
+    position: relative;
+    left: 15px;
+    bottom: 30px;
+}
+.capitan-america{
+    position: relative;
+    bottom: 56px;
+    right: 3px;
+    font-size: 8px;
+}
+h1{
+    position: relative;
+    bottom: 235px;
+    font-size: 20px;
+}
+.freddy{
+    position: relative;
+    bottom: 411px;
+    left: 182px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 152px;
+    width: 90%;
+}
+.messi{
+    position: relative;
+    bottom: 219px;
+    right: 1px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 152px;
+    width: 90%;
+}
+.frida{
+    position: relative;
+    bottom: 603px;
+    left: 368px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 152px;
+    width: 90%;
+}
+.descripcion-messi{
+    position: relative;
+    bottom: 252px;
+    left: 52px;
+    font-size: 12px;
+}
+.descripcion-freddy{
+    position: relative;
+    bottom: 444px;
+    left: 198px;
+    font-size: 12px;
+}
+.descripcion-frida{
+    position: relative;
+    bottom: 632px;
+    left: 399px;
+    font-size: 12px;
+}
+.footer-carrito{
+    margin-top: 442px;
+    width: 131%;
+    height: 200px;
+}
+.imagen-messi{
+    width: 60%;
+    position: relative;
+    left: 24px;
+}
