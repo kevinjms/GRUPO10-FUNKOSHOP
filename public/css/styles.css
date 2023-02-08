@@ -1,5 +1,5 @@
 
-/* pagina de registro  */
+/*************INICIO HEADER*************/
 * {
     margin: 0;
     box-sizing: border-box;
@@ -33,6 +33,10 @@ body {
     display: none;
 
 }
+.burger-container {
+    display: flex;
+    color: white;
+}
 .burger-menu {
     display: flex;
     border: 1px solid black;
@@ -40,10 +44,6 @@ body {
     height: 40px;
     margin: 5px;
     border-radius: 5px;
-    color: white;
-}
-.burger-container {
-    display: flex;
     color: white;
 }
 a {
