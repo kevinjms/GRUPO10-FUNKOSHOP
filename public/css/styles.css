@@ -105,4 +105,27 @@ a{
 
 .footerDetalle h3{
     color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .detalleAsist{
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDetalle .detalleAsist .listaAsist{
+    list-style: square;
+
+}
+
+.footerDetalle .detalleAsist .listaAsist li{
+    color: white;
+    font-size: 12px;
+}
+
+.footerDetalle .detalleAsist .listaAsist li a{
+    color: white;
 }
