@@ -35,15 +35,21 @@ article .funko-carrito {
 
 .capitan-america {
     position: relative;
-    bottom: 12px;
+    bottom: 20px;
     left: 5px;
 }
 
 .fa-truck {
     position: relative;
-    top: 9px;
+    top: 3px;
     font-size: 10px;
-    left: 105px;
+    left: 100px;
+    border: #fc7126 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    position: relative;
+    width: 23px;
+    background-color: #fc7126;
 }
 
 .descripcion {
@@ -109,7 +115,7 @@ button[id="mas"] {
 
 .precio3 {
     position: relative;
-    left: 86px;
+    left: 100px;
     bottom: 14px;
     font-size: 12px;
 }
@@ -125,7 +131,7 @@ article .messi {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    height: 102px;
+    height: 114px;
     width: 30%;
     font-size: 10px;
     bottom: 90px;
@@ -133,9 +139,9 @@ article .messi {
 
 .me {
     position: relative;
-    top: 3px;
+    top: 8px;
     font-size: 10px;
-    left: 95px;
+    left: 90px;
 }
 
 .descripcion-messi {
@@ -150,23 +156,23 @@ article .freddy {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    height: 102px;
+    height: 111px;
     width: 30%;
     font-size: 10px;
-    bottom: 192px;
+    bottom: 202px;
     left: 137px;
 }
 
 .fre {
     position: relative;
-    top: 10px;
+    top: 14px;
     font-size: 10px;
-    left: 95px;
+    left: 90px;
 }
 
 .descripcion-freddy {
     position: relative;
-    bottom: 5px;
+    bottom: 6px;
     font-size: 9px;
     left: 5px;
 }
@@ -182,23 +188,23 @@ article .matrix {
     border-width: 1px;
     border-style: solid;
     border-color: black;
-    height: 102px;
+    height: 110px;
     width: 30%;
     font-size: 10px;
-    bottom: 294px;
+    bottom: 313px;
     left: 274px;
 }
 
 .ma {
     position: relative;
-    top: 23px;
+    top: 27px;
     font-size: 10px;
-    left: 96px;
+    left: 90px;
 }
 
 .descripcion-matrix {
     position: relative;
-    top: 9px;
+    top: 8px;
     font-size: 9px;
     left: 5px;
 }
@@ -208,4 +214,119 @@ article .matrix {
     position: relative;
     left: 19px;
     top: 8px;
+}
+
+article .michonne {
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    width: 30%;
+    font-size: 10px;
+    bottom: 294px;
+    left: 274px;
+    display: none;
+}
+
+.mic {
+    position: relative;
+    top: 23px;
+    font-size: 10px;
+    left: 96px;
+    display: none;
+}
+
+.descripcion-michonne {
+    position: relative;
+    top: 9px;
+    font-size: 9px;
+    left: 5px;
+    display: none;
+}
+
+.imagen-michonne {
+    position: relative;
+    left: 19px;
+    top: 8px;
+    display: none;
+}
+
+@media(min-width:1024px) {
+    article .funko-carrito {
+        width: 13%;
+    }
+
+    article .messi {
+        width: 12%;
+    }
+    .ma{
+        top: 28px;
+    }
+
+    article .freddy {
+        width: 12%;
+        bottom: 204px;
+        height: 114px;
+        left: 131px;
+    }
+
+    article .matrix {
+        width: 12%;
+        bottom: 318px;
+        height: 114px;
+        left: 263px;
+    }
+    .descripcion-matrix{
+        top: 8px;
+    }
+    article .michonne {
+        display: flex;
+        width: 12%;
+        bottom: 431px;
+        left: 395px;
+        height: 113px;
+    }
+
+    .mic {
+        display: flex;
+        top: 85px;
+        left: 22px;
+    }
+
+    .descripcion-michonne {
+        display: flex;
+        top: 64px;
+        left: -64px;
+    }
+
+    .imagen-michonne {
+        display: flex;
+        width: 143%;
+        left: 10px;
+        top: 3px;
+    }
+    .descripcion{
+        left: 328px;
+    }
+    .descripcion2{
+        left: 420px;
+    }
+    .precio{
+        left: 429px;
+    }
+    .contador{
+        left: 313px;
+    }
+    .envio{
+        left: 313px;
+    }
+    .total{
+        left: 328px;
+    }
+    .precio2{
+        left: 125px;
+    }
+    .precio2{
+        left: 124px;
+    }
 }
