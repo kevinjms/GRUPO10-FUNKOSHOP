@@ -1,0 +1,180 @@
+main{
+    margin: 15px 15px 15px 15px;
+}
+h1{
+    font-size: 21px;
+    position: relative;
+    bottom: 70px;
+    left: -1px;
+}
+h2{
+    font-size: 12px;
+}
+.favoritas{
+    position: relative;
+    left: 99px;
+    bottom: 14px;
+}
+.imagen-capitan{
+    width:70%;
+    margin: 15px;
+}
+.funko-carrito{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 146px;
+    width: 36%;
+}
+.capitan-america{
+    position: relative;
+    bottom: 34px;
+    font-size: 10px;
+    left: 9px;
+}
+.fa-truck{
+    position: relative;
+    bottom: 9px;
+    font-size: 10px;
+    left: 116px;
+}
+.descripcion{
+    position: relative;
+    left: 335px;
+    bottom: 173px;
+    font-size: 12px;
+}
+input[type="text"]{
+    max-width: 20px;
+}
+button[id="menos"]{
+    max-width: 20px;
+}
+button[id="mas"]{
+    max-width: 20px;
+}
+.contador{
+    position: relative;
+    left: 322px;
+    bottom: 164px;
+    font-size: 12px;
+}
+.descripcion2{
+    position: relative;
+    left: 424px;
+    bottom: 207px;
+    font-size: 12px;
+}
+.precio{
+    position: relative;
+    left: 433px;
+    bottom: 194px;
+    font-size: 12px;
+}
+.envio{
+    position: relative;
+    left: 305px;
+    bottom: 118px;
+    font-size: 12px;
+}
+.precio2{
+    position: relative;
+    left: 136px;
+    bottom: 13px;
+    font-size: 12px;
+}
+.total{
+    position: relative;
+    left: 337px;
+    bottom: 103px;
+    font-size: 12px;
+}
+.precio3{
+    position: relative;
+    left: 95px;
+    bottom: 15px;
+    font-size: 12px;
+}
+.imagen-messi{
+    width: 51%;
+    position: relative;
+    left: 35px;
+    top: 9px;
+}
+.messi{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 146px;
+    width: 36%;
+}
+.descripcion-messi{
+    position: relative;
+    left: 11px;
+    bottom: 17px;
+    font-size: 11px;
+}
+.mes{
+    position: relative;
+    bottom: -9px;
+    font-size: 10px;
+    left: 116px;
+}
+.descripcion-freddy{
+    position: relative;
+    bottom: 195px;
+    font-size: 10px;
+    left: 211px;
+}
+.imagen-freddy{
+    width: 95%;
+    position: relative;
+    left: 4px;
+    top: 9px;
+}
+.freddy{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 146px;
+    width: 36%;
+    bottom: 146px;
+    left: 198px;
+}
+.fre{
+    position: relative;
+    bottom: 172px;
+    font-size: 10px;
+    left: 316px;
+}
+.descripcion-matrix{
+    position: relative;
+    bottom: 372px;
+    font-size: 10px;
+    left: 408px;
+}
+.imagen-matrix{
+    width: 87%;
+    position: relative;
+    left: 8px;
+    top: 15px;
+}
+.matrix{
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    height: 146px;
+    width: 36%;
+    bottom: 322px;
+    left: 390px;
+}
+.ma{
+    position: relative;
+    bottom: 348px;
+    font-size: 10px;
+    left: 509px;
+}
