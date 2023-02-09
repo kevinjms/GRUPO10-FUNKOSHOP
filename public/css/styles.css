@@ -27,17 +27,18 @@ body {
 }
 .burger-container {
     display: flex;
-    color: white;
+   
 }
-.burger-menu {
-    display: flex;
-    border: 1px solid black;
-    width: 40px;
-    height: 40px;
-    margin: 5px;
-    border-radius: 5px;
-    color: white;
+.burger-menu i {
+    color: aliceblue;
+    font-size: 10px;
 }
+
+ .burger-menu {
+display: flex;
+
+
+} 
 a {
     color: black;
     text-decoration: none;
@@ -72,7 +73,6 @@ input {
 
 
 i {
-    position: absolute;
     top: 300px;
     right: 780px;
 }
