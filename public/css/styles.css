@@ -91,3 +91,18 @@ a{
     margin-left: 80px;
 
 }
+
+
+
+/* FOOTER */
+
+.footerDetalle{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerDetalle h3{
+    color: white;
+}
