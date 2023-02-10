@@ -16,32 +16,41 @@
 <body>
     <header>
         <div>
-            <img src="/images/logo_funko_shop.png" alt="logo">
-            <div>
-                <ul>
-                    <li>INICIO</li>
-                    <li>¿QUIÉNES SOMOS?</li>
-                    <li>CATEGORÍAS</li>
-                    <li>PERSONALIZADOS</li>
-                    <li>PRE-VENTA</li>
-                </ul>
+            <div class="burger-container">
+                <div class="burger-menu">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <img class="logo" src="/images/logo_funko_shop.png" alt="logo">
+                <div class="contenedor-de-botones">
+                    <button class="botones"><a href="/formulario-de-login"><i class="fa-solid fa-user"></i></a></button>
+                    <button class="botones"><i class="fa-regular fa-heart"></i></button>
+                    <button class="botones"><a href="/carrito-de-compras"><i
+                                class="fa-solid fa-cart-shopping"></i></a></button>
+                </div>
+
+
             </div>
-            <div>
-                <button><i class="fa-solid fa-user"></i></button>
-                <button><i class="fa-regular fa-heart"></i></button>
-                <button><i class="fa-solid fa-cart-shopping"></i></button>
+            <div class="accesos">
+                <ul>
+                    <li><a href="#">INICIO</a></li>
+                    <li><a href="#">¿QUIÉNES SOMOS?</a></li>
+                    <li><a href="#">CATEGORÍAS</a></li>
+                    <li><a href="#">PERSONALIZADOS</a></li>
+                    <li><a href="#">PRE-VENTA</a></li>
+
+                </ul>
             </div>
         </div>
     </header>
     <main>
         <article>
-            <div>
+            <div class="fotoPrincipal">
                 <img class="imgP" src="images/theJoker-funko1.jpg" alt="logo">
                 <div>
                     <button><i class="fa-regular fa-heart"></i></button>
                 </div>
             </div>
-            <div>
+            <div class="fotosSiguientes">
                 <img class="imgP" src="images/theJoker-funko2.jpg" alt="logo">
                 <img class="imgP" src="images/theJoker-funko3.jpg" alt="logo">
             </div>
@@ -69,9 +78,9 @@
                 </div>
             </div>
         </article>
-        <section>
+        <section class="relacionados">
             <h3>¡RELACIONADOS!</h3>
-            <article>
+            <article >
                 <div>
                     <img src="images/theRiddler-funko.jpg" alt="logo">
                     <h4>The Riddler</h4>

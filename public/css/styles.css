@@ -11,7 +11,7 @@ body {
     background-image: url('/images/banner-shenron-x.jpg');
     background-repeat: no-repeat;
     background-attachment: fixed;
-    background-size: contain;
+    background-size: 100%;
     
 }
 
