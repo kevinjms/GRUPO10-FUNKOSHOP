@@ -119,6 +119,54 @@ a {
 
 }
 
+/* MAIN INDEX */
+.destacados{
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.destacados .contenedorDestacados{
+    display: flex;
+    flex-direction: column;
+}
+
+.destacados .contenedorDestacados .infoDestacado{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado img{
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado h4{
+    font-size: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado button{
+    color: #FFF;
+	transition: all 0.5s;
+	position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado button:hover{
+    color: blue;
+    background-color: white;
+}
+   
 
 /* FOOTER */
 
