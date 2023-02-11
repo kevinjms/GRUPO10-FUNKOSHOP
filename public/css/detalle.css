@@ -4,9 +4,16 @@
     
 }
 
+.header {
+    background-image: url('/images/banner-shenron-x.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 220px;
+    
+}
 body {
     font-size: 12px;
-    background-color: rgb(82, 95, 95);  
+    background-color: whitesmoke;  
     
 }
 
@@ -43,7 +50,7 @@ body {
 
 .burger-menu {
     display: flex;
-    padding: 20px;
+    padding: 15px;
 }
 
 .contenedor-de-botones i {
@@ -61,9 +68,19 @@ body {
     background-color: white 200%;
     width: 100%;
 }
-
+.favorito {
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 380px;
+    ;
+}
+.fotosSiguientes  {
+    display: flex;
+}
 .fotosSiguientes img {
-    width: 10px;
+    width: 100px;
 }
 
 .relacionados  {
