@@ -96,7 +96,8 @@ a{
 .destacados{
     display: flex;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    width: 90%;
 }
 
 .destacados .contenedorDestacados{
