@@ -96,8 +96,13 @@ a{
 .destacados{
     display: flex;
     flex-direction: column;
-    align-items: center;
     width: 90%;
+    align-items: center;
+    margin: 25px;
+}
+
+.destacados .titleDestacados{
+    text-align: center;
 }
 
 .destacados .contenedorDestacados{
@@ -142,7 +147,30 @@ a{
     color: blue;
     background-color: white;
 }
-   
+
+.preventa{
+    background-image: url(/images/cuantos-funkos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.preventa h2{
+    margin: 15px;
+    color: black;
+}
+
+.preventa .botonPreventa{
+    display: flex;
+    width: 100px;
+    justify-content: space-around;
+    border-radius: 10px;
+    margin: 15px;
+}
 
 /* FOOTER */
 
