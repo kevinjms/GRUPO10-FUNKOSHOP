@@ -1,5 +1,70 @@
 * {
     margin: 0;
-    padding: 0;
     box-sizing: border-box;
+    
+}
+
+body {
+    font-size: 12px;
+    background-color: rgb(82, 95, 95);  
+    
+}
+
+
+
+.logo {
+    width: 25%;
+    display: flex;
+    margin: auto;
+}
+
+
+.accesos ul {
+    padding-left: 0px;
+    text-decoration: none;
+    font-size: 130%;
+    display: none;
+    
+}
+
+.burger-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.burger-menu i {
+    /* color: aliceblue; */
+    font-size: 50px;
+}
+
+.burger-menu {
+    display: flex;
+    padding: 20px;
+}
+
+.contenedor-de-botones i {
+    font-size: 30px;
+    display: flex;
+    
+}
+
+.botones {
+    background-color: transparent;
+    border: none;
+    
+}
+.fotoPrincipal img{
+    background-color: white 200%;
+    width: 100%;
+}
+
+.fotosSiguientes img {
+    width: 10px;
+}
+
+.relacionados img {
+    margin: 12px;
+    width: 130%;
 }
