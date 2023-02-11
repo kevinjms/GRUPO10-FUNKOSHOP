@@ -103,6 +103,7 @@ a{
 .destacados .contenedorDestacados{
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .destacados .contenedorDestacados .infoDestacado{
@@ -111,6 +112,7 @@ a{
     align-items: center;
     justify-content: space-between;
     height: 300px;
+    width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
