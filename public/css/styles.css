@@ -4,13 +4,16 @@
     box-sizing: border-box;
 
 }
+.header {
+    background-image: url('/images/banner-shenron-x.jpg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    
+}
 
 body {
     font-size: 12px;
     background-color: whitesmoke;
-    background-image: url('/images/banner-shenron-x.jpg');
-    background-repeat: no-repeat;
-    background-size: contain;
 
 }
 
@@ -41,6 +44,7 @@ body {
 .burger-menu i {
     /* color: aliceblue; */
     font-size: 50px;
+    margin-right: 90px;
 }
 
 .burger-menu {
