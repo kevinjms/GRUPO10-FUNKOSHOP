@@ -15,7 +15,7 @@ body {
 .logo {
     width: 25%;
     display: flex;
-    margin: auto;
+    margin-left: 10px;
 }
 
 
@@ -54,6 +54,9 @@ body {
     background-color: transparent;
     border: none;
     
+}
+.infoRiddler {
+    background-color: white;
 }
 .fotoPrincipal img{
     background-color: white 200%;
