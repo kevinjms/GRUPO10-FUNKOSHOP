@@ -53,7 +53,7 @@
     justify-content: space-evenly;
     font-size: 10px;
     position: relative;
-    bottom: 126px;
+    bottom: 131px;
 
 }
 
@@ -131,12 +131,14 @@ h1{
     top: -25px;
     background-color: #f77a31;
 }
+.funko-caja{
+    margin: 15px 15px 15px 15px;
+}
 /* Media Tablest*/
 @media(min-width:768px) {
     .funko-caja{
     width: 55%;
     margin-bottom: 10px;
-    position: relative;
     margin-top: -3px;
     margin: 15px 15px 15px 15px;
     }
@@ -147,10 +149,16 @@ h1{
         left: 74px;
     }
     .envio{
-        left: 287px;
+        left: 306px;
     }
     .total{
-        left: 282px;
+        left: 302px;
+    }
+    .descripciones{
+        left: 135px;
+    }
+    .precios{
+        left: 19px;
     }
 }
 
@@ -158,10 +166,19 @@ h1{
 @media(min-width:1024px) {
     .funko-caja{
     width: 41%;
-    position: relative;
     margin: 15px 15px 15px 15px;
     }
     .descripciones{
-        left: 115px;
+        left: 130px;
     }
+    .precios{
+        left: 15px;
+    }
+    .envio{
+        left: 300px;
+    }
+    .total{
+        left: 296px;
+    }
+
 }
