@@ -1,332 +1,167 @@
-main {
-    margin: 15px 15px 15px 15px;
-}
-
-h1 {
-    font-size: 16px;
-    position: relative;
-    bottom: 90px;
-}
-
-h2 {
-    font-size: 12px;
-}
-
-.favoritas {
-    position: relative;
-    left: 99px;
-    bottom: 14px;
-}
-
 .imagen-capitan {
-    width: 75%;
-
+    width: 18%;
+    position: relative;
+    left: 40px;
+    top: 10px;
 }
 
-article .funko-carrito {
+.carrito1{
+    display: none;
+}
+
+.articulos {
+    width: 14%;
+    margin-bottom: 10px;
     position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    height: 122px;
-    width: 33%;
+    margin-top: 5px;
+    left: 132px;
+    bottom: 48px;
     font-size: 10px;
 }
 
-.capitan-america {
-    position: relative;
-    bottom: 20px;
-    left: 5px;
+.car-fav {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 8px;
+    margin: 12px 16px;
 }
 
-.fa-truck {
+.favoritos {
     position: relative;
-    top: 3px;
-    font-size: 10px;
-    left: 100px;
-    border: #fc7126 1px solid;
-    border-radius: 50%;
-    padding: 5px;
-    position: relative;
-    width: 23px;
-    background-color: #fc7126;
+    left: 15px;
 }
 
-.descripcion {
+.descripciones {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 8px;
     position: relative;
-    left: 261px;
-    bottom: 149px;
-    font-size: 12px;
+    left: 75px;
 }
 
 .descripcion2 {
     position: relative;
-    left: 339px;
-    bottom: 184px;
-    font-size: 12px;
+    left: 20px;
 }
 
-.contador {
+#cantidad {
+    height: 17px;
+}
+
+.precios {
+    display: flex;
+    justify-content: space-evenly;
+    font-size: 10px;
     position: relative;
-    left: 243px;
-    bottom: 137px;
-    font-size: 12px;
+    bottom: 126px;
+
 }
 
-input[type="text"] {
-    max-width: 20px;
-}
-
-button[id="menos"] {
-    max-width: 20px;
-}
-
-button[id="mas"] {
-    max-width: 20px;
+.botones {
+    display: flex;
+    width: 15%;
+    height: 17px;
+    position: relative;
+    left: 128px;
 }
 
 .precio {
     position: relative;
-    left: 348px;
-    bottom: 167px;
-    font-size: 12px;
+    left: 28px;
 }
 
 .envio {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 6px;
     position: relative;
-    left: 246px;
-    bottom: 112px;
-    font-size: 12px;
+    bottom: 110px;
+    left: 243px;
 }
 
 .precio2 {
     position: relative;
-    left: 111px;
-    bottom: 13px;
-    font-size: 12px;
+    left: 57px;
 }
 
 .total {
+    display: flex;
+    font-size: 8px;
     position: relative;
-    left: 262px;
-    bottom: 102px;
-    font-size: 12px;
+    bottom: 98px;
+    left: 239px;
 }
-
-.precio3 {
+.precio3 { 
     position: relative;
-    left: 100px;
-    bottom: 14px;
-    font-size: 12px;
+    left: 40px;
 }
-
-.imagen-messi {
-    width: 45%;
+h1{
+    display: flex;
+    justify-content: center;
+    font-size: 19px;
     position: relative;
-    left: 32px;
+    bottom: 50px;
 }
-
-article .messi {
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    height: 114px;
-    width: 30%;
-    font-size: 10px;
-    bottom: 90px;
-}
-
-.me {
-    position: relative;
-    top: 8px;
-    font-size: 10px;
-    left: 90px;
-}
-
-.descripcion-messi {
-    position: relative;
-    bottom: 13px;
-    font-size: 10px;
-    left: 5px;
-}
-
-article .freddy {
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    height: 111px;
-    width: 30%;
-    font-size: 10px;
-    bottom: 202px;
-    left: 137px;
-}
-
-.fre {
-    position: relative;
-    top: 14px;
-    font-size: 10px;
-    left: 90px;
-}
-
-.descripcion-freddy {
-    position: relative;
-    bottom: 6px;
-    font-size: 9px;
-    left: 5px;
-}
-
-.imagen-freddy {
-    width: 80%;
-    position: relative;
-    left: 12px;
-}
-
-article .matrix {
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    height: 110px;
-    width: 30%;
-    font-size: 10px;
-    bottom: 313px;
-    left: 274px;
-}
-
-.ma {
-    position: relative;
-    top: 27px;
-    font-size: 10px;
-    left: 90px;
-}
-
-.descripcion-matrix {
-    position: relative;
-    top: 8px;
-    font-size: 9px;
-    left: 5px;
-}
-
-.imagen-matrix {
-    width: 66%;
-    position: relative;
-    left: 19px;
-    top: 8px;
-}
-
-article .michonne {
-    position: relative;
-    border-width: 1px;
-    border-style: solid;
-    border-color: black;
-    width: 30%;
-    font-size: 10px;
-    bottom: 294px;
-    left: 274px;
+.michonne{
     display: none;
 }
-
-.mic {
-    position: relative;
-    top: 23px;
-    font-size: 10px;
-    left: 96px;
-    display: none;
+.imagen-messi{
+    width: 30%;
 }
-
-.descripcion-michonne {
-    position: relative;
-    top: 9px;
-    font-size: 9px;
-    left: 5px;
-    display: none;
+.imagen-freddy{
+    width: 30%;
 }
-
-.imagen-michonne {
-    position: relative;
-    left: 19px;
-    top: 8px;
-    display: none;
+.imagen-matrix{
+    width: 30%;
 }
-
-@media(min-width:1024px) {
-    article .funko-carrito {
-        width: 13%;
+.car-des{
+    width: 30%;
+    background-color: white;
+    margin-bottom: 10px;
+}
+.fa-truck{
+    display: block;
+    font-size: 8px;
+    border: #f77a31 1px solid;
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+    left: 270px;
+    top: -25px;
+    background-color: #f77a31;
+}
+/* Media Tablest*/
+@media(min-width:768px) {
+    .funko-caja{
+    width: 55%;
+    margin-bottom: 10px;
+    position: relative;
+    margin-top: -3px;
+    margin: 15px 15px 15px 15px;
     }
-
-    article .messi {
-        width: 12%;
-    }
-    .ma{
-        top: 28px;
-    }
-
-    article .freddy {
-        width: 12%;
-        bottom: 204px;
-        height: 114px;
-        left: 131px;
-    }
-
-    article .matrix {
-        width: 12%;
-        bottom: 318px;
-        height: 114px;
-        left: 263px;
-    }
-    .descripcion-matrix{
-        top: 8px;
-    }
-    article .michonne {
-        display: flex;
-        width: 12%;
-        bottom: 431px;
-        left: 395px;
-        height: 113px;
-    }
-
-    .mic {
-        display: flex;
-        top: 85px;
-        left: 22px;
-    }
-
-    .descripcion-michonne {
-        display: flex;
-        top: 64px;
-        left: -64px;
-    }
-
-    .imagen-michonne {
-        display: flex;
-        width: 143%;
-        left: 10px;
-        top: 3px;
-    }
-    .descripcion{
-        left: 328px;
-    }
-    .descripcion2{
-        left: 420px;
+    .botones{
+        left: 164px;
     }
     .precio{
-        left: 429px;
-    }
-    .contador{
-        left: 313px;
+        left: 74px;
     }
     .envio{
-        left: 313px;
+        left: 287px;
     }
     .total{
-        left: 328px;
+        left: 282px;
     }
-    .precio2{
-        left: 125px;
+}
+
+/*Desktop*/
+@media(min-width:1024px) {
+    .funko-caja{
+    width: 41%;
+    position: relative;
+    margin: 15px 15px 15px 15px;
     }
-    .precio2{
-        left: 124px;
+    .descripciones{
+        left: 115px;
     }
 }

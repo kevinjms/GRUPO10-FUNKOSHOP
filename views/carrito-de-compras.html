@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -34,80 +33,71 @@
         </div>
     </header>
     <main>
-        <h2>CARRITO(1)</h2>
-        <h2 class="favoritas">FAVORITOS(0)</h2>
         <div class="funko-caja">
+            <div class="car-fav">
+                <h2>CARRITO(1)</h2>
+                <h2 class="favoritos">FAVORITOS(0)</h2>
+                <div class="descripciones">
+                    <h2 class="descripcion">CANT</h2>
+                    <h2 class="descripcion2">PRECIO</h2>
+                </div>
+            </div>
             <article>
                 <div class="funko-carrito">
-                    <div class="imagen"><img class="imagen-capitan" src="../images/funko_capitan_america.jpg" alt="imagen">
-                    </div>
-                    <div class="articulos"><i class="fa-solid fa-truck"></i>
-                            <p class="capitan-america">CAPITÁN AMÉRICA</p>
+                    <img class="imagen-capitan" src="../images/funko_capitan_america.jpg" alt="imagen">
+                    <div class="articulos"><i class="fa-solid fa-truck carrito1"></i>
+                        <p>POP!</p>
+                        <p class="capitan-america">CAPITÁN AMÉRICA</p>
                     </div>
                 </div>
             </article>
-            <p class="descripcion">CANT</p>
-            <div class="contador">
-                <button id="menos" type="button">-</button>
-                <input type="text" id="contador" class="form-control" value="1" min="1" />
-                <button id="mas" type="button">+</button>
+            <div class="precios">
+                <div class="botones"><button class="btn" type="button" id="menos">-</button>
+                    <input id="cantidad" type="text" style="text-align: center;" value="1">
+                    <button class="btn" type="button" id="mas">+</button>
+                </div>
+                <p class="precio">$4.500</p>
             </div>
 
-            <p class="descripcion2">PRECIO</p>
-            <p class="precio">$4.500</p>
-        
-        <div class="envio">
-            <input type="checkbox" name="envio" value="checked" /> ENVÍO
-            <P class="precio2">$800</P>
+            <div class="envio">
+                <h2>ENVÍO</h2>
+                <P class="precio2">$800</P>
+            </div>
+            <div class="total">
+                <h2>TOTAL</h2>
+                <p class="precio3">$5.300</p>
+            </div>
+            <h1>¡AGREGALOS A TU COMPRA!</h1>
+            <div class="funkos">
+                <div class="messi">
+                    <img class="imagen-messi" src="../images/Funko_Pop_Messi.jpg" alt="imagen">
+                    <div class="car-des">
+                        <div><i class="fa-solid fa-truck me"></i></div>
+                        <p class="descripcion-messi">MESSI</p>
+                    </div>
+                </div>
+                <div class="freddy">
+                    <img class="imagen-freddy" src="../images/Pesadilla-Freddy.jpg" alt="imagen">
+                    <div class="car-des">
+                        <div><i class="fa-solid fa-truck fre"></i></div>
+                        <p class="descripcion-freddy">FREDDY KRUEGER</p>
+                    </div>
+                </div>
+                <div class="matrix">
+                    <img class="imagen-matrix" src="../images/Matrix-neo.jpg" alt="imagen">
+                    <div class="car-des">
+                        <div><i class="fa-solid fa-truck ma"></i></div>
+                        <p class="descripcion-matrix">MATRIX</p>
+                    </div>
+                </div>
+                <div class="michonne">
+                    <img class="imagen-michonne" src="../images/TWD-michonne.jpg" alt="imagen">
+                    <div><i class="fa-solid fa-truck mic"></i></div>
+                    <p class="descripcion-michonne">MICHONNE</p>
+                </div>
+                </article>
+            </div>
         </div>
-        <div class="total">
-            <p>TOTAL</p>
-            <p class="precio3">$5.300</p>
-        </div>
-        <h1>¡AGREGALOS A TU COMPRA!</h1>
-                    <article>
-                        <div class="messi">
-                            <div class="imagen"><img class="imagen-messi" src="../images/messitopogigio.webp" alt="imagen">
-                            </div>
-                            <div><i class="fa-solid fa-truck me"></i>
-                                <p class="descripcion-messi">MESSI</p>
-                            </div>
-                        </div>
-                    </article>
-                        <article>
-                            <div class="freddy">
-                                <div class="imagen"><img class="imagen-freddy" src="../images/Pesadilla-Freddy.jpg" alt="imagen">
-                                </div>
-                                <div><i class="fa-solid fa-truck fre"></i>
-                                    <p class="descripcion-freddy">FREDDY KRUEGER</p>
-                                </div>
-                            </div>
-                        </article>
-                            <article>
-                                <div class="matrix">
-                                    <div class="imagen"><img class="imagen-matrix" src="../images/Matrix-neo.jpg" alt="imagen">
-                                    </div>
-                                    <div><i class="fa-solid fa-truck ma"></i>
-                                        <p class="descripcion-matrix">MATRIX</p>
-                                    </div>
-                                </div>
-                            </article>
-                            <article>
-                                <div class="michonne">
-                                    <div class="imagen"><img class="imagen-michonne" src="../images/TWD-michonne.jpg" alt="imagen">
-                                    </div>
-                                    <div><i class="fa-solid fa-truck mic"></i>
-                                        <p class="descripcion-michonne">MICHONNE</p>
-                                    </div>
-                                </div>
-                            </article>
-        </div>
-
-
-
-
-
-
     </main>
     <footer class="footer-carrito">
         <div>
