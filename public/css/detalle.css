@@ -68,6 +68,7 @@ body {
 }
 
 .relacionados img {
-    margin: 12px;
-    width: 130%;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
 }
