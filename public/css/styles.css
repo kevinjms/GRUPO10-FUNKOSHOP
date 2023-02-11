@@ -174,6 +174,28 @@ a {
     background-color: white;
 }
 
+.preventa{
+    background-image: url(/images/cuantos-funkos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.preventa h2{
+    margin: 15px;
+}
+
+.preventa .botonPreventa{
+    margin: 15px;
+    width: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
 /* FOOTER */
 
 .footerDetalle {
