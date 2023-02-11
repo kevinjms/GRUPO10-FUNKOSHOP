@@ -43,7 +43,6 @@ body {
 }
 
 .burger-menu i {
-    /* color: aliceblue; */
     font-size: 50px;
     margin-right: 90px;
 }
@@ -64,6 +63,22 @@ body {
     border: none;
     
 }
+.titulo {
+
+}
+.detalle {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 25px;
+}
+
+
+.cajadelproducto {
+    display: flex;
+    flex-direction: column;
+}
 .fotoPrincipal img{
     background-color: white 200%;
     width: 100%;
@@ -73,14 +88,24 @@ body {
     border: none;
     font-size: 50px;
     position: absolute;
-    margin-left: 380px;
-    ;
+    margin-left: 310px;
+}
+.compartir {
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 311px;
+    margin-top: 432px;
 }
 .fotosSiguientes  {
     display: flex;
+    justify-content: space-evenly;
 }
 .fotosSiguientes img {
     width: 100px;
+    display: flex;
+    
 }
 
 .relacionados  {
@@ -89,6 +114,7 @@ body {
     width: 90%;
     align-items: center;
     margin: 25px;
+    display: flex;
 }
 
 .infofunko {
@@ -111,4 +137,48 @@ body {
 .infofunko img {
     width: 200px;
     height: 200px;
+}
+
+/* FOOTER */
+
+.footerDetalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.footerDetalle .detalleAsist {
+    display: flex;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDetalle h3 {
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .detalleAsist .listaAsist {
+    list-style: square;
+}
+
+.footerDetalle .detalleAsist .listaAsist li {
+    color: white;
+    font-size: 12px;
+}
+
+.footerDetalle .detalleAsist .listaAsist li a {
+    color: white;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    cursor: pointer;
 }
