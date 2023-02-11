@@ -57,12 +57,16 @@ body {
     display: flex;
     
 }
-
 .botones {
     background-color: transparent;
     border: none;
     
 }
+
+/******** FIN HEADER ********/
+
+/******** INICIO MAIN ********/
+
 .titulo {
 
 }
@@ -70,7 +74,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 90%;
-    align-items: center;
+
     margin: 25px;
 }
 
@@ -107,6 +111,12 @@ body {
     display: flex;
     
 }
+.especificaciones {
+    margin: 10px;
+}
+.especificaciones h2 {
+    font-size: 40px;
+}
 
 .relacionados  {
     display: flex;
@@ -114,7 +124,7 @@ body {
     width: 90%;
     align-items: center;
     margin: 25px;
-    display: flex;
+   
 }
 
 .infofunko {
@@ -122,24 +132,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 300px;
     width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 15px;
+    font-size: 18px
 }
 .infodestacados {
     display: flex;
     flex-direction: column;
     width: 90%;
+    align-items: center;
 }
 .infofunko img {
     width: 200px;
     height: 200px;
+    margin-top: 15px;
+}
+.infofunko button {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
 }
 
-/* FOOTER */
+/********* FIN MAIN **********/
+
+/********INICIO FOOTER ********/
 
 .footerDetalle {
     display: flex;
@@ -182,3 +204,5 @@ a {
 a:hover {
     cursor: pointer;
 }
+
+/******** FIN FOOTER **********/
