@@ -68,6 +68,16 @@ body {
 /******** INICIO MAIN ********/
 
 .titulo {
+    display: flex;
+    font-size: 20px;
+    text-align: left;
+
+}
+.titulo p {
+   color: rgb(114, 112, 112);
+}
+.titulo h4 {
+margin-left: 20px;
 
 }
 .detalle {
@@ -168,6 +178,7 @@ body {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-color: royalblue;
 }
 
 .footerDetalle .detalleAsist {
