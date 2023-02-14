@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/normalize.css">
+    <link rel="stylesheet" href="/css/register.css">
+    <title>FUNKO SHOP</title>
+</head>
+<body>
+  <a class="bloqueImagenLogo" href='/'><img class="imagenLogo" src="/images/logo_funko_shop.png" alt="Logo"></a>
+  <form class="caja-formulario" action="/formulario-de-registro" method="POST">
+    <h1 align="center"> REGISTRARSE </h1>
+    <!--     Seccion de Nombre y Apellido        -->
+-->
+    <div class="nombre-apellido-container">
+        <div class="nombresApellidos"> 
+            <div class="textoIngreseNombre">INGRESE NOMBRE/S</div>
+            <div class="textoIngreseApellido" align="right">INGRESE APELLIDO/S</div>
+        </div>
+            <div class="NyAlugaresACompletar">
+            <input class="nombreACompletar" type="NOMBRES" name="NOMBRES"  required>
+            <input class="apellidoACompletar" type="APELLIDOS" name="APELLIDOS"  required>
+            </div>
+    </div>
+    <!--     Seccion de Correo y Contraseña              -->
+    <div class="correo-contraseña-container">
+        <div class="cajaDeMail">
+            <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
+            <input class="mail" type="email" name="email" placeholder="Ej: pedro.sanchez@hotmail.com" required>
+        </div>
+        <div class="cajaDeContraseña">
+            <div class="textoContraseña"> CONTRASEÑA </div>
+            <input class="password" type="password" name="contraseña" placeholder="Mínimo 8 caracteres" required> <i class="fa-solid fa-eye"> </i>
+        </div>    
+    </div> 
+    <!--     Seccion de Aceptar terminos y condiciones   -->
+    <section class="cajaDeAceptarTyC">
+        <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y CONDICIONES</a> </span>
+    </section>
+    <!--     Seccion final de Boton Registrarse          -->
+    <div align="center" class="cajaDeRegistro">
+        <button class="register" type="submit"> REGISTRARSE </button>
+    </div>
+  </form>  <!--  Aqui termina la caja del formulario    -->
+</body>
+</html>

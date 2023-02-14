@@ -1,41 +1,41 @@
+body { 
+    background-image: url('/images/cuantos-funkos.jpg') ;
+    background-size: 500px;
+}
+
+/* Seccion Imagen de Logo */
+.imagenLogo {
+    width: 120px ; height: 120px;
+    margin: 10px;
+}
+
+/* Contenido de la caja del formulario, datos en general */
 .caja-formulario {
-    position: auto;
+    background-color: rgba(255,255,255,0.7); 
+    background-size: contain;
     padding: 10px;
     border-style: solid;
     border-color: black;
     border-width: 5px;
     border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 10px ; margin-right: 10px;
     box-sizing: border-box;
-    margin-top: 50%;
 }
+
 /* Seccion de Nombre y Apellido */
-.nombresApellidos {
-    text-align: left;
-}
-
-.ingreseNombre , .ingreseApellido {
+.textoIngreseNombre , .textoIngreseApellido {
     display: inline-block;
+    font-weight: 600;
 }
 
-.ingreseNombre {
-    margin-right: 35px;
+.textoIngreseNombre {
+    margin-right: 18px;
 }
 
-.NyAlugaresACompletar {
-    border-color: red;
-}
-
-
-.nombreACompletar {
+.nombreACompletar , .apellidoACompletar {
     display: inline-block;
-    width: 180px;
-    margin-left: 1px;
-    border-color: red;
-}
-
-.apellidoACompletar {
-    display: inline-block;
-    width: 180px;
+    width: 170px;
     margin-left: 1px;
     border-color: red;
 }
@@ -45,8 +45,13 @@
 }
 
 /* Seccion de Correo y Contraseña */
-.correo-contraseña-container {
-    text-align: left;
+.textoCorreoElectronico , .textoContraseña {
+    font-weight: 600;
+}
+
+.mail , .password {
+    border-color: red;
+    width: 300px;
 }
 
 .cajaDeMail , .cajaDeContraseña  {
@@ -54,5 +59,14 @@
 }
 
 /* Seccion de Aceptar terminos y condiciones */
+.TyC {
+    font-style: oblique;
+    font-weight: 800;
+}
 
 /* Seccion final de Boton Registrarse */
+.register {
+    background-color: rgba(255,255,255,0.4); 
+    margin-top: 20px;
+    font-weight: 600;
+}
