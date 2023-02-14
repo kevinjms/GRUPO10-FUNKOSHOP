@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login-h2 {
+margin-bottom: 10px;
+margin-top: 10px;
+}
+h1 {
+text-align: center;
+margin-bottom: 20px;
+}
+.login-input-2 {
+    width: 40px;
+    height: 20px; 
+    margin: 1px;
+}
+.login-p-1 {
+font-size: 16px;
+text-align: right;
+}
+.login-p-2 {
+    font-size: 16px;
+}
+.login-p-3 {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 20px;
+}
+button {
+    width: 100px;
+    font-size: 18px;
+    border-radius: 50%;
+    background-color: black;
+    color: white;
+}
+.login-button {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.login-formulario {
+    display: flex;
+    flex-direction: column;
+    padding: 50px 400px 30px 400px;
+}
+.login-div {
+    border: 5px solid grey;
+}
