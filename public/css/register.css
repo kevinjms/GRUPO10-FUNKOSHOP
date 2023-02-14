@@ -1,0 +1,58 @@
+.caja-formulario {
+    position: auto;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    margin-top: 50%;
+}
+/* Seccion de Nombre y Apellido */
+.nombresApellidos {
+    text-align: left;
+}
+
+.ingreseNombre , .ingreseApellido {
+    display: inline-block;
+}
+
+.ingreseNombre {
+    margin-right: 35px;
+}
+
+.NyAlugaresACompletar {
+    border-color: red;
+}
+
+
+.nombreACompletar {
+    display: inline-block;
+    width: 180px;
+    margin-left: 1px;
+    border-color: red;
+}
+
+.apellidoACompletar {
+    display: inline-block;
+    width: 180px;
+    margin-left: 1px;
+    border-color: red;
+}
+
+.nombre-apellido-container {
+    margin-bottom: 50px;
+}
+
+/* Seccion de Correo y Contraseña */
+.correo-contraseña-container {
+    text-align: left;
+}
+
+.cajaDeMail , .cajaDeContraseña  {
+    margin-bottom: 50px;
+}
+
+/* Seccion de Aceptar terminos y condiciones */
+
+/* Seccion final de Boton Registrarse */

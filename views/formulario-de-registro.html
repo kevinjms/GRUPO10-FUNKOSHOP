@@ -10,37 +10,34 @@
     <title>FUNKO SHOP</title>
 </head>
 <body>
+  <div align="center" class="caja-formulario"> 
     <form action="/formulario-de-registro" method="POST">
-     <h1 align="center"> REGISTRARSE </h1>
-    <div class="nombre-container">
+    <h1 align="center"> REGISTRARSE </h1>
+    <div class="nombre-apellido-container">
         <div class="nombresApellidos"> 
-             <div>INGRESE NOMBRE/S</div>
-             <div align="right">INGRESE APELLIDO/S</div>
+             <div class="ingreseNombre">INGRESE NOMBRE/S</div>
+             <div class="ingreseApellido" align="right">INGRESE APELLIDO/S</div>
         </div>
-
-            <input type="NOMBRES" name="NOMBRES"  required>
-            <input type="APELLIDOS" name="APELLIDOS"  required>
+            <div class="NyAlugaresACompletar">
+            <input class="nombreACompletar" type="NOMBRES" name="NOMBRES"  required>
+            <input class="apellidoACompletar" type="APELLIDOS" name="APELLIDOS"  required>
+            </div>
     </div>
-     <div class="correo-contra-container">
+    <div class="correo-contraseña-container">
+       <div class="cajaDeMail">
         <div>CORREO ELECTRÓNICO</div>
-            <input class="mail" type="email" name="email" placeholder="@" required>
+        <input class="mail" type="email" name="email" placeholder="@" required>
+       </div>
+       <div class="cajaDeContraseña">
         <div> CONTRASEÑA </div>
-            <input class="passw" type="password" name="contraseña" required> <i class="fa-solid fa-eye"> </i>
+        <input class="passw" type="password" name="contraseña" required> <i class="fa-solid fa-eye"> </i>
+       </div>    
     </div>
         <section >
                 <input class="terms" type="checkbox">  <a href="#"> ACEPTAR TÉRMINOS Y CONDICIONES </a> 
             </section>
                 <button class="register" type="submit"> REGISTRARSE </button>
     </form>
+  </div> <!-- Cierre de      <div align="center" class="caja-formulario">           -->
 </body>
 </html>
-
-<!-- probando forma para que bloque de nombre y apellido queden al lado.. pero no funciona
-    <form action="/formulario-de-registro" method="POST">
-        <h1 align="center"> REGISTRARSE </h1>
-        <div><span><h2>INGRESE NOMBRE/S</h2></span>
-             <span><h2>INGRESE APELLIDO/S</h2></span>
-    </div>
-    <div><span><input type="nombre/s" name="nombre/s" required></span>
-         <span><input type="apellido/s" name="apellido/s" required></span>
-    </div> -->
