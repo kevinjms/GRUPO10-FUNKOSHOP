@@ -1,0 +1,72 @@
+body { 
+    background-image: url('/images/cuantos-funkos.jpg') ;
+    background-size: 500px;
+}
+
+/* Seccion Imagen de Logo */
+.imagenLogo {
+    width: 120px ; height: 120px;
+    margin: 10px;
+}
+
+/* Contenido de la caja del formulario, datos en general */
+.caja-formulario {
+    background-color: rgba(255,255,255,0.7); 
+    background-size: contain;
+    padding: 10px;
+    border-style: solid;
+    border-color: black;
+    border-width: 5px;
+    border-radius: 10px;
+    margin-top: 15%;
+    margin-left: 10px ; margin-right: 10px;
+    box-sizing: border-box;
+}
+
+/* Seccion de Nombre y Apellido */
+.textoIngreseNombre , .textoIngreseApellido {
+    display: inline-block;
+    font-weight: 600;
+}
+
+.textoIngreseNombre {
+    margin-right: 18px;
+}
+
+.nombreACompletar , .apellidoACompletar {
+    display: inline-block;
+    width: 170px;
+    margin-left: 1px;
+    border-color: red;
+}
+
+.nombre-apellido-container {
+    margin-bottom: 50px;
+}
+
+/* Seccion de Correo y Contraseña */
+.textoCorreoElectronico , .textoContraseña {
+    font-weight: 600;
+}
+
+.mail , .password {
+    border-color: red;
+    width: 300px;
+}
+
+.cajaDeMail , .cajaDeContraseña  {
+    margin-bottom: 50px;
+}
+
+/* Seccion de Aceptar terminos y condiciones */
+.TyC {
+    font-style: oblique;
+    font-weight: 800;
+}
+
+/* Seccion final de Boton Registrarse */
+.register {
+    background-color: rgba(255,255,255,0.4); 
+    margin-top: 20px;
+    font-weight: 600;
+}
