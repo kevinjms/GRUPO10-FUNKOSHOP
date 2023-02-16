@@ -4,12 +4,24 @@
     box-sizing: border-box;
 
 }
+
+h2 {
+    color: grey;
+}
+
 .header {
-    background-image: url('/images/banner-shenron-x.jpg');
+    /* background-image: url('/images/banner-shenron-x.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 220px;
-    
+    width: 100%;
+    display: flex; */
+}
+
+.burger-container .banner {
+    width: 100%;
+    position: absolute;
+    top: 0px;
 }
 
 body {
@@ -24,6 +36,7 @@ body {
     width: 25%;
     display: flex;
     margin-left: 10px;
+    z-index: 1;
 }
 
 
@@ -40,6 +53,7 @@ body {
     justify-content: space-between;
     align-items: center;
 
+
 }
 
 .burger-menu i {
@@ -51,6 +65,13 @@ body {
 .burger-menu {
     display: flex;
     padding: 15px;
+    z-index: 1;
+
+}
+
+.contenedor-de-botones {
+    z-index: 1;
+
 }
 
 .contenedor-de-botones i {
@@ -71,24 +92,41 @@ body {
 /** INICIO MAIN **/
 
 .container-main {
- 
-}
-
-.cabezas {
+    position: relative;
+    top: 135px;
 
 }
+
+.cabezas {}
+
 .cabezas img {
     width: 100px;
 
 }
 
+
+.search-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.search-container button {
+    background-color: white;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.search-container i {
+    background-color: white;
+}
+
 input {
     height: 30px;
     width: 95%;
-    border-radius: 5px;
-    display: flex;
-    margin: auto;
-
+    border-radius: 10px 0 0 10px;
+    border-right: none;
 }
 
 .nombresApellidos {
@@ -123,8 +161,9 @@ a {
 
 }
 
-/* MAIN INDEX */
-.destacados{
+/*** SECCION DESTACADOS ******/
+.destacados,
+.ofertas {
     display: flex;
     flex-direction: column;
     width: 90%;
@@ -132,18 +171,18 @@ a {
     margin: 25px;
 }
 
-.destacados .titleDestacados{
+.destacados .titleDestacados {
     text-align: center;
 }
 
-.destacados .contenedorDestacados{
+.destacados .contenedorDestacados {
     display: flex;
     flex-direction: column;
     width: 90%;
     align-items: center;
 }
 
-.destacados .contenedorDestacados .infoDestacado{
+.destacados .contenedorDestacados .infoDestacado {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -156,17 +195,17 @@ a {
     border-radius: 15px;
 }
 
-.destacados .contenedorDestacados .infoDestacado img{
+.destacados .contenedorDestacados .infoDestacado img {
     width: 200px;
     height: 200px;
     margin-top: 15px;
 }
 
-.destacados .contenedorDestacados .infoDestacado h4{
+.destacados .contenedorDestacados .infoDestacado h4 {
     font-size: 15px;
 }
 
-.destacados .contenedorDestacados .infoDestacado button{
+.destacados .contenedorDestacados .infoDestacado button {
     color: #FFF;
     transition: all 0.5s;
     position: relative;
@@ -175,12 +214,64 @@ a {
     margin-bottom: 15px;
 }
 
-.destacados .contenedorDestacados .infoDestacado button:hover{
+.destacados .contenedorDestacados .infoDestacado button:hover {
     color: blue;
     background-color: white;
 }
 
-.preventa{
+/****** SECCION OFERTAS *****/
+.ofertas .titleDestacados {
+    text-align: center;
+}
+
+.ofertas .contenedorOfertas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.ofertas .contenedorOfertas .infoOfertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas img {
+    width: 200px;
+    height: 200px;
+    margin-top: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas h4 {
+    font-size: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas button {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas button:hover {
+    color: blue;
+    background-color: white;
+}
+
+
+/**** PREVENTA ****/
+
+.preventa {
     background-image: url(/images/cuantos-funkos.jpg);
     background-size: cover;
     width: 100%;
@@ -191,17 +282,18 @@ a {
     justify-content: center;
 }
 
-.preventa h2{
+.preventa h2 {
     margin: 15px;
 }
 
-.preventa .botonPreventa{
+.preventa .botonPreventa {
     margin: 15px;
     width: 120px;
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
 }
+
 /* FOOTER */
 
 .footerDetalle {
@@ -209,6 +301,9 @@ a {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+    background-color: royalblue;
+    position: relative;
+    top: 135px;
 }
 
 .footerDetalle .detalleAsist {
