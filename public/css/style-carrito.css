@@ -7,6 +7,7 @@
 .head {
     display: flex;
     justify-content: space-between;
+    background-color: royalblue;
 }
 
 .img {
@@ -34,14 +35,17 @@ body {
 }
 
 .footer-carrito {
-    bottom: 0;
     display: flex;
     text-align: center;
     width: 100%;
+    background-color: royalblue;
 }
 
 .redes {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .asistencia {
@@ -217,6 +221,10 @@ h4 {
     display: flex;
     width: 90%;
     flex-direction: column;
+    align-items: center;
+    position: relative;
+    left: 20px;
+
 }
 
 .messi {
@@ -257,7 +265,8 @@ h4 {
     background-color: white;
     border-radius: 15px;
 }
-.funko-carrito{
+
+.funko-carrito {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -329,10 +338,16 @@ h4 {
 
     .asistencia {
         display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .informacion {
         display: flex;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .michonne {
@@ -398,12 +413,33 @@ h4 {
         font-size: 8px;
         flex-direction: column;
     }
-    .funkos{
+
+    .funkos {
         font-size: 12px;
+        left: 180px;
     }
-    .funko-carrito{
+
+    .funko-carrito {
         width: 65%;
         height: 132px;
+    }
+
+    .medios-de-pago {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ubi-tel {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ul-footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 }
 
@@ -491,8 +527,10 @@ h4 {
 
     .funkos {
         font-size: 17px;
+        left: 300px;
     }
-    .funko-carrito{
+
+    .funko-carrito {
         width: 88%;
         height: 220px;
     }
