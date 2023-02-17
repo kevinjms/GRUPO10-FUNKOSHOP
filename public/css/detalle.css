@@ -91,8 +91,9 @@ main {
 
 main .titulo {
     display: flex;
-    font-size: 20px;
+    font-size: 25px;
     text-align: left;
+    margin-bottom: 15px;
 
 }
 
@@ -163,10 +164,30 @@ main .titulo {
 
 .especificaciones {
     margin: 10px;
+    font-size: 20px;
+}
+
+.carrito {
+    display: flex;
+    position: absolute;
+    flex-direction: column-reverse;
+    right: 30px;
+    margin-top: 10px;
+    font-size: 15px;
+    
+}
+.carrito button {
+    background-color: turquoise;
+}
+
+details {
+    position: relative;
+    margin: 12px 0;
 }
 
 .especificaciones h2 {
     font-size: 40px;
+    color: black;
 }
 
 .relacionados {
