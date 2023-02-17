@@ -43,8 +43,11 @@ button {
 .login-formulario {
     display: flex;
     flex-direction: column;
-    padding: 50px 400px 30px 400px;
+    padding: 0px 20px 0px 20px;
 }
 .login-div {
     border: 5px solid grey;
+}
+.login-input {
+    border-radius: 10px;
 }

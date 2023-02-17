@@ -21,9 +21,17 @@ app.get('/formulario-de-registro', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/register.html'))
 });
 
+app.post('/formulario-de-registro', (req, res) => {
+    res.redirect('/')
+})
+
 app.get('/formulario-de-login', (req, res) => {
     res.sendFile(path.join(__dirname,'/views/formulario-de-login.html'))
 });
+
+app.post('/formulario-de-login', (req, res) => {
+    res.redirect('/')
+})
 
 const port = 3000;
 app.listen(port, () => {
