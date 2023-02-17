@@ -2,6 +2,7 @@
 <html lang="es">
 
 <head>
+    <title>FUNKO SHOP</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,13 +10,13 @@
     <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
-    <title>FUNKO SHOP</title>
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div>
             <div class="burger-container">
+                <img class="banner" src="/images/banner-shenron-x.jpg" alt="logo">
                 <img class="logo" src="/images/logo_funko_shop.png" alt="logo">
                 <div class="burger-menu">
                     <i class="fa-solid fa-bars"></i>
@@ -46,12 +47,12 @@
             <div class="cabezas">
                 <img src="/images/funko-cabezagris-breaking-bad.png" alt="breakingBad">
                 <img src="/images/funko-cabezagris-DC.png" alt="DC">
-                <!-- <img src="/images/funko-cabezagris-harrypotter.png" alt="HP"> -->
                 <img src="/images/funko-cabezagris-MARVEL.png" alt="Marvel">
                 <img src="/images/funko-cabezagris-starwars.png" alt="SW">
             </div>
-            <div>
-                <input type="text">
+            <div class="search-container">
+                <input type="text" placeholder="Funko de...">
+                <button><i class="fas fa-search"></i></button>
             </div>
             <section class="destacados">
                 <h2>DESTACADOS</h2>
@@ -86,11 +87,32 @@
             <section class="ofertas">
                 <h2>OFERTAS</h2>
                 <article class="contenedorOfertas">
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
-                    <div></div>
+                    <div class="infoOfertas">
+                        <img src="/images/R2-D2.jpg" alt="RD">
+                        <h4>R2-D2</h4>
+                        <button>DETALLE</button>
+                    </div>
+                    <div class="infoOfertas">
+                        <img src="/images/Terminator-t800.jpg" alt="T-800">
+                        <h4>TERMINATOR T-800</h4>
+                        <button>DETALLE</button>
+                    </div>
+                    <div class="infoOfertas">
+                        <img src="/images/Friday13th-jason.jpg" alt="JASON">
+                        <h4>JASON</h4>
+                        <button>DETALLE</button>
+                    </div>
+                    <div class="infoOfertas">
+                        <img src="/images/Albert_Einstein.JPG" alt="EINSTEIN">
+                        <h4>ALBERT EINSTEIN</h4>
+                        <button>DETALLE</button>
+                    </div>
+                    <div class="infoOfertas">
+                        <img src="/images/TWD-michonne.jpg" alt="TWD">
+                        <h4>MICHONNE</h4>
+                        <button>DETALLE</button>
+                    </div>
+                </article>
                 </article>
             </section>
             <div class="preventa">
@@ -101,6 +123,7 @@
     </main>
     <footer>
         <div class="footerDetalle">
+            <h2>FUNKO-SHOP</h2>
             <div class="detalleAsist">
                 <h3>ASISTENCIA</h3>
                 <ul class="listaAsist">
@@ -108,17 +131,6 @@
                     <li><a href=""> Bases y condiciones de promociones</a></li>
                     <li><a href="">Política de Privacidad</a></li>
                     <li><a href="">Centro de ayuda</a></li>
-                </ul>
-            </div>
-            <div class="informacion">
-                <h3>INFORMACIÓN</h3>
-                <ul class="listaInfo">
-                    <li>Inicio</li>
-                    <li>¿Quiénes somos?</li>
-                    <li>Categorías</li>
-                    <li>Personalizados</li>
-                    <li>Pre-venta</li>
-                    <li>Preguntas Frecuentes</li>
                 </ul>
             </div>
             <div class="seguinos">
@@ -130,6 +142,16 @@
                     <i class="fa-brands fa-facebook"></i>
                 </div>
             </div>
+            <div class="informacion">
+                <h3>INFORMACIÓN</h3>
+                <ul class="listaInfo">
+                    <a href="#">INICIO</a>
+                    <a href="#">¿QUIÉNES SOMOS?</a>
+                    <a href="#">CATEGORÍAS</a>
+                    <a href="#">PERSONALIZADOS</a>
+                    <a href="#">PRE-VENTA</a>
+                </ul>
+            </div>
             <div>
                 <div class="pagos">
                     <h3>MEDIOS DE PAGO</h3>
@@ -137,18 +159,22 @@
                         <i class="fa-sharp fa-solid fa-credit-card"></i>
                         <i class="fa-solid fa-building-columns"></i>
                         <i class="fa-solid fa-money-bill-1"></i>
-                        <button>ARREPENTIMIENTO</button>
                     </div>
                 </div>
-                <div class="envios">
-                    <h3><i class="fa-solid fa-truck-fast"></i>ENVÍOS A TODO EL PAÍS</h3>
+                <div class="arrepentido">
+                    <button>ARREPENTIMIENTO</button>
                 </div>
-            </div>
-            <div class="contacto">
-                <h4><i class="fa-solid fa-location-dot"></i>Ubicación</h4>
-                <h4><i class="fa-solid fa-phone"></i>5555-5555</h4>
-                <h4><i class="fa-solid fa-envelope"></i>funkoshop@gmail.com</h4>
-                <h4><i class="fa-solid fa-alarm-clock"></i>Lun-Vier 8:00-17:00hs</h4>
+                <div class="envios">
+                    <h3>ENVÍOS A TODO EL PAÍS</h3>
+                    <i class="fa-solid fa-truck-fast"></i>
+                </div>
+                <div class="contacto">
+                    <h3>CONTACTO</h3>
+                    <h4><i class="fa-solid fa-location-dot"></i>Ubicación</h4>
+                    <h4><i class="fa-solid fa-phone"></i>5555-5555</h4>
+                    <h4><i class="fa-solid fa-envelope"></i>funkoshop@gmail.com</h4>
+                    <h4><i class="fa-solid fa-alarm-clock"></i>Lun-Vier 8:00-17:00hs</h4>
+                </div>
             </div>
         </div>
     </footer>

@@ -7,19 +7,24 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/normalize.css">
     <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/login.css">
     <title>FUNKO SHOP</title>
 </head>
 <body>
     <form action="/formulario-de-login" method="POST">
+        <label class="login-formulario">
+            <div class="login-div">
         <h1> INICIAR SESIÓN </h1>
-        <h2> INGRESE SU CORREO ELECTRÓNICO </h2>
-        <input type="email" name="email" placeholder="INGRESE CORREO ELECTRONICO" required>
-        <h2> INGRESE SU CONTRASEÑA </h2>
-        <input type="password" name="contraseña" required> <i class="fa-solid fa-eye"> </i> 
-        <p> <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a> </p>
-        <p> <input type="checkbox"> RECORDARME </p>
-        <button type="submit"> ACCEDER </button>
-        <p> <a href=""> CREAR CUENTA </a> </p>
+        <h2 class="login-h2"> INGRESE SU CORREO ELECTRÓNICO </h2>
+        <input type="email" name="email" placeholder="CORREO ELECTRONICO" required>
+        <h2 class="login-h2"> INGRESE SU CONTRASEÑA </h2>
+        <input type="password" name="contraseña" placeholder="CONTRASEÑA" required> <i class="fa-solid fa-eye"> </i> 
+        <p class="login-p-1"> <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a> </p>
+        <p class="login-p-2"> <input class="login-input-2" type="checkbox"> RECORDARME </p>
+        <p class="login-button"> <button type="submit"> ACCEDER </button> </p>
+        <p class="login-p-3"> <a href="/"> CREAR CUENTA </a> </p>
+            </div>
+    </label>
     </form>
 </body>
 </html>
