@@ -221,6 +221,7 @@ main .titulo {
     margin-top: 10px;
     flex-direction: column;
     align-items: center;
+    display: none;
 }
 
 .footerDetalle h3 {
