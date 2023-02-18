@@ -1,7 +1,17 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
 body {
     font-size: 12px;
     background-color: whitesmoke;
 
+}
+
+h2 {
+    color: grey;
 }
 /** INICIO MAIN **/
 

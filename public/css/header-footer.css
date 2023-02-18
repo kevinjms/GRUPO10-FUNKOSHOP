@@ -1,14 +1,9 @@
-/* HEADER */
 * {
     margin: 0;
     box-sizing: border-box;
 
 }
-
-h2 {
-    color: grey;
-}
-
+/* HEADER */
 .header {
     background-image: url('/images/banner-shenron-x.jpg');
     background-repeat: no-repeat;
@@ -16,66 +11,52 @@ h2 {
     height: 220px;
     width: 100%;
     display: flex;
+    align-items: flex-start;
 }
 
-.burger-container .banner {
-    width: 100%;
-    position: absolute;
-    top: 0px;
+.header .burger-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.logo {
+.header .burger-container .logo {
     width: 25%;
     display: flex;
     margin-left: 10px;
     z-index: 1;
 }
 
-
-.accesos ul {
-    padding-left: 0px;
-    text-decoration: none;
-    font-size: 130%;
-    display: none;
-
-}
-
-.burger-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-
-}
-
-.burger-menu i {
+.header .burger-container .burger-menu{
     font-size: 50px;
-    margin-right: 90px;
 }
 
-.burger-menu {
-    display: flex;
-    padding: 15px;
+.header .burger-container .burger-menu i{
+    align-items: center;
+}
+
+.header .burger-container .contenedor-de-botones{
     z-index: 1;
-
 }
 
-.contenedor-de-botones {
-    z-index: 1;
-
-}
-
-.contenedor-de-botones i {
-    font-size: 30px;
-    display: flex;
-
-}
-
-.botones {
+.header .burger-container .contenedor-de-botones .botones {
     background-color: transparent;
     border: none;
 
 }
+
+.header .burger-container .contenedor-de-botones i {
+    font-size: 30px;
+    color: black;
+    display: flex;
+    text-decoration: none;
+}
+
+.header .accesos ul {
+    display: none;
+}
+
+
 
 
 /* FOOTER */
