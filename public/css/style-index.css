@@ -1,0 +1,203 @@
+body {
+    font-size: 12px;
+    background-color: whitesmoke;
+
+}
+/** INICIO MAIN **/
+
+.container-main {
+    position: relative;
+    top: 40px;
+
+}
+
+.cabezas img {
+    width: 100px;
+
+}
+
+
+.search-container {
+    display: flex;
+    width: 90%;
+    margin: auto;
+}
+
+.search-container button {
+    background-color: white;
+    border-left: none;
+    border-radius: 0 10px 10px 0;
+
+}
+
+.search-container i {
+    background-color: white;
+}
+
+input {
+    height: 30px;
+    width: 95%;
+    border-radius: 10px 0 0 10px;
+    border-right: none;
+}
+
+.nombresApellidos {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.mail,
+.passw {
+    width: 100%;
+}
+
+
+i {
+    top: 300px;
+    right: 780px;
+}
+
+.register {
+    width: 200px;
+    height: 40px;
+    color: white;
+    background-color: black;
+    border-radius: 50px;
+    margin-left: 80px;
+
+}
+
+/*** SECCION DESTACADOS ******/
+.destacados,
+.ofertas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin: 25px;
+}
+
+.destacados .titleDestacados {
+    text-align: center;
+}
+
+.destacados .contenedorDestacados {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.destacados .contenedorDestacados .infoDestacado {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -2px #777;
+}
+
+.destacados .contenedorDestacados .infoDestacado img {
+    height: 200px;
+    margin-top: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado h4 {
+    font-size: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado button {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.destacados .contenedorDestacados .infoDestacado button:hover {
+    color: blue;
+    background-color: white;
+}
+
+/****** SECCION OFERTAS *****/
+.ofertas .titleDestacados {
+    text-align: center;
+}
+
+.ofertas .contenedorOfertas {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+}
+
+.ofertas .contenedorOfertas .infoOfertas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0px 0px 20px -2px #777;
+}
+
+.ofertas .contenedorOfertas .infoOfertas img {
+    height: 200px;
+    margin-top: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas h4 {
+    font-size: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas button {
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
+}
+
+.ofertas .contenedorOfertas .infoOfertas button:hover {
+    color: blue;
+    background-color: white;
+}
+
+
+/**** PREVENTA ****/
+
+.preventa {
+    background-image: url(/images/cuantos-funkos.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.preventa h2 {
+    margin: 15px;
+}
+
+.preventa .botonPreventa {
+    margin: 15px;
+    width: 120px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+

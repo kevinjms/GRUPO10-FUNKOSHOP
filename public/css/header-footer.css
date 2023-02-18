@@ -1,0 +1,247 @@
+/* HEADER */
+* {
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+h2 {
+    color: grey;
+}
+
+.header {
+    background-image: url('/images/banner-shenron-x.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 220px;
+    width: 100%;
+    display: flex;
+}
+
+.burger-container .banner {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+}
+
+.logo {
+    width: 25%;
+    display: flex;
+    margin-left: 10px;
+    z-index: 1;
+}
+
+
+.accesos ul {
+    padding-left: 0px;
+    text-decoration: none;
+    font-size: 130%;
+    display: none;
+
+}
+
+.burger-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+}
+
+.burger-menu i {
+    font-size: 50px;
+    margin-right: 90px;
+}
+
+.burger-menu {
+    display: flex;
+    padding: 15px;
+    z-index: 1;
+
+}
+
+.contenedor-de-botones {
+    z-index: 1;
+
+}
+
+.contenedor-de-botones i {
+    font-size: 30px;
+    display: flex;
+
+}
+
+.botones {
+    background-color: transparent;
+    border: none;
+
+}
+
+
+/* FOOTER */
+
+.footerDetalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: royalblue;
+    position: relative;
+    top: 135px;
+   
+}
+
+.footerDetalle h2{
+    color: white;
+    font-size: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footerDetalle .detalleAsist{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.footerDetalle .detalleAsist h3{
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .detalleAsist .listaAsist {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+} 
+
+.footerDetalle .detalleAsist .listaAsist li a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+.footerDetalle .seguinos{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerDetalle .seguinos h3{
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .seguinos .redes{
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerDetalle .seguinos .redes i{
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .informacion{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footerDetalle .informacion h3{
+    color: white;
+    font-size: 15px;
+}
+.footerDetalle .informacion .listaInfo {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+}
+
+.footerDetalle .informacion .listaInfo li a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+}
+.footerDetalle .infoGeneral{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.footerDetalle .infoGeneral .pagos{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerDetalle .infoGeneral .pagos h3{
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .pagos .iconosPagos{
+    margin-top: 15px;
+    width: 100% ;
+    display: flex;
+    justify-content: space-around;
+}
+
+.footerDetalle .infoGeneral .pagos .iconosPagos i{
+    color: white;
+    font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .arrepentido{
+    margin: 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.footerDetalle .infoGeneral .arrepentido button{
+    border-radius: 7px;
+    border: none;
+    color: slateblue;
+}
+
+.footerDetalle .infoGeneral .envios h3 {
+    color: white;
+    font-size: 15px;
+
+}
+
+.footerDetalle .infoGeneral .envios i {
+    color: white;
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    font-size: 25px;
+
+}
+
+.footerDetalle .infoGeneral .contacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.footerDetalle .infoGeneral .contacto h3{
+    color: black;
+    font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .contacto h4{
+    margin-top: 5px;
+    font-size: 15px;
+}
