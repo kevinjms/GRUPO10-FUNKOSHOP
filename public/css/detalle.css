@@ -5,12 +5,12 @@
 }
 
 .header {
-    /* background-image: url('/images/banner-shenron-x.jpg');
+    background-image: url('/images/banner-shenron-x.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 220px;
     width: 100%;
-    display: flex; */
+    display: flex;
 }
 
 .burger-container .banner {
