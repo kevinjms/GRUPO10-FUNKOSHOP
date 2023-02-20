@@ -68,7 +68,6 @@
     flex-wrap: wrap;
     background-color: royalblue;
     position: relative;
-    top: 135px;
    
 }
 
@@ -115,17 +114,17 @@
 .footerDetalle .seguinos h3{
     color: white;
     font-size: 15px;
+    text-align: center;
 }
 
 .footerDetalle .seguinos .redes{
     margin-top: 15px;
-    display: flex;
-    justify-content: space-between;
 }
 
 .footerDetalle .seguinos .redes i{
     color: white;
-    font-size: 15px;
+    font-size: 40px;
+    margin: 0 10px;
 }
 
 .footerDetalle .informacion{
