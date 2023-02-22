@@ -12,6 +12,12 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', mainRoutes);
 
+<<<<<<< HEAD
+=======
+ app.post('/formulario-de-login', (req, res) => {
+     res.redirect('/')
+ })
+>>>>>>> main
 
 const port = 3000;
 app.listen(port, () => {
