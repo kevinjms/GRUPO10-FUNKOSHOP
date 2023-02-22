@@ -12,9 +12,6 @@ app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', mainRoutes);
 
- app.post('/formulario-de-login', (req, res) => {
-     res.redirect('/')
- })
 
  app.post('/register', (req, res) => {
     res.redirect('/')
