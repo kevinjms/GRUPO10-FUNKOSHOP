@@ -11,16 +11,17 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', mainRoutes);
+
 // app.get('/', (req, res) =>{
-//     res.sendFile(path.join(__dirname,'/views/index.html'))
+//     res.render(path.join(__dirname,'index'))
 // });
 
 // app.get('/detalle-de-producto', (req, res) =>{
-//     res.sendFile(path.join(__dirname,'/views/detalle-de-producto.html'))
+//     res.render(path.join(__dirname,'detalle-de-producto'))
 // });
 
 // app.get('/carrito-de-compras', (req, res) =>{
-//     res.sendFile(path.join(__dirname,'/views/carrito-de-compras.html'))
+//     res.render(path.join(__dirname,'carrito-de-compras'))
 // });
 
 // app.get('/formulario-de-registro', (req, res) => {
