@@ -1,37 +1,6 @@
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/normalize.css">
-    <link rel="stylesheet" href="/css/header-footer.css">
-    <link rel="stylesheet" href="/css/style-carrito.css">
-    <title>Carrito de compras</title>
-</head>
-
+<%- include('partials/head', {title: 'Carritos de Compras'}) %>
 <body>
-
-    <header>
-        <div class="head">
-            <img class="img" src="/images/logo_funko_shop.png" alt="logo">
-            <div>
-                <ul class="ul-header">
-                    <li>INICIO</li>
-                    <li>¿QUIÉNES SOMOS?</li>
-                    <li>CATEGORÍAS</li>
-                    <li>PERSONALIZADOS</li>
-                    <li>PRE-VENTA</li>
-                </ul>
-            </div>
-            <div class="botones1">
-                <button><a href="/formulario-de-login"><i class="fa-solid fa-user fas"></i></a></button>
-                <button><i class="fa-regular fa-heart fas"></i></button>
-                <button><i class="fa-solid fa-cart-shopping fas"></i></button>
-            </div>
-        </div>
-    </header>
+    <%- include('partials/header') %>
     <main>
         <div class="funko-caja">
             <div class="car-fav">
@@ -102,57 +71,7 @@
             </div>
         </div>
     </main>
-    <footer class="footer-carrito">
-        <div class="red">
-            <div class="asistencia">
-                <h3>ASISTENCIA</h3>
-                <ul class="ul-footer">
-                    <li><a href=""> Términos y condiciones</a> </li>
-                    <li><a href=""> Bases y condiciones de promociones</a></li>
-                    <li><a href="">Política de Privacidad</a></li>
-                    <li><a href="">Centro de ayuda</a></li>
-                </ul>
-            </div>
-            <div class="informacion">
-                <h3>INFORMACIÓN</h3>
-                <ul class="ul-footer">
-                    <li>Inicio</li>
-                    <li>¿Quiénes somos?</li>
-                    <li>Categorías</li>
-                    <li>Personalizados</li>
-                    <li>Pre-venta</li>
-                    <li>Preguntas Frecuentes</li>
-                </ul>
-            </div>
-            <div>
-                <h3>SEGUINOS</h3>
-                <i class="fa-brands fa-twitter re"></i>
-                <i class="fa-brands fa-linkedin re"></i>
-                <i class="fa-brands fa-instagram re"></i>
-                <i class="fa-brands fa-facebook re"></i>
-            </div>
-            <div>
-                <div class="medios-de-pago">
-                    <h3>MEDIOS DE PAGO</h3>
-                    <div>
-                        <i class="fa-sharp fa-solid fa-credit-card re"></i>
-                        <i class="fa-solid fa-building-columns re"></i>
-                        <i class="fa-solid fa-money-bill-1 re"></i>
-                        <button class="arrepentimiento">ARREPENTIMIENTO</button>
-                    </div>
-                </div>
-                <div>
-                    <h3><i class="fa-solid fa-truck-fast"></i>ENVÍOS A TODO EL PAÍS</h3>
-                </div>
-            </div>
-            <div class="ubi-tel">
-                <h4><i class="fa-solid fa-location-dot"></i>Ubicación</h4>
-                <h4><i class="fa-solid fa-phone"></i>5555-5555</h4>
-                <h4><i class="fa-solid fa-envelope"></i>funkoshop@gmail.com</h4>
-                <h4 class="horario"><i class="fa-solid fa-alarm-clock"></i>Lun-Vier 8:00-17:00hs</h4>
-            </div>
-        </div>
-    </footer>
+    <%- include('partials/footer') %>
 </body>
 
 </html>
