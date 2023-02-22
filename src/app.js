@@ -13,6 +13,10 @@ app.set('views', path.join(__dirname, 'views'));
 app.use('/', mainRoutes);
 
 
+ app.post('/register', (req, res) => {
+    res.redirect('/')
+})
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`server started on http://localhost:${port}`);

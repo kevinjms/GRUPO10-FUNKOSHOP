@@ -1,31 +1,6 @@
 <%- include('partials/head', {title: 'Home'}) %>
 <body>
-    <header class="header">
-        <div>
-            <div class="burger-container">
-                <img class="logo" src="/images/logo_funko_shop.png" alt="logo">
-                <div class="burger-menu">
-                    <i class="fa-solid fa-bars"></i>
-                </div>
-                <div class="contenedor-de-botones">
-                    <button class="botones"><a href="/formulario-de-login"><i class="fa-solid fa-user"></i></a></button>
-                    <button class="botones"><i class="fa-regular fa-heart"></i></button>
-                    <button class="botones"><a href="/carrito-de-compras"><i
-                                class="fa-solid fa-cart-shopping"></i></a></button>
-                </div>
-            </div>
-            <div class="accesos">
-                <ul>
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">¿QUIÉNES SOMOS?</a></li>
-                    <li><a href="#">CATEGORÍAS</a></li>
-                    <li><a href="#">PERSONALIZADOS</a></li>
-                    <li><a href="#">PRE-VENTA</a></li>
-
-                </ul>
-            </div>
-        </div>
-    </header>
+    <%- include('partials/header') %>
     <main>
         <div class="container-main">
             <div class="cabezas">
@@ -44,7 +19,7 @@
                     <div class="infoDestacado">
                         <img src="/images/theJoker-funko3.jpg" alt="ST">
                         <h4>the Joker</h4>
-                        <button>DETALLE<a href="/detalle-de-producto"></a></button>
+                        <button><a href="/detalle-de-producto">DETALLE</a></button>
                     </div>
                     <div class="infoDestacado">
                         <img src="/images/funko_doctor_strange.jpg" alt="DS">
@@ -105,63 +80,7 @@
             </div>
         </div>
     </main>
-    <footer>
-        <div class="footerDetalle">
-            <h2>FUNKO-SHOP</h2>
-            <div class="detalleAsist">
-                <h3>ASISTENCIA</h3>
-                <ul class="listaAsist">
-                    <li><a href=""> Términos y condiciones</a> </li>
-                    <li><a href=""> Bases y condiciones de promociones</a></li>
-                    <li><a href="">Política de Privacidad</a></li>
-                    <li><a href="">Centro de ayuda</a></li>
-                </ul>
-            </div>
-            <div class="seguinos">
-                <h3>SEGUINOS</h3>
-                <div class="redes">
-                    <i class="fa-brands fa-twitter"></i>
-                    <i class="fa-brands fa-linkedin"></i>
-                    <i class="fa-brands fa-instagram"></i>
-                    <i class="fa-brands fa-facebook"></i>
-                </div>
-            </div>
-            <div class="informacion">
-                <h3>INFORMACIÓN</h3>
-                <ul class="listaInfo">
-                    <li><a href="#">INICIO</a></li>
-                    <li><a href="#">¿QUIÉNES SOMOS?</a></li>
-                    <li><a href="#">CATEGORÍAS</a></li>
-                    <li><a href="#">PERSONALIZADOS</a></li>
-                    <li><a href="#">PRE-VENTA</a></li>
-                </ul>
-            </div>
-            <div class="infoGeneral">
-                <div class="pagos">
-                    <h3>MEDIOS DE PAGO</h3>
-                    <div class="iconosPagos">
-                        <i class="fa-sharp fa-solid fa-credit-card"></i>
-                        <i class="fa-solid fa-building-columns"></i>
-                        <i class="fa-solid fa-money-bill-1"></i>
-                    </div>
-                </div>
-                <div class="arrepentido">
-                    <button>ARREPENTIMIENTO</button>
-                </div>
-                <div class="envios">
-                    <h3>ENVÍOS A TODO EL PAÍS</h3>
-                    <i class="fa-solid fa-truck-fast"></i>
-                </div>
-                <div class="contacto">
-                    <h3>CONTACTO</h3>
-                    <h4><i class="fa-solid fa-location-dot"></i>Ubicación</h4>
-                    <h4><i class="fa-solid fa-phone"></i>5555-5555</h4>
-                    <h4><i class="fa-solid fa-envelope"></i>funkoshop@gmail.com</h4>
-                    <h4><i class="fa-solid fa-alarm-clock"></i>Lun-Vier 8:00-17:00hs</h4>
-                </div>
-            </div>
-        </div>
-    </footer>
+    <%- include('partials/footer') %>
 </body>
 
 </html>
