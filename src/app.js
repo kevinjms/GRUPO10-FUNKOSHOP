@@ -16,6 +16,10 @@ app.use('/', mainRoutes);
      res.redirect('/')
  })
 
+ app.post('/register', (req, res) => {
+    res.redirect('/')
+})
+
 const port = 3000;
 app.listen(port, () => {
     console.log(`server started on http://localhost:${port}`);
