@@ -190,7 +190,24 @@
 .footerDetalle .infoGeneral .arrepentido button{
     border-radius: 7px;
     border: none;
-    color: slateblue;
+    background-color: white;
+}
+
+.footerDetalle .infoGeneral .arrepentido button:hover{
+    border-radius: 10px;
+    background-color: blue;
+}
+
+.footerDetalle .infoGeneral .arrepentido button .botonA{
+    text-decoration: none;
+    color: blue;
+
+}
+
+.footerDetalle .infoGeneral .arrepentido button .botonA:hover{
+    text-decoration: none;
+    color: white;
+
 }
 
 .footerDetalle .infoGeneral .envios h3 {
@@ -227,128 +244,89 @@
 
 /*query tablet*/
 
-@media (min-width: 481px){
-
-.cabezas{
-    display: flex;
-    justify-content: space-evenly;
-    margin-top: 10px;
-    margin-bottom: 10px;
-}
-
-.preventa{ 
-    align-items: center !important;
-    justify-content: space-evenly !important;
-}
-
-.preventa h2{
-    text-align: center;
-    background-color: #9CDAFC ;
-    border: 1px solid white;
-    border-radius: 16px;
-    font-size: 50px;
-    color: black;
-    animation: flashing 4s infinite;
-}
-
-.botonPreventa{
-    width: 50% !important ;
-    
-}
-footer h2{
-    font-size: 50px !important;
-    margin-top: 25px !important;
-    animation: flashing 4s infinite;
-}
-
-footer h3{
-    font-size: 25px !important;
-    margin-top: 25px;
-    margin-bottom: 5px;
-    
-}
-
-.detalleAsist{
-    width: 80%;
-    font-size: 30px;
-    border: 2px solid white;
-    border-radius: 16px;
-}
-
-.listaInfo{
-    flex-direction: row !important;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.listaInfo li {
-    font-size: 20px !important;
-    margin: 5px !important;
-}
-
-.redes i ,.iconosPagos i ,.envios i ,.contacto i{
-    font-size: 30px !important;
-    margin: 20px !important;
-    animation: flashing 4s infinite;
-}
-.seguinos ,.envios{
-    border-bottom: 1px dotted whitesmoke;
-    margin-bottom: 20px;
-}
-
-.pagos {
-    width: 80%;
-    border: 2px solid white;
-    border-radius: 16px;
-}
-
-.arrepentido button{
-    font-size: 20px !important;
-    
-}
-
-
-.contacto{
-    
-    margin-top: 50px;
-    flex-direction: row !important;
-    justify-content: space-around ;
-
-}
-
-.contacto h3{
-    width: 30%;
-    background-color: black;
-    color: white !important ;
-    border: 1px solid whitesmoke;
-    border-radius: 10px;
-    text-align: center;
-    margin-bottom: 10px;
-    position: absolute ;
-    bottom: 10%;
-
-}
-
-.contacto h4{
-    margin: 7px !important;
-    
-}
-
-}
-
-@keyframes flashing {
-    from {
-      color: white;
-    }
-    to {
-      color: blue;
-    }
-
-    
-  }
-
-/*query Desktop*/
-
 @media (min-width: 768px){
+
+/* Header Tablet */
     
+.header {
+    height: 350px;
 }
+
+.header .burger-container .logo {
+    width: 30%;
+}
+
+.header .burger-container .burger-menu {
+    font-size: 60px;
+}
+
+.header .burger-container .contenedor-de-botones i {
+    font-size: 45px;
+    margin-right: 10px;
+}
+
+/* Footer tablet */
+
+.footerDetalle h2 {
+    font-size: 40px;
+}
+
+.footerDetalle .detalleAsist h3 {
+    font-size: 20px;
+}
+
+.footerDetalle .detalleAsist .listaAsist li a {
+    font-size: 18px;
+}
+
+.footerDetalle .seguinos h3 {
+    font-size: 20px;
+}
+
+.footerDetalle .seguinos .redes i {
+    font-size: 50px;
+}
+
+.footerDetalle .informacion h3 {
+    font-size: 20px;
+}
+
+.footerDetalle .informacion .listaInfo li a {
+    font-size: 18px;
+}
+
+.footerDetalle .infoGeneral .pagos h3 {
+    font-size: 20px;
+}
+
+.footerDetalle .infoGeneral .pagos .iconosPagos i {
+    font-size: 30px;
+}
+
+.footerDetalle .infoGeneral .arrepentido button{
+    height: 20px;
+
+}
+
+.footerDetalle .infoGeneral .arrepentido button:hover{
+    height: 23px;
+    background-color: blue;
+}
+
+.footerDetalle .infoGeneral .envios h3 {
+    font-size: 20px;
+}
+.footerDetalle .infoGeneral .envios i {
+    font-size: 30px;
+}
+
+.footerDetalle .infoGeneral .contacto h3 {
+    font-size: 20px;
+}
+
+.footerDetalle .infoGeneral .contacto h4 {
+    font-size: 20px;
+}
+}
+
+
