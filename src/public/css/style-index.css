@@ -207,5 +207,76 @@ i {
     border-radius: 20px;
     display: flex;
     justify-content: space-evenly;
+    background-color: white;
+    color: blue;
 }
 
+.preventa .botonPreventa:hover {
+    color: white;
+    background-color: blue;
+}
+
+@media (min-width: 768px) {
+
+.cabezas{
+    margin-left: 20px;
+}
+
+.cabezas img {
+    width: 180px;
+}
+
+.search-container {
+   width: 50%;
+}
+
+.destacados h2, .ofertas h2{
+    font-size: 30px;
+}
+
+.destacados .contenedorDestacados {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.destacados .contenedorDestacados .infoDestacado{
+    height: 280px;
+    width: 40%;
+}
+
+.ofertas .contenedorOfertas{
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.ofertas .contenedorOfertas .infoOfertas{
+    height: 280px;
+    width: 40%;
+}
+
+.preventa {
+    height: 400px;
+}
+
+.preventa h2 {
+    margin: 15px;
+    font-size: 30px;
+    color: grey;
+}
+
+.preventa .botonPreventa {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+}
+
+}
