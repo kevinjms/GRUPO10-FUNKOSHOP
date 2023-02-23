@@ -1,26 +1,13 @@
-body { 
-    background-image: url('/images/cuantos-funkos.jpg') ;
-    background-size: 500px;
-}
-
-/* Seccion Imagen de Logo */
-.imagenLogo {
-    width: 120px ; height: 120px;
-    margin: 10px;
-}
-
-/* Contenido de la caja del formulario, datos en general */
-.caja-formulario {
-    background-color: rgba(255,255,255,0.7); 
-    background-size: contain;
-    padding: 10px;
-    border-style: solid;
-    border-color: black;
-    border-width: 5px;
-    border-radius: 10px;
-    margin-top: 15%;
-    margin-left: 10px ; margin-right: 10px;
+* {
+    margin: 0;
     box-sizing: border-box;
+}
+/* Contenido de la caja del formulario, datos en general */
+.box-padre {
+    background-color: white;
+    margin: 15px;
+    box-shadow: 0px 0px 10px 5px #777;
+    border-radius: 10px;
 }
 
 /* Seccion de Nombre y Apellido */
@@ -30,43 +17,72 @@ body {
 }
 
 .textoIngreseNombre {
-    margin-right: 18px;
+    margin-right: 30px;
 }
 
 .nombreACompletar , .apellidoACompletar {
-    display: inline-block;
-    width: 170px;
-    margin-left: 1px;
     border-color: red;
+    margin-left: 15px;
+    border-radius: 7px;
+    background-color: white;
+    height: 30px;
+    width: 160px;
 }
 
 .nombre-apellido-container {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
+}
+.nombresApellidos {
+font-size: 14px;
+margin-left: 20px;
 }
 
 /* Seccion de Correo y Contraseña */
 .textoCorreoElectronico , .textoContraseña {
     font-weight: 600;
+    font-size: 16px;
+    margin-left: 20px;
 }
 
 .mail , .password {
+    width: 80%;
     border-color: red;
-    width: 300px;
+    margin-left: 15px;
+    border-radius: 7px;
+    background-color: white;
+    height: 30px;
 }
 
 .cajaDeMail , .cajaDeContraseña  {
-    margin-bottom: 50px;
+    margin-bottom: 15px;
 }
 
 /* Seccion de Aceptar terminos y condiciones */
+.cajaDeAceptarTyC {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+}
+.terms {
+    width: 40px;
+    height: 20px;
+}
 .TyC {
     font-style: oblique;
-    font-weight: 800;
 }
 
 /* Seccion final de Boton Registrarse */
 .register {
-    background-color: rgba(255,255,255,0.4); 
-    margin-top: 20px;
-    font-weight: 600;
+    color: #FFF;
+    transition: all 0.5s;
+    position: relative;
+    border-radius: 10px;
+    background-color: blue;
+    margin-bottom: 15px;
 }
+
+    
+
+    

@@ -16,19 +16,16 @@
     flex-direction: column;
     padding: 0px 20px 0px 20px;
 }
-.login-formulario p {
+.login-formulario h1 {
     text-align: center;
-    font-size: 18px;
-    margin-top: 14px;
 }
-.box-label {
-    margin-top: 15px;
-}
+
 .grup-label {
     display: flex;
     flex-direction: column;
 }
 .login-input {
+    border-color: red;
     margin: 5px 0 10px;
     border-radius: 7px;
     background-color: white;

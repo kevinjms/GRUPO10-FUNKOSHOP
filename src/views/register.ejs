@@ -1,41 +1,51 @@
-<%- include('partials/head', {title: 'Home', styles: ['register']}) %>
-<body>
-    <%- include('partials/header') %>
-  <a class="bloqueImagenLogo" href='/'><img class="imagenLogo" src="/images/logo_funko_shop.png" alt="Logo"></a>
-  <form class="caja-formulario" action="/register" method="POST">
-    <h1 align="center"> REGISTRARSE </h1>
-    <!--     Seccion de Nombre y Apellido        -->
+<%- include('partials/head', {title: 'Home' , styles: ['register']}) %>
 
-    <div class="nombre-apellido-container">
-        <div class="nombresApellidos"> 
-            <div class="textoIngreseNombre">INGRESE NOMBRE/S</div>
-            <div class="textoIngreseApellido" align="right">INGRESE APELLIDO/S</div>
-        </div>
-            <div class="NyAlugaresACompletar">
-            <input class="nombreACompletar" type="NOMBRES" name="NOMBRES"  required>
-            <input class="apellidoACompletar" type="APELLIDOS" name="APELLIDOS"  required>
-            </div>
-    </div>
-    <!--     Seccion de Correo y Contraseña              -->
-    <div class="correo-contraseña-container">
-        <div class="cajaDeMail">
-            <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
-            <input class="mail" type="email" name="email" placeholder="Ej: pedro.sanchez@hotmail.com" required>
-        </div>
-        <div class="cajaDeContraseña">
-            <div class="textoContraseña"> CONTRASEÑA </div>
-            <input class="password" type="password" name="contraseña" placeholder="Mínimo 8 caracteres" required> <i class="fa-solid fa-eye"> </i>
-        </div>    
-    </div> 
-    <!--     Seccion de Aceptar terminos y condiciones   -->
-    <section class="cajaDeAceptarTyC">
-        <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y CONDICIONES</a> </span>
-    </section>
-    <!--     Seccion final de Boton Registrarse          -->
-    <div align="center" class="cajaDeRegistro">
-        <button class="register" type="submit"><a href="/"> REGISTRARSE </a></button>
-    </div>
-  </form> <!--  Aqui termina la caja del formulario    -->
-  <%- include('partials/footer') %>
-</body>
-</html>
+    <body>
+        <%- include('partials/header') %>
+            <main>
+                <div class="box-padre">
+                    <form class="caja-formulario" action="/register" method="POST">
+                        <div>
+                            <h1 align="center"> REGISTRARSE </h1>
+                            <!--     Seccion de Nombre y Apellido        -->
+
+                            <div class="nombre-apellido-container">
+                                <div class="nombresApellidos">
+                                    <div class="textoIngreseNombre">INGRESE NOMBRE/S</div>
+                                    <div class="textoIngreseApellido" align="right">INGRESE APELLIDO/S</div>
+                                </div>
+                                <div class="NyAlugaresACompletar">
+                                    <input class="nombreACompletar" type="NOMBRES" name="NOMBRES" required>
+                                    <input class="apellidoACompletar" type="APELLIDOS" name="APELLIDOS" required>
+                                </div>
+                            </div>
+                            <!--     Seccion de Correo y Contraseña              -->
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeMail">
+                                    <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
+                                    <input class="mail" type="email" name="email"
+                                        placeholder="Ej: pedro.sanchez@hotmail.com" required>
+                                </div>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> CONTRASEÑA </div>
+                                    <input class="password" type="password" name="contraseña"
+                                        placeholder="Mínimo 8 caracteres" required> <i class="fa-solid fa-eye"> </i>
+                                </div>
+                            </div>
+                            <!--     Seccion de Aceptar terminos y condiciones   -->
+                            <section class="cajaDeAceptarTyC">
+                                <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y
+                                        CONDICIONES</a> </span>
+                            </section>
+                            <!--     Seccion final de Boton Registrarse          -->
+                            <div align="center" class="cajaDeRegistro">
+                                <button class="register" type="submit"><a href="/"> REGISTRARSE </a></button>
+                            </div>
+                    </form> <!--  Aqui termina la caja del formulario    -->
+                </div>
+                </div>
+            </main>
+            <%- include('partials/footer') %>
+    </body>
+
+    </html>
