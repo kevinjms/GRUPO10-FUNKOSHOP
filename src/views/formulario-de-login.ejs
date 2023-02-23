@@ -1,24 +1,39 @@
-<%- include('partials/head', {title: 'Log In', styles: ['login']}) %>
-<body>
-    <%- include('partials/header') %>
-<main>
-    <form action="/formulario-de-login" method="POST">
-        <label class="login-formulario">
-            <div class="login-div">
-        <h1> INICIAR SESIÓN </h1>
-        <h2 class="login-h2"> INGRESE SU CORREO ELECTRÓNICO </h2>
-        <input class="login-input" type="email" name="email" placeholder="CORREO ELECTRONICO" required>
-        <h2 class="login-h2"> INGRESE SU CONTRASEÑA </h2>
-        <input class="login-input" type="password" name="contraseña" placeholder="CONTRASEÑA" required> <i class="fa-solid fa-eye"> </i> 
-        <p class="login-p-1"> <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a> </p>
-        <p class="login-p-2"> <input class="login-input-2" type="checkbox"> RECORDARME </p>
-        <p class="login-button"> <button type="submit"> ACCEDER </button> </p>
-        <p class="login-p-3"> <a href="/register"> CREAR CUENTA </a> </p>
-            </div>
-    </label>
-    </form>
-</main>
+<%- include('partials/head', {title: 'Log In' , styles: ['login']}) %>
 
-<%- include('partials/footer') %>
-</body>
-</html>
+    <body>
+        <%- include('partials/header') %>
+            <main>
+                <div class="box-login">
+                    <form action="/formulario-de-login" method="POST">
+                        <div class="login-formulario">
+                            <p> INICIAR SESIÓN </p>
+                            <div class="box-label">
+                                <div class="grup-label">
+                                    <label class="login-label"> INGRESE SU CORREO ELECTRÓNICO </label>
+                                    <input class="login-input" type="email" name="email"
+                                        placeholder="correo electrónico" required>
+                                </div>
+                                <div class="box-label">
+                                    <label class="login-label"> INGRESE SU CONTRASEÑA </label>
+                                    <input class="login-input" type="password" name="contraseña"
+                                        placeholder="contraseña" required> <i class="fa-solid fa-eye"> </i>
+                                    <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a>
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <div class="box-remember">
+                                    <input class="login-input-2" type="checkbox" name="rememberMe" value="true">
+                                    <label class="login-p-2"> RECORDARME </label>
+                                </div>
+                                <p class="login-button"> <button type="submit"> ACCEDER </button> </p>
+                                <p class="login-p-3"> <a href="/register"> CREAR CUENTA </a> </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <%- include('partials/footer') %>
+    </body>
+
+    </html>
