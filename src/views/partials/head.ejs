@@ -9,5 +9,9 @@
         <script src="https://kit.fontawesome.com/439c181295.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="/css/normalize.css">
         <link rel="stylesheet" href="/css/header-footer.css">
-        <link rel="stylesheet" href="/css/style-index.css">
+        <% if (locals.styles && Array.isArray(locals.styles)) { 
+            styles.forEach(style => {%>
+                <link rel="stylesheet" href="/css/<%= style %>.css" />
+        <%  })
+        } %>
     </head>
