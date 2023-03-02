@@ -1,6 +1,6 @@
 body {
-    background-image: none;
-    background: whitesmoke;
+    font-size: 12px;
+    background-color: whitesmoke;
 }
 .imagen-capitan {
     position: relative;
@@ -185,7 +185,7 @@ h1 {
         width: 96%;
     }
     .descripciones{
-        left: 440px;
+        left: 438px;
     }
     .precios{
         left: 585px;
@@ -193,9 +193,37 @@ h1 {
     .botones1{
         width: 15%;
     }
+    .funkos{
+    flex-direction: row;
+    position: relative;
+    left: 32px;
+    gap: 20px;
+    }
+    .car-fav{
+        width: 94%;
+    }
+    
 }
+
 
 /*Desktop*/
 @media(min-width:1024px) {
-    
+    .precios{
+        left: 820px;
+        font-size: 12px;
+    }
+    .precio{
+        left: 90px;
+    }
+    .precio1{
+        left: 90px;
+    }
+    .descripciones{
+        left: 594px;
+    }
+    .car-fav{
+        font-size: 12px;
+        width: 98%;
+    }
+
 }

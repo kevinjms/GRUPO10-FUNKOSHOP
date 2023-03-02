@@ -161,7 +161,7 @@ i {
 }
 
 .ofertas .contenedorOfertas .infoOfertas img {
-    height: 200px;
+    height: 165px;
     margin-top: 15px;
 }
 
@@ -198,7 +198,7 @@ i {
 }
 
 .preventa h2 {
-    margin: 15px;
+    margin: 0px 15px;
 }
 
 .preventa .botonPreventa {
@@ -219,7 +219,9 @@ i {
 @media (min-width: 768px) {
 
 .cabezas{
-    margin-left: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .cabezas img {
@@ -268,8 +270,8 @@ i {
 
 .preventa h2 {
     margin: 15px;
-    font-size: 30px;
-    color: grey;
+    font-size: 25px;
+    color: white;
 }
 
 .preventa .botonPreventa {
