@@ -13,6 +13,12 @@ const controller = {
     },
     carrito: (req, res) => {
         res.render('carrito-de-compras');
+    },
+    create: (req, res) => {
+        res.render('creacion-de-productos');
+    },
+    edit: (req, res) => {
+        res.render('edicion-de-productos');
     }
 }
 

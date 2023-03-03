@@ -1,0 +1,54 @@
+<%- include('partials/head', {title: 'Log In' , styles: ['create']}) %>
+
+    <body>
+        <%- include('partials/header') %>
+            <main>
+                <div class="box-login">
+                    <form action="" method="POST">
+                        <div class="login-formulario">
+                            <h1> EDITAR PRODUCTO </h1>
+                            <div class="box-label">
+                                <div class="grup-label">
+                                    <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
+                                    <input class="login-input" type="file" name="image" required>
+                                </div>
+                                <div class="grup-label">
+                                    <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
+                                    <input class="login-input" type="text" name="name"
+                                        placeholder="nombre del producto" required>
+                                </div>
+                                <div class="box-label">
+                                    <label class="login-label"> AÑADA UNA DESCRIPCIÓN </label>
+                                    <div class="box-input">
+                                        <textarea class="login-input" name="description" placeholder="descripción" required>
+                                            </textarea>
+                                    </div>
+                                </div>
+                                <div class="grup-label">
+                                    <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
+                                    <input class="login-input" type="text" name="category"
+                                        placeholder="categoria" required>
+                                </div>
+                                <div class="grup-label">
+                                    <label class="login-label"> INDIQUE LA MARCA </label>
+                                    <input class="login-input" type="text" name="brand"
+                                        placeholder="marca" required>
+                                </div>
+                                <div class="grup-label">
+                                    <label class="login-label"> INDIQUE EL PRECIO </label>
+                                    <input class="login-input" type="number" name="price" required>
+                                </div>
+                            </div>
+                            <div class="box-button">
+                                <p class="login-button"> <button class="button-1" type="reset"> BORRAR </button> </p>
+                                <p class="login-button"> <button class="button-2" type="submit"> EDITAR </button> </p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </main>
+
+            <%- include('partials/footer') %>
+    </body>
+
+    </html>
