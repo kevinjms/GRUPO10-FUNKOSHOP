@@ -11,7 +11,7 @@ const controller = {
     detail: (req, res) => {
         res.render('detalle-de-producto');
     },
-    carrito: (req, res) => {
+    car: (req, res) => {
         res.render('carrito-de-compras');
     },
     create: (req, res) => {
