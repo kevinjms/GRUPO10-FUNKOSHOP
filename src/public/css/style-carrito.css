@@ -202,7 +202,9 @@ h1 {
     .car-fav{
         width: 94%;
     }
-    
+    main{
+    height: 100vh;
+    }
 }
 
 
@@ -225,5 +227,5 @@ h1 {
         font-size: 12px;
         width: 98%;
     }
-
+    
 }
