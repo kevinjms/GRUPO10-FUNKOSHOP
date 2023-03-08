@@ -1,3 +1,6 @@
+
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -387,6 +390,7 @@ footer .footerTittle{
 
     .header .accesos ul li a{
         font-size: 20px;
+        font-family: 'Proxima Nova';
         font-weight: bold;
         text-decoration: none;
         color: black;
