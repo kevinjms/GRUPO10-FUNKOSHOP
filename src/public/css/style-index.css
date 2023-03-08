@@ -282,3 +282,36 @@ i {
 }
 
 }
+
+@media (min-width: 1020px) {
+    
+    .cabezas img {
+        width: 250px;
+    }
+    
+    
+    .destacados h2, .ofertas h2{
+        font-size: 50px;
+    }
+    
+    
+    .destacados .contenedorDestacados .infoDestacado{
+        height: 280px;
+        width: 30%;
+    }
+    
+    
+    .ofertas .contenedorOfertas .infoOfertas{
+        height: 280px;
+        width: 30%;
+    }
+    
+    .preventa {
+        height: 400px;
+    }
+    
+    .preventa h2 {
+        font-size: 30px;
+    }
+    
+    }
