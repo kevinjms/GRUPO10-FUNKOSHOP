@@ -60,21 +60,24 @@
 
 /* FOOTER */
 
+footer{
+    background-color: royalblue;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .footerTittle{
+    color: white;
+    font-size: 25px;
+}
 .footerDetalle {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    background-color: royalblue;
     position: relative;
    
-}
-
-.footerDetalle h2{
-    color: white;
-    font-size: 25px;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .footerDetalle .detalleAsist{
@@ -267,66 +270,199 @@
 
 /* Footer tablet */
 
-.footerDetalle h2 {
-    font-size: 40px;
+
+footer .footerTittle{
+    font-size: 30px;
 }
 
-.footerDetalle .detalleAsist h3 {
+.footerDetalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+   
+}
+
+.footerDetalle .detalleAsist h3{
     font-size: 20px;
 }
+
 
 .footerDetalle .detalleAsist .listaAsist li a {
-    font-size: 18px;
+    font-size: 15px;
+
 }
 
-.footerDetalle .seguinos h3 {
+.footerDetalle .seguinos h3{
+    font-size: 20px;
+
+}
+
+
+
+.footerDetalle .seguinos .redes i{
+    font-size: 50px;
+}
+
+.footerDetalle .informacion h3{
     font-size: 20px;
 }
-
-.footerDetalle .seguinos .redes i {
-    font-size: 25px;
-}
-
-.footerDetalle .informacion h3 {
-    font-size: 20px;
+.footerDetalle .informacion .listaInfo {
+    list-style: none;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
 }
 
 .footerDetalle .informacion .listaInfo li a {
-    font-size: 18px;
+    font-size: 15px;
+
 }
 
-.footerDetalle .infoGeneral .pagos h3 {
+
+
+.footerDetalle .infoGeneral .pagos h3{
     font-size: 20px;
 }
 
-.footerDetalle .infoGeneral .pagos .iconosPagos i {
-    font-size: 25px;
+
+
+.footerDetalle .infoGeneral .pagos .iconosPagos i{
+    font-size: 20px;
 }
 
-.footerDetalle .infoGeneral .arrepentido button{
-    height: 20px;
-
-}
-
-.footerDetalle .infoGeneral .arrepentido button:hover{
-    height: 23px;
-    background-color: blue;
-}
 
 .footerDetalle .infoGeneral .envios h3 {
     font-size: 20px;
-}
-.footerDetalle .infoGeneral .envios i {
-    font-size: 25px;
+
 }
 
-.footerDetalle .infoGeneral .contacto h3 {
+
+.footerDetalle .infoGeneral .contacto h3{
     font-size: 20px;
 }
 
-.footerDetalle .infoGeneral .contacto h4 {
+.footerDetalle .infoGeneral .contacto h4{
     font-size: 20px;
 }
+
 }
 
+@media (min-width: 1020px){
 
+    /* Header Desktop */
+        
+    .header {
+        height: 600px;
+    }
+    
+    .header .burger-container .logo {
+        width: 20%;
+    }
+    
+    .header .burger-container .burger-menu {
+        display: none;
+    }
+    
+    .header .burger-container .contenedor-de-botones i {
+        font-size: 45px;
+        margin-right: 10px;
+    }
+
+    .header .accesos{
+        position: relative;
+        top: 360px;
+        margin-right: 15px;
+    }
+
+    .header .accesos ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        list-style: none;
+    }
+
+    .header .accesos ul li a{
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        color: black;
+        
+    }
+
+    .header .accesos ul li a:hover{
+        color: yellow;
+        font-size: 25px;
+    }
+    
+    /* Footer Desktop */
+    
+    footer .footerTittle{
+        font-size: 40px;
+    }
+    .footerDetalle {
+        width: 90%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    
+    .footerDetalle .detalleAsist h3{
+        font-size: 30px;
+    }
+    
+    
+    .footerDetalle .detalleAsist .listaAsist li a {
+        font-size: 20px;
+    }
+    
+    
+    .footerDetalle .seguinos h3{
+        font-size: 30px;
+    }
+
+    
+    .footerDetalle .seguinos .redes i{
+        font-size: 50px;
+    }
+    
+    .footerDetalle .informacion h3{
+        font-size: 30px;
+    }
+    
+    .footerDetalle .informacion .listaInfo li a {
+        font-size: 20px;
+ 
+    }
+    
+    .footerDetalle .infoGeneral .pagos h3{
+        font-size: 25px;
+    }
+    
+    .footerDetalle .infoGeneral .pagos .iconosPagos i{
+        font-size: 20px;
+    }
+    
+    .footerDetalle .infoGeneral .envios h3 {
+        font-size: 25px;
+    
+    }
+    
+    .footerDetalle .infoGeneral .envios i {
+        font-size: 25px;
+    
+    }
+    
+    
+    .footerDetalle .infoGeneral .contacto h3{
+        font-size: 25px;
+    }
+    
+    .footerDetalle .infoGeneral .contacto h4{
+        font-size: 20px;
+    }
+    }
