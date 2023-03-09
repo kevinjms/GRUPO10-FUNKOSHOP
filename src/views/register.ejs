@@ -7,29 +7,40 @@
                     <form class="caja-formulario" action="/register" method="POST">
                         <div>
                             <h1 align="center"> REGISTRARSE </h1>
-                            <!--     Seccion de Nombre y Apellido        -->
-
-                            <div class="nombre-apellido-container">
-                                <div class="nombresApellidos">
-                                    <div class="textoIngreseNombre">INGRESE NOMBRE/S</div>
-                                    <div class="textoIngreseApellido" align="right">INGRESE APELLIDO/S</div>
+                            <!--     Seccion de Correo y Contraseña              -->
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> IDENTIFICADOR </div>
+                                    <input class="password" type="number" name="id" required>
                                 </div>
-                                <div class="NyAlugaresACompletar">
-                                    <input class="nombreACompletar" type="NOMBRES" name="NOMBRES" required>
-                                    <input class="apellidoACompletar" type="APELLIDOS" name="APELLIDOS" required>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> NOMBRE </div>
+                                    <input class="password" type="text" name="firstName" required>
+                                </div>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> APELLIDO </div>
+                                    <input class="password" type="text" name="lastName" required>
                                 </div>
                             </div>
-                            <!--     Seccion de Correo y Contraseña              -->
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
-                                    <input class="mail" type="email" name="email"
-                                        placeholder="Ej: pedro.sanchez@hotmail.com" required>
+                                    <input class="mail" type="email" name="email" required>
                                 </div>
                                 <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> CONTRASEÑA </div>
-                                    <input class="password" type="password" name="contraseña"
-                                        placeholder="Mínimo 8 caracteres" required> <i class="fa-solid fa-eye"> </i>
+                                    <input class="password" type="password" name="password" required> <i class="fa-solid fa-eye"> </i>
+                                </div>
+                            </div>
+                            <div class="correo-contraseña-container">
+                                <section class="cajaDeAceptarTyC">
+                                    <div class="textoContraseña">CATEGORIA: </div>
+                                    <input class="terms" type="radio" name="category"> Administrador
+                                    <input class="terms" type="radio" name="category"> Usuario
+                                </section>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> IMAGEN </div>
+                                    <input class="password" type="file" name="image" required>
                                 </div>
                             </div>
                             <!--     Seccion de Aceptar terminos y condiciones   -->
