@@ -8,7 +8,8 @@
 }
 /* HEADER */
 .header {
-    background-image: url('/images/banner-shenron-x.jpg');
+    font-family: 'proxima Nova';
+    background-image: url('/images/banners/banner-shenron-x.jpg');
     background-repeat: no-repeat;
     background-size: 100%;
     height: 220px;
@@ -64,6 +65,7 @@
 /* FOOTER */
 
 footer{
+    font-family: 'proxima Nova';
     background-color: royalblue;
     display: flex;
     flex-direction: column;

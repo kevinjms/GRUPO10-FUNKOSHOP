@@ -1,11 +1,12 @@
-
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 /******** INICIO MAIN ********/
 
 main {
+    font-family: 'proxima Nova';
     position: relative;
 }
+
 
 main .titulo {
     display: flex;
@@ -91,8 +92,9 @@ main .titulo {
     right: 30px;
     margin-top: 10px;
     font-size: 15px;
-    
+
 }
+
 .carrito button {
     background-color: royalblue;
 }
@@ -142,15 +144,4 @@ details {
     height: 200px;
     margin-top: 15px;
 }
-
-.infofunko button {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
-}
-
 /********* FIN MAIN **********/
-

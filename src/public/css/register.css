@@ -6,6 +6,7 @@
 }
 /* Contenido de la caja del formulario, datos en general */
 .box-padre {
+    font-family: 'proxima Nova';
     background-color: white;
     margin: 15px;
     box-shadow: 0px 0px 10px 5px #777;
@@ -41,6 +42,7 @@ margin-left: 20px;
 
 /* Seccion de Correo y Contraseña */
 .textoCorreoElectronico , .textoContraseña {
+    font-family: 'proxima Nova';
     font-weight: 600;
     font-size: 16px;
     margin-left: 20px;
@@ -61,6 +63,7 @@ margin-left: 20px;
 
 /* Seccion de Aceptar terminos y condiciones */
 .cajaDeAceptarTyC {
+    font-family: 'proxima Nova';
     padding: 10px;
     margin-left: 10px;
     font-size: 14px;
@@ -73,16 +76,6 @@ margin-left: 20px;
 }
 .TyC {
     font-style: oblique;
-}
-
-/* Seccion final de Boton Registrarse */
-.register {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
 }
 
     

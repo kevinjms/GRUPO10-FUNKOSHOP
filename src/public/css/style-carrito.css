@@ -1,27 +1,24 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 body {
+    font-family: 'proxima Nova';
     font-size: 12px;
     background-color: whitesmoke;
 }
 .imagen-capitan {
-    position: relative;
-    right: 30px;
-    top: 6px;
-    height: 100px;
+    position: absolute;
+    width: 200px;
 }
 .img-carrito{
-    height: 100px;
+    height: 200px;
     margin-top: 15px;
 }
 .articulos {
     position: relative;
-    bottom: 50px;
-    left: 50px;
-    font-size: 6px;
+    bottom: -120px;
+    left: -50px;
+    font-size: 12px;
 }
-
-
 .car-fav {
     display: flex;
     font-size: 8px;
@@ -48,10 +45,10 @@ body {
     display: flex;
     flex-direction: column;
     gap: 37px;
-    font-size: 10px;
+    font-size: 12px;
     position: relative;
-    bottom: 115px;
-    left: 275px;
+    bottom: 200px;
+    left: 260px;
 }
 .total-carrito{
     margin-bottom: -80px;
@@ -128,44 +125,28 @@ h1 {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 187px;
-    width: 71%;
+    height: 300px;
+    width: 90%;
     margin-top: 15px;
     margin-bottom: 15px;
     background-color: white;
     border-radius: 15px;
+    box-shadow: 0px 0px 20px -2px #777;
 }
+
 .funko-carrito {
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 116px;
-    width: 45%;
+    height: 200px;
+    width: 60%;
     margin-top: 15px;
     background-color: white;
     border-radius: 15px;
-}
-.detalle {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
-    font-size: 10px;
+    box-shadow: 0px 0px 20px -2px #777;
 }
 .descripcion-caja{
     font-size: 12px;
-}
-.detalle-capitan {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
-    left: 10px;
-    font-size: 4px;
 }
 
 /* Media Tablest*/

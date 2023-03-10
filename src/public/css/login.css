@@ -19,6 +19,7 @@
     padding: 0px 20px 0px 20px;
 }
 .login-formulario h1 {
+    font-family: 'proxima Nova';
     text-align: center;
 }
 
@@ -35,9 +36,11 @@
 }
 
 .login-label {
+    font-family: 'proxima Nova';
     margin-top: 10px;
 }
 .box-label a {
+    font-family: 'proxima Nova';
     display: flex;
     flex-direction: column;
     font-size: 10px;
@@ -47,6 +50,7 @@
     margin: 15px 0;
 }
 .box-remember {
+    font-family: 'proxima Nova';
     display: flex;
     align-items: flex-end;
 }
@@ -66,23 +70,14 @@
 }
 
 .login-p-3 {
+    font-family: 'proxima Nova';
     font-size: 16px;
     text-align: center;
-    margin-top: 20px;
-}
-
-button {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
 }
 
 .login-button {
     display: flex;
     justify-content: center;
-    height: 50px;
+margin-top: 20px;
 }
 
