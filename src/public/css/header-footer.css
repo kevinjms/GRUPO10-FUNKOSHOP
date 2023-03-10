@@ -360,12 +360,12 @@ footer .footerTittle {
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
 
     /* Header Desktop */
 
     .header {
-        height: 600px;
+        height: 560px;
     }
 
     .header .burger-container .logo {
@@ -392,6 +392,7 @@ footer .footerTittle {
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
+        margin-top: 15px;
     }
 
     .header .accesos ul li a {

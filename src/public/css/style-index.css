@@ -222,7 +222,7 @@ i {
     }
 
     .destacados .contenedorDestacados .infoDestacado {
-        height: 280px;
+        height: 290px;
         width: 40%;
     }
 
@@ -259,7 +259,7 @@ i {
 
 }
 
-@media (min-width: 1020px) {
+@media (min-width: 1024px) {
 
     .cabezas img {
         width: 250px;
@@ -273,7 +273,7 @@ i {
 
 
     .destacados .contenedorDestacados .infoDestacado {
-        height: 280px;
+        height: 290px;
         width: 30%;
     }
 
