@@ -11,7 +11,7 @@
     margin: 15px;
     box-shadow: 0px 0px 10px 5px #777;
     border-radius: 10px;
-    
+
 }
 
 .login-formulario {
@@ -19,6 +19,7 @@
     flex-direction: column;
     padding: 0px 20px 0px 20px;
 }
+
 .login-formulario h1 {
     text-align: center;
 }
@@ -27,6 +28,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .login-input {
     margin: 5px 0 10px;
     border-radius: 7px;
@@ -37,6 +39,7 @@
 .login-label {
     margin-top: 10px;
 }
+
 .box-label a {
     display: flex;
     flex-direction: column;
@@ -46,10 +49,12 @@
 .box-button {
     margin: 15px 0;
 }
+
 .box-remember {
     display: flex;
     align-items: flex-end;
 }
+
 .login-input-2 {
     width: 40px;
     height: 20px;

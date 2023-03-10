@@ -5,20 +5,24 @@ body {
     font-size: 12px;
     background-color: whitesmoke;
 }
+
 .imagen-capitan {
     position: absolute;
     width: 200px;
 }
-.img-carrito{
+
+.img-carrito {
     height: 200px;
     margin-top: 15px;
 }
+
 .articulos {
     position: relative;
     bottom: -120px;
     left: -50px;
     font-size: 12px;
 }
+
 .car-fav {
     display: flex;
     font-size: 8px;
@@ -50,12 +54,15 @@ body {
     bottom: 200px;
     left: 260px;
 }
-.total-carrito{
+
+.total-carrito {
     margin-bottom: -80px;
 }
-.btn{
+
+.btn {
     width: 14%;
 }
+
 .botones1 {
     display: flex;
     width: 28%;
@@ -71,11 +78,13 @@ body {
     flex-direction: column;
     margin-bottom: -55px;
 }
-.precio1{
+
+.precio1 {
     position: relative;
     left: 80px;
     bottom: 15px;
 }
+
 .envio {
     position: relative;
     bottom: 75px;
@@ -89,7 +98,8 @@ body {
     bottom: 58px;
     font-size: 8px;
 }
-.favoritos{
+
+.favoritos {
     position: relative;
     left: 12px;
 }
@@ -141,7 +151,8 @@ h1 {
     border-radius: 15px;
     box-shadow: 0px 0px 20px -2px #777;
 }
-.descripcion-caja{
+
+.descripcion-caja {
     font-size: 12px;
 }
 
@@ -160,51 +171,62 @@ h1 {
         background-color: white;
         border-radius: 15px;
     }
-    .funko-caja{
+
+    .funko-caja {
         width: 96%;
     }
-    .descripciones{
+
+    .descripciones {
         left: 438px;
     }
-    .precios{
+
+    .precios {
         left: 585px;
     }
-    .botones1{
+
+    .botones1 {
         width: 15%;
     }
-    .funkos{
-    flex-direction: row;
-    position: relative;
-    left: 32px;
-    gap: 20px;
+
+    .funkos {
+        flex-direction: row;
+        position: relative;
+        left: 32px;
+        gap: 20px;
     }
-    .car-fav{
+
+    .car-fav {
         width: 94%;
     }
-    main{
-    height: 100vh;
+
+    main {
+        height: 100vh;
     }
 }
 
 
 /*Desktop*/
 @media(min-width:1024px) {
-    .precios{
+    .precios {
         left: 820px;
         font-size: 12px;
     }
-    .precio{
+
+    .precio {
         left: 90px;
     }
-    .precio1{
+
+    .precio1 {
         left: 90px;
     }
-    .descripciones{
+
+    .descripciones {
         left: 594px;
     }
-    .car-fav{
+
+    .car-fav {
         font-size: 12px;
         width: 98%;
     }
-    
+
 }

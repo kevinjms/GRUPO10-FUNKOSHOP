@@ -16,6 +16,7 @@ body {
 h2 {
     color: grey;
 }
+
 /** INICIO MAIN **/
 
 .container-main {
@@ -192,100 +193,102 @@ i {
 
 @media (min-width: 768px) {
 
-.cabezas{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
+    .cabezas {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
 
-.cabezas img {
-    width: 180px;
-}
+    .cabezas img {
+        width: 180px;
+    }
 
-.search-container {
-   width: 50%;
-}
+    .search-container {
+        width: 50%;
+    }
 
-.destacados h2, .ofertas h2{
-    font-size: 30px;
-}
+    .destacados h2,
+    .ofertas h2 {
+        font-size: 30px;
+    }
 
-.destacados .contenedorDestacados {
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    .destacados .contenedorDestacados {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-.destacados .contenedorDestacados .infoDestacado{
-    height: 280px;
-    width: 40%;
-}
+    .destacados .contenedorDestacados .infoDestacado {
+        height: 280px;
+        width: 40%;
+    }
 
-.ofertas .contenedorOfertas{
-    display: flex;
-    flex-direction: row;
-    width: 90%;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-around;
-}
+    .ofertas .contenedorOfertas {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 
-.ofertas .contenedorOfertas .infoOfertas{
-    height: 280px;
-    width: 40%;
-}
+    .ofertas .contenedorOfertas .infoOfertas {
+        height: 280px;
+        width: 40%;
+    }
 
-.preventa {
-    height: 400px;
-}
+    .preventa {
+        height: 400px;
+    }
 
-.preventa h2 {
-    margin: 15px;
-    font-size: 25px;
-    color: white;
-}
+    .preventa h2 {
+        margin: 15px;
+        font-size: 25px;
+        color: white;
+    }
 
-.preventa .botonPreventa {
-    width: 150px;
-    height: 30px;
-    display: flex;
-    align-items: center;
-}
+    .preventa .botonPreventa {
+        width: 150px;
+        height: 30px;
+        display: flex;
+        align-items: center;
+    }
 
 }
 
 @media (min-width: 1020px) {
-    
+
     .cabezas img {
         width: 250px;
     }
-    
-    
-    .destacados h2, .ofertas h2{
+
+
+    .destacados h2,
+    .ofertas h2 {
         font-size: 50px;
     }
-    
-    
-    .destacados .contenedorDestacados .infoDestacado{
+
+
+    .destacados .contenedorDestacados .infoDestacado {
         height: 280px;
         width: 30%;
     }
-    
-    
-    .ofertas .contenedorOfertas .infoOfertas{
+
+
+    .ofertas .contenedorOfertas .infoOfertas {
         height: 280px;
         width: 30%;
     }
-    
+
     .preventa {
         height: 400px;
     }
-    
+
     .preventa h2 {
         font-size: 30px;
     }
-    
-    }
+
+}

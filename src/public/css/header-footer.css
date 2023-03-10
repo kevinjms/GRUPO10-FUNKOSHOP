@@ -1,4 +1,3 @@
-
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 * {
@@ -6,6 +5,7 @@
     box-sizing: border-box;
 
 }
+
 /* HEADER */
 .header {
     font-family: 'proxima Nova';
@@ -18,7 +18,7 @@
     align-items: flex-start;
 }
 
-.header .burger-container{
+.header .burger-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -31,15 +31,15 @@
     z-index: 1;
 }
 
-.header .burger-container .burger-menu{
+.header .burger-container .burger-menu {
     font-size: 50px;
 }
 
-.header .burger-container .burger-menu i{
+.header .burger-container .burger-menu i {
     align-items: center;
 }
 
-.header .burger-container .contenedor-de-botones{
+.header .burger-container .contenedor-de-botones {
     z-index: 1;
 }
 
@@ -64,7 +64,7 @@
 
 /* FOOTER */
 
-footer{
+footer {
     font-family: 'proxima Nova';
     background-color: royalblue;
     display: flex;
@@ -72,20 +72,21 @@ footer{
     align-items: center;
 }
 
-footer .footerTittle{
+footer .footerTittle {
     color: white;
     font-size: 25px;
 }
+
 .footerDetalle {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
-   
+
 }
 
-.footerDetalle .detalleAsist{
+.footerDetalle .detalleAsist {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +94,7 @@ footer .footerTittle{
     margin-bottom: 15px;
 }
 
-.footerDetalle .detalleAsist h3{
+.footerDetalle .detalleAsist h3 {
     color: white;
     font-size: 15px;
 }
@@ -105,7 +106,7 @@ footer .footerTittle{
     flex-direction: column;
     align-items: center;
     padding: 0px;
-} 
+}
 
 .footerDetalle .detalleAsist .listaAsist li a {
     color: white;
@@ -113,38 +114,39 @@ footer .footerTittle{
     text-decoration: none;
 }
 
-.footerDetalle .seguinos{
+.footerDetalle .seguinos {
     display: flex;
     flex-direction: column;
 }
 
-.footerDetalle .seguinos h3{
+.footerDetalle .seguinos h3 {
     color: white;
     font-size: 15px;
     text-align: center;
 }
 
-.footerDetalle .seguinos .redes{
+.footerDetalle .seguinos .redes {
     margin-top: 15px;
 }
 
-.footerDetalle .seguinos .redes i{
+.footerDetalle .seguinos .redes i {
     color: white;
     font-size: 40px;
     margin: 0 10px;
 }
 
-.footerDetalle .informacion{
+.footerDetalle .informacion {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
 }
 
-.footerDetalle .informacion h3{
+.footerDetalle .informacion h3 {
     color: white;
     font-size: 15px;
 }
+
 .footerDetalle .informacion .listaInfo {
     list-style: none;
     margin-top: 15px;
@@ -159,60 +161,61 @@ footer .footerTittle{
     font-size: 12px;
     text-decoration: none;
 }
-.footerDetalle .infoGeneral{
+
+.footerDetalle .infoGeneral {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 15px;
 }
 
-.footerDetalle .infoGeneral .pagos{
+.footerDetalle .infoGeneral .pagos {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.footerDetalle .infoGeneral .pagos h3{
+.footerDetalle .infoGeneral .pagos h3 {
     color: white;
     font-size: 15px;
 }
 
-.footerDetalle .infoGeneral .pagos .iconosPagos{
+.footerDetalle .infoGeneral .pagos .iconosPagos {
     margin-top: 15px;
-    width: 100% ;
+    width: 100%;
     display: flex;
     justify-content: space-around;
 }
 
-.footerDetalle .infoGeneral .pagos .iconosPagos i{
+.footerDetalle .infoGeneral .pagos .iconosPagos i {
     color: white;
     font-size: 15px;
 }
 
-.footerDetalle .infoGeneral .arrepentido{
+.footerDetalle .infoGeneral .arrepentido {
     margin: 25px;
     display: flex;
     justify-content: center;
 }
 
-.footerDetalle .infoGeneral .arrepentido button{
+.footerDetalle .infoGeneral .arrepentido button {
     border-radius: 7px;
     border: none;
     background-color: white;
 }
 
-.footerDetalle .infoGeneral .arrepentido button:hover{
+.footerDetalle .infoGeneral .arrepentido button:hover {
     border-radius: 10px;
     background-color: blue;
 }
 
-.footerDetalle .infoGeneral .arrepentido button .botonA{
+.footerDetalle .infoGeneral .arrepentido button .botonA {
     text-decoration: none;
     color: blue;
 
 }
 
-.footerDetalle .infoGeneral .arrepentido button .botonA:hover{
+.footerDetalle .infoGeneral .arrepentido button .botonA:hover {
     text-decoration: none;
     color: white;
 
@@ -233,242 +236,244 @@ footer .footerTittle{
 
 }
 
-.footerDetalle .infoGeneral .contacto{
+.footerDetalle .infoGeneral .contacto {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
 }
 
-.footerDetalle .infoGeneral .contacto h3{
+.footerDetalle .infoGeneral .contacto h3 {
     color: black;
     font-size: 15px;
 }
 
-.footerDetalle .infoGeneral .contacto h4{
+.footerDetalle .infoGeneral .contacto h4 {
     margin-top: 5px;
     font-size: 15px;
 }
 
 /*query tablet*/
 
-@media (min-width: 768px){
+@media (min-width: 768px) {
 
-/* Header Tablet */
-    
-.header {
-    height: 350px;
-}
+    /* Header Tablet */
 
-.header .burger-container .logo {
-    width: 30%;
-}
-
-.header .burger-container .burger-menu {
-    font-size: 60px;
-}
-
-.header .burger-container .contenedor-de-botones i {
-    font-size: 45px;
-    margin-right: 10px;
-}
-
-/* Footer tablet */
-
-
-footer .footerTittle{
-    font-size: 30px;
-}
-
-.footerDetalle {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    position: relative;
-   
-}
-
-.footerDetalle .detalleAsist h3{
-    font-size: 20px;
-}
-
-
-.footerDetalle .detalleAsist .listaAsist li a {
-    font-size: 15px;
-
-}
-
-.footerDetalle .seguinos h3{
-    font-size: 20px;
-
-}
-
-
-
-.footerDetalle .seguinos .redes i{
-    font-size: 50px;
-}
-
-.footerDetalle .informacion h3{
-    font-size: 20px;
-}
-.footerDetalle .informacion .listaInfo {
-    list-style: none;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-}
-
-.footerDetalle .informacion .listaInfo li a {
-    font-size: 15px;
-
-}
-
-
-
-.footerDetalle .infoGeneral .pagos h3{
-    font-size: 20px;
-}
-
-
-
-.footerDetalle .infoGeneral .pagos .iconosPagos i{
-    font-size: 20px;
-}
-
-
-.footerDetalle .infoGeneral .envios h3 {
-    font-size: 20px;
-
-}
-
-
-.footerDetalle .infoGeneral .contacto h3{
-    font-size: 20px;
-}
-
-.footerDetalle .infoGeneral .contacto h4{
-    font-size: 20px;
-}
-
-}
-
-@media (min-width: 1020px){
-
-    /* Header Desktop */
-        
     .header {
-        height: 600px;
+        height: 420px;
     }
-    
+
     .header .burger-container .logo {
-        width: 20%;
+        width: 30%;
     }
-    
+
     .header .burger-container .burger-menu {
-        display: none;
+        font-size: 60px;
     }
-    
+
     .header .burger-container .contenedor-de-botones i {
         font-size: 45px;
         margin-right: 10px;
     }
 
-    .header .accesos{
+    /* Footer tablet */
+
+
+    footer .footerTittle {
+        font-size: 30px;
+    }
+
+    .footerDetalle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        position: relative;
+
+    }
+
+    .footerDetalle .detalleAsist h3 {
+        font-size: 20px;
+    }
+
+
+    .footerDetalle .detalleAsist .listaAsist li a {
+        font-size: 15px;
+
+    }
+
+    .footerDetalle .seguinos h3 {
+        font-size: 20px;
+
+    }
+
+
+
+    .footerDetalle .seguinos .redes i {
+        font-size: 50px;
+    }
+
+    .footerDetalle .informacion h3 {
+        font-size: 20px;
+    }
+
+    .footerDetalle .informacion .listaInfo {
+        list-style: none;
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 0px;
+    }
+
+    .footerDetalle .informacion .listaInfo li a {
+        font-size: 15px;
+
+    }
+
+
+
+    .footerDetalle .infoGeneral .pagos h3 {
+        font-size: 20px;
+    }
+
+
+
+    .footerDetalle .infoGeneral .pagos .iconosPagos i {
+        font-size: 20px;
+    }
+
+
+    .footerDetalle .infoGeneral .envios h3 {
+        font-size: 20px;
+
+    }
+
+
+    .footerDetalle .infoGeneral .contacto h3 {
+        font-size: 20px;
+    }
+
+    .footerDetalle .infoGeneral .contacto h4 {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 1020px) {
+
+    /* Header Desktop */
+
+    .header {
+        height: 600px;
+    }
+
+    .header .burger-container .logo {
+        width: 20%;
+    }
+
+    .header .burger-container .burger-menu {
+        display: none;
+    }
+
+    .header .burger-container .contenedor-de-botones i {
+        font-size: 45px;
+        margin-right: 10px;
+    }
+
+    .header .accesos {
         position: relative;
         top: 360px;
         margin-right: 15px;
     }
 
-    .header .accesos ul{
+    .header .accesos ul {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
     }
 
-    .header .accesos ul li a{
+    .header .accesos ul li a {
         font-size: 20px;
         font-family: 'Proxima Nova';
         font-weight: bold;
         text-decoration: none;
         color: black;
-        
+
     }
 
-    .header .accesos ul li a:hover{
+    .header .accesos ul li a:hover {
         color: yellow;
         font-size: 25px;
     }
-    
+
     /* Footer Desktop */
-    
-    footer .footerTittle{
+
+    footer .footerTittle {
         font-size: 40px;
     }
+
     .footerDetalle {
         width: 90%;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
-    
-    
-    .footerDetalle .detalleAsist h3{
-        font-size: 30px;
-    }
-    
-    
-    .footerDetalle .detalleAsist .listaAsist li a {
-        font-size: 20px;
-    }
-    
-    
-    .footerDetalle .seguinos h3{
+
+
+    .footerDetalle .detalleAsist h3 {
         font-size: 30px;
     }
 
-    
-    .footerDetalle .seguinos .redes i{
-        font-size: 50px;
+
+    .footerDetalle .detalleAsist .listaAsist li a {
+        font-size: 20px;
     }
-    
-    .footerDetalle .informacion h3{
+
+
+    .footerDetalle .seguinos h3 {
         font-size: 30px;
     }
-    
+
+
+    .footerDetalle .seguinos .redes i {
+        font-size: 50px;
+    }
+
+    .footerDetalle .informacion h3 {
+        font-size: 30px;
+    }
+
     .footerDetalle .informacion .listaInfo li a {
         font-size: 20px;
- 
+
     }
-    
-    .footerDetalle .infoGeneral .pagos h3{
+
+    .footerDetalle .infoGeneral .pagos h3 {
         font-size: 25px;
     }
-    
-    .footerDetalle .infoGeneral .pagos .iconosPagos i{
+
+    .footerDetalle .infoGeneral .pagos .iconosPagos i {
         font-size: 20px;
     }
-    
+
     .footerDetalle .infoGeneral .envios h3 {
         font-size: 25px;
-    
+
     }
-    
+
     .footerDetalle .infoGeneral .envios i {
         font-size: 25px;
-    
+
     }
-    
-    
-    .footerDetalle .infoGeneral .contacto h3{
+
+
+    .footerDetalle .infoGeneral .contacto h3 {
         font-size: 25px;
     }
-    
-    .footerDetalle .infoGeneral .contacto h4{
+
+    .footerDetalle .infoGeneral .contacto h4 {
         font-size: 20px;
     }
-    }
+}

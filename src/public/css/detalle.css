@@ -88,15 +88,9 @@ main .titulo {
 .carrito {
     display: flex;
     position: absolute;
-    flex-direction: column-reverse;
-    right: 30px;
-    margin-top: 10px;
-    font-size: 15px;
-
-}
-
-.carrito button {
-    background-color: royalblue;
+    right: 50px;
+    margin-top: 25px;
+    font-size: xx-large;
 }
 
 details {
@@ -144,4 +138,107 @@ details {
     height: 200px;
     margin-top: 15px;
 }
+
 /********* FIN MAIN **********/
+
+@media (min-width: 768px) {
+    .cj-img .fa-heart {
+        position: relative;
+        margin-left: 290px;
+        margin-top: 15px;
+        font-size: 80px;
+    }
+
+    .fotoPrincipal img {
+        margin-left: 15px;
+    }
+
+    .fa-share-nodes {
+        position: relative;
+        margin-top: 400px;
+        margin-left: 290px;
+        font-size: 70px;
+    }
+
+    main .titulo {
+        font-size: 50px;
+    }
+
+    .especificaciones {
+        font-size: 40px;
+    }
+
+    .especificaciones h2 {
+        font-size: 80px;
+    }
+
+    .carrito {
+        right: 100px;
+
+    }
+
+    .carrito i {
+        font-size: 70px;
+    }
+
+    .relacionados {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin: 25px;
+    }
+
+    .infofunko {
+        height: 320px;
+        width: 40%;
+    }
+
+    .infodestacados {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
+
+@media (min-width: 1024px) {
+    .detalle {
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin: 25px;
+    }
+
+    .especificaciones {
+        position: absolute;
+        margin-left: 630px;
+        margin-top: 215px;
+    }
+
+    .carrito .btn-add {
+        margin-top: -160px;
+        margin-left: -40px;
+        position: absolute;
+    }
+
+    .cj-img .fa-heart {
+        position: absolute;
+        margin-top: 10px;
+        margin-left: 320px;
+    }
+
+    .linkInfo {
+        font-size: 24px;
+    }
+
+    .fa-share-nodes {
+        position: absolute;
+        margin-top: 60px;
+        margin-left: 325px;
+    }
+
+    .fotoPrincipal img {}
+}
