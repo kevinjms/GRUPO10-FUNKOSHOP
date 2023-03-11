@@ -86,3 +86,21 @@
 .TyC {
     font-style: oblique;
 }
+
+@media(min-width:1024px) {
+    .box-padre {
+        font-size: 20px;
+    }
+
+    .textoCorreoElectronico,
+    .textoContraseña {
+        font-size: 22px;
+    }
+    .mail, .password {
+        height: 40px;
+    }
+    .cajaDeAceptarTyC {
+        font-size: 18px;
+    }
+
+}

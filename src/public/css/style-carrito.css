@@ -1,5 +1,10 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'proxima Nova';
     font-size: 12px;
@@ -109,7 +114,14 @@ h1 {
     display: flex;
     justify-content: space-around;
     position: relative;
-    top: 6px;
+    left: 20px;
+}
+
+.cj-general {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
 }
 
 .funko-caja {
@@ -157,76 +169,138 @@ h1 {
 }
 
 /* Media Tablest*/
-@media(min-width:768px) {
-    .michonne {
-        display: flex;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-between;
-        height: 187px;
-        width: 71%;
-        margin-top: 15px;
-        margin-bottom: 15px;
-        background-color: white;
-        border-radius: 15px;
-    }
+@media (min-width: 768px) {
+
 
     .funko-caja {
         width: 96%;
     }
 
     .descripciones {
-        left: 438px;
+        left: 425px;
+    }
+
+    .descripcion2 {
+        position: relative;
+        left: 80px;
     }
 
     .precios {
-        left: 585px;
+
+        left: 567px;
+        display: flex;
+        position: absolute;
+        top: 478px;
+
+    }
+
+    .precio {
+        position: relative;
+        left: 130px;
+        bottom: 53px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: -44px;
+    }
+
+    .precio1 {
+        position: relative;
+        left: 130px;
+        bottom: 15px;
+    }
+
+    .articulos {
+        position: relative;
+        bottom: -120px;
+        left: -130px;
+        font-size: 12px;
     }
 
     .botones1 {
-        width: 15%;
+        width: 90%;
     }
 
     .funkos {
+        display: flex;
         flex-direction: row;
-        position: relative;
-        left: 32px;
-        gap: 20px;
+        width: 90%;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-around;
     }
 
     .car-fav {
-        width: 94%;
+        width: 740px;
     }
 
-    main {
-        height: 100vh;
+    .cj-general {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    .funko-caja-carrito {
+        height: 290px;
+        width: 40%;
     }
 }
 
 
 /*Desktop*/
 @media(min-width:1024px) {
+
     .precios {
-        left: 820px;
-        font-size: 12px;
+        left: 770px;
+        top: 660px;
     }
 
     .precio {
-        left: 90px;
+        bottom: 62px;
+        margin-bottom: -40px;
+        font-size: 24px;
     }
 
     .precio1 {
-        left: 90px;
+        left: 130px;
+        font-size: 24px;
+        top: -25px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    .cj-general {
+        margin-top: 70px;
+    }
+
+    .funkos {
+        justify-content: space-between;
+    }
+
+    .funko-caja-carrito {
+        height: 290px;
+        width: 20%;
+    }
+
+    .btn-add {
+        font-size: x-large;
+    }
+
+    .funko-carrito {
+        width: 50%;
     }
 
     .descripciones {
-        left: 594px;
+        left: 460px;
     }
+
 
     .car-fav {
-        font-size: 12px;
-        width: 98%;
+        font-size: 16px;
+        width: 100%;
+        margin-top: 30px;
     }
-
 }
