@@ -96,9 +96,12 @@
     .textoContraseña {
         font-size: 22px;
     }
-    .mail, .password {
+
+    .mail,
+    .password {
         height: 40px;
     }
+
     .cajaDeAceptarTyC {
         font-size: 18px;
     }

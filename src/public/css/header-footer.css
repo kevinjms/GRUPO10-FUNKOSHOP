@@ -241,10 +241,11 @@ footer .footerTittle {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+    color: white;
 }
 
 .footerDetalle .infoGeneral .contacto h3 {
-    color: black;
+    color: white;
     font-size: 15px;
 }
 
@@ -413,13 +414,14 @@ footer .footerTittle {
 
     footer .footerTittle {
         font-size: 40px;
+        margin-top: 70px;
     }
 
     .footerDetalle {
         width: 90%;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-around;
     }
 
 
@@ -432,6 +434,14 @@ footer .footerTittle {
         font-size: 20px;
     }
 
+    .footerDetalle .detalleAsist .listaAsist {
+        list-style: none;
+        margin-top: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
 
     .footerDetalle .seguinos h3 {
         font-size: 30px;
@@ -440,6 +450,10 @@ footer .footerTittle {
 
     .footerDetalle .seguinos .redes i {
         font-size: 50px;
+    }
+
+    .footerDetalle .infoGeneral {
+        margin-top: 60px;
     }
 
     .footerDetalle .informacion h3 {
@@ -455,6 +469,15 @@ footer .footerTittle {
         font-size: 25px;
     }
 
+    .footerDetalle .infoGeneral .pagos,
+    .arrepentido {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        top: 40px;
+    }
+
     .footerDetalle .infoGeneral .pagos .iconosPagos i {
         font-size: 20px;
     }
@@ -464,9 +487,10 @@ footer .footerTittle {
 
     }
 
-    .footerDetalle .infoGeneral .envios i {
-        font-size: 25px;
-
+    .footerDetalle .infoGeneral .envios {
+        position: relative;
+        right: 320px;
+        bottom: 94px;
     }
 
 
@@ -476,5 +500,15 @@ footer .footerTittle {
 
     .footerDetalle .infoGeneral .contacto h4 {
         font-size: 20px;
+    }
+
+    .footerDetalle .infoGeneral .contacto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 32px;
+        position: relative;
+        left: 350px;
+        bottom: 200px;
     }
 }
