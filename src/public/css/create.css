@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 * {
+    font-family: 'proxima Nova';
     margin: 0;
     box-sizing: border-box;
 }
@@ -10,7 +11,7 @@
     margin: 15px;
     box-shadow: 0px 0px 10px 5px #777;
     border-radius: 10px;
-    
+
 }
 
 .login-formulario {
@@ -18,6 +19,7 @@
     flex-direction: column;
     padding: 0px 20px 0px 20px;
 }
+
 .login-formulario h1 {
     text-align: center;
 }
@@ -26,6 +28,7 @@
     display: flex;
     flex-direction: column;
 }
+
 .login-input {
     margin: 5px 0 10px;
     border-radius: 7px;
@@ -36,6 +39,7 @@
 .login-label {
     margin-top: 10px;
 }
+
 .box-label a {
     display: flex;
     flex-direction: column;
@@ -45,10 +49,12 @@
 .box-button {
     margin: 15px 0;
 }
+
 .box-remember {
     display: flex;
     align-items: flex-end;
 }
+
 .login-input-2 {
     width: 40px;
     height: 20px;
@@ -86,11 +92,12 @@
 }
 
 .button-2 {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
+    box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
+    background-color: #0B44EF;
+    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
+    color: #E6EAEF;
     border-radius: 10px;
-    background-color: green;
+    font-size: 16px;
     margin-bottom: 15px;
 }
 

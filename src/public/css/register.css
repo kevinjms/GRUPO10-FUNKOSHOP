@@ -1,11 +1,19 @@
-
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
 * {
     margin: 0;
     box-sizing: border-box;
 }
+
+.registrarse {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
 /* Contenido de la caja del formulario, datos en general */
 .box-padre {
+    font-family: 'proxima Nova';
     background-color: white;
     margin: 15px;
     box-shadow: 0px 0px 10px 5px #777;
@@ -13,7 +21,8 @@
 }
 
 /* Seccion de Nombre y Apellido */
-.textoIngreseNombre , .textoIngreseApellido {
+.textoIngreseNombre,
+.textoIngreseApellido {
     display: inline-block;
     font-weight: 600;
 }
@@ -22,7 +31,8 @@
     margin-right: 30px;
 }
 
-.nombreACompletar , .apellidoACompletar {
+.nombreACompletar,
+.apellidoACompletar {
     border-color: red;
     margin-left: 15px;
     border-radius: 7px;
@@ -34,57 +44,100 @@
 .nombre-apellido-container {
     margin-bottom: 15px;
 }
+
 .nombresApellidos {
-font-size: 14px;
-margin-left: 20px;
+    font-size: 14px;
+    margin-left: 20px;
 }
 
 /* Seccion de Correo y Contraseña */
-.textoCorreoElectronico , .textoContraseña {
+.textoCorreoElectronico,
+.textoContraseña {
+    font-family: 'proxima Nova';
     font-weight: 600;
     font-size: 16px;
     margin-left: 20px;
 }
 
-.mail , .password {
-    width: 80%;
-    border-color: red;
+.mail,
+.password {
+    width: 90%;
     margin-left: 15px;
     border-radius: 7px;
     background-color: white;
     height: 30px;
 }
 
-.cajaDeMail , .cajaDeContraseña  {
+.cajaDeMail,
+.cajaDeContraseña {
     margin-bottom: 15px;
 }
 
+.fa-eye {
+    position: relative;
+    right: 30px;
+}
+
+
+
 /* Seccion de Aceptar terminos y condiciones */
 .cajaDeAceptarTyC {
+    font-family: 'proxima Nova';
     padding: 10px;
     margin-left: 10px;
     font-size: 14px;
     display: flex;
     align-items: center;
 }
+
 .terms {
     width: 40px;
     height: 20px;
 }
+
 .TyC {
     font-style: oblique;
+    font-size: 8px;
 }
 
-/* Seccion final de Boton Registrarse */
-.register {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: blue;
-    margin-bottom: 15px;
+.button-register{
+    text-decoration: none;
+    color: white;
 }
 
-    
 
-    
+
+@media(min-width:768px) {
+
+    .mail,
+    .password {
+        width: 93%;
+    }
+}
+
+
+@media(min-width:1024px) {
+    .box-padre {
+        font-size: 20px;
+    }
+
+    .textoCorreoElectronico,
+    .textoContraseña {
+        font-size: 22px;
+    }
+
+    .mail,
+    .password {
+        height: 40px;
+        width: 93%;
+    }
+
+    .cajaDeAceptarTyC {
+        font-size: 18px;
+    }
+
+    .fa-eye {
+        right: 35px;
+    }
+
+}
