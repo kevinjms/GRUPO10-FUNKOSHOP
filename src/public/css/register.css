@@ -5,6 +5,12 @@
     box-sizing: border-box;
 }
 
+.registrarse {
+    text-align: center;
+    position: relative;
+    top: 10px;
+}
+
 /* Contenido de la caja del formulario, datos en general */
 .box-padre {
     font-family: 'proxima Nova';
@@ -55,8 +61,7 @@
 
 .mail,
 .password {
-    width: 80%;
-    border-color: red;
+    width: 90%;
     margin-left: 15px;
     border-radius: 7px;
     background-color: white;
@@ -67,6 +72,13 @@
 .cajaDeContraseña {
     margin-bottom: 15px;
 }
+
+.fa-eye {
+    position: relative;
+    right: 30px;
+}
+
+
 
 /* Seccion de Aceptar terminos y condiciones */
 .cajaDeAceptarTyC {
@@ -85,7 +97,24 @@
 
 .TyC {
     font-style: oblique;
+    font-size: 8px;
 }
+
+.button-register{
+    text-decoration: none;
+    color: white;
+}
+
+
+
+@media(min-width:768px) {
+
+    .mail,
+    .password {
+        width: 93%;
+    }
+}
+
 
 @media(min-width:1024px) {
     .box-padre {
@@ -100,10 +129,15 @@
     .mail,
     .password {
         height: 40px;
+        width: 93%;
     }
 
     .cajaDeAceptarTyC {
         font-size: 18px;
+    }
+
+    .fa-eye {
+        right: 35px;
     }
 
 }

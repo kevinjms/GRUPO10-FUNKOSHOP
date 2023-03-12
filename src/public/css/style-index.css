@@ -28,7 +28,6 @@ h2 {
 
 }
 
-
 .search-container {
     display: flex;
     width: 90%;
@@ -218,7 +217,7 @@ i {
         width: 90%;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .destacados .contenedorDestacados .infoDestacado {
@@ -232,7 +231,7 @@ i {
         width: 90%;
         align-items: center;
         flex-wrap: wrap;
-        justify-content: space-around;
+        justify-content: space-evenly;
     }
 
     .ofertas .contenedorOfertas .infoOfertas {
@@ -277,6 +276,25 @@ i {
         width: 30%;
     }
 
+    .grogu {
+        position: relative;
+        left: 40px;
+    }
+
+    .freddie {
+        position: relative;
+        right: 30px;
+    }
+
+    .albert {
+        position: relative;
+        left: 40px;
+    }
+
+    .carol {
+        position: relative;
+        right: 30px;
+    }
 
     .ofertas .contenedorOfertas .infoOfertas {
         height: 280px;

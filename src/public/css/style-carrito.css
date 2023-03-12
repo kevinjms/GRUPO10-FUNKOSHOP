@@ -170,8 +170,6 @@ h1 {
 
 /* Media Tablest*/
 @media (min-width: 768px) {
-
-
     .funko-caja {
         width: 96%;
     }
@@ -191,7 +189,6 @@ h1 {
         display: flex;
         position: absolute;
         top: 478px;
-
     }
 
     .precio {
@@ -250,7 +247,6 @@ h1 {
 
 /*Desktop*/
 @media(min-width:1024px) {
-
     .precios {
         left: 770px;
         top: 660px;
