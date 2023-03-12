@@ -73,6 +73,7 @@ main .titulo {
     width: 100px;
     display: flex;
     box-shadow: 0px 0px 20px -2px #777;
+    border-radius: 10px;
 }
 
 .imgP {
@@ -178,7 +179,7 @@ details {
     }
 
     .carrito i {
-        font-size: 70px;
+        font-size: 51px;
     }
 
     .relacionados {
@@ -219,7 +220,7 @@ details {
     }
 
     .carrito .btn-add {
-        margin-top: -160px;
+        margin-top: -148px;
         margin-left: -40px;
         position: absolute;
     }
@@ -236,9 +237,8 @@ details {
 
     .fa-share-nodes {
         position: absolute;
-        margin-top: 60px;
-        margin-left: 325px;
-    }
+        margin-top: 245px;
+        margin-left: 190px;
 
-    .fotoPrincipal img {}
+    }
 }
