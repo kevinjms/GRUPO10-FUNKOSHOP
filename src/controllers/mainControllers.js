@@ -19,6 +19,9 @@ const controller = {
     },
     edit: (req, res) => {
         res.render('edicion-de-productos');
+    },
+    list: (req, res) => {
+        res.render('listado-de-productos');
     }
 }
 
