@@ -30,4 +30,3 @@ Los sitios en los que nos inspiramos son:
 - https://www.funkoholic.com.ar
 - https://www.pophunter.es
 
-
