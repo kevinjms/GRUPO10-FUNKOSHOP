@@ -1,5 +1,6 @@
 const express = require('express');
 const mainRoutes = require('./routers/main')
+const productsRoutes = require('./routers/products')
 
 const path = require('path');
 const app = express();
@@ -11,7 +12,7 @@ app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 
 app.use('/', mainRoutes);
-
+app.use('/products', productsRoutes)
 
 app.post('/register', (req, res) => {
     res.redirect('/')
