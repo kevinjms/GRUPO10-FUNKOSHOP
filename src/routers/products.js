@@ -1,10 +1,5 @@
 const express = require('express');
 
-<<<<<<< HEAD
-=======
-const fs = require ('fs');
-
->>>>>>> b35a2c6e8768d7d94b926ecde4330a2743dc80bc
 const productsController = require('../controllers/productsControllers');
 
 const router = express.Router();
