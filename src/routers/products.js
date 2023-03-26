@@ -1,10 +1,5 @@
 const express = require('express');
 
-<<<<<<< HEAD
-const fs = require ('fs');
-
-=======
->>>>>>> main
 const productsController = require('../controllers/productsControllers');
 
 const router = express.Router();
