@@ -15,9 +15,9 @@ const controller = {
         );
     },
     detail: (req, res) => {
-        const { id } = req.params;
+        const id = req.params.id;
         const products = getProducts();
-        const product = products.find((element) => element.id === +id);
+        const product = products.find(product => product.id == id);
         res.render('detail', { product });
     },
     create: (req, res) => {
@@ -26,8 +26,11 @@ const controller = {
     edit: (req, res) => {
         res.render('edicion-de-productos');
     },
-    delete: (req, res) => {
-        res.render();
+    destroy: (req, res) => {
+    const productIndex = products.findIndex(element => element.id == req.params.id);
+        products.splice(productIndex, 1);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        res.redirect('/edicion-de-productos');
     }
 }
 

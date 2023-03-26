@@ -11,13 +11,11 @@ router.get('/detail/:id', productsController.detail);
 
  router.get('/create/creacion-de-productos', productsController.create);
 
- router.post('/listado-de-productos', productsController.list);
+ router.post('/products', productsController.list);
 
  router.get('/:id/edit/edicion-de-productos', productsController.edit);
 
- router.put('/:id/listado-de-productos', productsController.list);
-
- router.get('/:id', productsController.delete);
+ router.delete('/edicion-de-productos/detail/delete/:id', productsController.destroy);
 
 
 module.exports = router
