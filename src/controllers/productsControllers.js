@@ -9,8 +9,16 @@ function getProducts() {
 
 
 const controller = {
+    list: (req, res) => {
+        const products = getProducts();
+        res.render('products', { products }
+        );
+    },
     detail: (req, res) => {
-        res.render('detalle-de-producto');
+        const { id } = req.params;
+        const products = getProducts();
+        const product = products.find((element) => element.id === +id);
+        res.render('detail', { product });
     },
     create: (req, res) => {
         res.render('creacion-de-productos');
@@ -18,14 +26,10 @@ const controller = {
     edit: (req, res) => {
         res.render('edicion-de-productos');
     },
-    list:  (req, res) => {
-        const products = getProducts();
-        res.render('listado-de-productos',
-        {products});
-    },
     delete: (req, res) => {
         res.render();
     }
 }
 
 module.exports = controller;
+
