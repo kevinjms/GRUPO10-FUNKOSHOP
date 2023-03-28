@@ -1,4 +1,4 @@
-const path = require ('path');
+const path = require('path');
 
 
 const controller = {
@@ -7,13 +7,13 @@ const controller = {
     },
     login: (req, res) => {
         res.render('formulario-de-login');
-    }, 
+    },
     register: (req, res) => {
         res.render('register');
     },
     car: (req, res) => {
         res.render('carrito-de-compras');
-    }
+    },  
 }
 
 module.exports = controller;

@@ -12,13 +12,13 @@
                                     <p>Funko pop</p>
                                 </div>
                                 <div>
-                                    <h4>The Joker</h4>
+                                    <h4><%= product.name %></h4>
                                 </div>
                             </div>
                             <div class="cj-img">
                                 <button class="favorito"><i class="fa-regular fa-heart"></i></button>
                                 <button class="compartir"> <i class="fa-sharp fa-solid fa-share-nodes"></i></button>
-                                <img class="imgP" src="images/funkos/theJoker-funko1.jpg" alt="logo">
+                                <img class="imgP" src="images/funkos/<%= product.image %>" alt="logo">
                             </div>
                         </div>
                         <div class="fotosSiguientes">
@@ -31,12 +31,12 @@
                         <div class="carrito">
                             <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i></button>
                         </div>
-                        <h2>$10.500</h2>
+                        <h2><%= product.price %></h2>
                         <p>Disponibles: 5</p>
 
                         <details>
                             <sumary>
-                                Funko pop The Joker, de la pelicula suicide squad
+                                <%= product.description %>
                             </sumary>
                         </details>
                         <div class="linkInfo">
