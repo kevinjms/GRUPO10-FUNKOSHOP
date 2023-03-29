@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 
 
-const productsFilePath = path.join(__dirname, '../public/data/products.json');
+const productsFilePath = path.join(__dirname, '../data/products.json');
 function getProducts() {
     return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 };
@@ -22,6 +22,21 @@ const controller = {
     },
     create: (req, res) => {
         res.render('creacion-de-productos');
+    },
+    save: (req, res) => {
+        const image = req.file ? req.file.filename : 'funko-sin-imagen.png';
+        const products = getProducts();
+        const newProduct = {
+            id: products[products.length -1].id +1,
+            name: req.body.name,
+            description: req.body.description,
+            image: image,
+            category: req.body.category,
+            price: req.body.price     
+        }
+        products.push(newProduct);
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        res.redirect('/products');
     },
     edit: (req, res) => {
         res.render('edicion-de-productos');
