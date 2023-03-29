@@ -1,244 +1,226 @@
-[{
+[
+  {
     "id": 1,
     "name": "Albert Einstein",
     "description": "",
     "image": "Albert.png",
     "category": "Personajes Historicos",
-    "color": "White",
-    "size": "11",
     "price": "4500"
-  }, {
+  },
+  {
     "id": 2,
     "name": "Batman",
     "description": "",
     "image": "Batman.png",
     "category": "DC",
-    "color": "Black",
-    "size": "11",
     "price": "5000"
-  }, {
+  },
+  {
     "id": 3,
     "name": "C3-PO",
     "description": "",
     "image": "C-3PO.png",
     "category": "Star Wars",
-    "color": "Gold",
-    "size": "11",
     "price": "6000"
-  }, {
+  },
+  {
     "id": 4,
     "name": "Carol",
     "description": "",
     "image": "carol.png",
     "category": "Series",
-    "color": "White",
-    "size": "11",
     "price": "4800"
-  }, {
+  },
+  {
     "id": 5,
     "name": "Chewbacca",
     "description": "",
     "image": "Chewbacca.png",
     "category": "Brown",
-    "size": "11",
     "price": "7000"
-  }, {
+  },
+  {
     "id": 6,
     "name": "Daneyrys Targayen",
     "description": "",
     "image": "daneyrys_targayen.png",
     "category": "Series",
-    "color": "White",
-    "size": "11",
     "price": "5500"
-  }, {
+  },
+  {
     "id": 7,
     "name": "Darth Vader",
     "description": "",
     "image": "Darth-Vader.png",
     "category": "Star Wars",
-    "color": "Black",
-    "size": "11",
     "price": "6800"
-  }, {
+  },
+  {
     "id": 8,
     "name": "Dobby",
     "description": "",
     "image": "dobby.png",
     "category": "Harry Potter",
-    "color": "Light Brown",
-    "size": "11",
     "price": "$5600"
-  }, {
+  },
+  {
     "id": 9,
     "name": "Doctor Strange",
     "description": "",
     "image": "Doctor-Strange.png",
     "category": "Marvel",
-    "color": "Red",
-    "size": "11",
     "price": "6800"
-  }, {
+  },
+  {
     "id": 10,
     "name": "Flash",
     "description": "",
     "image": "Flash.png",
     "category": "DC",
-    "color": "Red",
-    "size": "11",
     "price": "5200"
-  }, {
+  },
+  {
     "id": 11,
     "name": "Freddie Mercury",
     "description": "",
     "image": "Freddie-Mercury.png",
     "category": "Personajes",
-    "color": "White",
-    "size": "11",
     "price": "7000"
-  }, {
+  },
+  {
     "id": 12,
     "name": "Freddy Krueger",
     "description": "",
     "image": "freddy_krueger.png",
     "category": "Cine",
-    "color": "Orange",
-    "size": "11",
     "price": "4500"
-  }, {
+  },
+  {
     "id": 13,
     "name": "Gollum",
     "description": "",
     "image": "gollum.png",
     "category": "Cine",
-    "color": "Brown",
-    "size": "11",
     "price": "3400"
-  }, {
+  },
+  {
     "id": 14,
     "name": "Baby Yoda",
     "description": "",
     "image": "Grogu.png",
     "category": "Star Wars",
-    "color": "Green",
-    "size": "11",
     "price": "6000"
-  }, {
+  },
+  {
     "id": 15,
     "name": "Harley Quinn",
     "description": "",
     "image": "Harley-Quinn.png",
     "category": "DC",
-    "color": "Blue",
-    "size": "11",
     "price": "6000"
-  }, {
+  },
+  {
     "id": 16,
     "name": "Iron Man",
     "description": "",
     "image": "Iron-Man.png",
     "category": "Marvel",
-    "color": "Red",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 17,
     "name": "Jason",
     "description": "",
     "image": "Jason.png",
     "category": "Cine",
-    "color": "Grey",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 18,
     "name": "Jimi Hendrix",
     "description": "",
     "image": "jimi-hendrix.png",
     "category": "Personajes",
-    "color": "black",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 19,
     "name": "John Wick",
     "description": "",
     "image": "johnwick.png",
     "category": "Cine",
-    "color": "Black",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 20,
     "name": "Leia Morgana",
     "description": "",
     "image": "Leia.png",
     "category": "Star Wars",
-    "color": "White",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 21,
     "name": "Mr. Bean",
     "description": "",
     "image": "mr.bean.png",
     "category": "Series",
-    "color": "Brown",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 22,
     "name": "Obi Wan Kenobi",
     "description": "",
     "image": "Obi-Wan.png",
     "category": "Star Wars",
-    "color": "Brown",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 23,
     "name": "Eleven",
     "description": "",
     "image": "once.png",
     "category": "Series",
-    "color": "White",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 24,
     "name": "Robocop",
     "description": "",
     "image": "robocop.png",
     "category": "Cine",
-    "color": "Silver",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 25,
     "name": "Spiderman",
     "description": "",
     "image": "Spider-man.png",
     "category": "Marvel",
-    "color": "Red",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 26,
     "name": "Thor",
     "description": "",
     "image": "Thor.png",
     "category": "Marvel",
-    "color": "Red",
-    "size": "11",
     "price": "6000"
-  },{
+  },
+  {
     "id": 27,
     "name": "Walter White",
     "description": "",
     "image": "walte_white.png",
     "category": "Series",
-    "color": "Balck",
-    "size": "11",
     "price": "6000"
-  }]
-  
+  },
+  {
+    "id": 28,
+    "name": "Scaloni",
+    "description": "                Campeon del mundo                            ",
+    "image": "funko-sin-imagen.png",
+    "category": "Futbol",
+    "price": "15000"
+  }
+]

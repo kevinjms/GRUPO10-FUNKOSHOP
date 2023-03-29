@@ -4,15 +4,11 @@
         <%- include('partials/header') %>
             <main>
                 <div class="box-padre">
-                    <form class="caja-formulario" action="/register" method="POST">
+                    <form class="caja-formulario" action="/register" method="POST" enctype="multipart/form-data">
                         <div>
                             <h1 class="registrarse"> REGISTRARSE </h1>
                             <!--     Seccion de Correo y Contraseña              -->
                             <div class="correo-contraseña-container">
-                                <div class="cajaDeContraseña">
-                                    <div class="textoContraseña"> IDENTIFICADOR </div>
-                                    <input class="password" type="number" name="id" required>
-                                </div>
                                 <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> NOMBRE </div>
                                     <input class="password" type="text" name="firstName" required>
