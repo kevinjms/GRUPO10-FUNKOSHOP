@@ -1,23 +1,20 @@
 const express = require('express');
 const router = express.Router();
-const multer = require('multer');
 
 const productsController = require('../controllers/productsControllers');
+const uploadFile = require('../middlewares/multerMiddleware');
 
 
 router.get('/', productsController.list);
 
 router.get('/detail/:id', productsController.detail);
 
-router.get('/create/creacion-de-productos', productsController.create);
-
-router.post('/listado-de-productos', productsController.list);
+router.get('/create', productsController.create);
+router.post('/', uploadFile.single("image"), productsController.save);
 
 router.get('/:id/edit/edicion-de-productos', productsController.edit);
 
-router.put('/:id/listado-de-productos', productsController.list);
-
-router.get('/:id', productsController.delete);
+router.delete('/edicion-de-productos/detail/delete/:id', productsController.destroy);
 
 
-module.exports = router;
+module.exports = router
