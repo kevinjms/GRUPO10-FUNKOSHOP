@@ -17,7 +17,7 @@
   },
   {
     "id": 3,
-    "name": "C3-PO",
+    "name": "C-3PO",
     "description": "",
     "image": "C-3PO.png",
     "category": "Star Wars",
@@ -218,9 +218,17 @@
   {
     "id": 28,
     "name": "Scaloni",
-    "description": "                Campeon del mundo                            ",
+    "description": "Campeon del mundo ",
     "image": "funko-sin-imagen.png",
     "category": "Futbol",
+    "price": "15000"
+  },
+  {
+    "id": 29,
+    "name": "The Joker",
+    "description": "",
+    "image": "theJoker-funko1.png",
+    "category": "DC",
     "price": "15000"
   }
 ]
