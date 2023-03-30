@@ -21,7 +21,7 @@ const controller = {
         res.render('detail', { product });
     },
     create: (req, res) => {
-        res.render('creacion-de-productos');
+        res.render('productsCreate');
     },
     save: (req, res) => {
         const image = req.file ? req.file.filename : 'funko-sin-imagen.png';
@@ -39,13 +39,13 @@ const controller = {
         res.redirect('/products');
     },
     edit: (req, res) => {
-        res.render('edicion-de-productos');
+        res.render('editProducts');
     },
     destroy: (req, res) => {
     const productIndex = products.findIndex(element => element.id == req.params.id);
         products.splice(productIndex, 1);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-        res.redirect('/edicion-de-productos');
+        res.redirect('/editProducts');
     }
 }
 

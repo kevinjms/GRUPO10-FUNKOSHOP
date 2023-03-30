@@ -9,12 +9,12 @@ router.get('/', productsController.list);
 
 router.get('/detail/:id', productsController.detail);
 
-router.get('/create', productsController.create);
+router.get('/productsCreate', productsController.create);
 router.post('/', uploadFile.single("image"), productsController.save);
 
-router.get('/:id/edit/edicion-de-productos', productsController.edit);
+router.get('/editProducts/edit/:id', productsController.edit);
 
-router.delete('/edicion-de-productos/detail/delete/:id', productsController.destroy);
+router.delete('/editProducts/edit/delete/:id', productsController.destroy);
 
 
 module.exports = router

@@ -6,7 +6,7 @@ const controller = {
         res.render('index');
     },
     login: (req, res) => {
-        res.render('formulario-de-login');
+        res.render('loginForm');
     },
     register: (req, res) => {
         res.render('register');
