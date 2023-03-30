@@ -17,7 +17,7 @@ const mainRouter = require('./routes/mainRouter');
 const productsRouter = require('./routes/productsRouter');
 
 app.use('/', mainRouter);
-app.use('/products', productsRouter);
+app.use('/products', productsRouter);  // Entregable Sprint 4
 
 // ****** template Engine *****
 app.set('view engine', 'ejs');
