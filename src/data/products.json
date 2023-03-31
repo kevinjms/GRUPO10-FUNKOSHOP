@@ -137,14 +137,6 @@
   },
   {
     "id": 18,
-    "name": "Jimi Hendrix",
-    "description": "",
-    "image": "jimi-hendrix.png",
-    "category": "Personajes",
-    "price": "6000"
-  },
-  {
-    "id": 19,
     "name": "John Wick",
     "description": "",
     "image": "johnwick.png",
@@ -152,7 +144,7 @@
     "price": "6000"
   },
   {
-    "id": 20,
+    "id": 19,
     "name": "Leia Morgana",
     "description": "",
     "image": "Leia.png",
@@ -160,15 +152,15 @@
     "price": "6000"
   },
   {
-    "id": 21,
+    "id": 20,
     "name": "Mr. Bean",
     "description": "",
-    "image": "mr.bean.png",
+    "image": "mr.been.png",
     "category": "Series",
     "price": "6000"
   },
   {
-    "id": 22,
+    "id": 21,
     "name": "Obi Wan Kenobi",
     "description": "",
     "image": "Obi-Wan.png",
@@ -176,7 +168,7 @@
     "price": "6000"
   },
   {
-    "id": 23,
+    "id": 22,
     "name": "Eleven",
     "description": "",
     "image": "once.png",
@@ -184,7 +176,7 @@
     "price": "6000"
   },
   {
-    "id": 24,
+    "id": 23,
     "name": "Robocop",
     "description": "",
     "image": "robocop.png",
@@ -192,7 +184,7 @@
     "price": "6000"
   },
   {
-    "id": 25,
+    "id": 24,
     "name": "Spiderman",
     "description": "",
     "image": "Spider-man.png",
@@ -200,7 +192,7 @@
     "price": "6000"
   },
   {
-    "id": 26,
+    "id": 25,
     "name": "Thor",
     "description": "",
     "image": "Thor.png",
@@ -208,7 +200,7 @@
     "price": "6000"
   },
   {
-    "id": 27,
+    "id": 26,
     "name": "Walter White",
     "description": "",
     "image": "walte_white.png",
@@ -216,18 +208,10 @@
     "price": "6000"
   },
   {
-    "id": 28,
-    "name": "Scaloni",
-    "description": "Campeon del mundo ",
-    "image": "funko-sin-imagen.png",
-    "category": "Futbol",
-    "price": "15000"
-  },
-  {
-    "id": 29,
+    "id": 27,
     "name": "The Joker",
     "description": "",
-    "image": "theJoker-funko1.png",
+    "image": "theJoker-funko1.jpg",
     "category": "DC",
     "price": "15000"
   }
