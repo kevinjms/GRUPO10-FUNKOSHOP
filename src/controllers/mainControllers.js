@@ -1,9 +1,14 @@
 const path = require('path');
+const fs = require('fs');
 
+const productsFilePath = path.join(__dirname, '../data/products.json');
+const products = JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
 
 const controller = {
     index: (req, res) => {
-        res.render('index');
+        const visited = products.filter((product) => product.subcategory == 'visited');
+        const inSale = products.filter((product) => product.subcategory == 'in-sale');
+        res.render('index', { visited, inSale });
     },
     login: (req, res) => {
         res.render('loginForm');

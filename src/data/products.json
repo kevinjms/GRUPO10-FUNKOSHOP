@@ -5,6 +5,7 @@
     "description": "",
     "image": "Albert.png",
     "category": "Personajes Historicos",
+    "subcategory": "in-sale",
     "price": "4500"
   },
   {
@@ -13,6 +14,7 @@
     "description": "",
     "image": "Batman.png",
     "category": "DC",
+    "subcategory": "in-sale",
     "price": "5000"
   },
   {
@@ -21,6 +23,7 @@
     "description": "",
     "image": "C-3PO.png",
     "category": "Star Wars",
+    "subcategory": "in-sale",
     "price": "6000"
   },
   {
@@ -29,6 +32,7 @@
     "description": "",
     "image": "carol.png",
     "category": "Series",
+    "subcategory": "in-sale",
     "price": "4800"
   },
   {
@@ -37,6 +41,7 @@
     "description": "",
     "image": "Chewbacca.png",
     "category": "Brown",
+    "subcategory": "in-sale",
     "price": "7000"
   },
   {
@@ -45,6 +50,7 @@
     "description": "",
     "image": "daneyrys_targayen.png",
     "category": "Series",
+    "subcategory": "none",
     "price": "5500"
   },
   {
@@ -53,6 +59,7 @@
     "description": "",
     "image": "Darth-Vader.png",
     "category": "Star Wars",
+    "subcategory": "none",
     "price": "6800"
   },
   {
@@ -61,6 +68,7 @@
     "description": "",
     "image": "dobby.png",
     "category": "Harry Potter",
+    "subcategory": "none",
     "price": "$5600"
   },
   {
@@ -69,6 +77,7 @@
     "description": "",
     "image": "Doctor-Strange.png",
     "category": "Marvel",
+    "subcategory": "none",
     "price": "6800"
   },
   {
@@ -77,6 +86,7 @@
     "description": "",
     "image": "Flash.png",
     "category": "DC",
+    "subcategory": "none",
     "price": "5200"
   },
   {
@@ -85,6 +95,7 @@
     "description": "",
     "image": "Freddie-Mercury.png",
     "category": "Personajes",
+    "subcategory": "none",
     "price": "7000"
   },
   {
@@ -93,6 +104,7 @@
     "description": "",
     "image": "freddy_krueger.png",
     "category": "Cine",
+    "subcategory": "none",
     "price": "4500"
   },
   {
@@ -101,6 +113,7 @@
     "description": "",
     "image": "gollum.png",
     "category": "Cine",
+    "subcategory": "none",
     "price": "3400"
   },
   {
@@ -109,6 +122,7 @@
     "description": "",
     "image": "Grogu.png",
     "category": "Star Wars",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -133,6 +147,7 @@
     "description": "",
     "image": "Jason.png",
     "category": "Cine",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -141,6 +156,7 @@
     "description": "",
     "image": "johnwick.png",
     "category": "Cine",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -149,6 +165,7 @@
     "description": "",
     "image": "Leia.png",
     "category": "Star Wars",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -157,6 +174,7 @@
     "description": "",
     "image": "mr.been.png",
     "category": "Series",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -165,6 +183,7 @@
     "description": "",
     "image": "Obi-Wan.png",
     "category": "Star Wars",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -173,6 +192,7 @@
     "description": "",
     "image": "once.png",
     "category": "Series",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -181,6 +201,7 @@
     "description": "",
     "image": "robocop.png",
     "category": "Cine",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -189,6 +210,7 @@
     "description": "",
     "image": "Spider-man.png",
     "category": "Marvel",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -197,6 +219,7 @@
     "description": "",
     "image": "Thor.png",
     "category": "Marvel",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -205,6 +228,7 @@
     "description": "",
     "image": "walte_white.png",
     "category": "Series",
+    "subcategory": "none",
     "price": "6000"
   },
   {
@@ -213,6 +237,7 @@
     "description": "",
     "image": "theJoker-funko1.jpg",
     "category": "DC",
+    "subcategory": "none",
     "price": "15000"
   }
 ]
