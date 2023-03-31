@@ -3,30 +3,25 @@
     <body>
         <%- include('partials/header') %>
             <main>
-                <div class="container products-wrapper">
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="products-title">Todos los productos</h2>
-                        </div>
-            
-                        <% products.forEach((product) => { %>
-                            <div class="col-12 col-sm-6 col-lg-3">
-                                <section class="product-box">
-                                        <figure class="product-box_image">
-                                            <img src="/images/funkos/<%= product.image %>" alt="imagen de producto">
-                                        </figure>
-                                        <article class="product-box_data">
-                                            <h2><%= product.price %></h2>
-                                            <p><%= product.name %></p>
-                                            <i class="fas fa-truck"></i>
-                                            <a href="/products/detail/<%= product.id %>"><button class="btn-add">DETALLE</button></a>
-                                        </article>
-                                    </a>
-                                </section>
-                            </div>
+                <div class="container-main">
+                    <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
+                        <% products.forEach((product)=> { %>
+                        <section class="destacados">
+                            <article class="contenedorDestacados">
+                                <div class="infoDestacado">
+                                    <button class="favorito"><i class="fa-regular fa-heart"></i></button>
+                                    <img src="/images/funkos/<%= product.image %>" alt="imagen de producto">
+                                    <h4>
+                                        <%= product.name %>
+                                    </h4>
+                                    <h4>$
+                                        <%= product.price %>
+                                    </h4>
+                                   <a href="/products/detail/<%= product.id %>"><button class="btn-add">DETALLE</button></a>
+                                </div>
+                            </article>
+                        </section>
                         <% }) %>
-            
-                    </div>
                 </div>
             </main>
             <%- include('partials/footer') %>
