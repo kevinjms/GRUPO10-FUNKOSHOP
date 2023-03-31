@@ -16,23 +16,26 @@
                     </div>
                     <section class="destacados">
                         <h2>DESTACADOS</h2>
+                        <% visited.forEach((product) => { %>
                         <article class="contenedorDestacados">
                             <div class="infoDestacado">
-                                <img src="/images/funkos/theJoker-funko1.jpg" alt="ST">
-                                <h4>THE JOKER</h4>
+                                <img src="/images/funkos/<%= product.image %>" alt="ST">
+                                <h4><%= product.name %></h4>
                                 <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/29">DETALLE</a></button>
                             </div>
-                            
+                            <% }) %>
                         </article>
                     </section>
                     <section class="ofertas">
                         <h2>OFERTAS</h2>
+                        <% inSale.forEach((product) => { %>
                         <article class="contenedorOfertas">
                             <div class="infoOfertas">
-                                <img src="/images/funkos/C-3PO.png" alt="C3">
-                                <h4>C-3PO</h4>
+                                <img src="/images/funkos/<%= product.image %>" alt="C3">
+                                <h4><%= product.name %></h4>
                                 <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/3">DETALLE</a></button>
                             </div>
+                            <% }) %>
                         </article>
                     </section>
                     <div class="preventa">
