@@ -1,4 +1,4 @@
-<%- include('partials/head', {title: 'Productos' , styles: ['detalle']}) %>
+<%- include('partials/head', {title: 'Productos' , styles: ['detalle', 'style-index']}) %>
 
     <body>
         <%- include('partials/header') %>
@@ -16,7 +16,7 @@
                                 </div>
                             </div>
                             <div class="cj-img">
-                                <button class="favorito"><i class="fa-regular fa-heart"></i></button>
+                                <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
                                 <button class="compartir"> <i class="fa-sharp fa-solid fa-share-nodes"></i></button>
                                 <img src="/images/funkos/<%= product.image %>" alt="logo">
                             </div>
@@ -46,35 +46,19 @@
                         </div>
                     </div>
                 </section>
-                <section class="relacionados">
-                    <h2>RELACIONADOS</h2>
-                    <article class="infodestacados">
-                        <div class="infofunko">
-                            <img src="/images/funkos/<%= product.image %>" alt="logo">
-                            <h4>Gollum </h4>
-                            <p>$10.500</p>
-                            <button class="btn-add">AGREGAR</button>
+                <section class="ofertas">
+                    <h2>OFERTAS</h2>
+                    
+                    <article class="contenedorOfertas"><% inSale.forEach((product) => { %>
+                        <div class="infoOfertas">
+                            <img src="/images/funkos/<%= product.image %>" alt="C3">
+                            <h4><%= product.name %></h4>
+                            <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
                         </div>
-                        <div class="infofunko">
-                            <img src="/images/funkos/<%= product.image %>" alt="logo">
-                            <h4>Harley Quinn Suicide Squad</h4>
-                            <p>$10.500</p>
-                            <button class="btn-add">AGREGAR</button>
-                        </div>
-                        <div class="infofunko">
-                            <img src="/images/funkos/<%= product.image %>" alt="logo">
-                            <h4>Darth Vader</h4>
-                            <p>$10.500</p>
-                            <button class="btn-add">AGREGAR</button>
-                        </div>
-                        <div class="infofunko">
-                            <img src="/images/funkos/<%= product.image %>" alt="logo">
-                            <h4>RoboCop</h4>
-                            <p>$10.500</p>
-                            <button class="btn-add">AGREGAR</button>
-                        </div>
+                        <% }) %>
                     </article>
                 </section>
+                
             </main>
             <%- include('partials/footer') %>
     </body>

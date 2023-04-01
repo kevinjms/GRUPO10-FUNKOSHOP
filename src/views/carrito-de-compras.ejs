@@ -1,4 +1,4 @@
-<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito']}) %>
+<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito', 'style-index']}) %>
 
     <body>
         <%- include('partials/header') %>
@@ -35,29 +35,15 @@
                             <p class="precio1">$11.300</p>
                         </div>
                     </div>
-                    <section class="cj-general">
+                    <section class="destacados">
                         <h1>¡AGREGALOS A TU COMPRA!</h1>
-                        <article class="funkos">
-                            <div class="funko-caja-carrito">
-                                <img class="img-carrito" src="../images/funkos/Flash.png" alt="imagen">
-                                <h3 class="descripcion-caja">FLASH</h3>
-                                <button class="btn-add">AGREGAR</button>
+                        <article class="contenedorDestacados"><% visited.forEach((product) => { %>
+                            <div class="infoDestacado">
+                                <img src="/images/funkos/<%= product.image %>" alt="ST">
+                                <h4><%= product.name %></h4>
+                                <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
                             </div>
-                            <div class="funko-caja-carrito">
-                                <img class="img-carrito" src="../images/funkos/freddy_krueger.png" alt="imagen">
-                                <h3 class="descripcion-caja">FREDDY KRUEGER</h3>
-                                <button class="btn-add">AGREGAR</button>
-                            </div>
-                            <div class="funko-caja-carrito">
-                                <img class="img-carrito" src="../images/funkos/jokerA1.png" alt="imagen">
-                                <h3 class="descripcion-caja">JOKER </h3>
-                                <button class="btn-add">AGREGAR</button>
-                            </div>
-                            <div class="funko-caja-carrito">
-                                <img class="img-carrito" src="../images/funkos/Chewbacca.png" alt="imagen">
-                                <h3 class="descripcion-caja">CHEWBACCA</h3>
-                                <button class="btn-add">AGREGAR</button>
-                            </div>
+                            <% }) %>
                         </article>
                     </section>
                 </div>

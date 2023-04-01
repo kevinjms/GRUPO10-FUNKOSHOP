@@ -46,8 +46,10 @@ body {
 }
 
 #cantidad {
+    height: 25px;
     width: 20%;
-    text-align: center;
+    border-radius: 10px 10px 10px 10px;
+    border-right: solid;
 }
 
 .precios {
@@ -66,6 +68,7 @@ body {
 
 .btn {
     width: 14%;
+    height: 25px;
 }
 
 .botones1 {

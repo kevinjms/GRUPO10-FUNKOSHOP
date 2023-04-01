@@ -18,7 +18,8 @@ const controller = {
         const id = req.params.id;
         const products = getProducts();
         const product = products.find(product => product.id == id);
-        res.render('detail', { product });
+        const inSale = products.filter((product) => product.subcategory == 'in-sale');
+        res.render('detail', { product, inSale });
     },
     create: (req, res) => {
         res.render('productsCreate');
