@@ -153,6 +153,7 @@ details {
 
     .fotoPrincipal img {
         margin-left: 15px;
+        width: 50%;
     }
 
     .fotosSiguientes img {
