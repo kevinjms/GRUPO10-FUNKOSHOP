@@ -59,7 +59,7 @@
     "description": "",
     "image": "Darth-Vader.png",
     "category": "Star Wars",
-    "subcategory": "none",
+    "subcategory": "visited",
     "price": "6800"
   },
   {
