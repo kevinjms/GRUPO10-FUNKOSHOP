@@ -39,7 +39,9 @@ const controller = {
         res.redirect('/products');
     },
     edit: (req, res) => {
-        res.render('editProducts');
+        const id = req.params.id;
+        const products = getProducts();
+        res.render('editProducts', {products} );
     },
     destroy: (req, res) => {
     const productIndex = products.findIndex(element => element.id == req.params.id);
