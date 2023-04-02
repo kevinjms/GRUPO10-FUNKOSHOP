@@ -12,7 +12,7 @@ router.get('/detail/:id', productsController.detail);   // Detalle de un product
 router.get('/productsCreate', productsController.create);    // Formulario de creación de productos
 router.post('/', uploadFile.single("image"), productsController.save);  // Acción de creación (a donde se envía el formulario)
  
-router.get('/editProducts/edit/:id', productsController.edit);
+router.get('/editProducts/edit/:id', productsController.edit);   // Formulario de edición de productos
 
 router.delete('/editProducts/edit/delete/:id', productsController.destroy);  // Acción de borrado
 
