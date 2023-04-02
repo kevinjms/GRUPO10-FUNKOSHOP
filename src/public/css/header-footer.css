@@ -90,8 +90,6 @@ footer .footerTittle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
-    margin-bottom: 15px;
 }
 
 .footerDetalle .detalleAsist h3 {
@@ -139,7 +137,6 @@ footer .footerTittle {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 15px;
 }
 
 .footerDetalle .informacion h3 {
@@ -323,7 +320,6 @@ footer .footerTittle {
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding: 0px;
     }
 
     .footerDetalle .informacion .listaInfo li a {
@@ -387,7 +383,7 @@ footer .footerTittle {
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        margin-top: 15px;
+        margin-top: -25px;
     }
 
     .header .accesos ul li a {
@@ -408,7 +404,8 @@ footer .footerTittle {
 
     footer .footerTittle {
         font-size: 40px;
-        margin-top: 70px;
+        position: relative;
+        top: 74px;
     }
 
     .footerDetalle {
@@ -416,6 +413,7 @@ footer .footerTittle {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        margin-bottom: 135px;
     }
 
 
@@ -448,6 +446,9 @@ footer .footerTittle {
 
     .footerDetalle .infoGeneral {
         margin-top: 60px;
+        position: relative;
+        right: 10px;
+        top: 235px;
     }
 
     .footerDetalle .informacion h3 {
@@ -504,5 +505,57 @@ footer .footerTittle {
         position: relative;
         left: 350px;
         bottom: 200px;
+    }
+
+    .footerDetalle .detalleAsist {
+        position: relative;
+        right: 35px;
+        top: 200px;
+    }
+
+    .footerDetalle .seguinos {
+        position: relative;
+        top: 183px;
+    }
+
+    .footerDetalle .informacion {
+        position: relative;
+        left: 18px;
+        top: 213px;
+    }
+
+    .footerDetalle .informacion .listaInfo {
+        position: relative;
+        bottom: 11px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .footerDetalle .informacion {
+        left: 320px;
+        top: -55px;
+    }
+
+    .footerDetalle .seguinos {
+        right: -170px;
+        top: -80px;
+    }
+
+    .footerDetalle .detalleAsist {
+        right: -10px;
+        top: -60px;
+    }
+
+    .footerDetalle .infoGeneral{
+        right: 476px;
+        top: 270px;
+    }
+
+    .footerDetalle .infoGeneral .pagos {
+        top: 35px;
+    }
+
+    .footerDetalle .infoGeneral .contacto{
+        bottom: 188px;
     }
 }
