@@ -15,8 +15,8 @@
                         <button><i class="fas fa-search"></i></button>
                     </div>
                     <section class="destacados">
-                        <h2>DESTACADOS</h2>
-                        <article class="contenedorDestacados" ><% visited.forEach((product) => { %> 
+                            <h2>DESTACADOS</h2>
+                            <article class="contenedorDestacados"><% visited.forEach((product) => { %>
                             <div class="infoDestacado">
                                 <img src="/images/funkos/<%= product.image %>" alt="ST">
                                 <h4><%= product.name %></h4>
@@ -26,9 +26,9 @@
                         </article>
                     </section>
                     <section class="ofertas">
-                        <h2>OFERTAS</h2>
-                        <article class="contenedorOfertas"> <% inSale.forEach((product) => { %> 
-                            <div class="infoOfertas"
+                            <h2>OFERTAS</h2>
+                        <article class="contenedorOfertas"> <% inSale.forEach((product) => { %>
+                            <div class="infoOfertas">
                                 <img src="/images/funkos/<%= product.image %>" alt="C3">
                                 <h4><%= product.name %></h4>
                                 <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>

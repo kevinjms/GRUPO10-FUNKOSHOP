@@ -46,7 +46,7 @@ main .titulo {
 
 }
 
-.favorito {
+.favoritos {
     background: transparent;
     border: none;
     font-size: 50px;
@@ -140,6 +140,8 @@ details {
     height: 200px;
     margin-top: 15px;
 }
+
+
 
 /********* FIN MAIN **********/
 
