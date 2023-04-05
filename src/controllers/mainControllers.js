@@ -1,19 +1,29 @@
-const path = require ('path');
+const path = require('path');
+const fs = require('fs');
 
+const productsFilePath = path.join(__dirname, '../data/products.json');
+function getProducts() {
+    return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
+};
 
 const controller = {
     index: (req, res) => {
-        res.render('index');
+        const products = getProducts();
+        const visited = products.filter((product) => product.subcategory == 'visited');
+        const inSale = products.filter((product) => product.subcategory == 'in-sale');
+        res.render('index', { visited, inSale });
     },
     login: (req, res) => {
-        res.render('formulario-de-login');
-    }, 
+        res.render('loginForm');
+    },
     register: (req, res) => {
         res.render('register');
     },
     car: (req, res) => {
-        res.render('carrito-de-compras');
-    }
+        const products = getProducts();
+        const visited = products.filter((product) => product.subcategory == 'visited');
+        res.render('carrito-de-compras', { visited });
+    },  
 }
 
 module.exports = controller;

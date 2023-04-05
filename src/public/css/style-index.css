@@ -191,6 +191,23 @@ i {
     background-color: blue;
 }
 
+/******* lista de productos *******/
+.favorito {
+    background: transparent;
+    border: none;
+    font-size: 50px;
+    position: absolute;
+    margin-left: 240px;
+    margin-top: 10px;
+}
+
+.products-title {
+    display: flex;
+    position: relative;
+    top: 15px;
+    justify-content: center;
+}
+
 @media (min-width: 768px) {
 
     .cabezas {
@@ -255,6 +272,12 @@ i {
         height: 30px;
         display: flex;
         align-items: center;
+    }
+
+    /***** lista de productos ****/
+    .favorito {
+        font-size: 40px;
+        margin-left: 185px;
     }
 
 }

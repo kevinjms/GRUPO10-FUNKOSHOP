@@ -33,6 +33,7 @@ main .titulo {
 }
 
 
+
 .cajadelproducto {
     display: flex;
     flex-direction: column;
@@ -45,7 +46,7 @@ main .titulo {
 
 }
 
-.favorito {
+.favoritos {
     background: transparent;
     border: none;
     font-size: 50px;
@@ -59,8 +60,8 @@ main .titulo {
     border: none;
     font-size: 50px;
     position: absolute;
-    margin-left: 311px;
-    margin-top: 432px;
+    margin-left: 310px;
+    margin-top: 320px;
 }
 
 .fotosSiguientes {
@@ -140,6 +141,8 @@ details {
     margin-top: 15px;
 }
 
+
+
 /********* FIN MAIN **********/
 
 @media (min-width: 768px) {
@@ -152,11 +155,16 @@ details {
 
     .fotoPrincipal img {
         margin-left: 15px;
+        width: 50%;
+    }
+
+    .fotosSiguientes img {
+        width: 170px;
     }
 
     .fa-share-nodes {
         position: relative;
-        margin-top: 400px;
+        margin-top: 260px;
         margin-left: 290px;
         font-size: 70px;
     }
@@ -213,6 +221,11 @@ details {
         margin: 25px;
     }
 
+    .fotoPrincipal img {
+        margin-left: 15px;
+        width: 580px;
+    }
+
     .especificaciones {
         position: absolute;
         margin-left: 630px;
@@ -221,7 +234,7 @@ details {
 
     .carrito .btn-add {
         margin-top: -148px;
-        margin-left: -40px;
+        margin-left: 50px;
         position: absolute;
     }
 
@@ -237,8 +250,8 @@ details {
 
     .fa-share-nodes {
         position: absolute;
-        margin-top: 245px;
-        margin-left: 190px;
+        margin-top: 150px;
+        margin-left: 330px;
 
     }
 }
