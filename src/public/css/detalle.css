@@ -51,7 +51,8 @@ main .titulo {
     border: none;
     font-size: 50px;
     position: absolute;
-    margin-left: 310px;
+    margin-left: 300px;
+    top: 50px;
 }
 
 .compartir {
@@ -158,8 +159,18 @@ details {
         width: 50%;
     }
 
+    .favoritos {
+        font-size: 60px;
+        margin-left: 0px;
+        top: -70px;
+    }
+
     .fotosSiguientes img {
-        width: 170px;
+        width: 120px;
+    }
+
+    .fotosSiguientes {
+        margin-right: 320px;
     }
 
     .fa-share-nodes {
@@ -174,7 +185,9 @@ details {
     }
 
     .especificaciones {
-        font-size: 40px;
+        position: absolute;
+        margin-left: 440px;
+        margin-top: 150px;
     }
 
     .especificaciones h2 {
@@ -182,7 +195,8 @@ details {
     }
 
     .carrito {
-        right: 100px;
+        right: 0px;
+        bottom: -120px;
 
     }
 
@@ -232,6 +246,17 @@ details {
         margin-top: 215px;
     }
 
+    .favoritos {
+        font-size: 70px;
+        margin-left: 0px;
+        top: -110px;
+    }
+
+    .carrito {
+        right: 118px;
+        bottom: -180px;
+    }
+
     .carrito .btn-add {
         margin-top: -148px;
         margin-left: 50px;
@@ -242,6 +267,9 @@ details {
         position: absolute;
         margin-top: 10px;
         margin-left: 320px;
+    }
+    .fotosSiguientes {
+            margin-right: 0px;
     }
 
     .linkInfo {

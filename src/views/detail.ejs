@@ -16,7 +16,6 @@
                                 </div>
                             </div>
                             <div class="cj-img">
-                                <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
                                 <button class="compartir"> <i class="fa-sharp fa-solid fa-share-nodes"></i></button>
                                 <img src="/images/funkos/<%= product.image %>" alt="logo">
                             </div>
@@ -26,12 +25,13 @@
                             <img class="imgP" src="/images/funkos/<%= product.image %>" alt="logo">
                         </div>
                     </div>
-
+                    
                     <div class="especificaciones">
+                        <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
                         <div class="carrito">
                             <button class="btn-add"><i class="fa-solid fa-cart-shopping"></i></button>
                         </div>
-                        <h2>$ <%= product.price %></h2>
+                        <h2><%= product.price %></h2>
                         <p>Disponibles: 5</p>
 
                         <details>
@@ -53,6 +53,7 @@
                         <div class="infoOfertas">
                             <img src="/images/funkos/<%= product.image %>" alt="C3">
                             <h4><%= product.name %></h4>
+                            <h4>$ <%= product.price %></h4>
                             <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
                         </div>
                         <% }) %>

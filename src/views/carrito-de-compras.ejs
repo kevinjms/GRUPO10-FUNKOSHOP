@@ -1,4 +1,4 @@
-<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito', 'style-index']}) %>
+<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito', 'style-index' ]}) %>
 
     <body>
         <%- include('partials/header') %>
@@ -12,7 +12,7 @@
                             <h2 class="descripcion2">PRECIO</h2>
                         </div>
                     </div>
-                    <article>
+                    <article class="box-car">
                         <div class="funko-carrito">
                             <img class="imagen-capitan" src="../images/funkos/funko_capitan_america.jpg" alt="imagen">
                             <div class="articulos">
@@ -21,29 +21,35 @@
                                 <button class="btn-add">DETALLE</button>
                             </div>
                         </div>
-                    </article>
-                    <div class="precios">
-                        <div class="botones1"><button class="btn" type="button" id="menos">-</button>
-                            <input id="cantidad" type="text" value="1">
-                            <button class="btn" type="button" id="mas">+</button>
-                        </div>
-                        <p class="precio">$10.500</p>
-                        <h2>ENVÍO</h2>
-                        <P class="precio">$800</P>
-                        <div class="total-carrito">
-                            <h2>TOTAL</h2>
-                            <p class="precio1">$11.300</p>
-                        </div>
-                    </div>
-                    <section class="destacados">
-                        <h1>¡AGREGALOS A TU COMPRA!</h1>
-                        <article class="contenedorDestacados"><% visited.forEach((product) => { %>
-                            <div class="infoDestacado">
-                                <img src="/images/funkos/<%= product.image %>" alt="ST">
-                                <h4><%= product.name %></h4>
-                                <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
+                        <div class="precios">
+                            <div class="botones1"><button class="btn" type="button" id="menos">-</button>
+                                <input id="cantidad" type="text" value="1">
+                                <button class="btn" type="button" id="mas">+</button>
                             </div>
-                            <% }) %>
+                            <p class="precio">$10.500</p>
+                            <h2>ENVÍO</h2>
+                            <P class="precio">$800</P>
+                            <div class="total-carrito">
+                                <h2>TOTAL</h2>
+                                <p class="precio1">$11.300</p>
+                            </div>
+                        </div>
+                    </article>
+                    <section class="destacados">
+                        <h2>¡AGREGALOS A TU COMPRA!</h2>
+                        <article class="contenedorDestacados">
+                            <% visited.forEach((product)=> { %>
+                                <div class="infoDestacado">
+                                    <img src="/images/funkos/<%= product.image %>" alt="ST">
+                                    <h4>
+                                        <%= product.name %>
+                                    </h4>
+                                    <h4>$ <%= product.price %>
+                                    </h4>
+                                    <button class="btn-add"><a class='button-detalle-de-producto'
+                                            href="/products/detail/<%= product.id %>">DETALLE</a></button>
+                                </div>
+                                <% }) %>
                         </article>
                     </section>
                 </div>
