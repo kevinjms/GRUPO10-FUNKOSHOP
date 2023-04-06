@@ -42,7 +42,8 @@ const controller = {
     edit: (req, res) => {
         const id = req.params.id;
         const products = getProducts();
-        res.render('editProducts', {products} );
+        const product = products.find(product => product.id == id);
+        res.render('editProducts', {product} );
     },
     destroy: (req, res) => {
     const productIndex = products.findIndex(element => element.id == req.params.id);

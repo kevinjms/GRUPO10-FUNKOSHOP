@@ -239,5 +239,13 @@
     "category": "DC",
     "subcategory": "none",
     "price": "15000"
+  },
+  {
+    "id": 31,
+    "name": "scaloni",
+    "description": "scaloni",
+    "image": "scaloni.png",
+    "category": "scaloni",
+    "price": "12345"
   }
-]
+]  
