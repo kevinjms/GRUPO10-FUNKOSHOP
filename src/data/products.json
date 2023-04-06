@@ -239,5 +239,23 @@
     "category": "DC",
     "subcategory": "none",
     "price": "15000"
-  }
-]
+  },
+  {
+    "id": 28,
+    "name": "Axl Rose ",
+    "description": "Cantante de Guns n' Roses                                         ",
+    "image": "axlrose.png",
+    "category": "Musica",
+    "subcategory": "none",
+    "price": "17000"
+   },
+   {
+    "id": 29,
+    "name": "Scaloni",
+    "description": "Dt Campeon 2022                   ",
+    "image": "scaloni.png",
+    "category": "Futbol",
+    "subcategory": "none",
+    "price": "16000"
+   }
+  ]
