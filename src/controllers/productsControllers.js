@@ -33,6 +33,7 @@ const controller = {
             description: req.body.description,
             image: image,
             category: req.body.category,
+            subcategory: "none",      // por defecto sera "none" en todos los funkos que se creen, si se lo quiere modificar por Destacados u Ofertas, hacerlo en el JSON.
             price: req.body.price     
         }
         products.push(newProduct);
@@ -45,11 +46,30 @@ const controller = {
         const product = products.find(product => product.id == id);
         res.render('editProducts', {product} );
     },
+    update: (req, res) => {
+        const id = req.params.id ;
+        const products = getProducts();
+        const productIndex = products.findIndex(product => product.id == id);
+        const image = req.file ? req.file.filename : products[productIndex].image ;
+        products[productIndex] = {
+            id: products[productIndex].id,                                  // ...products[productIndex],
+            name: req.body.name,
+            description: req.body.description,
+            image: image,
+            category: req.body.category,
+            subcategory: "none",
+            price: req.body.price
+        }
+        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));  
+        res.redirect('/products/detail/'+id);  
+    },    
     destroy: (req, res) => {
-    const productIndex = products.findIndex(element => element.id == req.params.id);
+        const id = req.params.id;
+        const products = getProducts();
+        const productIndex = products.findIndex(product => product.id == id);
         products.splice(productIndex, 1);
         fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
-        res.redirect('/editProducts');
+        res.redirect('/products');
     }
 }
 

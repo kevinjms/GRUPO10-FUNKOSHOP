@@ -4,7 +4,7 @@
         <%- include('partials/header') %>
             <main>
                 <div class="box-login">
-                    <form action="" method="POST" enctype="multipart/form-data">
+                    <form action="/products/detail/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                         <div class="login-formulario">
                             <h1> EDITAR PRODUCTO </h1>
                             <div class="box-label">
@@ -40,12 +40,13 @@
                                 </div>
                             </div>
                             <div class="box-button">
-                                <form action="/products/detail/delete/<%= products.id %>?_method=DELETE" method="POST" >
-                                <p class="login-button"> <button class="button-1" type="reset"> BORRAR </button> </p>
-                            </form>
-                                <p class="login-button"> <button class="button-2" type="submit"> EDITAR </button> </p>
+                                <p class="login-button"> <button class="button-2" type="submit"> ACTUALIZAR </button> </p>
                             </div>
                         </div>
+                    </form>
+                    <form action="/products/detail/<%= product.id %>?_method=DELETE" method="POST" >
+                        <p class="login-button"> <button class="button-1" type="submit"> ELIMINAR PRODUCTO </button> </p> <!-- Para diferenciarlo del boton "Borrar" de otras views(que cumple otra función),
+                                                                                                                         se colocó otro nombre a este boton-->
                     </form>
                 </div>
             </main>
