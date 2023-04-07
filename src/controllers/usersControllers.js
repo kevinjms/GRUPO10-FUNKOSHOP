@@ -1,5 +1,7 @@
 const path = require('path');
 const fs = require('fs');
+const bcrypt = require('bcryptjs');
+const { json } = require('express');
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
@@ -7,9 +9,6 @@ function getUsers() {
 };
 
 const controller = {
-    login: (req, res) => {
-        res.render('loginForm');
-    },
     register: (req, res) => {
         res.render('register');
     },
@@ -21,13 +20,26 @@ const controller = {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
             type: 'Customer',
             avatar: image
         }
         users.push(newUser);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
         res.redirect('/');
+    },
+    login: (req, res) => {
+        res.render('loginForm');
+    },
+    logged: (req, res) => {
+        const users = getUsers()
+        for (let i = 0; i < users.length; i++) {
+            if (usuarios[i].email == req.body.email && bcrypt.compareSync(req.body.password, usuarios[i].password)){
+                res.redirect('/');
+            } else {
+                res.render('loginForm')
+            }
+        }
     },
 }
 
