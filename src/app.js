@@ -15,9 +15,11 @@ app.use(methodOverride('_method'));
 // ****** sistemas de rutas *******
 const mainRouter = require('./routes/mainRouter');
 const productsRouter = require('./routes/productsRouter');
+const usersRouter = require('./routes/usersRouter');
 
 app.use('/', mainRouter);
 app.use('/products', productsRouter);  // Entregable Sprint 4
+app.use('/users', usersRouter) 
 
 // ****** template Engine *****
 app.set('view engine', 'ejs');
