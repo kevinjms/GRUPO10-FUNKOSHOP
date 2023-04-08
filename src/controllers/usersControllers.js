@@ -7,9 +7,7 @@ function getUsers() {
 };
 
 const controller = {
-    login: (req, res) => {
-        res.render('loginForm');
-    },
+    
     register: (req, res) => {
         res.render('register');
     },
@@ -28,6 +26,14 @@ const controller = {
         users.push(newUser);
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
         res.redirect('/');
+    },
+
+    login: (req, res) => {
+        res.render('loginForm');
+    },
+
+    profile: (req, res) => {
+        res.render('profileForm');
     },
 }
 
