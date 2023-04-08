@@ -29,8 +29,29 @@ const controller = {
     },
 
     login: (req, res) => {
-        res.render('loginForm');
+        res.render('./users/loginForm');
     },
+    
+    logged: (req, res) => {
+        let errors = validationResult(req);    // variable que define si hay errores o no 
+        const users = getUsers()
+        let existeUser = false;
+        if (errors.isEmpty()) {      // si no hay errores, es decir si 'errors' es vacio, entonces hace lo siguiente.
+            for (let i = 0; i < users.length; i++) {
+                if (users[i].email == req.body.email && bcrypt.compareSync(req.body.password, users[i].password)){
+                   existeUser = existeUser||true ;
+                    };
+                };   // aca finaliza el for 
+            if (existeUser) {
+                res.redirect('/');
+            } else {
+            return res.render('./users/loginForm', {errors: [ {msg: 'Datos inválidos'} ] } ); 
+            }
+        } else {
+            return res.render('./users/loginForm', {errors: errors.errors} ) ;
+        }
+    },
+
 
     profile: (req, res) => {
         res.render('profileForm');
