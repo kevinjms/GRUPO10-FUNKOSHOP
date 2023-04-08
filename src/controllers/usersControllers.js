@@ -1,5 +1,8 @@
 const path = require('path');
 const fs = require('fs');
+const bcrypt = require('bcryptjs');
+const { json } = require('express');
+const { validationResult } = require('express-validator')
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
@@ -7,11 +10,17 @@ function getUsers() {
 };
 
 const controller = {
-    
     register: (req, res) => {
-        res.render('register');
+        res.render('./users/register');
     },
     registered: (req, res) => {
+        const resultValidation = validationResult(req)
+        if(resultValidation.errors.length > 0) {
+            return res.render('./users/register', { 
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
         const image = req.file.filename;
         const users = getUsers();
         const newUser = {
@@ -19,7 +28,7 @@ const controller = {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
-            password: req.body.password,
+            password: bcrypt.hashSync(req.body.password, 10),
             type: 'Customer',
             avatar: image
         }
@@ -27,11 +36,9 @@ const controller = {
         fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
         res.redirect('/');
     },
-
     login: (req, res) => {
         res.render('./users/loginForm');
     },
-    
     logged: (req, res) => {
         let errors = validationResult(req);    // variable que define si hay errores o no 
         const users = getUsers()
@@ -51,11 +58,9 @@ const controller = {
             return res.render('./users/loginForm', {errors: errors.errors} ) ;
         }
     },
-
-
     profile: (req, res) => {
         res.render('profileForm');
     },
 }
 
-module.exports = controller;
+module.exports = controller ;

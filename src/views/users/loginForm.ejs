@@ -1,10 +1,10 @@
-<%- include('partials/head', {title: 'Log In' , styles: ['login']}) %>
+<%- include('../partials/head', {title: 'Log In' , styles: ['login']}) %>
 
     <body>
-        <%- include('partials/header') %>
+        <%- include('../partials/header') %>
             <main>
                 <div class="box-login">
-                    <form action="/login" method="POST">
+                    <form action="/users/login" method="POST">
                         <div class="login-formulario">
                             <h1> INICIAR SESIÓN </h1>
                             <div class="box-label">
@@ -16,7 +16,7 @@
                                 <div class="box-label">
                                     <label class="login-label"> INGRESE SU CONTRASEÑA </label>
                                     <div class="box-input">
-                                        <input class="login-input" type="password" name="contraseña"
+                                        <input class="login-input" type="password" name="password"
                                             placeholder="Contraseña" required> <i class="fa-solid fa-eye"> </i>
                                         <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a>
                                     </div>
@@ -35,7 +35,7 @@
                 </div>
             </main>
 
-            <%- include('partials/footer') %>
+            <%- include('../partials/footer') %>
     </body>
 
     </html>
