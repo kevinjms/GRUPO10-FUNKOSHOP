@@ -10,7 +10,7 @@ function getUsers() {
 
 const controller = {
     register: (req, res) => {
-        res.render('register');
+        res.render('./users/register');
     },
     registered: (req, res) => {
         const image = req.file.filename;
@@ -29,18 +29,23 @@ const controller = {
         res.redirect('/');
     },
     login: (req, res) => {
-        res.render('loginForm');
+        res.render('./users/loginForm');
     },
     logged: (req, res) => {
         const users = getUsers()
+        let existeUser = false;
         for (let i = 0; i < users.length; i++) {
-            if (usuarios[i].email == req.body.email && bcrypt.compareSync(req.body.password, usuarios[i].password)){
-                res.redirect('/');
-            } else {
-                res.render('loginForm')
-            }
-        }
-    },
+            if (users[i].email == req.body.email && bcrypt.compareSync(req.body.password, users[i].password)){
+               existeUser = existeUser||true ;
+                };
+            };        
+        if (existeUser) {
+           res.redirect('/');
+        } else {
+           res.render('./users/loginForm');
+        };
+    }
 }
 
-module.exports = controller;
+module.exports = controller ;
+    

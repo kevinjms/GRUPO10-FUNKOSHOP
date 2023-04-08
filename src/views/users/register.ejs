@@ -1,7 +1,7 @@
-<%- include('partials/head', {title: 'Home' , styles: ['register']}) %>
+<%- include('../partials/head', {title: 'Home' , styles: ['register']}) %>
 
     <body>
-        <%- include('partials/header') %>
+        <%- include('../partials/header') %>
             <main>
                 <div class="box-padre">
                     <form class="caja-formulario" action="/users" method="POST" enctype="multipart/form-data">
@@ -52,7 +52,7 @@
                 </div>
                 </div>
             </main>
-            <%- include('partials/footer') %>
+            <%- include('../partials/footer') %>
     </body>
 
     </html>

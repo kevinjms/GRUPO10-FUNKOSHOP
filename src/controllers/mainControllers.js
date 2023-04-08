@@ -13,12 +13,6 @@ const controller = {
         const inSale = products.filter((product) => product.subcategory == 'in-sale');
         res.render('index', { visited, inSale });
     },
-    login: (req, res) => {
-        res.render('loginForm');
-    },
-    register: (req, res) => {
-        res.render('register');
-    },
     car: (req, res) => {
         const products = getProducts();
         const visited = products.filter((product) => product.subcategory == 'visited');

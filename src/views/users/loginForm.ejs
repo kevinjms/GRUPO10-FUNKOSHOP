@@ -1,10 +1,10 @@
-<%- include('partials/head', {title: 'Log In' , styles: ['login']}) %>
+<%- include('../partials/head', {title: 'Log In' , styles: ['login']}) %>
 
     <body>
-        <%- include('partials/header') %>
+        <%- include('../partials/header') %>
             <main>
                 <div class="box-login">
-                    <form action="/" method="POST">
+                    <form action="/users/login" method="POST">
                         <div class="login-formulario">
                             <h1> INICIAR SESIÓN </h1>
                             <div class="box-label">
@@ -35,7 +35,7 @@
                 </div>
             </main>
 
-            <%- include('partials/footer') %>
+            <%- include('../partials/footer') %>
     </body>
 
     </html>
