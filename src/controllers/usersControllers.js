@@ -2,6 +2,7 @@ const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const { json } = require('express');
+const { validationResult } = require('express-validator')
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
@@ -13,6 +14,13 @@ const controller = {
         res.render('register');
     },
     registered: (req, res) => {
+        const resultValidation = validationResult(req)
+        if(resultValidation.errors.length > 0) {
+            return res.render('register', { 
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            })
+        }
         const image = req.file.filename;
         const users = getUsers();
         const newUser = {
