@@ -10,14 +10,24 @@
                             <div class="box-label">
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE SU CORREO ELECTRÓNICO </label>
-                                    <input class="login-input" type="email" name="email"
-                                        placeholder="Correo electrónico" required>
+                                    <input class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null %>" type="text" name="email"
+                                        placeholder="Correo electrónico">
+                                        <% if (locals.errors && errors.email) { %>
+                                            <div class="text-danger">
+                                                <%= errors.email.msg %>
+                                            </div>
+                                       <% } %>
                                 </div>
                                 <div class="box-label">
                                     <label class="login-label"> INGRESE SU CONTRASEÑA </label>
                                     <div class="box-input">
-                                        <input class="login-input" type="password" name="password"
-                                            placeholder="Contraseña" required> <i class="fa-solid fa-eye"> </i>
+                                        <input class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>" type="password" name="password"
+                                            placeholder="Contraseña"> <i class="fa-solid fa-eye"> </i>
+                                            <% if (locals.errors && errors.password) { %>
+                                                <div class="text-danger">
+                                                    <%= errors.password.msg %>
+                                                </div>
+                                           <% } %>
                                         <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a>
                                     </div>
                                 </div>
