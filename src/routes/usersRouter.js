@@ -29,5 +29,6 @@ router.post('/', uploadFile.single("image"), validations, usersController.regist
 
 router.get('/login', usersController.login);
 router.post('/login', validateLogin, usersController.logged);
+router.get('/profileForm', usersController.profile);
 
 module.exports = router
