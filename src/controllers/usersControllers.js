@@ -50,35 +50,17 @@ const controller = {
                     };
                 };   // aca finaliza el for 
             if (existeUser) {
-                res.redirect('/');  
+                res.redirect('/');
             } else {
             return res.render('./users/loginForm', {errors: [ {msg: 'Datos inválidos'} ] } ); 
-            }  
+            }
         } else {
-            return res.render('./users/loginForm', {errors: errors.errors} ) ;        
+            return res.render('./users/loginForm', {errors: errors.errors} ) ;
         }
-    }
-
-};
+    },
+    profile: (req, res) => {
+        res.render('profileForm');
+    },
+}
 
 module.exports = controller ;
-
-
-
-/*
-logged: (req, res) => {
-        const users = getUsers()
-        let existeUser = false;
-        for (let i = 0; i < users.length; i++) {
-            if (users[i].email == req.body.email && bcrypt.compareSync(req.body.password, users[i].password)){
-               existeUser = existeUser||true ;
-                };
-            };        
-        if (existeUser) {
-           res.redirect('/');
-        } else {
-           res.render('./users/loginForm');
-        };
-    }
-
-*/    

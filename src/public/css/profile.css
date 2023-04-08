@@ -1,0 +1,26 @@
+.detalle-perfil img {
+    width: 200px;
+    float: left;
+    margin-right: 10px;
+}
+
+body {
+    background-color: #f5f5f5;
+    padding: 25px;
+    margin-bottom: 15px;
+}
+
+.perfil-usuario h1 {
+    font-size: 1.5em;
+}
+
+
+.perfil-usuario ul {
+    padding: 0;
+    margin: 0;
+}
+
+.perfil-usuario li {
+    list-style: none;
+    margin-bottom: 5px;
+}
