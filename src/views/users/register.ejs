@@ -1,0 +1,78 @@
+<%- include('../partials/head', {title: 'Home' , styles: ['register']}) %>
+
+    <body>
+        <%- include('../partials/header') %>
+            <main>
+                <div class="box-padre">
+                    <form class="caja-formulario" action="/users" method="POST" enctype="multipart/form-data">
+                        <div>
+                            <h1 class="registrarse"> REGISTRARSE </h1>
+                            <!--     Seccion de Correo y Contraseña              -->
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> NOMBRE </div>
+                                    <input class="password <%= locals.errors && errors.firstName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.firstName : null %>" type="text" name="firstName">
+                                    <% if (locals.errors && errors.firstName) { %>
+                                        <div class="text-danger">
+                                            <%= errors.firstName.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> APELLIDO </div>
+                                    <input class="password <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.lastName : null %>" type="text" name="lastName">
+                                    <% if (locals.errors && errors.lastName) { %>
+                                        <div class="text-danger">
+                                            <%= errors.lastName.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                            </div>
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeMail">
+                                    <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
+                                    <input class="mail <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null %>" type="text" name="email">
+                                    <% if (locals.errors && errors.email) { %>
+                                        <div class="text-danger">
+                                            <%= errors.email.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> CONTRASEÑA </div>
+                                    <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>" type="password" name="password"> <i class="fa-solid fa-eye"> </i>
+                                    <% if (locals.errors && errors.password) { %>
+                                        <div class="text-danger">
+                                            <%= errors.password.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                            </div>
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> IMAGEN </div>
+                                    <input class="password" type="file" name="image">
+                                    <% if (locals.errors && errors.avatar) { %>
+                                        <div class="text-danger">
+                                            <%= errors.avatar.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                            </div>
+                            <!--     Seccion de Aceptar terminos y condiciones   -->
+                            <section class="cajaDeAceptarTyC">
+                                <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y
+                                        CONDICIONES</a> </span>
+                            </section>
+                            <!--     Seccion final de Boton Registrarse          -->
+                            <div align="center">
+                                <button type="submit" class="btn-add"><a class="button-register"> REGISTRARSE </a></button>
+                            </div>
+                    </form> <!--  Aqui termina la caja del formulario    -->
+                </div>
+                </div>
+            </main>
+            <%- include('../partials/footer') %>
+    </body>
+
+    </html>

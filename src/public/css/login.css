@@ -88,29 +88,48 @@
 
 .fa-eye {
     position: relative;
-    right: 30px;
+    left: 340px;
+    bottom: 35px;
+}
+
+.text-danger {
+    color: red;
+}
+@media (min-width: 768px) {
+
+    .fa-eye {
+        position: relative;
+        left: 0px;
+        bottom: 0px;
+    }
 }
 
 @media (min-width: 1024px) {
-.login-label {
-    font-size: 24px;
-}
-.box-label a {
-    font-size: 18px;
-}
-.login-input {
-    height: 50px;
-}
-.box-label {
-    font-size: 30px;
-}
-.login-p-2 {
-    font-size: 18px;
-}
-.login-p-3 {
-    font-size: 18px;
-}
-.fa-eye{
-    right: 55px;
-}
+    .login-label {
+        font-size: 24px;
+    }
+
+    .box-label a {
+        font-size: 18px;
+    }
+
+    .login-input {
+        height: 50px;
+    }
+
+    .box-label {
+        font-size: 30px;
+    }
+
+    .login-p-2 {
+        font-size: 18px;
+    }
+
+    .login-p-3 {
+        font-size: 18px;
+    }
+
+    .fa-eye {
+        right: 55px;
+    }
 }

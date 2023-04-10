@@ -48,8 +48,12 @@ body {
 #cantidad {
     height: 25px;
     width: 20%;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 10px;
     border-right: solid;
+}
+.box-car {
+    margin: 40px 0 10px;
+
 }
 
 .precios {
@@ -130,7 +134,7 @@ h1 {
 }
 
 .funko-caja {
-    margin: 15px 15px 15px 15px;
+    margin: 15px;
     width: 90%;
 }
 
@@ -199,6 +203,9 @@ h1 {
         display: flex;
         position: absolute;
         top: 478px;
+    }
+    .box-car {
+        margin: 50px 0 50px;
     }
 
     .precio {
