@@ -31,7 +31,7 @@
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
-                                    <input class="mail <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null %>" type="email" name="email">
+                                    <input class="mail <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null %>" type="text" name="email">
                                     <% if (locals.errors && errors.email) { %>
                                         <div class="text-danger">
                                             <%= errors.email.msg %>

@@ -92,6 +92,9 @@
     bottom: 35px;
 }
 
+.text-danger {
+    color: red;
+}
 @media (min-width: 768px) {
 
     .fa-eye {
