@@ -33,7 +33,6 @@ main .titulo {
 }
 
 
-
 .cajadelproducto {
     display: flex;
     flex-direction: column;
@@ -142,7 +141,10 @@ details {
     margin-top: 15px;
 }
 
-
+.boton-editar{
+    text-decoration: none;
+    color: #0B44EF;
+}
 
 /********* FIN MAIN **********/
 

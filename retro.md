@@ -11,3 +11,5 @@ En esta etapa, como en las 2 anteriores, nos hemos reunido en varias ocasiones, 
 Retrospectiva del 4° Sprint:
 
 Como en el spring anterior, nos reunimos en varias ocasiones, para entre todos, hacer lo solicitado en el spring. En cada reunión íbamos diciendo cada uno que hizo y hacíamos retrospectivas de qué nos faltaba para así en ese momento resolver o buscar la manera de que en el próximo encuentro hacerlo con más claridad, como siempre hemos sido un grupo comunicativo y con tolerancia entre todos, entonces así se nos ha facilitado la solución de trabajos y/o dudas, siempre buscamos la manera que todos estén presentes en cada reunión para que de pronto no se atrase alguno o quede con dudas de algo que se hizo previamente. 
+
+Retrospectiva del 5° Sprint:
