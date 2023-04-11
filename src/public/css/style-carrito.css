@@ -51,8 +51,9 @@ body {
     border-radius: 10px;
     border-right: solid;
 }
+
 .box-car {
-    margin: 40px 0 10px;
+    margin: 30px 0 10px;
 
 }
 
@@ -67,30 +68,19 @@ body {
 }
 
 .total-carrito {
-    margin-bottom: -80px;
+    margin-bottom: -163px;
     position: relative;
     left: 1px;
 }
 
-.btn {
-    width: 14%;
-    height: 25px;
-}
-
-.botones1 {
-    display: flex;
-    width: 28%;
-    height: 16px;
-    position: relative;
-}
 
 .precio {
     position: relative;
     left: 80px;
-    bottom: 50px;
+    bottom: 53px;
     display: flex;
     flex-direction: column;
-    margin-bottom: -55px;
+    margin-bottom: -31px;
 }
 
 .precio1 {
@@ -135,7 +125,7 @@ h1 {
 
 .funko-caja {
     margin: 15px;
-    width: 90%;
+    width: 93%;
 }
 
 .funkos {
@@ -177,9 +167,15 @@ h1 {
     font-size: 12px;
 }
 
-.envio1{
+.envio1 {
     position: relative;
     left: 1px;
+}
+
+.botones1 {
+    width: 25%;
+    position: relative;
+    right: 16px;
 }
 
 /* Media Tablest*/
@@ -204,6 +200,7 @@ h1 {
         position: absolute;
         top: 478px;
     }
+
     .box-car {
         margin: 50px 0 50px;
     }
@@ -211,10 +208,15 @@ h1 {
     .precio {
         position: relative;
         left: 130px;
-        bottom: 53px;
+        bottom: 38px;
         display: flex;
         flex-direction: column;
-        margin-bottom: -44px;
+        margin-bottom: -12px;
+    }
+
+    .precio2 {
+        position: relative;
+        bottom: 52px;
     }
 
     .precio1 {
@@ -228,10 +230,6 @@ h1 {
         bottom: -120px;
         left: -130px;
         font-size: 12px;
-    }
-
-    .botones1 {
-        width: 90%;
     }
 
     .funkos {
@@ -259,6 +257,12 @@ h1 {
         height: 290px;
         width: 40%;
     }
+
+    .botones1 {
+        width: 80%;
+        right: 6px;
+        top: 16px;
+    }
 }
 
 
@@ -270,21 +274,18 @@ h1 {
     }
 
     .precio {
-        bottom: 54px;
-        margin-bottom: -40px;
+        bottom: 45px;
+        margin-bottom: -30px;
         font-size: 24px;
-        left:  150px;
+        left: 150px;
     }
 
     .precio1 {
-        left: 135px;
+        left: 150px;
         font-size: 24px;
         top: -25px;
     }
-    
-    .total-carrito {
-        left: 15px;
-    }
+
 
     h1 {
         font-size: 24px;
@@ -303,12 +304,8 @@ h1 {
         width: 20%;
     }
 
-    .btn-add {
-        font-size: x-large;
-    }
-
     .funko-carrito {
-        width: 50%;
+        width: 40%;
     }
 
     .descripciones {
@@ -321,10 +318,20 @@ h1 {
         width: 100%;
         margin-top: 30px;
     }
-    .funko-caja{
+
+    .funko-caja {
         width: 97%;
     }
-    .envio1{
+
+    .envio1 {
         left: 15px;
+    }
+
+    .botones1 {
+        width: 100%;
+    }
+
+    .precio2{
+        bottom: 58px;
     }
 }
