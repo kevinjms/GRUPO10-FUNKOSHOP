@@ -25,14 +25,18 @@
 }
 
 .header .burger-container .logo {
-    width: 25%;
+    width: 33%;
     display: flex;
     margin-left: 10px;
-    z-index: 1;
+    position: relative;
+    top: 10px;
 }
 
 .header .burger-container .burger-menu {
-    font-size: 50px;
+    font-size: 32px;
+    position: relative;
+    right: 68px;
+    top: 165px;
 }
 
 .header .burger-container .burger-menu i {
@@ -40,7 +44,11 @@
 }
 
 .header .burger-container .contenedor-de-botones {
-    z-index: 1;
+    position: relative;
+    right: 8px;
+    top: 10px;
+    display: flex;
+
 }
 
 .header .burger-container .contenedor-de-botones .botones {
@@ -267,6 +275,8 @@ footer .footerTittle {
 
     .header .burger-container .burger-menu {
         font-size: 60px;
+        right: 153px;
+        top: 325px;
     }
 
     .header .burger-container .contenedor-de-botones i {
@@ -360,7 +370,8 @@ footer .footerTittle {
     }
 
     .header .burger-container .logo {
-        width: 20%;
+        width: 18%;
+        top: 15px;
     }
 
     .header .burger-container .burger-menu {
@@ -374,7 +385,7 @@ footer .footerTittle {
 
     .header .accesos {
         position: relative;
-        top: 360px;
+        top: 400px;
         margin-right: 15px;
     }
 
@@ -546,7 +557,7 @@ footer .footerTittle {
         top: -60px;
     }
 
-    .footerDetalle .infoGeneral{
+    .footerDetalle .infoGeneral {
         right: 476px;
         top: 270px;
     }
@@ -555,7 +566,8 @@ footer .footerTittle {
         top: 35px;
     }
 
-    .footerDetalle .infoGeneral .contacto{
+    .footerDetalle .infoGeneral .contacto {
         bottom: 188px;
     }
+
 }

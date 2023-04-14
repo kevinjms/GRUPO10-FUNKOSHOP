@@ -54,6 +54,11 @@ main .titulo {
     top: 50px;
 }
 
+.favoritos:hover {
+    color: red;
+}
+
+
 .compartir {
     display: flex;
     background: transparent;
@@ -90,8 +95,8 @@ main .titulo {
 .carrito {
     display: flex;
     position: absolute;
-    right: 50px;
-    margin-top: 25px;
+    right: 102px;
+    margin-top: 22px;
     font-size: xx-large;
 }
 
@@ -141,7 +146,7 @@ details {
     margin-top: 15px;
 }
 
-.boton-editar{
+.boton-editar {
     text-decoration: none;
     color: #0B44EF;
 }
@@ -163,8 +168,8 @@ details {
 
     .favoritos {
         font-size: 60px;
-        margin-left: 0px;
-        top: -70px;
+        margin-left: -156px;
+        top: -8px;
     }
 
     .fotosSiguientes img {
@@ -188,8 +193,8 @@ details {
 
     .especificaciones {
         position: absolute;
-        margin-left: 440px;
-        margin-top: 150px;
+        margin-left: 436px;
+        margin-top: 90px;
     }
 
     .especificaciones h2 {
@@ -197,8 +202,8 @@ details {
     }
 
     .carrito {
-        right: 0px;
-        bottom: -120px;
+        right: 177px;
+        bottom: -80px;
 
     }
 
@@ -244,19 +249,19 @@ details {
 
     .especificaciones {
         position: absolute;
-        margin-left: 630px;
-        margin-top: 215px;
+        margin-left: 640px;
+        margin-top: 190px;
     }
 
     .favoritos {
         font-size: 70px;
-        margin-left: 0px;
-        top: -110px;
+        margin-left: -138px;
+        top: -108px;
     }
 
     .carrito {
-        right: 118px;
-        bottom: -180px;
+        right: 317px;
+        bottom: -160px;
     }
 
     .carrito .btn-add {
@@ -270,8 +275,9 @@ details {
         margin-top: 10px;
         margin-left: 320px;
     }
+
     .fotosSiguientes {
-            margin-right: 0px;
+        margin-right: 0px;
     }
 
     .linkInfo {
