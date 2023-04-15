@@ -385,7 +385,7 @@ footer .footerTittle {
 
     .header .accesos {
         position: relative;
-        top: 400px;
+        top: 430px;
         margin-right: 15px;
     }
 
@@ -568,6 +568,10 @@ footer .footerTittle {
 
     .footerDetalle .infoGeneral .contacto {
         bottom: 188px;
+    }
+
+    .header .accesos {
+        top: 388px;
     }
 
 }

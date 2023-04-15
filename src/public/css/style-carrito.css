@@ -37,7 +37,7 @@ body {
 .descripciones {
     display: flex;
     position: relative;
-    left: 130px;
+    left: 150px;
 }
 
 .descripcion2 {
@@ -269,8 +269,8 @@ h1 {
 /*Desktop*/
 @media(min-width:1024px) {
     .precios {
-        left: 1070px;
-        top: 660px;
+        left: 760px;
+        top: 650px;
     }
 
     .precio {
@@ -309,7 +309,7 @@ h1 {
     }
 
     .descripciones {
-        left: 780px;
+        left: 470px;
     }
 
 
@@ -331,7 +331,22 @@ h1 {
         width: 100%;
     }
 
-    .precio2{
+    .precio2 {
         bottom: 58px;
     }
+}
+
+@media(min-width:1440px) {
+    .descripciones {
+        left: 880px;
+    }
+
+    .precios {
+        left: 1175px;
+    }
+
+    .funko-carrito {
+        width: 50%;
+    }
+
 }
