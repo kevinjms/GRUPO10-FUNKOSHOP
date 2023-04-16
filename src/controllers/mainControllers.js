@@ -17,7 +17,13 @@ const controller = {
         const products = getProducts();
         const visited = products.filter((product) => product.subcategory == 'visited');
         res.render('carrito-de-compras', { visited });
-    },  
+    }, 
+    us: (req, res)  => {
+        res.render('aboutUs');
+    },
+    personalized: (req, res)  => {
+        res.render('personalized');
+    }
 }
 
 module.exports = controller;

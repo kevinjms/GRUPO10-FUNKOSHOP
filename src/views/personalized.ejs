@@ -1,0 +1,33 @@
+<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito', 'style-index' ]}) %>
+
+    <body>
+        <%- include('partials/header') %>
+
+<section>
+    <article>
+        <div class="grup-label">
+            <label class="login-label"> INGRESE LA IMAGEN </label>
+            <input class="login-input" type="file" name="image">
+        </div>
+        <div class="grup-label">
+            <label class="login-label"> NOMBRE DEL FUNKO </label>
+            <input class="login-input" type="text" name="name" placeholder="Nombre del producto"
+                required>
+        </div>
+        <div class="box-label">
+            <label class="login-label"> AÑADA UNA DESCRIPCIÓN DEL FUNKO PEDIDO </label>
+            <div class="box-input">
+                <textarea class="login-input" name="description" placeholder="Descripción"
+                    required>
+                    </textarea>
+                    <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
+                    <input class="mail" type="text" name="email">
+            </div>
+    </article>
+</section>
+
+
+        <%- include('partials/footer') %>
+    </body>
+
+    </html>
