@@ -7,7 +7,7 @@ const uploadFile = require('../middlewares/multerMiddleware');
 
 router.get('/', productsController.list);  // Listado de productos
 
-router.get('/productsCreate', productsController.create);    // Formulario de creación de productos
+router.get('/create', productsController.create);    // Formulario de creación de productos
 router.post('/', uploadFile.single("image"), productsController.save);  // Acción de creación (a donde se envía el formulario)
 
 router.get('/detail/:id', productsController.detail);   // Detalle de un producto particular (Ejemplo:, la url seria: http://localhost:3000/products/detail/:id )
