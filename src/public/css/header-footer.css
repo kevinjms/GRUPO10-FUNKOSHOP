@@ -551,36 +551,53 @@ footer .footerTittle {
 }
 
 @media (min-width: 1440px) {
+
+    /***** heder *******/
+    .header {
+        height: 800px;
+    }
+
+    .footerDetalle {
+        top: -220px;
+        left: -60px;
+    }
+
+    .header .accesos ul {
+        top: 190px;
+        position: relative;
+    }
+
+    /****** footer *******/
     .footerDetalle .informacion {
-        left: 320px;
-        top: -55px;
+        left: -150px;
     }
 
     .footerDetalle .seguinos {
-        right: -170px;
-        top: -80px;
+        left: -100px;
+        top: 170px;
     }
 
     .footerDetalle .detalleAsist {
-        right: -10px;
-        top: -60px;
+        left: -60px;
+        top: 190px;
     }
 
     .footerDetalle .infoGeneral {
-        right: 476px;
-        top: 270px;
+        left: -170px;
+        top: 250px;
     }
 
     .footerDetalle .infoGeneral .pagos {
-        top: 35px;
+        left: 0px;
+    }
+
+    .footerDetalle .infoGeneral .envios {
+        right: 0px;
+        bottom: -30px;
     }
 
     .footerDetalle .infoGeneral .contacto {
-        bottom: 188px;
-    }
-
-    .header .accesos {
-        top: 388px;
+        top: -184px;
     }
 
 }
