@@ -1,33 +1,42 @@
-<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['style-carrito', 'style-index' ]}) %>
+<%- include('partials/head', {title: 'Carritos de Compras' , styles: ['aboutUs' ]}) %>
 
     <body>
         <%- include('partials/header') %>
 
-<section>
-    <article>
-        <div class="grup-label">
-            <label class="login-label"> INGRESE LA IMAGEN </label>
-            <input class="login-input" type="file" name="image">
-        </div>
-        <div class="grup-label">
-            <label class="login-label"> NOMBRE DEL FUNKO </label>
-            <input class="login-input" type="text" name="name" placeholder="Nombre del producto"
-                required>
-        </div>
-        <div class="box-label">
-            <label class="login-label"> AÑADA UNA DESCRIPCIÓN DEL FUNKO PEDIDO </label>
-            <div class="box-input">
-                <textarea class="login-input" name="description" placeholder="Descripción"
-                    required>
+            <section class="box">
+                <article class="box-son">
+                    <h2>PERSONALIZA TU FUNKO</h2>
+                    <div>
+                        <label class="label"> NOMBRE Y APELLIDO</label>
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <label class="label"> CORREO ELECTRÓNICO</label>
+                    <input class="mail" type="text" name="email" required>
+                    <div>
+                        <label class="label"> NÚMERO DE TELÉFONO</label>
+                        <input type="tel" id="tel" name="tel" required>
+                    </div>
+                    <div>
+                        <label class="label"> NOMBRE DEL FUNKO (como se llamará tu funko)</label>
+                        <input class="input" type="text" name="name" required>
+                    </div>
+                    <div>
+                        <label class="label"> INGRESE LAS IMAGENES </label>
+                        <p>(Ingresa al menos 3 fotos de distintos ángulos)</p>
+                        <input class="input" type="file" name="image" required>
+                    </div>
+                    <div>
+                        <label class="label"> DESCRIPCIÓN DEL FUNKO PEDIDO </label>
+                        <p>(Añadí las características del diseño, se lo mas explicito posible)</p>
+                        <div>
+                            <textarea class="input" name="description"  required>
                     </textarea>
-                    <div class="textoCorreoElectronico">CORREO ELECTRÓNICO</div>
-                    <input class="mail" type="text" name="email">
-            </div>
-    </article>
-</section>
+                        </div>
+                </article>
+            </section>
 
 
-        <%- include('partials/footer') %>
+            <%- include('partials/footer') %>
     </body>
 
     </html>

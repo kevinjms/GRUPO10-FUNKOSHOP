@@ -33,14 +33,18 @@
 }
 
 .header .burger-container .burger-menu {
-    font-size: 32px;
+    font-size: 50px;
     position: relative;
     right: 68px;
-    top: 165px;
+    top: 150px;
+    background: rgb(54 120 202 / 60%);
+    border-radius: 7px;
+    width: 290px;
 }
 
 .header .burger-container .burger-menu i {
-    align-items: center;
+    position: relative;
+    padding: 5px;
 }
 
 .header .burger-container .contenedor-de-botones {
@@ -276,7 +280,12 @@ footer .footerTittle {
     .header .burger-container .burger-menu {
         font-size: 60px;
         right: 153px;
-        top: 325px;
+        top: 285px;
+    }
+
+    .header .burger-container .burger-menu i {
+        padding: 13px;
+
     }
 
     .header .burger-container .contenedor-de-botones i {

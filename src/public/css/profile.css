@@ -1,17 +1,25 @@
-.detalle-perfil img {
-    width: 200px;
-    float: left;
-    margin-right: 10px;
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+.detalle-perfil{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin: 0 0 0 10px;
 }
+
 
 body {
     background-color: #f5f5f5;
-    padding: 25px;
     margin-bottom: 15px;
+    font-family: 'proxima Nova';
 }
 
-.perfil-usuario h1 {
-    font-size: 1.5em;
+.perfil-usuario{
+    margin: 20px 0 0 10px;
+}
+
+.close-session {
+    margin-top: 20px;
 }
 
 
@@ -19,6 +27,10 @@ body {
     padding: 0;
     margin: 0;
 }
+.perfil-usuario h2 {
+    margin-top: 10px;
+}
+
 
 .perfil-usuario li {
     list-style: none;

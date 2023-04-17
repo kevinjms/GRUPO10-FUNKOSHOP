@@ -14,3 +14,35 @@ h2 {
     color: grey;
     margin-bottom: 15px;
 }
+
+
+
+.box {
+    background-color: white;
+    margin: 15px;
+    box-shadow: 0px 0px 10px 5px #777;
+    border-radius: 10px;
+}
+.box-son {
+    margin: 10px;
+    padding: 10px 0 10px;
+}
+.box h2{
+    margin-bottom: 10px;
+    text-align: center;
+}
+input {
+    margin: 3px 0 10px;
+    border-radius: 7px;
+    background-color: white;
+    height: 30px;
+    width: 95%;
+}
+label {
+    font-weight: 600;
+    margin-left: 5px;
+}
+textarea {
+    width: 90%;
+    height: 100px;
+}
