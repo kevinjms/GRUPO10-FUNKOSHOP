@@ -37,15 +37,15 @@
     position: relative;
     right: 68px;
     top: 150px;
-    background: rgb(54 120 202 / 60%);
+    /* background: rgb(54 120 202 / 60%); */
     border-radius: 7px;
     width: 290px;
 }
 
-.header .burger-container .burger-menu i {
+/* .header .burger-container .burger-menu i {
     position: relative;
     padding: 5px;
-}
+} */
 
 .header .burger-container .contenedor-de-botones {
     position: relative;
