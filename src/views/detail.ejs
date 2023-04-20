@@ -1,4 +1,4 @@
-<%- include('partials/head', {title: 'Productos' , styles: ['detalle', 'style-index']}) %>
+<%- include('partials/head', {title: 'Productos' , styles: ['detalle', 'style-index' ]}) %>
 
     <body>
         <%- include('partials/header') %>
@@ -12,7 +12,9 @@
                                     <p>Funko pop</p>
                                 </div>
                                 <div>
-                                    <h4><%= product.name %></h4>
+                                    <h4>
+                                        <%= product.name %>
+                                    </h4>
                                 </div>
                             </div>
                             <div class="cj-img">
@@ -25,13 +27,17 @@
                             <img class="imgP" src="/images/funkos/<%= product.image %>" alt="logo">
                         </div>
                     </div>
-                    
+
                     <div class="especificaciones">
                         <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
                         <div class="carrito">
-                            <button class="btn-add"><li class="fa-solid fa-cart-shopping" ></li></button>
+                            <button class="boton-carrito">
+                                <li class="fa-solid fa-cart-shopping"></li>
+                            </button>
                         </div>
-                        <h2><%= product.price %></h2>
+                        <h2>
+                            <%= product.price %>
+                        </h2>
                         <p>Disponibles: 5</p>
 
                         <details>
@@ -44,24 +50,31 @@
                             <li><a href="#">Envíos</a></li>
                             <li><a href="#">Términos y condiciones</a></li>
                             <br>
-                            <button><a class="boton-editar" href="/products/editProducts/<%= product.id %>">Editar</a></button>
+                            <button><a class="boton-editar"
+                                    href="/products/editProducts/<%= product.id %>">Editar</a></button>
                         </div>
                     </div>
                 </section>
                 <section class="ofertas">
                     <h2>OFERTAS</h2>
-                    
-                    <article class="contenedorOfertas"><% inSale.forEach((product) => { %>
-                        <div class="infoOfertas">
-                            <img src="/images/funkos/<%= product.image %>" alt="C3">
-                            <h4><%= product.name %></h4>
-                            <h4>$ <%= product.price %></h4>
-                            <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                        </div>
-                        <% }) %>
+
+                    <article class="contenedorOfertas">
+                        <% inSale.forEach((product)=> { %>
+                            <div class="infoOfertas">
+                                <img src="/images/funkos/<%= product.image %>" alt="C3">
+                                <h4>
+                                    <%= product.name %>
+                                </h4>
+                                <h4>$ <%= product.price %>
+                                </h4>
+                                <button class="btn-add"><a class='button-detalle-de-producto'
+                                        href="/products/detail/<%= product.id %>">DETALLE</a></button>
+                                <button class="btn-add agg">Agregar al carrito</button>
+                            </div>
+                            <% }) %>
                     </article>
                 </section>
-                
+
             </main>
             <%- include('partials/footer') %>
     </body>

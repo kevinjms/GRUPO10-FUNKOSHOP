@@ -6,16 +6,22 @@
                 <div class="container-main">
                     <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
                     <section class="destacados">
-                        <article class="contenedorDestacados"><% products.forEach((product) => { %>
-                        <div class="infoDestacado">
-                            <img src="/images/funkos/<%= product.image %>" alt="ST">
-                            <h4><%= product.name %></h4>
-                            <h4>$ <%= product.price %></h4>
-                            <button class="btn-add"><a class= 'button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                        </div>
-                        <% }) %>
-                    </article>
-                </section>
+                        <article class="contenedorDestacados">
+                            <% products.forEach((product)=> { %>
+                                <div class="infoDestacado">
+                                    <img src="/images/funkos/<%= product.image %>" alt="ST">
+                                    <h4>
+                                        <%= product.name %>
+                                    </h4>
+                                    <h4>$ <%= product.price %>
+                                    </h4>
+                                    <button class="btn-add"><a class='button-detalle-de-producto'
+                                            href="/products/detail/<%= product.id %>">DETALLE</a></button>
+                                    <button class="btn-add prod">Agregar al carrito</button>
+                                </div>
+                                <% }) %>
+                        </article>
+                    </section>
                 </div>
             </main>
             <%- include('partials/footer') %>

@@ -22,24 +22,28 @@ h2 {
 .container-main {
     position: relative;
 }
+
 @-webkit-keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     100% {
-      transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
     }
-  }
-  
-  @keyframes scroll {
+}
+
+@keyframes scroll {
     0% {
-      transform: translateX(0);
+        transform: translateX(0);
     }
+
     100% {
-      transform: translateX(calc(-250px * 7));
+        transform: translateX(calc(-250px * 7));
     }
-  }
-  .slider {
+}
+
+.slider {
     background: white;
     box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
     height: 70px;
@@ -47,38 +51,45 @@ h2 {
     overflow: hidden;
     position: relative;
     width: 100%;
-  }
-  .slider::before, .slider::after {
+}
+
+.slider::before,
+.slider::after {
     background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
     content: "";
     height: 70px;
     position: absolute;
     width: 200px;
     z-index: 1;
-  }
-  .slider::after {
+}
+
+.slider::after {
     right: 0;
     top: 0;
     transform: rotateZ(180deg);
-  }
-  .slider::before {
+}
+
+.slider::before {
     left: 0;
     top: 0;
-  }
-  .slider .slider-track {
+}
+
+.slider .slider-track {
     -webkit-animation: scroll 40s linear infinite;
-            animation: scroll 40s linear infinite;
+    animation: scroll 40s linear infinite;
     display: flex;
     width: calc(250px * 14);
-  }
-  .slider .slide {
+}
+
+.slider .slide {
     height: 70px;
     width: 250px;
-  }
-  .slider .slide img{
+}
+
+.slider .slide img {
     height: 70px;
     width: 120px;
-  }
+}
 
 .search-container {
     display: flex;
@@ -171,7 +182,7 @@ i {
 }
 
 .destacados .contenedorDestacados .infoDestacado h4 {
-    font-size: 15px;
+    font-size: 12px;
     font-family: 'Proxima Nova';
 }
 
@@ -207,6 +218,7 @@ i {
 }
 
 .ofertas .contenedorOfertas .infoOfertas h4 {
+    margin-top: -31px;
     font-size: 15px;
 }
 
@@ -261,24 +273,41 @@ i {
 
 }
 
+.agg {
+    margin-top: -38px;
+}
+
+.prod {
+    box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+    background-color: #0B44EF;
+    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
+    color: #E6EAEF;
+    border-radius: 6px;
+    margin-bottom: 14px;
+    font-size: 8px;
+}
+
+
 @media (min-width: 768px) {
 
-    .slider{
+    .slider {
         height: 150px;
     }
 
-    .slider::before, .slider::after{
+    .slider::before,
+    .slider::after {
         height: 150px;
     }
 
     .slider .slide {
         height: 150px;
         width: 250px;
-      }
-      .slider .slide img{
+    }
+
+    .slider .slide img {
         height: 150px;
         width: 250px;
-      }
+    }
 
     .search-container {
         width: 50%;
@@ -347,24 +376,30 @@ i {
 
     }
 
+    .agg {
+        margin-top: -32px;
+    }
+
     @media (min-width: 1024px) {
 
-        .slider{
+        .slider {
             height: 150px;
         }
-    
-        .slider::before, .slider::after{
+
+        .slider::before,
+        .slider::after {
             height: 150px;
         }
-    
+
         .slider .slide {
             height: 150px;
             width: 280px;
-          }
-          .slider .slide img{
+        }
+
+        .slider .slide img {
             height: 150px;
             width: 280px;
-          }
+        }
 
 
         .destacados h2,

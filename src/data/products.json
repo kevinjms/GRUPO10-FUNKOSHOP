@@ -243,7 +243,7 @@
   {
     "id": 28,
     "name": "Axl Rose ",
-    "description": "Cantante de Guns n' Roses                                         ",
+    "description": "Cantante de Guns n' Roses",
     "image": "axlrose.png",
     "category": "Musica",
     "subcategory": "none",
@@ -252,10 +252,19 @@
    {
     "id": 29,
     "name": "Scaloni",
-    "description": "Dt Campeon 2022                   ",
+    "description": "Dt Campeon 2022",
     "image": "scaloni.png",
     "category": "Futbol",
     "subcategory": "none",
     "price": "16000"
+   },
+   {
+    "id": 30,
+    "name": "Capitán América",
+    "description": "",
+    "image": "funko_capitan_america.png",
+    "category": "Marvel",
+    "subcategory": "none",
+    "price": "17000"
    }
   ]
