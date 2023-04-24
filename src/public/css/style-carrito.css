@@ -23,9 +23,9 @@ body {
 
 .articulos {
     position: relative;
-    bottom: -120px;
-    left: -50px;
-    font-size: 12px;
+    bottom: -81px;
+    left: -77px;
+    font-size: 7px;
 }
 
 .car-fav {
@@ -227,7 +227,7 @@ h1 {
 
     .articulos {
         position: relative;
-        bottom: -120px;
+        bottom: -80px;
         left: -130px;
         font-size: 12px;
     }
