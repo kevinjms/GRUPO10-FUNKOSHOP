@@ -12,15 +12,9 @@ module.exports = {
     name: {
       type: Sequelize.TEXT,
       allowNull: false,
-    },
-    products_id: {
-      type: Sequelize.INTEGER,
-      references: {
-        model: 'products',
-        key: 'id'
-      }
+    }
   }
-});
+);
   },
 
   async down (queryInterface, Sequelize) {
