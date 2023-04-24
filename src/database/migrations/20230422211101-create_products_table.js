@@ -33,17 +33,17 @@ module.exports = {
         type: Sequelize.DECIMAL(11,2),
         allowNull: false,
       },
-      category_id: {
+      product_categories_id: {
         type: Sequelize.INTEGER,
         references: {
-          model:'categories',
+          model:'products',
           key:'id'
         }
       },
-      subcateogry_id: {
+      product_subcateogries_id: {
         type: Sequelize.INTEGER,
         references: {
-          model:'subcategories',
+          model:'products',
           key:'id'
         }
       },

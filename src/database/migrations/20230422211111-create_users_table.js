@@ -29,10 +29,10 @@ module.exports = {
       type: Sequelize.TEXT,
       allowNull: false,
     },
-    type_id: {
+    types_id: {
       type: Sequelize.INTEGER,
       references: {
-        model:'types',
+        model:'users',
         key:'id'
       }
     }
