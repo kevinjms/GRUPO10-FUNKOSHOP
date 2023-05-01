@@ -17,22 +17,6 @@ module.exports = {
         type: Sequelize.TEXT,
         allowNull: false,
       },
-      image: {
-        type: Sequelize.TEXT,
-        allowNull: false,
-      },
-      category: {
-        type: Sequelize.TEXT,
-        allowNull: false,
-      },
-      subcategory: {
-        type: Sequelize.TEXT,
-        allowNull: false,
-      },
-      price: {
-        type: Sequelize.DECIMAL(11,2),
-        allowNull: false,
-      },
       product_categories_id: {
         type: Sequelize.INTEGER,
         references: {
@@ -46,6 +30,10 @@ module.exports = {
           model:'products',
           key:'id'
         }
+      },
+      price: {
+        type: Sequelize.DECIMAL(11,2),
+        allowNull: false,
       },
      });
   },
