@@ -16,4 +16,6 @@ Retrospectiva del 5° Sprint:
 
 En esta etapa, nos reunimos en varias ocaciones y entre todos logramos hacer lo solicitiado para este 5* sprint. En algunas reuniones tuvimos que hacer tareas, como las validaciones del register y el login, todos juntos asi a todos nos quedaba claro lo que estabamos haciendo.  Como siempre seguimos ayudandonos entre todos asi todos entendemos y podemos avanzar con el proyecto.
 
-Restrospectiva del 6° Sprint:
+Restrospectiva del 6° Sprint: 
+
+Como en cada sprint nos reunimos semanalmente para lograr entre todos realizar la base de datos en conjunto. Nos resulto mucho más concreto y simple realizar la base en grupo para disipar posibles dudas y afianzar conocimientos. De esta forma el grupo pudo avanzar correctamente y entender todos como realizar una base de datos completa. 
