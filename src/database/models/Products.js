@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     let alias = "Product"
     let col = {
@@ -16,17 +18,9 @@ module.exports = (sequelize, DataTypes) => {
           },
           product_categories_id: {
             type: Sequelize.INTEGER,
-            references: {
-              model:'products',
-              key:'id'
-            }
           },
-          product_subcateogries_id: {
+          product_subcategories_id: {
             type: Sequelize.INTEGER,
-            references: {
-              model:'products',
-              key:'id'
-            }
           },
           price: {
             type: Sequelize.DECIMAL(11,2),
@@ -34,7 +28,7 @@ module.exports = (sequelize, DataTypes) => {
         }
 }
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -45,21 +39,19 @@ module.exports = (sequelize, DataTypes) => {
     Product.associate = function(models) {
         Product.belongsTo(models.Category, {
             as: "categories",
-            foreignKey: "products_id"
+            foreignKey: "product_categories_id"
         });
 
         Product.belongsTo(models.Subcategory, {
             as: "subcategories",
-            foreignKey: "products_id"
+            foreignKey: "product_subcategories_id"
         });
 
-        Product.belongsToMany(models.Image, {
-            as: "images",
-            through: "products_images",
-            foreignKey: "products_id",
+        Product.hasMany(models.Image, {
+          as: "images",
             otherKey: "image_id",
             timestamps: false
-        });
+      });
     }
 return Product
 }

@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     let alias = "User"
     let col = {
@@ -35,7 +37,7 @@ module.exports = (sequelize, DataTypes) => {
           }
 }
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -46,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
     User.associate = function(models) {
         User.belongsTo(models.Type, {
             as: "types",
-            foreignKey: "users_id"
+            foreignKey: "types_id"
         });
     }
 return User
