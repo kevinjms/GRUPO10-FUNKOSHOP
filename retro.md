@@ -14,6 +14,7 @@ Como en el sprint anterior, nos reunimos en varias ocasiones, para entre todos, 
 
 Retrospectiva del 5° Sprint:
 
-En esta etapa, nos reunimos en varias ocaciones y entre todos logramos hacer lo solicitiado para este 5* sprint. En algunas reuniones tuvimos que hacer tareas, como las validaciones del register y el login, todos juntos asi a todos nos quedaba claro lo que estabamos haciendo.  Como siempre seguimos ayudandonos entre todos asi todos entendemos y podemos avanzar con el proyecto.
+En esta etapa, nos reunimos en varias ocasiones y entre todos logramos hacer lo solicitiado para este 5* sprint. En algunas reuniones tuvimos que hacer tareas, como las validaciones del register y el login todos juntos, así, a todos nos quedaba claro lo que estabamos haciendo.  Como siempre seguimos ayudándonos entre todos para que todos entendamos y podamos avanzar con el proyecto.
 
 Restrospectiva del 6° Sprint:
+
