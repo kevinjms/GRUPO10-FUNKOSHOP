@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     let alias = "Subcategory"
     let col = {
@@ -12,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
           }
 }
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -21,12 +23,9 @@ module.exports = (sequelize, DataTypes) => {
     const Subcategory = sequelize.define(alias, col, config)
 
     Subcategory.associate = function(models) {
-        Subcategory.belongsToMany(models.Subcategory, {
-            as: "subcategories",
-            through: "products_subcategories",
+        Subcategory.hasMany(models.Product, {
+            as: "products",
             foreignKey: "product_subcategories_id",
-            otherKey: "products_id",
-            timestamps: false
         });
     }
 return Subcategory

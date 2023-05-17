@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     let alias = "Category"
     let col = {
@@ -12,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
           }
 }
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -21,12 +23,9 @@ module.exports = (sequelize, DataTypes) => {
     const Category = sequelize.define(alias, col, config)
 
     Category.associate = function(models) {
-        Category.belongsToMany(models.Category, {
-            as: "categories",
-            through: "products_categories",
+        Category.hasMany(models.Product, {
+            as: "products",
             foreignKey: "product_categories_id",
-            otherKey: "products_id",
-            timestamps: false
         });
     }
 return Category

@@ -1,3 +1,5 @@
+const { Sequelize } = require("sequelize")
+
 module.exports = (sequelize, DataTypes) => {
     let alias = "Type"
     let col = {
@@ -12,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
           }
 }
     let config = {
-        timestamps: true,
+        timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
         deletedAt: false
@@ -21,12 +23,9 @@ module.exports = (sequelize, DataTypes) => {
     const Type = sequelize.define(alias, col, config)
 
     Type.associate = function(models) {
-        Type.belongsToMany(models.Type, {
-            as: "types",
-            through: "users_types",
+        Type.hasMany(models.User, {
+            as: "users",
             foreignKey: "types_id",
-            otherKey: "users_id",
-            timestamps: false
         });
     }
 return Type
