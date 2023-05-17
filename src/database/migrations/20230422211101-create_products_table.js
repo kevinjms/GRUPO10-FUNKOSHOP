@@ -24,7 +24,7 @@ module.exports = {
           key:'id'
         }
       },
-      product_subcateogries_id: {
+      product_subcategories_id: {
         type: Sequelize.INTEGER,
         references: {
           model:'products',

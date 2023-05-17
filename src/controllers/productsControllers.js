@@ -1,74 +1,65 @@
 const fs = require('fs');
 const path = require('path');
-
-
-const productsFilePath = path.join(__dirname, '../data/products.json');
-function getProducts() {
-    return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-};
-
+const db = require('../database/models')
 
 const controller = {
     list: (req, res) => {
-        const products = getProducts();
-        res.render('products', { products }
-        );
+        db.Product.findAll()
+        .then((result) => {
+            res.render('products', { products:result })
+        })
+        .catch()
     },
     detail: (req, res) => {
-        const id = req.params.id;
-        const products = getProducts();
-        const product = products.find(product => product.id == id);
-        const inSale = products.filter((product) => product.subcategory == 'in-sale');
-        res.render('detail', { product, inSale });
+        db.Product.findByPk(req.params.id, {
+            include:  [{association: "categories"}, {association: "subcategories"}, {association: "images"}]
+        })
+        .then(function(product) {
+            res.render('detail', { product:product, inSale });
+        })
     },
     create: (req, res) => {
         res.render('productsCreate');
     },
     save: (req, res) => {
-        const image = req.file ? req.file.filename : 'funko-sin-imagen.png';
-        const products = getProducts();
-        const newProduct = {
-            id: products[products.length -1].id +1,
+        db.Product.create({
             name: req.body.name,
             description: req.body.description,
-            image: image,
+            image: req.body.image,
             category: req.body.category,
-            subcategory: "none",      // por defecto sera "none" en todos los funkos que se creen, si se lo quiere modificar por Destacados u Ofertas, hacerlo en el JSON.
-            price: req.body.price     
-        }
-        products.push(newProduct);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+            subcategory: req.body.subcategory,     
+            price: req.body.price
+        })
         res.redirect('/products');
     },
     edit: (req, res) => {
-        const id = req.params.id;
-        const products = getProducts();
-        const product = products.find(product => product.id == id);
-        res.render('editProducts', {product} );
+        db.Product.findByPk(req.params.id)
+        .then(function([product]) {
+            res.render('editProducts', {product} );
+        })
     },
     update: (req, res) => {
-        const id = req.params.id ;
-        const products = getProducts();
-        const productIndex = products.findIndex(product => product.id == id);
-        const image = req.file ? req.file.filename : products[productIndex].image ;
-        products[productIndex] = {
-            id: products[productIndex].id,                                  // ...products[productIndex],
+        db.Product.update({
             name: req.body.name,
             description: req.body.description,
-            image: image,
+            image: req.body.image,
             category: req.body.category,
-            subcategory: "none",
+            subcategory: req.body.subcategory,     
             price: req.body.price
+        }, {
+            where: {
+                id: req.params.id
+            }
+        })
+        res.redirect('/products' + req.params.id)
         }
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, ' '));  
-        res.redirect('/products/detail/'+id);  
-    },    
+    ,    
     destroy: (req, res) => {
-        const id = req.params.id;
-        const products = getProducts();
-        const productIndex = products.findIndex(product => product.id == id);
-        products.splice(productIndex, 1);
-        fs.writeFileSync(productsFilePath, JSON.stringify(products, null, 2));
+        db.Product.destroy({
+            where: {
+                id: req.params.id
+            }
+        })
         res.redirect('/products');
     }
 }
