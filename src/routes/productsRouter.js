@@ -6,6 +6,7 @@ const uploadFile = require('../middlewares/multerMiddleware');
 
 
 router.get('/', productsController.list);  // Listado de productos
+router.get('/search', productsController.search); // buscador de productos
 
 router.get('/create', productsController.create);    // Formulario de creación de productos
 router.post('/', uploadFile.single("image"), productsController.save);  // Acción de creación (a donde se envía el formulario)

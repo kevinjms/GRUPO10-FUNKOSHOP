@@ -27,7 +27,8 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: false
+        deletedAt: false,
+        tableName: 'products_images'
     }
 
     const Image = sequelize.define(alias, col, config)
