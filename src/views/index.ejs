@@ -26,8 +26,10 @@
                         </div>
                     </div>
                     <div class="search-container">
-                        <input type="text" placeholder="Funko de...">
-                        <button><i class="fas fa-search"></i></button>
+                        <form action="/products/search" method="get">
+                            <input name="query" type="text" placeholder="Funko de...">
+                            <button type="submit"><i class="fas fa-search"></i></button>
+                        </form>
                     </div>
                     <section class="destacados">
                         <h2>DESTACADOS</h2>

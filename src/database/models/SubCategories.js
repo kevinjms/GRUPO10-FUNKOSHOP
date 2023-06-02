@@ -17,7 +17,8 @@ module.exports = (sequelize, DataTypes) => {
         timestamps: false,
         createdAt: 'created_at',
         updatedAt: 'updated_at',
-        deletedAt: false
+        deletedAt: false,
+        tableName: 'products_subcategories'
     }
 
     const Subcategory = sequelize.define(alias, col, config)

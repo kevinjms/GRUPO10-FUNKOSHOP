@@ -27,8 +27,20 @@
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
-                                    <input class="login-input" type="text" name="category" placeholder="Categoria"
-                                        required>
+                                        <select name="category" class="login-input">
+                                            <option value="" selected> Categoria </option>
+                                            <% for(let i = 0; i < categories.length; i++){ %>
+                                                <option value="<%= categories[i].id %>"> <%= categories[i].name %> </option>
+                                           <% } %>
+                                        </select>
+                                </div>
+                                <div class="grup-label">
+                                    <label class="login-label"> INGRESE LA SUBCATEGORIA DEL PRODUCTO </label>
+                                        <select name="subcategory" class="login-input">
+                                            <% for(let i = 0; i < subcategories.length; i++){ %>
+                                                <option value="<%= subcategories[i].id %>" selected="<%= subcategories[i].name=='none'?'selected':'' %>"> <%= subcategories[i].name %> </option>
+                                           <% } %>
+                                        </select>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INDIQUE LA MARCA </label>
