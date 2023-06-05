@@ -11,7 +11,7 @@
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> NOMBRE </div>
-                                    <input class="password <%= locals.errors && errors.firstName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.firstName : null %>" type="text" name="firstName">
+                                    <input class="name <%= locals.errors && errors.firstName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.firstName : null %>" type="text" name="firstName">
                                     <% if (locals.errors && errors.firstName) { %>
                                         <div class="text-danger">
                                             <%= errors.firstName.msg %>
@@ -20,7 +20,7 @@
                                 </div>
                                 <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> APELLIDO </div>
-                                    <input class="password <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.lastName : null %>" type="text" name="lastName">
+                                    <input class="surname <%= locals.errors && errors.lastName ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.lastName : null %>" type="text" name="lastName">
                                     <% if (locals.errors && errors.lastName) { %>
                                         <div class="text-danger">
                                             <%= errors.lastName.msg %>
@@ -47,11 +47,20 @@
                                         </div>
                                    <% } %>
                                 </div>
+                                <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> CONFIRMAR CONTRASEÑA </div>
+                                    <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>" type="password" name="password"> <i class="fa-solid fa-eye"> </i>
+                                    <% if (locals.errors && errors.password) { %>
+                                        <div class="text-danger">
+                                            <%= errors.password.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
                             </div>
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> IMAGEN </div>
-                                    <input class="password" type="file" name="image">
+                                    <input class="avatar" type="file" name="image">
                                     <% if (locals.errors && errors.avatar) { %>
                                         <div class="text-danger">
                                             <%= errors.avatar.msg %>
@@ -73,6 +82,7 @@
                 </div>
             </main>
             <%- include('../partials/footer') %>
+    
     </body>
 
     </html>

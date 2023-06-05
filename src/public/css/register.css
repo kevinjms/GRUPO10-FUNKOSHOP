@@ -60,7 +60,10 @@
 }
 
 .mail,
-.password {
+.password,
+.name,
+.surname,
+.avatar {
     width: 90%;
     margin-left: 15px;
     border-radius: 7px;
