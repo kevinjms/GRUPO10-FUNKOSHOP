@@ -1,0 +1,33 @@
+<%- include('../partials/head', {title: 'Profile' , styles: ['profile']}) %>
+
+
+    <body>
+        <%- include('../partials/header') %>
+
+            <section class="detalle-perfil">
+                <div>
+                    <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
+                </div>
+                <img src="avatar.jpg" alt="Foto del usuario" class="avatar">
+            </section>
+            <section class="perfil-usuario">
+                <h1 class="title">MI CUENTA</h1>
+                <div class="profile-info">
+                   <p>NOMBRE</p>
+                   <p>APELLIDO</p>
+                   <p>DIRECCIÓN</p>
+                   <p>LOCALIDAD</p>
+                   <p>CÓDIGO POSTAL</p>
+                   <p>EMAIL</p>
+                   <p>NÚMERO DE CONTACTO</p>
+                </div>
+                <div class="close-session">
+                    <button><a href="/">CERRAR SESIÓN</a></button>
+                </div>
+            </section>
+
+            <%- include('../partials/footer') %>
+            
+    </body>
+
+    </html>

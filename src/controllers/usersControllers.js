@@ -62,7 +62,7 @@ const controller = {
         }
     },
     profile: (req, res) => {
-        res.render('profileForm');
+        res.render('./users/profileForm');
     },
 }
 
