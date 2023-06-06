@@ -48,7 +48,7 @@ const controller = {
             price: req.body.price
         });
         if (req.file) {
-            db.Image.create({
+            db.Image.create({ 
                 url: req.file.filename,
                 isPrimary: true,
                 products_id: product.id
