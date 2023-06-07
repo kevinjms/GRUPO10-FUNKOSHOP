@@ -10,33 +10,40 @@
                             <div class="box-label">
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
-                                    <input class="login-input" type="file" name="image">
+                                    <input class="login-input" value="<%= product.image %>" type="file" name="image">
+                                    <img src="/images/funkos/<%= product.images[0].url%>">
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
-                                    <input class="login-input" type="text" name="name" placeholder="Nombre del producto"
+                                    <input class="login-input" value="<%= product.name %>" type="text" name="name" placeholder="Nombre del producto"
                                         required>
                                 </div>
                                 <div class="box-label">
                                     <label class="login-label"> AÑADA UNA DESCRIPCIÓN </label>
                                     <div class="box-input">
-                                        <textarea class="login-input" name="description" placeholder="Descripción"
-                                            required>
-                                            </textarea>
+                                        <textarea class="login-textarea" name="description"  placeholder="Descripción"
+                                            required><%= product.description.trim() %></textarea>
                                     </div>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
-                                    <input class="login-input" type="text" name="category" placeholder="Categoria"
-                                        required>
+                                    <select name="category" class="login-input">
+                                        <% for(let i = 0; i < categories.length; i++){ %>
+                                            <option value="<%= categories[i].id %>" <%= product.categories.name == categories[i].name?'selected':'' %>> <%= categories[i].name %> </option>
+                                       <% } %>
+                                    </select>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INDIQUE LA MARCA </label>
-                                    <input class="login-input" type="text" name="brand" placeholder="Marca" required>
+                                    <select name="subcategory" class="login-input">
+                                        <% for(let i = 0; i < subcategories.length; i++){ %>
+                                            <option value="<%= subcategories[i].id %>" <%= product.subcategories.name == subcategories[i].name?'selected':'' %>> <%= subcategories[i].name %> </option>
+                                       <% } %>
+                                    </select>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INDIQUE EL PRECIO </label>
-                                    <input class="login-input" type="number" name="price" required>
+                                    <input class="login-input" value="<%= product.price %>" type="number" name="price" required>
                                 </div>
                             </div>
                             <div class="box-button">
