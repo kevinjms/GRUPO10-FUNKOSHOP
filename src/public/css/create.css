@@ -6,6 +6,13 @@
     box-sizing: border-box;
 }
 
+.login-textarea {
+    width: 50rem;
+    height: 5rem;
+    resize: none;
+    overflow: hidden;
+}
+
 .box-login {
     background-color: white;
     margin: 15px;

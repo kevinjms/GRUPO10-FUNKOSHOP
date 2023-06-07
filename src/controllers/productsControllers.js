@@ -60,9 +60,9 @@ const controller = {
     edit: async (req, res) => {
         const categories = await db.Category.findAll();
         const subcategories = await db.Subcategory.findAll();
-        db.Product.findByPk(req.params.id)
+        db.Product.findByPk(req.params.id, {include: [{ association: "categories" }, { association: "subcategories" }, { association: "images" }]})
             .then(function (product) {
-                res.render('editProducts', { product: [product], categories, subcategories });
+                res.render('editProducts', { categories, subcategories, product });
             })
     },
     update: async (req, res) => {
@@ -82,13 +82,19 @@ const controller = {
             image.url = req.file.filename;
             image.save()
         }
-        res.redirect('/products' + req.params.id)
+        res.redirect('/products/detail/' + req.params.id)
     }
     ,
-    destroy: (req, res) => {
-        db.Product.destroy({
+    destroy: async (req, res) => {
+        await db.Image.destroy({
             where: {
-                id: req.params.id
+                products_id: req.params.id
+            }
+        })
+
+        await db.Product.destroy({
+            where: {
+               id: req.params.id 
             }
         })
         res.redirect('/products');
