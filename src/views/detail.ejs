@@ -19,12 +19,12 @@
                             </div>
                             <div class="cj-img">
                                 <button class="compartir"> <i class="fa-sharp fa-solid fa-share-nodes"></i></button>
-                                <img src="/images/funkos/<%= product.image %>" alt="logo">
+                                <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="logo">
                             </div>
                         </div>
                         <div class="fotosSiguientes">
-                            <img class="imgP" src="/images/funkos/<%= product.image %>" alt="logo">
-                            <img class="imgP" src="/images/funkos/<%= product.image %>" alt="logo">
+                            <img class="imgP" src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="logo">
+                            <img class="imgP" src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="logo">
                         </div>
                     </div>
 
@@ -61,7 +61,7 @@
                     <article class="contenedorOfertas">
                         <% inSale.forEach((product)=> { %>
                             <div class="infoOfertas">
-                                <img src="/images/funkos/<%= product.image %>" alt="C3">
+                                <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="C3">
                                 <h4>
                                     <%= product.name %>
                                 </h4>

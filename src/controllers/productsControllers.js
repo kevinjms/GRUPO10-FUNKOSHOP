@@ -61,8 +61,8 @@ const controller = {
         const categories = await db.Category.findAll();
         const subcategories = await db.Subcategory.findAll();
         db.Product.findByPk(req.params.id)
-            .then(function ([product]) {
-                res.render('editProducts', { product, categories, subcategories });
+            .then(function (product) {
+                res.render('editProducts', { product: [product], categories, subcategories });
             })
     },
     update: async (req, res) => {
