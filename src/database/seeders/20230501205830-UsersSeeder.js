@@ -13,8 +13,8 @@ module.exports = {
       types_id: 1,
       adress:'' ,
       city: '',
-      zipCode: '',
-      cell:'' ,
+      zipCode: 1111,
+      cell: 1 ,
     },
     {
       firstName: 'Sofia',
@@ -25,8 +25,8 @@ module.exports = {
       types_id: 2,
       adress:'' ,
       city: '',
-      zipCode: '',
-      cell:'' ,
+      zipCode: 1111,
+      cell: 1 ,
 
     },
     {
@@ -38,8 +38,8 @@ module.exports = {
       types_id: 2,
       adress:'' ,
       city: '',
-      zipCode: '',
-      cell:'' ,
+      zipCode: 1111,
+      cell: 1,
     },
     {
       firstName: 'Juan',
@@ -50,8 +50,8 @@ module.exports = {
       types_id: 2,
       adress:'' ,
       city: '',
-      zipCode: '',
-      cell:'' ,
+      zipCode: 1111,
+      cell: 1,
     },
     {
       firstName: 'Fernando',
@@ -62,8 +62,8 @@ module.exports = {
       types_id: 2,
       adress:'' ,
       city: '',
-      zipCode: '',
-      cell:'' ,
+      zipCode: 1111,
+      cell: 1 ,
     },
   ], {});
   },
