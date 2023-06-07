@@ -2,6 +2,8 @@
 
 .title{
     text-align: center;
+    font-family: 'proxima Nova';
+    font-size: 30px;
     position: relative;
     top: 10px;
     bottom: 10px;
@@ -17,8 +19,17 @@
     margin-left: 30px;
 }
 
+.perfil-usuario .title{
+    text-align: center;
+    font-family: 'proxima Nova';
+    font-size: 20px;    
+}
+
 .profile-info p {
     margin: 15px;
+    font-family: 'proxima Nova';
+    font-size: 15px;
+    
 }
 
 .close-session{
@@ -26,6 +37,14 @@
     margin-bottom: 20px;
 }
 
+.close-session button{
+    border-radius: 10px;
+    background-color: blue;
+}
+
 .close-session a{
     text-decoration: none;
+    font-family: 'proxima Nova';
+    font-size: 15px;
+    color: white;
 }
