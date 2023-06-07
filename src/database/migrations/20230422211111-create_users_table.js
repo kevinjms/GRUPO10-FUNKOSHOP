@@ -17,6 +17,22 @@ module.exports = {
       type: Sequelize.TEXT,
       allowNull: false,
     },
+    adress:{
+      type:Sequelize.TEXT,
+      allowNull: false
+    },
+    city:{
+      type:Sequelize.TEXT,
+      allowNull: false
+    },
+    zipCode:{
+      type:Sequelize.INTEGER,
+      allowNull: false
+    },
+    cell:{
+      type:Sequelize.INTEGER,
+      allowNull: false
+    },
     email: {
       type: Sequelize.TEXT,
       allowNull: false,

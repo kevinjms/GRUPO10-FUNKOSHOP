@@ -52,7 +52,7 @@ const controller = {
             if (existeUser) {
                 res.redirect('/');
             } else {
-            return res.render('./users/loginForm'); 
+            return res.render('./users/profileForm'); 
             }
         } else {
             return res.render('./users/loginForm', {
