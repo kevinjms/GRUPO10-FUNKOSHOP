@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 07-06-2023 a las 02:58:57
+-- Tiempo de generación: 08-06-2023 a las 00:45:31
 -- Versión del servidor: 10.4.27-MariaDB
 -- Versión de PHP: 8.0.25
 
@@ -41,34 +41,34 @@ CREATE TABLE `products` (
 --
 
 INSERT INTO `products` (`id`, `name`, `description`, `product_categories_id`, `product_subcategories_id`, `price`) VALUES
-(1, 'Albert Einstein', ' funko de Einstein', 8, 1, '4500.00'),
+(1, 'Albert Einstein', ' funko de Einstein', 7, 1, '4500.00'),
 (2, 'Batman', '', 2, 2, '5000.00'),
-(3, 'C-3PO', '', 1, 1, '6000.00'),
-(4, 'Carol', '', 3, 2, '4800.00'),
-(5, 'Chewbacca', '', 1, 1, '7000.00'),
-(6, 'Daneyrys Targayen', '', 3, 2, '5500.00'),
-(7, 'Darth Vader', '', 1, 3, '6800.00'),
-(8, 'Dobby', '', 7, 3, '5600.00'),
+(3, 'C-3PO', '', 1, 3, '6000.00'),
+(4, 'Carol', '', 3, 1, '4800.00'),
+(5, 'Chewbacca', '', 1, 2, '7000.00'),
+(6, 'Daneyrys Targayen', '', 3, 3, '5500.00'),
+(7, 'Darth Vader', '', 1, 1, '6800.00'),
+(8, 'Dobby', '', 6, 2, '5600.00'),
 (9, 'Doctor Strange', '', 4, 3, '6800.00'),
-(10, 'Flash', '', 2, 3, '5200.00'),
-(11, 'Freddie Mercury', '', 10, 3, '7000.00'),
-(12, 'Freddy Krueger', '', 7, 3, '4500.00'),
-(13, 'Gollum', '', 7, 3, '3400.00'),
-(14, 'Baby Yoda', '', 1, 3, '6000.00'),
+(10, 'Flash', '', 3, 1, '5200.00'),
+(11, 'Freddie Mercury', '', 9, 2, '7000.00'),
+(12, 'Freddy Krueger', '', 6, 3, '4500.00'),
+(13, 'Gollum', '', 6, 1, '3400.00'),
+(14, 'Baby Yoda', '', 1, 2, '6000.00'),
 (15, 'Harley Quinn', '', 2, 3, '6000.00'),
-(16, 'Iron Man', '', 4, 3, '6000.00'),
-(17, 'Jason', '', 7, 3, '6000.00'),
-(18, 'John Wick', '', 7, 3, '6000.00'),
+(16, 'Iron Man', '', 4, 1, '6000.00'),
+(17, 'Jason', '', 6, 2, '6000.00'),
+(18, 'John Wick', '', 6, 3, '6000.00'),
 (19, 'Leia Morgana', '', 1, 1, '6000.00'),
-(20, 'Mr. Bean', '', 3, 2, '6000.00'),
-(21, 'Obi Wan Kenobi', '', 1, 1, '6000.00'),
-(22, 'Eleven', '', 3, 2, '6000.00'),
-(23, 'Robocop', '', 7, 1, '6000.00'),
-(24, 'Spiderman', '', 4, 2, '6000.00'),
-(25, 'Thor', '', 4, 3, '6000.00'),
-(26, 'Walter White', '', 3, 3, '6000.00'),
-(28, 'Axl Rose ', 'Cantante de Guns n\' Roses', 10, 3, '17000.00'),
-(29, 'Scaloni', 'Dt Campeon 2022', 9, 3, '16000.00'),
+(20, 'Mr. Bean', '', 6, 2, '6000.00'),
+(21, 'Obi Wan Kenobi', '', 1, 3, '6000.00'),
+(22, 'Eleven', '', 3, 1, '6000.00'),
+(23, 'Robocop', '', 6, 2, '6000.00'),
+(24, 'Spiderman', '', 4, 3, '6000.00'),
+(25, 'Thor', '', 4, 1, '6000.00'),
+(26, 'Walter White', '', 3, 2, '6000.00'),
+(28, 'Axl Rose ', 'Cantante de Guns n\' Roses', 9, 1, '17000.00'),
+(29, 'Scaloni', 'Dt Campeon 2022', 8, 2, '16000.00'),
 (30, 'Capitán América', '', 4, 3, '17000.00');
 
 -- --------------------------------------------------------
@@ -92,11 +92,10 @@ INSERT INTO `products_categories` (`id`, `name`) VALUES
 (3, 'SERIES'),
 (4, 'MARVEL'),
 (5, 'HARRY POTTER'),
-(6, 'STAR WARS'),
-(7, 'PELICULAS'),
-(8, 'FAMOSOS'),
-(9, 'DEPORTES'),
-(10, 'MUSICA');
+(6, 'PELICULAS'),
+(7, 'FAMOSOS'),
+(8, 'DEPORTES'),
+(9, 'MUSICA');
 
 -- --------------------------------------------------------
 
@@ -198,6 +197,10 @@ CREATE TABLE `users` (
   `id` int(11) NOT NULL,
   `firstName` text NOT NULL,
   `LastName` text NOT NULL,
+  `adress` text NOT NULL,
+  `city` text NOT NULL,
+  `zipCode` int(11) NOT NULL,
+  `cell` int(11) NOT NULL,
   `email` text NOT NULL,
   `password` text NOT NULL,
   `avatar` text NOT NULL,
@@ -208,12 +211,17 @@ CREATE TABLE `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`id`, `firstName`, `LastName`, `email`, `password`, `avatar`, `types_id`) VALUES
-(1, 'Rodolfo', 'Lopez', 'rodolfo.lopez@gmail.com', '12345678', 'imagen.jpg', 1),
-(2, 'Sofia', 'Garcia', 'sofia.garcia@gmail.com', '87654321', 'imagen.jpg', 2),
-(3, 'Maria', 'Rodriguez', 'maria.rodriguez@gmail.com', 'hola1234', 'imagen.jpg', 2),
-(4, 'Juan', 'Cruz', 'juan.cruz@gmail.com', '1234hola', 'imagen.jpg', 2),
-(5, 'Fernando', 'Gomez', 'fernando.gomez@gmail.com', 'chau1234', 'imagen.jpg', 2);
+INSERT INTO `users` (`id`, `firstName`, `LastName`, `adress`, `city`, `zipCode`, `cell`, `email`, `password`, `avatar`, `types_id`) VALUES
+(1, 'Rodolfo', 'Lopez', '', '', 0, 0, 'rodolfo.lopez@gmail.com', '12345678', 'imagen.jpg', 1),
+(2, 'Sofia', 'Garcia', '', '', 0, 0, 'sofia.garcia@gmail.com', '87654321', 'imagen.jpg', 2),
+(3, 'Maria', 'Rodriguez', '', '', 0, 0, 'maria.rodriguez@gmail.com', 'hola1234', 'imagen.jpg', 2),
+(4, 'Juan', 'Cruz', '', '', 0, 0, 'juan.cruz@gmail.com', '1234hola', 'imagen.jpg', 2),
+(5, 'Fernando', 'Gomez', '', '', 0, 0, 'fernando.gomez@gmail.com', 'chau1234', 'imagen.jpg', 2),
+(6, 'Rodolfo', 'Lopez', '', '', 0, 0, 'rodolfo.lopez@gmail.com', '12345678', 'imagen.jpg', 1),
+(7, 'Sofia', 'Garcia', '', '', 0, 0, 'sofia.garcia@gmail.com', '87654321', 'imagen.jpg', 2),
+(8, 'Maria', 'Rodriguez', '', '', 0, 0, 'maria.rodriguez@gmail.com', 'hola1234', 'imagen.jpg', 2),
+(9, 'Juan', 'Cruz', '', '', 0, 0, 'juan.cruz@gmail.com', '1234hola', 'imagen.jpg', 2),
+(10, 'Fernando', 'Gomez', '', '', 0, 0, 'fernando.gomez@gmail.com', 'chau1234', 'imagen.jpg', 2);
 
 -- --------------------------------------------------------
 
@@ -232,7 +240,9 @@ CREATE TABLE `users_types` (
 
 INSERT INTO `users_types` (`id`, `name`) VALUES
 (1, 'ADMIN'),
-(2, 'USER');
+(2, 'USER'),
+(3, 'ADMIN'),
+(4, 'USER');
 
 --
 -- Índices para tablas volcadas
@@ -293,37 +303,37 @@ ALTER TABLE `users_types`
 -- AUTO_INCREMENT de la tabla `products`
 --
 ALTER TABLE `products`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de la tabla `products_categories`
 --
 ALTER TABLE `products_categories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=21;
 
 --
 -- AUTO_INCREMENT de la tabla `products_images`
 --
 ALTER TABLE `products_images`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=34;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=61;
 
 --
 -- AUTO_INCREMENT de la tabla `products_subcategories`
 --
 ALTER TABLE `products_subcategories`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
 
 --
 -- AUTO_INCREMENT de la tabla `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- AUTO_INCREMENT de la tabla `users_types`
 --
 ALTER TABLE `users_types`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Restricciones para tablas volcadas

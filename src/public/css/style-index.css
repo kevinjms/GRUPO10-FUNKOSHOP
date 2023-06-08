@@ -85,7 +85,7 @@ h2 {
     width: 250px;
 }
 
-.slider .slide img {   
+.slider .slide img {
     height: 110px;
     width: 120px;
 }
@@ -94,12 +94,15 @@ h2 {
     display: flex;
     width: 90%;
     margin: 20px;
+    position: relative;
+    left: 17px;
 }
 
 .search-container button {
     background-color: white;
-    border-left: none;
-    border-radius: 0 10px 10px 0;
+    border: none;
+    position: relative;
+    left: -32px;
 
 }
 
@@ -109,9 +112,8 @@ h2 {
 
 input {
     height: 30px;
-    width: 95%;
-    border-radius: 10px 0 0 10px;
-    border-right: none;
+    width: 350px;
+    border-radius: 10px 10px 10px 10px;
 }
 
 .nombresApellidos {
@@ -310,7 +312,19 @@ i {
 
     .search-container {
         width: 50%;
-        margin-left: 30%;
+        margin-left: 76px;
+    }
+
+    .search-container button {
+        background-color: white;
+        border: none;
+        position: relative;
+        left: 545px;
+        top: -22px;
+    }
+
+    input {
+        width: 580px;
     }
 
     .destacados h2,
@@ -378,28 +392,43 @@ i {
     .agg {
         margin-top: -32px;
     }
+}
 
-    @media (min-width: 1024px) {
+@media (min-width: 1024px) {
 
-        .slider {
-            height: 220px;
-        }
+    .slider {
+        height: 220px;
+    }
 
-        .slider::before,
-        .slider::after {
-            height: 150px;
-        }
+    .slider::before,
+    .slider::after {
+        height: 150px;
+    }
 
-        .slider .slide {
-            height: 150px;
-            width: 280px;
-        }
+    .slider .slide {
+        height: 150px;
+        width: 280px;
+    }
 
-        .slider .slide img {
-            height: 240px;
-            width: 280px;
-        }
+    .slider .slide img {
+        height: 240px;
+        width: 280px;
+    }
 
+    .search-container {
+        margin-left: 60px;
+    }
+
+    input {
+        width: 870px;
+        height: 46px;
+        font-size: 20px;
+    }
+
+    .search-container button {
+        left: 820px;
+        top: -35px;
+        font-size: 20px;
 
         .destacados h2,
         .ofertas h2 {
@@ -447,5 +476,18 @@ i {
             font-size: 30px;
         }
 
+    }
+}
+
+@media (min-width: 1044px) {
+    input {
+        width: 1276px;
+    }
+
+    .search-container button {
+        left: 1222px;
+    }
+    .search-container {
+        margin-left: 100px;
     }
 }
