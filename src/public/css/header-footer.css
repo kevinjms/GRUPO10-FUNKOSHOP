@@ -565,7 +565,6 @@ footer .footerTittle {
     }
 
     .footerDetalle {
-        top: -220px;
         left: -60px;
     }
 
@@ -577,21 +576,22 @@ footer .footerTittle {
     /****** footer *******/
     .footerDetalle .informacion {
         left: -150px;
+        top: 7px;
     }
 
     .footerDetalle .seguinos {
         left: -100px;
-        top: 170px;
+        top: -36px;
     }
 
     .footerDetalle .detalleAsist {
         left: -60px;
-        top: 190px;
+        top: -20px;
     }
 
     .footerDetalle .infoGeneral {
         left: -170px;
-        top: 250px;
+        top: 46px;
     }
 
     .footerDetalle .infoGeneral .pagos {

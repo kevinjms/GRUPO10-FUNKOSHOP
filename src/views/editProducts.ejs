@@ -29,7 +29,7 @@
                                     <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
                                     <select name="category" class="login-input">
                                         <% for(let i = 0; i < categories.length; i++){ %>
-                                            <option value="<%= categories[i].id %>" <%= product.categories.name == categories[i].name?'selected':'' %>> <%= categories[i].name %> </option>
+                                            <option value="<%= categories[i].id %>" <%= product.categories == categories[i].name?'selected':'' %>> <%= categories[i].name %> </option>
                                        <% } %>
                                     </select>
                                 </div>
@@ -37,7 +37,7 @@
                                     <label class="login-label"> INDIQUE LA MARCA </label>
                                     <select name="subcategory" class="login-input">
                                         <% for(let i = 0; i < subcategories.length; i++){ %>
-                                            <option value="<%= subcategories[i].id %>" <%= product.subcategories.name == subcategories[i].name?'selected':'' %>> <%= subcategories[i].name %> </option>
+                                            <option value="<%= subcategories[i].id %>" <%= product.subcategories == subcategories[i].name?'selected':'' %>> <%= subcategories[i].name %> </option>
                                        <% } %>
                                     </select>
                                 </div>

@@ -5,11 +5,18 @@
             <main>
                 <div class="container-main">
                     <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
+                    <div class="search-container">
+                        <form action="/products/search" method="get">
+                            <input name="query" type="text" placeholder="Funko de...">
+                            <button type="submit"><i class="fas fa-search"></i></button></input>
+                        </form>
+                    </div>
                     <section class="destacados">
                         <article class="contenedorDestacados">
                             <% products.forEach((product)=> { %>
                                 <div class="infoDestacado">
-                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="ST">
+                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>"
+                                        alt="ST">
                                     <h4>
                                         <%= product.name %>
                                     </h4>
