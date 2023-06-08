@@ -414,6 +414,9 @@ i {
         height: 240px;
         width: 280px;
     }
+    .products-title {
+        font-size: 40px;
+    }
 
     .search-container {
         margin-left: 60px;
@@ -429,65 +432,74 @@ i {
         left: 820px;
         top: -35px;
         font-size: 20px;
+    }
 
-        .destacados h2,
-        .ofertas h2 {
-            font-size: 50px;
-            margin: 30px 0 20px;
-
-        }
-
-
-        .destacados .contenedorDestacados .infoDestacado {
-            height: 290px;
-            width: 30%;
-        }
-
-        .grogu {
-            position: relative;
-            left: 40px;
-        }
-
-        .freddie {
-            position: relative;
-            right: 30px;
-        }
-
-        .albert {
-            position: relative;
-            left: 40px;
-        }
-
-        .carol {
-            position: relative;
-            right: 30px;
-        }
-
-        .ofertas .contenedorOfertas .infoOfertas {
-            height: 280px;
-            width: 30%;
-        }
-
-        .preventa {
-            height: 400px;
-        }
-
-        .preventa h2 {
-            font-size: 30px;
-        }
+    .destacados h2,
+    .ofertas h2 {
+        font-size: 50px;
+        margin: 30px 0 20px;
 
     }
+
+    .destacados .contenedorDestacados .infoDestacado {
+        height: 290px;
+        width: 30%;
+    }
+
+    .grogu {
+        position: relative;
+        left: 40px;
+    }
+
+    .freddie {
+        position: relative;
+        right: 30px;
+    }
+
+    .albert {
+        position: relative;
+        left: 40px;
+    }
+
+    .carol {
+        position: relative;
+        right: 30px;
+    }
+
+    .ofertas .contenedorOfertas .infoOfertas {
+        height: 280px;
+        width: 30%;
+    }
+
+    .preventa {
+        height: 400px;
+    }
+
+    .preventa h2 {
+        font-size: 30px;
+    }
+
 }
 
+
 @media (min-width: 1044px) {
+    .products-title {
+        font-size: 50px;
+    }
+
     input {
-        width: 1276px;
+        width: 1208px;
     }
 
     .search-container button {
-        left: 1222px;
+        left: 1160px;
     }
+
     .search-container {
         margin-left: 100px;
+    }
+
+    .destacados .contenedorDestacados .infoDestacado {
+        width: 30%;
     }
 }
