@@ -63,7 +63,11 @@
 .password,
 .name,
 .surname,
-.avatar {
+.avatar,
+.adress,
+.city,
+.zipcode,
+.cell {
     width: 90%;
     margin-left: 15px;
     border-radius: 7px;
