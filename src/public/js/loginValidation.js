@@ -4,7 +4,7 @@ window.onload = function () {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-
+console.log(form)
         const errorsElement = document.querySelectorAll(".text-danger");
         errorsElement.forEach(element => {
             element.style.display = "none"
@@ -46,6 +46,13 @@ window.onload = function () {
       });
       form.password.classList.remove("is-valid");
       form.password.classList.add("is-invalid");
+  } else if (form.password.value.length < 8) {
+      errors.push({
+        name: "password",
+        message: "La contraseña debe tener minimo 8 caracteres",
+      });
+      form.password.classList.remove("is-valid");
+      form.password.classList.add("is-invalid");
   } else {
       form.password.classList.remove("is-invalid");
       form.password.classList.add("is-valid");
@@ -53,6 +60,7 @@ window.onload = function () {
 
    //Error campos vacios
     errors.forEach((error) => {
+      console.log(error)
       const errorLabel = document.getElementById("error-" + error.name);
       errorLabel.style.display = "block"
       errorLabel.innerHTML = error.message;
