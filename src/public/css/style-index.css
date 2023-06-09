@@ -44,7 +44,7 @@ h2 {
 }
 
 .slider {
-    background: whitesmoke;
+    background: transparent;
     box-shadow: 0 10px 20px -5px rgb(245 245 245);
     height: 100px;
     margin: auto;
@@ -482,17 +482,17 @@ i {
 }
 
 
-@media (min-width: 1044px) {
+@media (min-width: 1440px) {
     .products-title {
         font-size: 50px;
     }
 
     input {
-        width: 1208px;
+        width: 1300px;
     }
 
     .search-container button {
-        left: 1160px;
+        left: 1250px;
     }
 
     .search-container {

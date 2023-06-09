@@ -39,6 +39,45 @@
                                    <% } %>
                                 </div>
                                 <div class="cajaDeContraseña">
+                                    <div class="textoContraseña"> DIRECCION </div>
+                                    <input class="adress <%= locals.errors && errors.adress ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.adress : null %>" type="text" name="adress">
+                                    <% if (locals.errors && errors.adress) { %>
+                                        <div class="text-danger">
+                                            <%= errors.adress.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                            </div>
+                            <div class="correo-contraseña-container">
+                                <div class="cajaDeMail">
+                                    <div class="textoCorreoElectronico">CIUDAD</div>
+                                    <input class="city" <%= locals.errors && errors.city ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.city : null %>" type="text" name="city">
+                                    <% if (locals.errors && errors.city) { %>
+                                        <div class="text-danger">
+                                            <%= errors.city.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                                <div class="cajaDeMail">
+                                    <div class="textoCorreoElectronico">CODIGO POSTAL</div>
+                                    <input class="zipcode" <%= locals.errors && errors.zipCode ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.zipCode : null %>" type="text" name="zipCode">
+                                    <% if (locals.errors && errors.zipCode) { %>
+                                        <div class="text-danger">
+                                            <%= errors.zipCode.msg %>
+                                        </div>
+                                   <% } %>
+                                </div>
+                            </div>
+                            <div class="cajaDeMail">
+                                <div class="textoCorreoElectronico">NUMERO DE CONTACTO</div>
+                                <input class="cell" <%= locals.errors && errors.cell ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.cell : null %>" type="text" name="cell">
+                                <% if (locals.errors && errors.cell) { %>
+                                    <div class="text-danger">
+                                        <%= errors.cell.msg %>
+                                    </div>
+                               <% } %>
+                            </div>
+                                <div class="cajaDeContraseña">
                                     <div class="textoContraseña"> CONTRASEÑA </div>
                                     <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>" type="password" name="password"> <i class="fa-solid fa-eye"> </i>
                                     <% if (locals.errors && errors.password) { %>

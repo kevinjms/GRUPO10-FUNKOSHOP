@@ -67,9 +67,10 @@
     text-decoration: none;
 }
 
-.header .accesos ul {
+nav {
     display: none;
 }
+
 
 
 
@@ -395,9 +396,60 @@ footer .footerTittle {
         margin-right: 10px;
     }
 
-    .header .accesos {
+    nav {
+        display: block;
+        position: absolute;
+        top: 505px;
+        width: 1024px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .menu-horizontal {
+        list-style: none;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .menu-horizontal>li>a {
+        display: block;
+        padding: 15px 20px;
+        color: white;
+        text-decoration: none;
+    }
+
+    .menu-horizontal>li>a:hover{
+        color: yellow;
+        font-size: 25px;
+    }
+
+    .menu-vertical {
+        position: absolute;
+        display: none;
+        z-index: 1;
+        list-style: none;
+        width: 200px;
+        background-color: rgba(0, 0, 0, .5);
+    }
+
+    .menu-horizontal li:hover .menu-vertical {
+        display: block;
+    }
+
+    .menu-vertical li:hover {
+        background-color: black;
+    }
+
+    .menu-vertical li a {
+        display: block;
+        color: white;
+        text-decoration: none;
+        padding: 15px 15px 15px 20px;
+    }
+
+    /* .header .accesos {
         position: relative;
-        top: 430px;
+        top:  415px;
         margin-right: 15px;
     }
 
@@ -406,7 +458,6 @@ footer .footerTittle {
         flex-direction: row;
         justify-content: space-between;
         list-style: none;
-        margin-top: -25px;
     }
 
     .header .accesos ul li a {
@@ -422,6 +473,16 @@ footer .footerTittle {
         color: yellow;
         font-size: 25px;
     }
+    .accesos .opciones a{
+        position: absolute;
+        display: none;
+        list-style: none;
+        background-color: aqua;
+    }
+    .accesos:hover .opciones a{
+        display: block;
+    } */
+
 
     /* Footer Desktop */
 
@@ -564,6 +625,12 @@ footer .footerTittle {
         height: 800px;
     }
 
+    nav {
+        top: 750px;
+        width: 1450px;
+        font-size: 25px;
+    }
+
     .footerDetalle {
         left: -60px;
     }
@@ -608,3 +675,4 @@ footer .footerTittle {
     }
 
 }
+

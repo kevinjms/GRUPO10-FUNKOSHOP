@@ -36,7 +36,7 @@
                         <article class="contenedorDestacados">
                             <% visited.forEach((product)=> { %>
                                 <div class="infoDestacado">
-                                    <img src="/images/funkos/<%= product.image %>" alt="ST">
+                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="ST">
                                     <h4>
                                         <%= product.name %>
                                     </h4>
@@ -52,7 +52,7 @@
                         <article class="contenedorOfertas">
                             <% inSale.forEach((product)=> { %>
                                 <div class="infoOfertas">
-                                    <img src="/images/funkos/<%= product.image %>" alt="C3">
+                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="C3">
                                     <h4>
                                         <%= product.name %>
                                     </h4>
