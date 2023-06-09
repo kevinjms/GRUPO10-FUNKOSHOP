@@ -34,7 +34,7 @@
                                     </select>
                                 </div>
                                 <div class="grup-label">
-                                    <label class="login-label"> INDIQUE LA MARCA </label>
+                                    <label class="login-label"> INDIQUE LA SUBCATEGORIA DEL PRODUCTO </label>
                                     <select name="subcategory" class="login-input">
                                         <% for(let i = 0; i < subcategories.length; i++){ %>
                                             <option value="<%= subcategories[i].id %>" <%= product.subcategories == subcategories[i].name?'selected':'' %>> <%= subcategories[i].name %> </option>
