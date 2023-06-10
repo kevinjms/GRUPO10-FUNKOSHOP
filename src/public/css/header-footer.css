@@ -404,7 +404,7 @@ footer .footerTittle {
         margin: auto;
         font-size: 20px;
     }
-
+/* 
     .menu-horizontal {
         list-style: none;
         display: flex;
@@ -445,42 +445,6 @@ footer .footerTittle {
         color: white;
         text-decoration: none;
         padding: 15px 15px 15px 20px;
-    }
-
-    /* .header .accesos {
-        position: relative;
-        top:  415px;
-        margin-right: 15px;
-    }
-
-    .header .accesos ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-    }
-
-    .header .accesos ul li a {
-        font-size: 20px;
-        font-family: 'Proxima Nova';
-        font-weight: bold;
-        text-decoration: none;
-        color: black;
-
-    }
-
-    .header .accesos ul li a:hover {
-        color: yellow;
-        font-size: 25px;
-    }
-    .accesos .opciones a{
-        position: absolute;
-        display: none;
-        list-style: none;
-        background-color: aqua;
-    }
-    .accesos:hover .opciones a{
-        display: block;
     } */
 
 

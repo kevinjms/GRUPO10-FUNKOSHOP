@@ -67,6 +67,31 @@ const controller = {
     profile: (req, res) => {
         res.render('./users/profileForm');
     },
+    edit: async (req, res) => {
+        db.users.findByPk(req.params.id)
+            .then(function (user) {
+                res.render('editUsers', { user });
+            })
+    },
+    update: async (req, res) => {
+        const product = await db.Product.update({
+            name: req.body.name,
+            description: req.body.description,
+            product_categories_id: req.body.category,
+            product_subcategories_id: req.body.subcategory,
+            price: req.body.price
+        }, {
+            where: {
+                id: req.params.id
+            }
+        })
+        if (req.file) {
+            const image = await db.Image.findOne({ where: { products_id: product.id } })
+            image.url = req.file.filename;
+            image.save()
+        }
+        res.redirect('/products/detail/' + req.params.id)
+    },
 }
 
 module.exports = controller ;
