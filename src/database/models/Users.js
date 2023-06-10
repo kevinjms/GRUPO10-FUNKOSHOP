@@ -15,11 +15,26 @@ module.exports = (sequelize, DataTypes) => {
           lastName: {
             type: Sequelize.TEXT,
             allowNull: false,
-
           },
           email: {
             type: Sequelize.TEXT,
             allowNull: false,
+          },
+          adress:{
+            type:Sequelize.TEXT,
+            allowNull: false
+          },
+          city:{
+            type:Sequelize.TEXT,
+            allowNull: false
+          },
+          zipCode:{
+            type:Sequelize.INTEGER,
+            allowNull: false
+          },
+          cell:{
+            type:Sequelize.INTEGER,
+            allowNull: false
           },
           password: {
             type: Sequelize.TEXT,
