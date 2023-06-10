@@ -17,3 +17,13 @@ Retrospectiva del 5° Sprint:
 En esta etapa, nos reunimos en varias ocasiones y entre todos logramos hacer lo solicitiado para este 5* sprint. En algunas reuniones tuvimos que hacer tareas, como las validaciones del register y el login todos juntos, así, a todos nos quedaba claro lo que estabamos haciendo.  Como siempre seguimos ayudándonos entre todos para que todos entendamos y podamos avanzar con el proyecto.
 
 Restrospectiva del 6° Sprint:
+
+En este sprint nos tuvimos que reunir varias veces para poder lograr cumplir con los objetivos de este sprint. Aunque al principio era complicado, pudimos pasar todo de los json a la base de datos y empezar a usarla. Nos seguimos ayudando entre todos para poder entender y avanzar con el proyecto
+
+Restrospectiva del 7° Sprint:
+
+En esta ocasion, nos reunimos para poder cumplir con este sprint. Algo a destacar es que se nos resulto un poco mas facil que el sprint anterior ya que este tenia varios conceptos que habiamos visto antes pero que solo faltaban ajustarlos un poco. Ahora solo nos toca seguir con el proyecto y llegar al ultimo sprint.
+
+Restrospectiva del 8° Sprint:
+
+En este ultimo sprint, nos reunimos muchas veces para hacer las tareas de sprint anteriores y para poder cumplir con lo solicitado en este sprint. Logramos entre todos ayudarnos para poder entender y completar este sprint y asi avanzar y cumplir con las tareas que nos habian quedado pendientes de sprints anteriores. Despues de mucho tiempo, logramos terminar nuestro proyecto y dejarlo listo para presentarlo.
