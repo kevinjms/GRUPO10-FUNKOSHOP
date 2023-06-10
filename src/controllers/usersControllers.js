@@ -3,12 +3,14 @@ const fs = require('fs');
 const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator')
 const db = require('../database/models')
-const {Op} = require('sequelize')
 
-const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
-    return JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-};
+	db.User.findAll()
+		.then(function (usuarios) {
+			return usuarios
+		}
+		)
+}
 
 const controller = {
     register: (req, res) => {

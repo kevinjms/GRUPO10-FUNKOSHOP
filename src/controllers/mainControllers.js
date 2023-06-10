@@ -1,12 +1,7 @@
 const path = require('path');
 const fs = require('fs');
-const db = require('../database/models')
-const { Op } = require('sequelize')
+const db = require('../database/models');
 
-const productsFilePath = path.join(__dirname, '../data/products.json');
-function getProducts() {
-    return JSON.parse(fs.readFileSync(productsFilePath, 'utf-8'));
-};
 
 const controller = {
     index: async (req, res) => {
@@ -28,7 +23,7 @@ const controller = {
           res.render('index', { inSale, visited });
         } catch (error) {
           console.error(error);
-          res.status(500).send('Error guachinnn');
+          res.status(500).send('Error');
         }
       },
     car: (req, res) => {
