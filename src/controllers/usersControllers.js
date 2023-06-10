@@ -1,8 +1,9 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
-const { json } = require('express');
 const { validationResult } = require('express-validator')
+const db = require('../database/models')
+const {Op} = require('sequelize')
 
 const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
@@ -13,7 +14,7 @@ const controller = {
     register: (req, res) => {
         res.render('./users/register');
     },
-    registered: (req, res) => {
+    registered: async (req, res) => {
         const resultValidation = validationResult(req)
         if(resultValidation.errors.length > 0) {
             return res.render('./users/register', { 
@@ -21,20 +22,20 @@ const controller = {
                 oldData: req.body
             })
         }
-        const image = req.file.filename;
-        const users = getUsers();
-        const newUser = {
-            id: users[users.length -1].id +1,
+        await db.User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
+            adress: req.body.adress,
+            city: req.body.city,
+            zipCode: req.body.zipCode,
+            cell: req.body.cell,
             type: 'Customer',
-            avatar: image
-        }
-        users.push(newUser);
-        fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        res.redirect('/');
+            avatar: req.file.filename
+        });
+
+        res.redirect('/users/login');
     },
     login: (req, res) => {
         res.render('./users/loginForm');
