@@ -404,7 +404,7 @@ footer .footerTittle {
         margin: auto;
         font-size: 20px;
     }
-/* 
+
     .menu-horizontal {
         list-style: none;
         display: flex;
@@ -423,20 +423,20 @@ footer .footerTittle {
         font-size: 25px;
     }
 
-    .menu-vertical {
+    /* .menu-vertical {
         position: absolute;
         display: none;
         z-index: 1;
         list-style: none;
         width: 200px;
         background-color: rgba(0, 0, 0, .5);
-    }
+    } */
 
     .menu-horizontal li:hover .menu-vertical {
         display: block;
     }
 
-    .menu-vertical li:hover {
+    /* .menu-vertical li:hover {
         background-color: black;
     }
 
