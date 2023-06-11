@@ -1,19 +1,22 @@
 const path = require('path');
 const fs = require('fs');
 const bcrypt = require('bcryptjs');
-const { json } = require('express');
 const { validationResult } = require('express-validator')
+const db = require('../database/models')
 
-const usersFilePath = path.join(__dirname, '../data/users.json');
 function getUsers() {
-    return JSON.parse(fs.readFileSync(usersFilePath, 'utf-8'));
-};
+	db.User.findAll()
+		.then(function (usuarios) {
+			return usuarios
+		}
+		)
+}
 
 const controller = {
     register: (req, res) => {
         res.render('./users/register');
     },
-    registered: (req, res) => {
+    registered: async (req, res) => {
         const resultValidation = validationResult(req)
         if(resultValidation.errors.length > 0) {
             return res.render('./users/register', { 
@@ -21,20 +24,20 @@ const controller = {
                 oldData: req.body
             })
         }
-        const image = req.file.filename;
-        const users = getUsers();
-        const newUser = {
-            id: users[users.length -1].id +1,
+        await db.User.create({
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
             password: bcrypt.hashSync(req.body.password, 10),
+            adress: req.body.adress,
+            city: req.body.city,
+            zipCode: req.body.zipCode,
+            cell: req.body.cell,
             type: 'Customer',
-            avatar: image
-        }
-        users.push(newUser);
-        fs.writeFileSync(usersFilePath, JSON.stringify(users, null, 2));
-        res.redirect('/');
+            avatar: req.file.filename
+        });
+
+        res.redirect('/users/login');
     },
     login: (req, res) => {
         res.render('./users/loginForm');
@@ -63,6 +66,31 @@ const controller = {
     },
     profile: (req, res) => {
         res.render('./users/profileForm');
+    },
+    edit: async (req, res) => {
+        db.users.findByPk(req.params.id)
+            .then(function (user) {
+                res.render('editUsers', { user });
+            })
+    },
+    update: async (req, res) => {
+        const product = await db.Product.update({
+            name: req.body.name,
+            description: req.body.description,
+            product_categories_id: req.body.category,
+            product_subcategories_id: req.body.subcategory,
+            price: req.body.price
+        }, {
+            where: {
+                id: req.params.id
+            }
+        })
+        if (req.file) {
+            const image = await db.Image.findOne({ where: { products_id: product.id } })
+            image.url = req.file.filename;
+            image.save()
+        }
+        res.redirect('/products/detail/' + req.params.id)
     },
 }
 

@@ -7,13 +7,13 @@ module.exports = {
     id: {
       type: Sequelize.INTEGER,
       autoIncrement: true,
-      primaryKey: true
+      primaryKey: true,
     },
     firstName: {
       type: Sequelize.TEXT,
       allowNull: false,
     },
-    LastName: {
+    lastName: {
       type: Sequelize.TEXT,
       allowNull: false,
     },

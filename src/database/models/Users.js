@@ -6,19 +6,35 @@ module.exports = (sequelize, DataTypes) => {
         id: {
             type: Sequelize.INTEGER,
             autoIncrement: true,
-            primaryKey: true
+            primaryKey: true,
           },
           firstName: {
             type: Sequelize.TEXT,
             allowNull: false,
           },
-          LastName: {
+          lastName: {
             type: Sequelize.TEXT,
             allowNull: false,
           },
           email: {
             type: Sequelize.TEXT,
             allowNull: false,
+          },
+          adress:{
+            type:Sequelize.TEXT,
+            allowNull: false
+          },
+          city:{
+            type:Sequelize.TEXT,
+            allowNull: false
+          },
+          zipCode:{
+            type:Sequelize.INTEGER,
+            allowNull: false
+          },
+          cell:{
+            type:Sequelize.INTEGER,
+            allowNull: false
           },
           password: {
             type: Sequelize.TEXT,
@@ -31,7 +47,7 @@ module.exports = (sequelize, DataTypes) => {
           types_id: {
             type: Sequelize.INTEGER,
             references: {
-              model:'users',
+              model:'Type',
               key:'id'
             }
           }

@@ -46,3 +46,14 @@ textarea {
     width: 90%;
     height: 100px;
 }
+
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    height: 50px;
+}
+.button-2 {
+    
+    background-color: lightskyblue;
+}
