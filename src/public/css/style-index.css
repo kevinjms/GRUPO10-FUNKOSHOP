@@ -1,505 +1,462 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'proxima Nova';
-    font-size: 12px;
-    background-color: whitesmoke;
-
+  font-family: "proxima Nova";
+  font-size: 12px;
+  background-color: whitesmoke;
 }
 
 h2 {
-    color: grey;
+  color: grey;
 }
 
 /** INICIO MAIN **/
 
 .container-main {
-    position: relative;
+  position: relative;
 }
 
 @-webkit-keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 @keyframes scroll {
-    0% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(0);
+  }
 
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 .slider {
-    background: transparent;
-    box-shadow: 0 10px 20px -5px rgb(245 245 245);
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  background: transparent;
+  box-shadow: 0 10px 20px -5px rgb(245 245 245);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .slider::before,
 .slider::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 70px;
-    position: absolute;
-    z-index: 1;
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 70px;
+  position: absolute;
+  z-index: 1;
 }
 
 .slider::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .slider::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slider .slider-track {
-    -webkit-animation: scroll 40s linear infinite;
-    animation: scroll 40s linear infinite;
-    display: flex;
-    width: calc(90px * 14);
+  -webkit-animation: scroll 40s linear infinite;
+  animation: scroll 40s linear infinite;
+  display: flex;
+  width: calc(90px * 14);
 }
 
 .slider .slide {
-    height: 70px;
-    width: 250px;
+  height: 70px;
+  width: 250px;
 }
 
 .slider .slide img {
-    height: 110px;
-    width: 120px;
+  height: 110px;
+  width: 120px;
 }
 
 .search-container {
-    display: flex;
-    width: 90%;
-    margin: 20px;
-    position: relative;
-    left: 17px;
+  display: flex;
+  width: 90%;
+  margin: 20px;
+  position: relative;
+  left: 17px;
 }
 
 .search-container button {
-    background-color: white;
-    border: none;
-    position: relative;
-    left: -32px;
-
+  background-color: white;
+  border: none;
+  position: relative;
+  left: -32px;
 }
 
 .search-container i {
-    background-color: white;
+  background-color: white;
 }
 
 input {
-    height: 30px;
-    width: 350px;
-    border-radius: 10px 10px 10px 10px;
+  height: 30px;
+  width: 350px;
+  border-radius: 10px 10px 10px 10px;
 }
 
 .nombresApellidos {
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  justify-content: space-around;
 }
-
 
 .mail,
 .passw {
-    width: 100%;
+  width: 100%;
 }
 
-
 i {
-    top: 300px;
-    right: 780px;
+  top: 300px;
+  right: 780px;
 }
 
 .register {
-    width: 200px;
-    height: 40px;
-    color: white;
-    background-color: black;
-    border-radius: 50px;
-    margin-left: 80px;
-
+  width: 200px;
+  height: 40px;
+  color: white;
+  background-color: black;
+  border-radius: 50px;
+  margin-left: 80px;
 }
 
 /*** SECCION DESTACADOS ******/
 .destacados,
 .ofertas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 25px;
 }
 
 .destacados .titleDestacados {
-    text-align: center;
+  text-align: center;
 }
 
 .destacados .contenedorDestacados {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
 }
 
 .destacados .contenedorDestacados .infoDestacado {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px -2px #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px -2px #777;
 }
 
 .destacados .contenedorDestacados .infoDestacado img {
-    height: 200px;
-    margin-top: 15px;
+  height: 200px;
+  margin-top: 15px;
 }
 
 .destacados .contenedorDestacados .infoDestacado h4 {
-    font-size: 12px;
-    font-family: 'Proxima Nova';
+  font-size: 12px;
+  font-family: "Proxima Nova";
 }
 
 /****** SECCION OFERTAS *****/
 .ofertas .titleDestacados {
-    text-align: center;
+  text-align: center;
 }
 
 .ofertas .contenedorOfertas {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
 }
 
 .ofertas .contenedorOfertas .infoOfertas {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 20px -2px #777;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 20px -2px #777;
 }
 
 .ofertas .contenedorOfertas .infoOfertas img {
-    height: 165px;
-    margin-top: 15px;
+  height: 165px;
+  margin-top: 15px;
 }
 
 .ofertas .contenedorOfertas .infoOfertas h4 {
-    margin-top: -31px;
-    font-size: 15px;
-}
-
-/**** PREVENTA ****/
-
-.preventa {
-    background-image: url(/images/banners/cuantos-funkos.jpg);
-    background-size: cover;
-    width: 100%;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-}
-
-.preventa h2 {
-    margin: 0px 15px;
-}
-
-.preventa .botonPreventa {
-    margin: 15px;
-    width: 120px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-evenly;
-    background-color: white;
-    color: blue;
-}
-
-.preventa .botonPreventa:hover {
-    color: white;
-    background-color: blue;
+  margin-top: -31px;
+  font-size: 15px;
 }
 
 /******* lista de productos *******/
 .favorito {
-    background: transparent;
-    border: none;
-    font-size: 50px;
-    position: absolute;
-    margin-left: 240px;
-    margin-top: 10px;
+  background: transparent;
+  border: none;
+  font-size: 50px;
+  position: absolute;
+  margin-left: 240px;
+  margin-top: 10px;
 }
 
 .products-title {
-    display: flex;
-    position: relative;
-    top: 15px;
-    justify-content: center;
-    font-size: 20px;
-
+  display: flex;
+  position: relative;
+  top: 15px;
+  justify-content: center;
+  font-size: 20px;
 }
 
 .agg {
-    margin-top: -38px;
+  margin-top: -38px;
 }
 
 .prod {
-    box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
-    background-color: #0B44EF;
-    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
-    color: #E6EAEF;
-    border-radius: 6px;
-    margin-bottom: 14px;
-    font-size: 8px;
+  box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgba(0, 0, 0, 0.6),
+    0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset,
+    0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+  background-color: #0b44ef;
+  background-image: linear-gradient(-45deg, #0b44ef, #007dfa);
+  color: #e6eaef;
+  border-radius: 6px;
+  margin-bottom: 14px;
+  font-size: 8px;
 }
 
 
 @media (min-width: 768px) {
+  .slider {
+    height: 180px;
+  }
 
-    .slider {
-        height: 180px;
-    }
+  .slider::before,
+  .slider::after {
+    height: 150px;
+  }
 
-    .slider::before,
-    .slider::after {
-        height: 150px;
-    }
+  .slider .slide {
+    height: 150px;
+    width: 250px;
+  }
 
-    .slider .slide {
-        height: 150px;
-        width: 250px;
-    }
+  .slider .slide img {
+    height: 200px;
+    width: 250px;
+  }
 
-    .slider .slide img {
-        height: 200px;
-        width: 250px;
-    }
+  .search-container {
+    width: 50%;
+    margin-left: 76px;
+  }
 
-    .search-container {
-        width: 50%;
-        margin-left: 76px;
-    }
+  .search-container button {
+    background-color: white;
+    border: none;
+    position: relative;
+    left: 545px;
+    top: -22px;
+  }
 
-    .search-container button {
-        background-color: white;
-        border: none;
-        position: relative;
-        left: 545px;
-        top: -22px;
-    }
+  input {
+    width: 580px;
+  }
 
-    input {
-        width: 580px;
-    }
+  .destacados h2,
+  .ofertas h2 {
+    font-size: 30px;
+  }
 
-    .destacados h2,
-    .ofertas h2 {
-        font-size: 30px;
-    }
+  .destacados .contenedorDestacados {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .destacados .contenedorDestacados {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+  .destacados .contenedorDestacados .infoDestacado {
+    height: 290px;
+    width: 40%;
+  }
 
-    .destacados .contenedorDestacados .infoDestacado {
-        height: 290px;
-        width: 40%;
-    }
+  .ofertas .contenedorOfertas {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
 
-    .ofertas .contenedorOfertas {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
-    }
+  .ofertas .contenedorOfertas .infoOfertas {
+    height: 280px;
+    width: 40%;
+  }
 
-    .ofertas .contenedorOfertas .infoOfertas {
-        height: 280px;
-        width: 40%;
-    }
+  .preventa {
+    height: 400px;
+  }
 
-    .preventa {
-        height: 400px;
-    }
+  .preventa h2 {
+    margin: 15px;
+    font-size: 25px;
+    color: white;
+  }
 
-    .preventa h2 {
-        margin: 15px;
-        font-size: 25px;
-        color: white;
-    }
+  .preventa .botonPreventa {
+    width: 150px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+  }
 
-    .preventa .botonPreventa {
-        width: 150px;
-        height: 30px;
-        display: flex;
-        align-items: center;
-    }
+  /***** lista de productos ****/
+  .favorito {
+    font-size: 40px;
+    margin-left: 185px;
+  }
 
-    /***** lista de productos ****/
-    .favorito {
-        font-size: 40px;
-        margin-left: 185px;
-    }
+  .products-title {
+    font-size: 30px;
+    margin-top: 20px;
+  }
 
-    .products-title {
-        font-size: 30px;
-        margin-top: 20px;
-
-    }
-
-    .agg {
-        margin-top: -32px;
-    }
+  .agg {
+    margin-top: -32px;
+  }
 }
 
 @media (min-width: 1024px) {
+  .slider {
+    height: 220px;
+  }
 
-    .slider {
-        height: 220px;
-    }
+  .slider::before,
+  .slider::after {
+    height: 150px;
+  }
 
-    .slider::before,
-    .slider::after {
-        height: 150px;
-    }
+  .slider .slide {
+    height: 150px;
+    width: 280px;
+  }
 
-    .slider .slide {
-        height: 150px;
-        width: 280px;
-    }
+  .slider .slide img {
+    height: 240px;
+    width: 280px;
+  }
+  .products-title {
+    font-size: 40px;
+  }
 
-    .slider .slide img {
-        height: 240px;
-        width: 280px;
-    }
-    .products-title {
-        font-size: 40px;
-    }
+  .search-container {
+    margin-left: 60px;
+  }
 
-    .search-container {
-        margin-left: 60px;
-    }
+  input {
+    width: 870px;
+    height: 46px;
+    font-size: 20px;
+  }
 
-    input {
-        width: 870px;
-        height: 46px;
-        font-size: 20px;
-    }
+  .search-container button {
+    left: 820px;
+    top: -35px;
+    font-size: 20px;
+  }
 
-    .search-container button {
-        left: 820px;
-        top: -35px;
-        font-size: 20px;
-    }
+  .destacados h2,
+  .ofertas h2 {
+    font-size: 50px;
+    margin: 30px 0 20px;
+  }
 
-    .destacados h2,
-    .ofertas h2 {
-        font-size: 50px;
-        margin: 30px 0 20px;
+  .destacados .contenedorDestacados .infoDestacado {
+    height: 290px;
+    width: 30%;
+  }
 
-    }
+  .grogu {
+    position: relative;
+    left: 40px;
+  }
 
-    .destacados .contenedorDestacados .infoDestacado {
-        height: 290px;
-        width: 30%;
-    }
+  .freddie {
+    position: relative;
+    right: 30px;
+  }
 
-    .grogu {
-        position: relative;
-        left: 40px;
-    }
+  .albert {
+    position: relative;
+    left: 40px;
+  }
 
-    .freddie {
-        position: relative;
-        right: 30px;
-    }
+  .carol {
+    position: relative;
+    right: 30px;
+  }
 
-    .albert {
-        position: relative;
-        left: 40px;
-    }
+  .ofertas .contenedorOfertas .infoOfertas {
+    height: 280px;
+    width: 30%;
+  }
 
-    .carol {
-        position: relative;
-        right: 30px;
-    }
+  .preventa {
+    height: 400px;
+  }
 
-    .ofertas .contenedorOfertas .infoOfertas {
-        height: 280px;
-        width: 30%;
-    }
-
-    .preventa {
-        height: 400px;
-    }
-
-    .preventa h2 {
-        font-size: 30px;
-    }
-
+  .preventa h2 {
+    font-size: 30px;
+  }
 }
 
-
 @media (min-width: 1440px) {
-    .products-title {
-        font-size: 50px;
-    }
+  .products-title {
+    font-size: 50px;
+  }
 
-    input {
-        width: 1300px;
-    }
+  input {
+    width: 1300px;
+  }
 
-    .search-container button {
-        left: 1250px;
-    }
+  .search-container button {
+    left: 1250px;
+  }
 
-    .search-container {
-        margin-left: 100px;
-    }
+  .search-container {
+    margin-left: 100px;
+  }
 
-    .destacados .contenedorDestacados .infoDestacado {
-        width: 30%;
-    }
+  .destacados .contenedorDestacados .infoDestacado {
+    width: 30%;
+  }
 }

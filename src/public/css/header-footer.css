@@ -1,45 +1,44 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
 
 * {
-    margin: 0;
-    box-sizing: border-box;
-
+  margin: 0;
+  box-sizing: border-box;
 }
 
 /* HEADER */
 .header {
-    font-family: 'proxima Nova';
-    background-image: url('/images/banners/banner-shenron-x.jpg');
-    background-repeat: no-repeat;
-    background-size: 100%;
-    height: 220px;
-    width: 100%;
-    display: flex;
-    align-items: flex-start;
+  font-family: "proxima Nova";
+  background-image: url("/images/banners/banner-shenron-x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 220px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 .header .burger-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .header .burger-container .logo {
-    width: 33%;
-    display: flex;
-    margin-left: 10px;
-    position: relative;
-    top: 10px;
+  width: 33%;
+  display: flex;
+  margin-left: 10px;
+  position: relative;
+  top: 10px;
 }
 
 .header .burger-container .burger-menu {
-    font-size: 50px;
-    position: relative;
-    right: 68px;
-    top: 150px;
-    /* background: rgb(54 120 202 / 60%); */
-    border-radius: 7px;
-    width: 290px;
+  font-size: 50px;
+  position: relative;
+  right: 68px;
+  top: 150px;
+  /* background: rgb(54 120 202 / 60%); */
+  border-radius: 7px;
+  width: 290px;
 }
 
 /* .header .burger-container .burger-menu i {
@@ -48,631 +47,703 @@
 } */
 
 .header .burger-container .contenedor-de-botones {
-    position: relative;
-    right: 12px;
-    top: 10px;
-    display: flex;
-
+  position: relative;
+  right: 12px;
+  top: 10px;
+  display: flex;
 }
 
 .header .burger-container .contenedor-de-botones .botones {
-    background-color: transparent;
-    border: none;
-
+  background-color: transparent;
+  border: none;
 }
 
 .header .burger-container .contenedor-de-botones i {
-    font-size: 30px;
-    color: black;
-    text-decoration: none;
+  font-size: 30px;
+  color: black;
+  text-decoration: none;
 }
 
 nav {
-    display: none;
+  display: none;
 }
-
-
-
-
 
 /* FOOTER */
 
 footer {
-    font-family: 'proxima Nova';
-    background-color: royalblue;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  font-family: "proxima Nova";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 footer .footerTittle {
-    color: white;
-    font-size: 25px;
+  color: royalblue;
+  font-size: 25px;
 }
 
 .footerDetalle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.footerDetalle .detalleAsist {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDetalle .detalleAsist h3 {
+  color: black;
+  font-size: 15px;
+}
+
+.footerDetalle .detalleAsist .listaAsist {
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.footerDetalle .detalleAsist .listaAsist li a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footerDetalle .seguinos {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  background-color: black;
+  width: 425px;
+  margin-bottom: 15px;
+}
+
+.footerDetalle .seguinos .redes {
+  margin-top: 15px;
+}
+
+.footerDetalle .seguinos .redes i {
+  font-size: 24px;
+  margin: 0 8px 10px;
+  background-color: white;
+  height: 35px;
+  width: 35px;
+  border-radius: 100px;
+  color: black;
+}
+
+.fa-twitter:before {
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa-linkedin:before {
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-instagram:before {
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.fa-facebook:before {
+  margin: 5px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.footerDetalle .informacion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDetalle .informacion h3 {
+  color: white;
+  font-size: 15px;
+}
+
+.footerDetalle .informacion .listaInfo {
+  list-style: none;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px;
+}
+
+.footerDetalle .informacion .listaInfo li a {
+  color: white;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.footerDetalle .infoGeneral {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.footerDetalle .infoGeneral .pagos {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerDetalle .infoGeneral .pagos h3 {
+  color: black;
+  font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .pagos .iconosPagos {
+  margin: 2px 0px 0px;
+  width: 100%;
+  display: flex;
+}
+
+.footerDetalle .infoGeneral .pagos .iconosPagos i {
+  background-color: transparent;
+  width: 35px;
+  height: 26px;
+}
+.fa-credit-card:before {
+  margin: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa-bank:before,
+.fa-building-columns:before,
+.fa-institution:before,
+.fa-museum:before,
+.fa-university:before {
+  margin: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.fa-money-bill-1:before,
+.fa-money-bill-alt:before {
+  margin: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footerDetalle .infoGeneral .arrepentido button {
+  border-radius: 7px;
+  border: none;
+  background-color: white;
+}
+
+.footerDetalle .infoGeneral .arrepentido button:hover {
+  border-radius: 10px;
+  background-color: blue;
+}
+
+.footerDetalle .infoGeneral .arrepentido button .botonA {
+  text-decoration: none;
+  color: black;
+}
+
+.footerDetalle .infoGeneral .arrepentido button .botonA:hover {
+  text-decoration: none;
+  color: white;
+}
+
+.footerDetalle .infoGeneral .envios h3 {
+  color: black;
+  font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .envios i {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  font-size: 12px;
+  margin: 0 75px 10px;
+}
+
+.fa-shipping-fast:before,
+.fa-truck-fast:before {
+  content: "\f48b";
+  margin: 4px;
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.footerDetalle .infoGeneral .contacto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: -10px;
+  color: white;
+}
+
+.footerDetalle .infoGeneral .contacto h3 {
+  color: black;
+  font-size: 15px;
+}
+
+.footerDetalle .infoGeneral .contacto h4 {
+  margin-top: 5px;
+  font-size: 12px;
+  color: gray;
+}
+
+.fa-location-dot {
+  color: black;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+}
+
+.fa-phone {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.fa-envelope {
+  font-size: 10px;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+.fa-location-dot:before,
+.fa-map-marker-alt:before {
+  margin: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-phone:before {
+  margin: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.fa-envelope:before {
+  margin: 2px;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+}
+
+.envios {
+  margin: 6px 0px 4px;
+}
+/*query tablet*/
+
+@media (min-width: 768px) {
+  /* Header Tablet */
+
+  .header {
+    height: 420px;
+  }
+
+  .header .burger-container .logo {
+    width: 30%;
+  }
+
+  .header .burger-container .burger-menu {
+    font-size: 60px;
+    right: 153px;
+    top: 285px;
+  }
+
+  .header .burger-container .burger-menu i {
+    padding: 13px;
+  }
+
+  .header .burger-container .contenedor-de-botones i {
+    font-size: 45px;
+    margin-right: 10px;
+  }
+
+  /* Footer tablet */
+
+  footer .footerTittle {
+    font-size: 30px;
+  }
+
+  .footerDetalle {
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     position: relative;
+  }
 
-}
+  .footerDetalle .detalleAsist h3 {
+    font-size: 20px;
+  }
 
-.footerDetalle .detalleAsist {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerDetalle .detalleAsist h3 {
-    color: white;
+  .footerDetalle .detalleAsist .listaAsist li a {
     font-size: 15px;
-}
+  }
 
-.footerDetalle .detalleAsist .listaAsist {
+  .footerDetalle .seguinos {
+    width: 768px;
+    height: 110px;
+  }
+
+  .footerDetalle .seguinos .redes i {
+    font-size: 35px;
+    margin: 15px 8px 10px;
+    height: 50px;
+    width: 50px;
+  }
+
+  .fa-twitter:before {
+    flex-direction: column;
+  }
+
+  .footerDetalle .informacion h3 {
+    font-size: 20px;
+  }
+
+  .footerDetalle .informacion .listaInfo {
     list-style: none;
     margin-top: 15px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
-}
+  }
 
-.footerDetalle .detalleAsist .listaAsist li a {
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-.footerDetalle .seguinos {
-    display: flex;
-    flex-direction: column;
-}
-
-.footerDetalle .seguinos h3 {
-    color: white;
+  .footerDetalle .informacion .listaInfo li a {
     font-size: 15px;
-    text-align: center;
-}
+  }
 
-.footerDetalle .seguinos .redes {
-    margin-top: 15px;
-}
+  .footerDetalle .infoGeneral .pagos h3 {
+    font-size: 20px;
+  }
 
-.footerDetalle .seguinos .redes i {
-    color: white;
-    font-size: 40px;
-    margin: 0 10px;
-}
+  .footerDetalle .infoGeneral .pagos .iconosPagos i {
+    font-size: 20px;
+  }
 
-.footerDetalle .informacion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+  .footerDetalle .infoGeneral .envios h3 {
+    font-size: 20px;
+  }
 
-.footerDetalle .informacion h3 {
-    color: white;
+  .footerDetalle .infoGeneral .contacto h3 {
+    font-size: 20px;
+  }
+
+  .footerDetalle .infoGeneral .contacto h4 {
+    font-size: 20px;
+  }
+
+  .header .burger-container .contenedor-de-botones {
+    right: 40px;
+  }
+
+  .footerDetalle .infoGeneral .envios i {
+    font-size: 18px;
+  }
+
+  .footerDetalle .infoGeneral .pagos .iconosPagos {
+    width: 68%;
+  }
+
+  .fa-location-dot {
     font-size: 15px;
-}
+  }
 
-.footerDetalle .informacion .listaInfo {
-    list-style: none;
-    margin-top: 15px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 0px;
-}
-
-.footerDetalle .informacion .listaInfo li a {
-    color: white;
-    font-size: 12px;
-    text-decoration: none;
-}
-
-.footerDetalle .infoGeneral {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 15px;
-}
-
-.footerDetalle .infoGeneral .pagos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.footerDetalle .infoGeneral .pagos h3 {
-    color: white;
+  .fa-phone {
     font-size: 15px;
-}
+  }
 
-.footerDetalle .infoGeneral .pagos .iconosPagos {
-    margin-top: 15px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerDetalle .infoGeneral .pagos .iconosPagos i {
-    color: white;
+  .fa-envelope {
     font-size: 15px;
-}
-
-.footerDetalle .infoGeneral .arrepentido {
-    margin: 25px;
-    display: flex;
-    justify-content: center;
-}
-
-.footerDetalle .infoGeneral .arrepentido button {
-    border-radius: 7px;
-    border: none;
-    background-color: white;
-}
-
-.footerDetalle .infoGeneral .arrepentido button:hover {
-    border-radius: 10px;
-    background-color: blue;
-}
-
-.footerDetalle .infoGeneral .arrepentido button .botonA {
-    text-decoration: none;
-    color: blue;
-
-}
-
-.footerDetalle .infoGeneral .arrepentido button .botonA:hover {
-    text-decoration: none;
-    color: white;
-
-}
-
-.footerDetalle .infoGeneral .envios h3 {
-    color: white;
-    font-size: 15px;
-
-}
-
-.footerDetalle .infoGeneral .envios i {
-    color: white;
-    display: flex;
-    margin: 20px;
-    justify-content: center;
-    font-size: 25px;
-
-}
-
-.footerDetalle .infoGeneral .contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 10px;
-    color: white;
-}
-
-.footerDetalle .infoGeneral .contacto h3 {
-    color: white;
-    font-size: 15px;
-}
-
-.footerDetalle .infoGeneral .contacto h4 {
-    margin-top: 5px;
-    font-size: 15px;
-}
-
-/*query tablet*/
-
-@media (min-width: 768px) {
-
-    /* Header Tablet */
-
-    .header {
-        height: 420px;
-    }
-
-    .header .burger-container .logo {
-        width: 30%;
-    }
-
-    .header .burger-container .burger-menu {
-        font-size: 60px;
-        right: 153px;
-        top: 285px;
-    }
-
-    .header .burger-container .burger-menu i {
-        padding: 13px;
-
-    }
-
-    .header .burger-container .contenedor-de-botones i {
-        font-size: 45px;
-        margin-right: 10px;
-    }
-
-    /* Footer tablet */
-
-
-    footer .footerTittle {
-        font-size: 30px;
-    }
-
-    .footerDetalle {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        position: relative;
-
-    }
-
-    .footerDetalle .detalleAsist h3 {
-        font-size: 20px;
-    }
-
-
-    .footerDetalle .detalleAsist .listaAsist li a {
-        font-size: 15px;
-
-    }
-
-    .footerDetalle .seguinos h3 {
-        font-size: 20px;
-
-    }
-
-
-    .footerDetalle .seguinos .redes i {
-        font-size: 50px;
-    }
-
-    .footerDetalle .informacion h3 {
-        font-size: 20px;
-    }
-
-    .footerDetalle .informacion .listaInfo {
-        list-style: none;
-        margin-top: 15px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footerDetalle .informacion .listaInfo li a {
-        font-size: 15px;
-
-    }
-
-    .footerDetalle .infoGeneral .pagos h3 {
-        font-size: 20px;
-    }
-
-    .footerDetalle .infoGeneral .pagos .iconosPagos i {
-        font-size: 20px;
-    }
-
-
-    .footerDetalle .infoGeneral .envios h3 {
-        font-size: 20px;
-
-    }
-
-    .footerDetalle .infoGeneral .contacto h3 {
-        font-size: 20px;
-    }
-
-    .footerDetalle .infoGeneral .contacto h4 {
-        font-size: 20px;
-    }
-
-    .header .burger-container .contenedor-de-botones {
-        right: 40px;
-    }
+  }
 }
 
 @media (min-width: 1024px) {
+  /* Header Desktop */
 
-    /* Header Desktop */
+  .header {
+    height: 560px;
+  }
 
-    .header {
-        height: 560px;
-    }
+  .header .burger-container .logo {
+    width: 18%;
+    top: 15px;
+  }
 
-    .header .burger-container .logo {
-        width: 18%;
-        top: 15px;
-    }
+  .header .burger-container .burger-menu {
+    display: none;
+  }
 
-    .header .burger-container .burger-menu {
-        display: none;
-    }
+  .header .burger-container .contenedor-de-botones i {
+    font-size: 45px;
+    margin-right: 10px;
+  }
 
-    .header .burger-container .contenedor-de-botones i {
-        font-size: 45px;
-        margin-right: 10px;
-    }
+  nav {
+    display: block;
+    position: absolute;
+    top: 505px;
+    width: 1024px;
+    margin: auto;
+    font-size: 20px;
+  }
 
-    nav {
-        display: block;
-        position: absolute;
-        top: 505px;
-        width: 1024px;
-        margin: auto;
-        font-size: 20px;
-    }
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
 
-    .menu-horizontal {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
+  .menu-horizontal > li > a {
+    display: block;
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+  }
 
-    .menu-horizontal>li>a {
-        display: block;
-        padding: 15px 20px;
-        color: white;
-        text-decoration: none;
-    }
+  .menu-horizontal > li > a:hover {
+    color: yellow;
+    font-size: 25px;
+  }
 
-    .menu-horizontal>li>a:hover{
-        color: yellow;
-        font-size: 25px;
-    }
+  .menu-vertical {
+    position: absolute;
+    display: none;
+    z-index: 1;
+    list-style: none;
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
 
-    .menu-vertical {
-        position: absolute;
-        display: none;
-        z-index: 1;
-        list-style: none;
-        width: 200px;
-        background-color: rgba(0, 0, 0, .5);
-    }
+  .menu-horizontal li:hover .menu-vertical {
+    display: block;
+  }
 
-    .menu-horizontal li:hover .menu-vertical {
-        display: block;
-    }
+  .menu-vertical li:hover {
+    background-color: black;
+  }
 
-    .menu-vertical li:hover {
-        background-color: black;
-    }
+  .menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+  }
 
-    .menu-vertical li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 15px 15px 15px 20px;
-    }
+  /* Footer Desktop */
 
-    /* .header .accesos {
-        position: relative;
-        top:  415px;
-        margin-right: 15px;
-    }
+  footer .footerTittle {
+    font-size: 40px;
+    position: relative;
+    top: -94px;
+    left: 260px;
+  }
 
-    .header .accesos ul {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        list-style: none;
-    }
+  .footerDetalle {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
 
-    .header .accesos ul li a {
-        font-size: 20px;
-        font-family: 'Proxima Nova';
-        font-weight: bold;
-        text-decoration: none;
-        color: black;
+  .footerDetalle .detalleAsist h3 {
+    font-size: 30px;
+  }
 
-    }
+  .envios {
+    margin: 46px 0px -55px;
+  }
+  .footerDetalle .detalleAsist .listaAsist li a {
+    font-size: 20px;
+  }
 
-    .header .accesos ul li a:hover {
-        color: yellow;
-        font-size: 25px;
-    }
-    .accesos .opciones a{
-        position: absolute;
-        display: none;
-        list-style: none;
-        background-color: aqua;
-    }
-    .accesos:hover .opciones a{
-        display: block;
-    } */
+  .footerDetalle .detalleAsist .listaAsist {
+    list-style: none;
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .footerDetalle .seguinos h3 {
+    font-size: 30px;
+  }
 
-    /* Footer Desktop */
+  .footerDetalle .seguinos .redes i {
+    font-size: 50px;
+  }
 
-    footer .footerTittle {
-        font-size: 40px;
-        position: relative;
-        top: 74px;
-    }
+  .footerDetalle .infoGeneral {
+    margin-top: 60px;
+    position: relative;
+    right: 10px;
+  }
 
-    .footerDetalle {
-        width: 90%;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        margin-bottom: 135px;
-    }
+  .footerDetalle .informacion h3 {
+    font-size: 30px;
+  }
 
+  .footerDetalle .informacion .listaInfo li a {
+    font-size: 20px;
+  }
 
-    .footerDetalle .detalleAsist h3 {
-        font-size: 30px;
-    }
+  .footerDetalle .infoGeneral .pagos h3 {
+    font-size: 25px;
+  }
 
+  .footerDetalle .infoGeneral .pagos,
+  .arrepentido {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    right: 592px;
+    margin: 46px 0px -103px;
+  }
 
-    .footerDetalle .detalleAsist .listaAsist li a {
-        font-size: 20px;
-    }
+  .footerDetalle .infoGeneral .pagos .iconosPagos i {
+    font-size: 20px;
+  }
 
-    .footerDetalle .detalleAsist .listaAsist {
-        list-style: none;
-        margin-top: 5px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .footerDetalle .infoGeneral .envios h3 {
+    font-size: 25px;
+  }
 
+  .footerDetalle .infoGeneral .envios {
+    position: relative;
+    right: 228px;
+  }
 
-    .footerDetalle .seguinos h3 {
-        font-size: 30px;
-    }
+  .footerDetalle .infoGeneral .contacto h3 {
+    font-size: 25px;
+  }
 
+  .footerDetalle .infoGeneral .contacto h4 {
+    font-size: 20px;
+  }
 
-    .footerDetalle .seguinos .redes i {
-        font-size: 50px;
-    }
+  .footerDetalle .infoGeneral .contacto {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 32px;
+    position: relative;
+    left: 115px;
+  }
 
-    .footerDetalle .infoGeneral {
-        margin-top: 60px;
-        position: relative;
-        right: 10px;
-        top: 235px;
-    }
+  .footerDetalle .detalleAsist {
+    position: relative;
+    right: 35px;
+    top: 200px;
+  }
 
-    .footerDetalle .informacion h3 {
-        font-size: 30px;
-    }
+  .footerDetalle .seguinos {
+    position: relative;
+    width: 100%;
+    height: 14%;
+  }
 
-    .footerDetalle .informacion .listaInfo li a {
-        font-size: 20px;
+  .footerDetalle .informacion {
+    position: relative;
+    left: 18px;
+    top: 213px;
+  }
 
-    }
+  .footerDetalle .informacion .listaInfo {
+    position: relative;
+    bottom: 11px;
+  }
 
-    .footerDetalle .infoGeneral .pagos h3 {
-        font-size: 25px;
-    }
+  .header .burger-container .contenedor-de-botones {
+    right: 15px;
+  }
 
-    .footerDetalle .infoGeneral .pagos,
-    .arrepentido {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        position: relative;
-        top: 40px;
-    }
+  .footerDetalle .seguinos .redes i {
+    font-size: 40px;
+    margin: 0px 8px 19px;
+    height: 50px;
+    width: 50px;
+  }
 
-    .footerDetalle .infoGeneral .pagos .iconosPagos i {
-        font-size: 20px;
-    }
-
-    .footerDetalle .infoGeneral .envios h3 {
-        font-size: 25px;
-
-    }
-
-    .footerDetalle .infoGeneral .envios {
-        position: relative;
-        right: 320px;
-        bottom: 94px;
-    }
-
-
-    .footerDetalle .infoGeneral .contacto h3 {
-        font-size: 25px;
-    }
-
-    .footerDetalle .infoGeneral .contacto h4 {
-        font-size: 20px;
-    }
-
-    .footerDetalle .infoGeneral .contacto {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 32px;
-        position: relative;
-        left: 350px;
-        bottom: 200px;
-    }
-
-    .footerDetalle .detalleAsist {
-        position: relative;
-        right: 35px;
-        top: 200px;
-    }
-
-    .footerDetalle .seguinos {
-        position: relative;
-        top: 183px;
-    }
-
-    .footerDetalle .informacion {
-        position: relative;
-        left: 18px;
-        top: 213px;
-    }
-
-    .footerDetalle .informacion .listaInfo {
-        position: relative;
-        bottom: 11px;
-    }
-
-    .header .burger-container .contenedor-de-botones {
-        right: 15px;
-    }
+  .footerDetalle .seguinos .redes {
+    margin-top: 18px;
+  }
 }
 
 @media (min-width: 1440px) {
+  /***** heder *******/
+  .header {
+    height: 800px;
+  }
 
-    /***** heder *******/
-    .header {
-        height: 800px;
-    }
+  nav {
+    top: 750px;
+    width: 1450px;
+    font-size: 25px;
+  }
 
-    nav {
-        top: 750px;
-        width: 1450px;
-        font-size: 25px;
-    }
+  footer .footerTittle {
+    top: -105px;
+    left: 370px;
+  }
+  .header .accesos ul {
+    top: 190px;
+    position: relative;
+  }
 
-    .footerDetalle {
-        left: -60px;
-    }
+  /****** footer *******/
+  .footerDetalle .informacion {
+    left: -150px;
+    top: 7px;
+  }
 
-    .header .accesos ul {
-        top: 190px;
-        position: relative;
-    }
+  .footerDetalle .detalleAsist {
+    left: -60px;
+    top: -20px;
+  }
 
-    /****** footer *******/
-    .footerDetalle .informacion {
-        left: -150px;
-        top: 7px;
-    }
+  .footerDetalle .infoGeneral {
+    left: -170px;
+  }
 
-    .footerDetalle .seguinos {
-        left: -100px;
-        top: -36px;
-    }
+  .footerDetalle .infoGeneral .pagos {
+    right: 680px;
+    margin-bottom: -64px;
+  }
 
-    .footerDetalle .detalleAsist {
-        left: -60px;
-        top: -20px;
-    }
+  .footerDetalle .infoGeneral .envios {
+    right: 186px;
+    margin: 0;
+  }
 
-    .footerDetalle .infoGeneral {
-        left: -170px;
-        top: 46px;
-    }
-
-    .footerDetalle .infoGeneral .pagos {
-        left: 0px;
-    }
-
-    .footerDetalle .infoGeneral .envios {
-        right: 0px;
-        bottom: -30px;
-    }
-
-    .footerDetalle .infoGeneral .contacto {
-        top: -184px;
-    }
-
+  .footerDetalle .infoGeneral .contacto {
+    left: 310px;
+    margin-top: -69px;
+  }
 }
-
