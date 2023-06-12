@@ -33,7 +33,8 @@ const controller = {
             city: req.body.city,
             zipCode: req.body.zipCode,
             cell: req.body.cell,
-            type: 'Customer'
+            type: 'Customer',
+            avatar: req.file.filename
         });
 
         res.redirect('/users/login');
@@ -56,7 +57,7 @@ const controller = {
                 });
             }
             req.session.user = {
-                id: user.id,
+                avatar: user.avatar,
                 firstName: user.firstName,
                 lastName: user.lastName,
                 email: user.email,
