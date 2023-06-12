@@ -26,11 +26,10 @@ const controller = {
           res.status(500).send('Error');
         }
       },
-    car: (req, res) => {
-        const products = getProducts();
-        const visited = products.filter((product) => product.subcategory == 'visited');
-        res.render('carrito-de-compras', { visited });
-    },
+      car: (req, res) => {
+        db.Product.findByPk(req.params.id)
+          res.render('carrito-de-compras');
+      },
     us: (req, res) => {
         res.render('aboutUs');
     },
