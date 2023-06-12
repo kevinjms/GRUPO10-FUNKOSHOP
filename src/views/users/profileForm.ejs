@@ -7,21 +7,21 @@
             <div class="detalle-perfil">
                 <div>
                     <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
-                </div>
-                <img src="avatar.jpg" alt="Foto del usuario" class="avatar">
-            </div>
             <div class="perfil-usuario">
                 <button class="create"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a></button>
                 <h1 class="title">MI CUENTA</h1>
                 <div class="profile-info">
-                   <p>NOMBRE</p>
-                   <p>APELLIDO</p>
-                   <p>DIRECCIÓN</p>
-                   <p>CIUDAD</p>
-                   <p>CÓDIGO POSTAL</p>
-                   <p>EMAIL</p>
-                   <p>NÚMERO DE CONTACTO</p>
+                   <p>NOMBRE: <%= user.firstName %></p> 
+                   <p>APELLIDO: <%= user.lastName %></p> 
+                   <p>DIRECCIÓN: <%= user.adress %></p>
+                   <p>CIUDAD: <%= user.city %></p> 
+                   <p>CÓDIGO POSTAL: <%= user.zipCode %></p> 
+                   <p>NÚMERO DE CONTACTO: <%= user.cell %></p> 
+                   <p>EMAIL: <%= user.email %></p> 
                 </div>
+                <a href="/editUser/<%= user.id %>">
+                    <button>Editar</button>
+                </a>
                 <div class="close-session">
                     <button><a href="/">CERRAR SESIÓN</a></button>
                 </div>

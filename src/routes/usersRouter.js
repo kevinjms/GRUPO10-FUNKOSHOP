@@ -32,12 +32,12 @@ const validateLogin = [
 router.get('/register', usersController.register);
 router.post('/', uploadFile.single("image"), validations, usersController.registered)
 
-router.get('/editUser', usersController.edit);
-router.post('/', uploadFile.single("image"), usersController.update)
 
 
 router.get('/login', usersController.login);
 router.post('/login', validateLogin, usersController.logged);
 router.get('/profileForm', usersController.profile);
 
+router.get('/editUser', usersController.edit);
+router.post('/', uploadFile.single("image"), usersController.update)
 module.exports = router

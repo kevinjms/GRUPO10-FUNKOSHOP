@@ -33,8 +33,7 @@ const controller = {
             city: req.body.city,
             zipCode: req.body.zipCode,
             cell: req.body.cell,
-            type: 'Customer',
-            avatar: req.file.filename
+            type: 'Customer'
         });
 
         res.redirect('/users/login');
@@ -42,56 +41,100 @@ const controller = {
     login: (req, res) => {
         res.render('./users/loginForm');
     },
-    logged: (req, res) => {
-        let rValidation = validationResult(req); 
-        const users = getUsers()
-        let existeUser = false;
-        if (rValidation.isEmpty()) {      // si no hay errores, es decir si 'errors' es vacio, entonces hace lo siguiente.
-            for (let i = 0; i < users.length; i++) {
-                if (users[i].email == req.body.email && bcrypt.compareSync(req.body.password, users[i].password)){
-                   existeUser = existeUser||true ;
-                    };
-                };   // aca finaliza el for 
-            if (existeUser) {
-                res.redirect('/');
-            } else {
-            return res.render('./users/profileForm'); 
+    logged: async (req, res) => {
+        const { email, password } = req.body;
+
+        try {
+            const user = await db.User.findOne({ where: { email } });
+
+            if (!user || !bcrypt.compareSync(password, user.password)) {
+                return res.render('./users/login', {
+                    errors: {
+                        credentials: 'Credenciales inválidas'
+                    },
+                    oldData: req.body
+                });
             }
-        } else {
-            return res.render('./users/loginForm', {
-                errors: rValidation.mapped(),
+            req.session.user = {
+                id: user.id,
+                firstName: user.firstName,
+                lastName: user.lastName,
+                email: user.email,
+                password: user.password,
+                adress: user.adress,
+                city: user.city,
+                zipCode: user.zipCode,
+                cell: user.cell
+              };
+            // Aquí puedes implementar la lógica para guardar la sesión del usuario
+            // por ejemplo, utilizando req.session o alguna biblioteca de manejo de sesiones
+
+            res.redirect('/users/profileForm');
+        } catch (error) {
+            console.error(error);
+            res.render('./users/login', {
+                errors: {
+                    general: 'Error al iniciar sesión'
+                },
                 oldData: req.body
-            }) ;
+            });
         }
     },
     profile: (req, res) => {
-        res.render('./users/profileForm');
+        const user = req.session.user;
+        // Aquí puedes implementar la lógica para obtener los datos del perfil del usuario
+        // y luego renderizar la vista con los datos obtenidos
+
+        res.render('./users/profileForm', { user });
     },
-    edit: async (req, res) => {
-        db.users.findByPk(req.params.id)
-            .then(function (user) {
-                res.render('editUsers', { user });
-            })
+    edit: (req, res) => {
+        // Aquí puedes implementar la lógica para obtener los datos del usuario a editar
+        // y luego renderizar la vista de edición con los datos obtenidos
+
+        res.render('./users/editUser');
     },
     update: async (req, res) => {
-        const product = await db.Product.update({
-            name: req.body.name,
-            description: req.body.description,
-            product_categories_id: req.body.category,
-            product_subcategories_id: req.body.subcategory,
-            price: req.body.price
-        }, {
-            where: {
-                id: req.params.id
-            }
-        })
-        if (req.file) {
-            const image = await db.Image.findOne({ where: { products_id: product.id } })
-            image.url = req.file.filename;
-            image.save()
+        const resultValidation = validationResult(req);
+        if (resultValidation.errors.length > 0) {
+            return res.render('./users/editUser', {
+                errors: resultValidation.mapped(),
+                oldData: req.body
+            });
         }
-        res.redirect('/products/detail/' + req.params.id)
-    },
-}
 
-module.exports = controller ;
+        try {
+            const user = await db.User.findByPk(req.params.id);
+
+            if (!user) {
+                return res.render('./users/editUser', {
+                    errors: {
+                        general: 'Usuario no encontrado'
+                    },
+                    oldData: req.body
+                });
+            }
+
+            user.firstName = req.body.firstName;
+            user.lastName = req.body.lastName;
+            user.email = req.body.email;
+            user.address = req.body.address;
+            user.city = req.body.city;
+            user.zipCode = req.body.zipCode;
+            user.cell = req.body.cell;
+
+            await user.save();
+
+            res.redirect('/users/profileForm');
+        } catch (error) {
+            console.error(error);
+            res.render('./users/editUser', {
+                errors: {
+                    general: 'Error al actualizar el usuario'
+                },
+                oldData: req.body
+            });
+        }
+    }
+};
+
+module.exports = controller;

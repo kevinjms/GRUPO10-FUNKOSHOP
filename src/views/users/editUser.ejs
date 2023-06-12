@@ -112,18 +112,7 @@
                                         <div id="error-password-confirm" class="text-danger"></div>
                             </div>
                         </div>
-                        <div class="correo-contraseña-container">
-                            <div class="cajaDeContraseña">
-                                <div class="textoContraseña"> IMAGEN </div>
-                                <input class="avatar" type="file" value="<%= user.avatar %>" name="image">
-                                <% if (locals.errors && errors.avatar) { %>
-                                    <div class="text-danger">
-                                        <%= errors.avatar.msg %>
-                                    </div>
-                                    <% } %>
-                                        <div id="error-image" class="text-danger"></div>
-                            </div>
-                        </div>
+                        
                         <!--     Seccion de Aceptar terminos y condiciones   -->
                         <section class="cajaDeAceptarTyC">
                             <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y
