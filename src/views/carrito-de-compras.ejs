@@ -35,23 +35,6 @@
                             <p class="precio1">$11.300</p>
                         </div>
                     </div>
-                    <section class="destacados">
-                        <h2>¡AGREGALOS A TU COMPRA!</h2>
-                        <article class="contenedorDestacados">
-                            <% visited.forEach((product)=> { %>
-                                <div class="infoDestacado">
-                                    <img src="/images/funkos/<%= product.image %>" alt="ST">
-                                    <h4>
-                                        <%= product.name %>
-                                    </h4>
-                                    <h4>$ <%= product.price %>
-                                    </h4>
-                                    <button class="btn-add"><a class='button-detalle-de-producto'
-                                            href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                                </div>
-                                <% }) %>
-                        </article>
-                    </section>
                 </div>
                 </div>
             </main>

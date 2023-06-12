@@ -515,7 +515,6 @@ footer .footerTittle {
     font-size: 20px;
   }
 
-<<<<<<< HEAD
   .menu-horizontal {
     list-style: none;
     display: flex;
@@ -528,24 +527,23 @@ footer .footerTittle {
     color: white;
     text-decoration: none;
   }
-=======
     nav {
-        display: block;
-        position: absolute;
-        top: 505px;
-        width: 1024px;
-        margin: auto;
-        font-size: 20px;
-    }
+    display: block;
+    position: absolute;
+    top: 505px;
+    width: 1024px;
+    margin: auto;
+    font-size: 20px;
+  }
 
-    .menu-horizontal {
-        list-style: none;
-        display: flex;
-        justify-content: space-around;
-    }
->>>>>>> b92fa591366d4d288e0e5b1cec10e288c1a467d6
-
-  .menu-horizontal > li > a:hover {
+  .menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+  }
+    .menu-horizontal
+    > li
+    > a:hover {
     color: yellow;
     font-size: 25px;
   }
@@ -574,7 +572,6 @@ footer .footerTittle {
     padding: 15px 15px 15px 20px;
   }
 
-<<<<<<< HEAD
   /* Footer Desktop */
 
   footer .footerTittle {
@@ -609,16 +606,16 @@ footer .footerTittle {
     flex-direction: column;
     align-items: center;
   }
-=======
-    .menu-vertical li a {
-        display: block;
-        color: white;
-        text-decoration: none;
-        padding: 15px 15px 15px 20px;
-    } */
->>>>>>> b92fa591366d4d288e0e5b1cec10e288c1a467d6
+  .menu-vertical li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+  }
 
-  .footerDetalle .seguinos h3 {
+  .footerDetalle
+  .seguinos
+  h3 {
     font-size: 30px;
   }
 
@@ -631,7 +628,12 @@ footer .footerTittle {
     position: relative;
     right: 10px;
   }
-
+  footer .footerTittle {
+    font-size: 40px;
+    position: relative;
+    bottom: 100px;
+    left: 260px;
+  }
   .footerDetalle .informacion h3 {
     font-size: 30px;
   }
@@ -664,7 +666,7 @@ footer .footerTittle {
 
   .footerDetalle .infoGeneral .envios {
     position: relative;
-    right: 228px;
+    right: 240px;
   }
 
   .footerDetalle .infoGeneral .contacto h3 {
@@ -680,7 +682,7 @@ footer .footerTittle {
     flex-direction: column;
     margin-bottom: 32px;
     position: relative;
-    left: 115px;
+    left: 98px;
   }
 
   .footerDetalle .detalleAsist {
