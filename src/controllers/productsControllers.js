@@ -8,8 +8,8 @@ const controller = {
         db.Product.findAll({
             where: { 
                 [Op.or]:[
-                    {name: { [Op.like]: "%" + req.query.query + "%" } },
-                    {"$categories.name$": { [Op.like]: "%" + req.query.query + "%" } }
+                    {name: { [Op.like]: "%" + req.query.query + "%" }},
+                    {"$categories.name$": { [Op.like]: "%" + req.query.query + "%" }}
                 ]
             }, 
              include: [{ model: db.Image, as: 'images' },
