@@ -49,6 +49,11 @@
     font-size: 10px;
 }
 
+#toggle-password{
+background: none;
+    border: none;
+}
+
 .box-button {
     margin: 15px 0;
 }

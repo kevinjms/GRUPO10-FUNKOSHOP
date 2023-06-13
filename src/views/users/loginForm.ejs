@@ -6,41 +6,46 @@
                 <div class="box-login">
                     <form action="/users/login" method="POST">
                         <div class="login-formulario">
-                            <h1> INICIAR SESIÓN </h1>
+                            <h1>INICIAR SESIÓN</h1>
                             <div class="box-label">
                                 <div class="grup-label">
-                                    <label class="login-label"> INGRESE SU CORREO ELECTRÓNICO </label>
-                                    <input class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>" value="<%= locals.oldData ? oldData.email : null %>" type="text" name="email"
+                                    <label class="login-label">INGRESE SU CORREO ELECTRÓNICO</label>
+                                    <input
+                                        class="login-input <%= locals.errors && errors.email ? 'is-invalid' : null %>"
+                                        value="<%= locals.oldData ? oldData.email : null %>" type="text" name="email"
                                         placeholder="Correo electrónico">
-                                        <% if (locals.errors && errors.email) { %>
-                                            <div class="text-danger">
-                                                <%= errors.email.msg %>
-                                            </div>
-                                       <% } %>
-                                       <div id="error-email" class="text-danger"></div>
+                                    <% if (locals.errors && errors.email) { %>
+                                        <div class="text-danger">
+                                            <%= errors.email.msg %>
+                                        </div>
+                                        <% } %>
+                                            <div id="error-email" class="text-danger"></div>
                                 </div>
                                 <div class="box-label">
-                                    <label class="login-label"> INGRESE SU CONTRASEÑA </label>
+                                    <label class="login-label">INGRESE SU CONTRASEÑA</label>
                                     <div class="box-input">
-                                        <input class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>" type="password" name="password"
-                                            placeholder="Contraseña"> <i class="fa-solid fa-eye"> </i>
-                                            <% if (locals.errors && errors.password) { %>
-                                                <div class="text-danger">
-                                                    <%= errors.password.msg %>
-                                                </div>
-                                           <% } %>
-                                           <div id="error-password" class="text-danger"></div>
-                                        <a href=""> ¿OLVIDASTE TU CONTRASEÑA? </a>
+                                        <input
+                                            class="login-input <%= locals.errors && errors.password ? 'is-invalid' : null %>"
+                                            type="password" name="password" placeholder="Contraseña">
+                                        <button id="toggle-password" type="button"><i
+                                                class="fa-solid fa-eye"></i></button>
+                                        <% if (locals.errors && errors.password) { %>
+                                            <div class="text-danger">
+                                                <%= errors.password.msg %>
+                                            </div>
+                                            <% } %>
+                                                <div id="error-password" class="text-danger"></div>
+                                                <a href="">¿OLVIDASTE TU CONTRASEÑA?</a>
                                     </div>
                                 </div>
                             </div>
                             <div class="box-button">
                                 <div class="box-remember">
                                     <input class="login-input-2" type="checkbox" name="rememberMe" value="true">
-                                    <label class="login-p-2"> RECORDARME </label>
+                                    <label class="login-p-2">RECORDARME</label>
                                 </div>
-                                <p class="login-button"> <button type="submit" class="btn-add"> ACCEDER </button> </p>
-                                <p class="login-p-3"> <a href="/users/register"> CREAR CUENTA </a> </p>
+                                <p class="login-button"><button type="submit" class="btn-add">ACCEDER</button></p>
+                                <p class="login-p-3"><a href="/users/register">CREAR CUENTA</a></p>
                             </div>
                         </div>
                     </form>
@@ -48,7 +53,7 @@
             </main>
 
             <%- include('../partials/footer') %>
-            <script src="/js/loginValidation.js"> </script>
+                <script src="/js/loginValidation.js"></script>
     </body>
 
     </html>

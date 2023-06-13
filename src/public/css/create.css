@@ -7,7 +7,7 @@
 }
 
 .login-textarea {
-    width: 50rem;
+    width: 22rem;
     height: 5rem;
     resize: none;
     overflow: hidden;
@@ -112,4 +112,22 @@
     display: flex;
     justify-content: center;
     height: 50px;
+}
+
+@media (min-width: 768px) {
+    .login-textarea {
+        width: 43rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .login-textarea {
+        width: 58rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .login-textarea {
+        width: 84rem;
+    }
 }
