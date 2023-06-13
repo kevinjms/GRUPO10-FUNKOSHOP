@@ -37,9 +37,20 @@
     margin-bottom: 20px;
 }
 
-.close-session button{
+.close-session1 {
+    border-radius: 10px;
+    background-color: red;
+}
+
+.close-session2 {
     border-radius: 10px;
     background-color: blue;
+}
+
+.close-session3 button {
+    border-radius: 10px;
+    background-color: blue;
+    color: white;
 }
 
 .close-session a{

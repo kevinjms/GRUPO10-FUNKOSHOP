@@ -4,13 +4,6 @@ const bcrypt = require('bcryptjs');
 const { validationResult } = require('express-validator')
 const db = require('../database/models')
 
-function getUsers() {
-	db.User.findAll()
-		.then(function (usuarios) {
-			return usuarios
-		}
-		)
-}
 
 const controller = {
     register: (req, res) => {
@@ -57,6 +50,7 @@ const controller = {
                 });
             }
             req.session.user = {
+                id: user.id,
                 avatar: user.avatar,
                 firstName: user.firstName,
                 lastName: user.lastName,
@@ -70,6 +64,9 @@ const controller = {
             // Aquí puedes implementar la lógica para guardar la sesión del usuario
             // por ejemplo, utilizando req.session o alguna biblioteca de manejo de sesiones
 
+            if (req.body.rememberMe != undefined) {
+                const hola = res.cookie('recordame', user.email, { maxAge: 60000} )
+            }
             res.redirect('/users/profileForm');
         } catch (error) {
             console.error(error);
@@ -89,52 +86,26 @@ const controller = {
         res.render('./users/profileForm', { user });
     },
     edit: (req, res) => {
-        // Aquí puedes implementar la lógica para obtener los datos del usuario a editar
-        // y luego renderizar la vista de edición con los datos obtenidos
-
-        res.render('./users/editUser');
+        const user = req.session.user;
+        res.render('./users/editUser', { user});
     },
     update: async (req, res) => {
-        const resultValidation = validationResult(req);
-        if (resultValidation.errors.length > 0) {
-            return res.render('./users/editUser', {
-                errors: resultValidation.mapped(),
-                oldData: req.body
-            });
-        }
-
-        try {
-            const user = await db.User.findByPk(req.params.id);
-
-            if (!user) {
-                return res.render('./users/editUser', {
-                    errors: {
-                        general: 'Usuario no encontrado'
-                    },
-                    oldData: req.body
-                });
+        const user = await db.User.update({
+            avatar: req.body.avatar,
+            firstName: req.body.firstName,
+            lastName: req.body.lastName,
+            email: req.body.email,
+            password: req.body.password,
+            adress: req.body.adress,
+            city: req.body.city,
+            zipCode: req.body.zipCode,
+            cell: req.body.cell
+        }, {
+            where: {
+                id: req.params.id
             }
-
-            user.firstName = req.body.firstName;
-            user.lastName = req.body.lastName;
-            user.email = req.body.email;
-            user.address = req.body.address;
-            user.city = req.body.city;
-            user.zipCode = req.body.zipCode;
-            user.cell = req.body.cell;
-
-            await user.save();
-
-            res.redirect('/users/profileForm');
-        } catch (error) {
-            console.error(error);
-            res.render('./users/editUser', {
-                errors: {
-                    general: 'Error al actualizar el usuario'
-                },
-                oldData: req.body
-            });
-        }
+        })
+        res.redirect('/users/profileForm')
     }
 };
 

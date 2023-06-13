@@ -39,5 +39,5 @@ router.post('/login', validateLogin, usersController.logged);
 router.get('/profileForm', usersController.profile);
 
 router.get('/editUser', usersController.edit);
-router.post('/', uploadFile.single("image"), usersController.update)
+router.put('/editUser/:id', uploadFile.single("image"), usersController.update)
 module.exports = router
