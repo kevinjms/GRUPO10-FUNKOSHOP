@@ -8,7 +8,7 @@
                 <div>
                     <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
                 </div>
-                <img src="" alt="Foto del usuario" class="avatar">
+                <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
             </div>
             <div class="perfil-usuario">
                 <button class="create"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a></button>
@@ -23,7 +23,8 @@
                    <p>EMAIL: <%= user.email %></p> 
                 </div>
                 <div class="close-session">
-                    <button><a href="/">CERRAR SESIÓN</a></button>
+                    <button class="close-session2"><a href="/users/editUser">Editar Usuario</a></button>
+                    <button class="close-session1"><a href="/">CERRAR SESIÓN</a></button>
                 </div>
             </div>
 

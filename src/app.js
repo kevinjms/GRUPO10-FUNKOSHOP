@@ -4,7 +4,8 @@ const express = require('express');
 const path = require('path');
 const methodOverride =  require('method-override');
 const session = require('express-session');
-
+const cookieParser = require('cookie-parser');
+const recordameMiddleware = require('./middlewares/cookieMiddleware')
 // ********* Express/use *****
 const app = express();
 
@@ -14,6 +15,8 @@ app.use(express.urlencoded({extended: false }));   // Con la linea 11 y 12, acla
 app.use(express.json());               // lo vamos a capturar en forma de Objeto Literal (para luego convertirlo en JSON), sin esto toda informacion de un formulario se pierde, salvo que se use express-generator. 
 app.use(methodOverride('_method'));
 app.use(session({secret: "Funko-DH"}));
+app.use(cookieParser());
+app.use(recordameMiddleware);
 
 // ****** sistemas de rutas *******
 const mainRouter = require('./routes/mainRouter');
