@@ -10,8 +10,8 @@
                             <div class="box-label">
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
-                                    <input class="login-input" value="<%= product.image %>" type="file" name="image">
-                                    <img src="/images/funkos/<%= product.images[0].url%>" width="400px">
+                                    <input class="login-input" value="<%= product.image %>" type="file" name="image" id="editImage">
+                                    <img src="/images/funkos/<%= product.images[0].url%>" width="400px" id="imageNew">
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
@@ -59,6 +59,7 @@
             </main>
 
             <%- include('partials/footer') %>
+            <script src="/js/editImage.js"></script>
     </body>
 
     </html>
