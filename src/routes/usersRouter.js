@@ -2,8 +2,10 @@ const express = require('express');
 const router = express.Router();
 
 const usersController = require('../controllers/usersControllers');
-const uploadFile = require('../middlewares/usersMiddleware');
+const uploadFile = require('../middlewares/multerMiddleware');
 const { body } = require('express-validator')
+const authMiddleware = require('../middlewares/authMiddleware')
+const loggedMiddleware = require('../middlewares/loggedMiddleware')
 
 const validations= [
     body('firstName').notEmpty().withMessage('*Tienes que escribir un nombre*'),
@@ -34,9 +36,9 @@ router.post('/', uploadFile.single("image"), validations, usersController.regist
 
 
 
-router.get('/login', usersController.login);
-router.post('/login', validateLogin, usersController.logged);
-router.get('/profileForm', usersController.profile);
+router.get('/login', loggedMiddleware, usersController.login);
+router.post('/login', validateLogin, loggedMiddleware, usersController.logged);
+router.get('/profileForm', authMiddleware, usersController.profile);
 
 router.get('/editUser', usersController.edit);
 router.put('/editUser/:id', uploadFile.single("image"), usersController.update)

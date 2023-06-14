@@ -1,16 +1,8 @@
-const path = require('path');
-const multer = require('multer');
+function usersMiddleware(req, res, next) {
+    if(req.session.user) {
+		res.locals.user = req.session.user
+    }
+    next();
+}
 
-const storage = multer.diskStorage({
-	destination: (req, file, cb) => {
-		cb(null, './src/public/images/users');
-	},
-	filename: (req, file, cb) => {
-		let fileName = `${Date.now()}_user${path.extname(file.originalname)}`;
-		cb(null, fileName);
-	}
-})
-
-const uploadFile = multer({ storage });
-
-module.exports = uploadFile;
+module.exports = usersMiddleware;
