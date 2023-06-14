@@ -51,6 +51,7 @@ const controller = {
             }
             req.session.user = {
                 id: user.id,
+                types_id: user.types_id,
                 avatar: user.avatar,
                 firstName: user.firstName,
                 lastName: user.lastName,
@@ -65,7 +66,7 @@ const controller = {
             // por ejemplo, utilizando req.session o alguna biblioteca de manejo de sesiones
 
             if (req.body.rememberMe != undefined) {
-                const hola = res.cookie('recordame', user.email, { maxAge: 60000} )
+            res.cookie('recordame', user.email, { maxAge: 60000} )
             }
             res.redirect('/users/profileForm');
         } catch (error) {
@@ -78,16 +79,15 @@ const controller = {
             });
         }
     },
-    profile: (req, res) => {
+    profile: async (req, res) => {
         const user = req.session.user;
-        // Aquí puedes implementar la lógica para obtener los datos del perfil del usuario
-        // y luego renderizar la vista con los datos obtenidos
-
-        res.render('./users/profileForm', { user });
+        const newUser = await db.User.findByPk(user.id)
+        res.render('./users/profileForm', { user: newUser});
     },
-    edit: (req, res) => {
+    edit: async (req, res) => {
         const user = req.session.user;
-        res.render('./users/editUser', { user});
+        const newUser = await db.User.findByPk(user.id)
+        res.render('./users/editUser', { user: newUser});
     },
     update: async (req, res) => {
         const user = await db.User.update({

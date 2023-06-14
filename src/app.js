@@ -6,6 +6,8 @@ const methodOverride =  require('method-override');
 const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const recordameMiddleware = require('./middlewares/cookieMiddleware')
+const usersMiddleware = require('./middlewares/usersMiddleware')
+
 // ********* Express/use *****
 const app = express();
 
@@ -17,6 +19,7 @@ app.use(methodOverride('_method'));
 app.use(session({secret: "Funko-DH"}));
 app.use(cookieParser());
 app.use(recordameMiddleware);
+app.use(usersMiddleware)
 
 // ****** sistemas de rutas *******
 const mainRouter = require('./routes/mainRouter');
