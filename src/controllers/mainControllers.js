@@ -29,6 +29,7 @@ const controller = {
       car: (req, res) => {
         db.Product.findByPk(req.params.id)
           res.render('carrito-de-compras');
+  
       },
     us: (req, res) => {
         res.render('aboutUs');

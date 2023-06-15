@@ -98,7 +98,7 @@ const controller = {
             }
         })
         res.redirect('/products');
-    }
+    },
 }
 
 module.exports = controller;

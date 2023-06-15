@@ -12,7 +12,7 @@ router.get('/create', adminMiddleware, productsController.create);    // Formula
 router.post('/', uploadFile.single("image"), productsController.save);  // Acción de creación (a donde se envía el formulario)
 
 router.get('/detail/:id', productsController.detail);   // Detalle de un producto particular (Ejemplo:, la url seria: http://localhost:3000/products/detail/:id )
- 
+
 router.get('/editProducts/:id', adminMiddleware, productsController.edit);   // Formulario de edición de productos
 router.put('/detail/:id', adminMiddleware, uploadFile.single("image"), productsController.update);  // Acción de edición (a donde se envía el formulario)
 router.delete('/detail/:id', adminMiddleware, productsController.destroy);  // Acción de borrado

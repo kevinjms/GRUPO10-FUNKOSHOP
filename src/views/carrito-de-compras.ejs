@@ -5,7 +5,7 @@
             <main>
                 <div class="funko-caja">
                     <div class="car-fav">
-                        <h2>CARRITO(1)</h2>
+                        <h2 id="titulo-carrito">CARRITO(1)</h2>
                         <h2 class="favoritos">FAVORITOS(0)</h2>
                         <div class="descripciones">
                             <h2 class="descripcion">CANT</h2>
@@ -18,7 +18,7 @@
                             <div class="articulos">
                                 <p>POP!</p>
                                 <p class="capitan-america">CAPITÁN AMÉRICA</p>
-                                <button class="btn-add"><a class='button-detalle-de-producto'>DETALLE</a></button>
+                                <button class="btn-add"><a href="/products/detail">DETALLE</a></button>
                             </div>
                         </div>
                     </article>
@@ -27,18 +27,17 @@
                             <input id="cantidad" type="text" value="1">
                             <button class="btn" type="button" id="mas">+</button>
                         </div>
-                        <p class="precio">$10.500</p>
-                        <h2>ENVÍO</h2>
-                        <P class="precio precio2">$800</P>
-                        <div class="total-carrito">
-                            <h2>TOTAL</h2>
-                            <p class="precio1">$11.300</p>
+                        <p id="precio" class="precio">$10.500</p>
+                    <h2>ENVÍO</h2>
+                    <P class="precio precio2">$800</P>
+                    <div class="total-carrito">
+                        <h2>TOTAL</h2>
+                        <p id="total" class="precio1">$11.300</p>
                         </div>
                     </div>
                 </div>
                 </div>
             </main>
             <%- include('partials/footer') %>
+            <script src="/js/btn.js"></script>
     </body>
-
-    </html>
