@@ -1,19 +1,28 @@
+@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+
+
 .btn-add {
+    font-family: 'proxima Nova';
     box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
     background-color: #0B44EF;
     background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
     color: #E6EAEF;
     border-radius: 6px;
     margin-bottom: 8px;
-    font-size: 8px;
+    font-size: 14px;
+    width: 100px;
 }
 
-.car{
-    margin-bottom: 33px;
-}
-
-.of{
-    margin-bottom: -12px;
+.btn-admin {
+    font-family: 'proxima Nova';
+    box-shadow: 0 3px 0 0 #077f0f, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
+    background-color: #0bef29;
+    background-image: linear-gradient(-45deg, #0bdb0e, #28f61d);
+    color: #E6EAEF;
+    border-radius: 6px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    width: 100px;
 }
 
 .infofunko .btn {

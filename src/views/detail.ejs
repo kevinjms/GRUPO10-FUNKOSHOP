@@ -35,13 +35,9 @@
 
                     <div class="especificaciones">
                         <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
-                        <div class="carrito">
-                            <button class="boton-carrito">
-                                <li class="fa-solid fa-cart-shopping"></li>
-                            </button>
-                        </div>
+                            <button class="btn-add det"><i class="fa-solid fa-cart-shopping"></i></button>
                         <h2>
-                            <%= product.price %>
+                            $ <%= product.price %>
                         </h2>
                         <p>Disponibles: 5</p>
 
@@ -55,8 +51,7 @@
                             <li><a href="#">Envíos</a></li>
                             <li><a href="#">Términos y condiciones</a></li>
                             <br>
-                            <button><a class="boton-editar"
-                                    href="/products/editProducts/<%= product.id %>">Editar</a></button>
+                            <button class="btn-admin"><a href="/products/editProducts/<%= product.id %>">EDITAR</a></button>
                         </div>
                     </div>
                 </section>

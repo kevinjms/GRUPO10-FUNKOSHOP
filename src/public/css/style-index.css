@@ -1,6 +1,7 @@
 @import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
 
 * {
+  font-family: "Proxima Nova";
   margin: 0;
   box-sizing: border-box;
 }
@@ -136,6 +137,14 @@ i {
   border-radius: 50px;
   margin-left: 80px;
 }
+.prod  {
+  position: relative;
+  width: 40px;
+  height: 36px;
+  left: 94px;
+  font-size: 20px;
+  bottom: 25px;
+}
 
 /*** SECCION DESTACADOS ******/
 .destacados,
@@ -208,13 +217,10 @@ i {
 }
 
 .ofertas .contenedorOfertas .infoOfertas img {
-  height: 165px;
-  margin-top: 15px;
-}
-
-.ofertas .contenedorOfertas .infoOfertas h4 {
-  margin-top: -31px;
-  font-size: 15px;
+  height: 200px;
+  margin-top: 15px; 
+  font-size: 12px;
+  font-family: "Proxima Nova";
 }
 
 /******* lista de productos *******/
@@ -250,6 +256,18 @@ i {
   margin-bottom: 14px;
   font-size: 8px;
 }
+.prod  {
+  position: relative;
+  width: 40px;
+  height: 60px;
+  left: 94px;
+  font-size: 20px;
+  bottom: 249px;
+}
+
+
+
+
 
 
 @media (min-width: 768px) {
@@ -458,5 +476,8 @@ i {
 
   .destacados .contenedorDestacados .infoDestacado {
     width: 30%;
+  }
+  .prod {
+    left: 135px;
   }
 }

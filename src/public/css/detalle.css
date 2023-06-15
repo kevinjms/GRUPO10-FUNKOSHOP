@@ -92,12 +92,13 @@ main .titulo {
     font-size: 20px;
 }
 
-.carrito {
-    display: flex;
-    position: absolute;
-    right: 102px;
-    margin-top: 22px;
-    font-size: xx-large;
+.det {
+    position: relative;
+    width: 60px;
+    left: 300px;
+    font-size: 26px;
+    top: 66px;
+    padding: 11px;
 }
 
 details {
@@ -146,23 +147,10 @@ details {
     margin-top: 15px;
 }
 
-.boton-editar {
+.btn-admin a {
+    color: whitesmoke;
     text-decoration: none;
-    color: #0B44EF;
-}
-
-.boton-carrito {
-    box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgba(0, 0, 0, 0.6), 0 4px 6px 1px rgba(0, 0, 0, 0.3), 0 1px 2px 1px rgba(0, 0, 0, 0) inset, 0 18px 32px -2px rgba(255, 255, 255, 0.1) inset;
-    background-color: #0B44EF;
-    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
-    color: #E6EAEF;
-    border-radius: 6px;
-    margin-bottom: 8px;
-    font-size: 20px;
-}
-
-.btn-add {
-    margin-top: -28px;
+    font-size: 24px;
 }
 
 .agg {
@@ -216,7 +204,7 @@ details {
     }
 
     .especificaciones h2 {
-        font-size: 80px;
+        font-size: 60px;
     }
 
     .carrito {
@@ -249,6 +237,12 @@ details {
         align-items: center;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+    .det {
+        width: 90px;
+        left: 0px;
+        top: 0px;
+        margin-bottom: 50px;
     }
 }
 
@@ -307,5 +301,23 @@ details {
         margin-top: 150px;
         margin-left: 330px;
 
+    }
+    .det {
+        top: -80px;
+        margin-bottom: 0px;
+    }
+
+   
+}
+ @media (min-width: 1440px) {
+    .especificaciones {
+        margin-left: 730px;
+    }
+    .detalle {
+        position: relative;
+        left: 200px;
+    }
+    .favoritos {
+        margin-left: -240px;
     }
 }

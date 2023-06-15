@@ -1,6 +1,7 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
 * {
+    font-family: "Proxima Nova";
     margin: 0;
     box-sizing: border-box;
 }
@@ -10,10 +11,14 @@ body {
     font-size: 12px;
     background-color: whitesmoke;
 }
+.login-button a{
+    color: white;
+    text-decoration: none;
+}
 
 .imagen-capitan {
     position: absolute;
-    width: 200px;
+    width: 160px;
 }
 
 .img-carrito {
@@ -23,9 +28,9 @@ body {
 
 .articulos {
     position: relative;
-    bottom: -81px;
-    left: -77px;
-    font-size: 7px;
+    bottom: -150px;
+    left: -50px;
+    font-size: 12px;
 }
 
 .car-fav {

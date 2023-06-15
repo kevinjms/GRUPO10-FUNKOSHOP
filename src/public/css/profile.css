@@ -59,8 +59,30 @@
     font-size: 15px;
     color: white;
 }
-.create {
-    left: 800px;
-    font-size: 30px;
+.btn-admin {
     position: relative;
+    left: 269px;
+}
+.btn-admin .fa-plus {
+    font-size: 30px;
+    color: whitesmoke;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+.btn-admin {
+    left: 560px;
+}
+}
+
+@media (min-width: 1024px) {
+    .btn-admin {
+    left: 800px;
+}
+}
+
+@media (min-width: 1440px) {
+.btn-admin {
+    left: 1180px;
+}
 }

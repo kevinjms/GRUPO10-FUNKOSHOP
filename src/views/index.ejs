@@ -34,9 +34,12 @@
                                     <h4>
                                         <%= product.name %>
                                     </h4>
+                                    <h4>$ <%= product.price %>
+                                    </h4>
                                     <button class="btn-add"><a class='button-detalle-de-producto'
                                             href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                                    <button class="btn-add prod">Agregar al carrito</button>
+                                    <button class="btn-add prod"><i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
                                 </div>
                                 <% }) %>
                         </article>
@@ -50,9 +53,12 @@
                                     <h4>
                                         <%= product.name %>
                                     </h4>
-                                    <button class="btn-add of"><a class='button-detalle-de-producto'
+                                    <h4>$ <%= product.price %>
+                                    </h4>
+                                    <button class="btn-add"><a class='button-detalle-de-producto'
                                             href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                                    <button class="btn-add car">Agregar al carrito</button>
+                                    <button class="btn-add prod"><i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
                                 </div>
                                 <% }) %>
                         </article>
