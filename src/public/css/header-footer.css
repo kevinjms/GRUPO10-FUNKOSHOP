@@ -36,15 +36,10 @@
   position: relative;
   right: 68px;
   top: 150px;
-  /* background: rgb(54 120 202 / 60%); */
   border-radius: 7px;
   width: 290px;
+  cursor: pointer;
 }
-
-/* .header .burger-container .burger-menu i {
-    position: relative;
-    padding: 5px;
-} */
 
 .header .burger-container .contenedor-de-botones {
   position: relative;
@@ -527,7 +522,7 @@ footer .footerTittle {
     color: white;
     text-decoration: none;
   }
-    nav {
+  nav {
     display: block;
     position: absolute;
     top: 505px;
@@ -541,9 +536,7 @@ footer .footerTittle {
     display: flex;
     justify-content: space-around;
   }
-    .menu-horizontal
-    > li
-    > a:hover {
+  .menu-horizontal > li > a:hover {
     color: yellow;
     font-size: 25px;
   }
@@ -613,9 +606,7 @@ footer .footerTittle {
     padding: 15px 15px 15px 20px;
   }
 
-  .footerDetalle
-  .seguinos
-  h3 {
+  .footerDetalle .seguinos h3 {
     font-size: 30px;
   }
 

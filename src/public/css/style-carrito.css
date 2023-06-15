@@ -47,8 +47,8 @@ body {
 
 #cantidad {
     height: 25px;
-    width: 20%;
-    border-radius: 10px;
+    width: 25%;
+    border-radius: 6px;
     border-right: solid;
 }
 
@@ -175,7 +175,13 @@ h1 {
 .botones1 {
     width: 25%;
     position: relative;
-    right: 16px;
+    right: 8px;
+}
+
+.btn{
+    width: 20px;
+    border-radius: 2px;
+    height: 18px;
 }
 
 /* Media Tablest*/
