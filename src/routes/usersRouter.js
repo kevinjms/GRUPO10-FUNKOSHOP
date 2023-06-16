@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const usersController = require('../controllers/usersControllers');
-const uploadFile = require('../middlewares/multerMiddleware');
+const uploadFile = require('../middlewares/usersMulterMiddleware');
 const { body } = require('express-validator')
 const authMiddleware = require('../middlewares/authMiddleware')
 const loggedMiddleware = require('../middlewares/loggedMiddleware')
@@ -41,5 +41,5 @@ router.post('/login', validateLogin, loggedMiddleware, usersController.logged);
 router.get('/profileForm', authMiddleware, usersController.profile);
 
 router.get('/editUser', usersController.edit);
-router.put('/editUser/:id', uploadFile.single("image"), usersController.update)
+router.put('/editUser/:id', uploadFile.single("avatar"), usersController.update)
 module.exports = router

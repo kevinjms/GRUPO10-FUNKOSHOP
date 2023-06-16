@@ -90,8 +90,9 @@ const controller = {
         res.render('./users/editUser', { user: newUser});
     },
     update: async (req, res) => {
-        const user = await db.User.update({
-            avatar: req.body.avatar,
+        const oldUser = await db.User.findByPk(req.params.id)
+        await db.User.update({
+            avatar: req.file ? req.file.filename: oldUser.avatar,
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,

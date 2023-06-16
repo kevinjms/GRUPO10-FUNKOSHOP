@@ -8,8 +8,6 @@
                 <div>
                     <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
                 </div>
-                <input class="login-input"  id="up-img" value="<%= user.avatar %>" type="file" name="avatar">
-                <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
             </div>
             <div class="perfil-usuario">
                 <button class="btn-admin"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a>
@@ -19,6 +17,8 @@
                 <div class="profile-info">
                     <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
                         enctype="multipart/form-data">
+                        <input class="login-input"  id="up-img" value="<%= user.avatar %>" type="file" name="avatar">
+                        <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
                         <p>NOMBRE: <input class="login-input" value="<%= user.firstName %>" type="text" name="firstName"
                                 required></p>
                         <p>APELLIDO: <input class="login-input" value="<%= user.lastName %>" type="text" name="lastName"
@@ -35,7 +35,6 @@
                                 required></p>
                         <div class="close-session">
                             <button type="submit" class="btn-add">ACTUALIZAR</button>
-                            <button class="btn-red"><a href="/">CERRAR SESIÓN</a></button>
                         </div>
                 </div>
                 </form>
