@@ -70,6 +70,7 @@ footer {
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: white;
 }
 
 footer .footerTittle {
@@ -118,6 +119,7 @@ footer .footerTittle {
   font-size: 15px;
   text-align: center;
   background-color: black;
+  box-shadow: 0px 0px 30px -2px white;
   width: 425px;
   margin-bottom: 15px;
 }
