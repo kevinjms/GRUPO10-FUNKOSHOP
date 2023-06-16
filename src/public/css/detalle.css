@@ -37,11 +37,14 @@ main .titulo {
     display: flex;
     flex-direction: column;
 }
+img{
+    background: white;
+}
 
 .fotoPrincipal img {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0px 0px 20px -2px #777;
+    box-shadow: 0px 0px 35px -2px white;
 
 }
 
@@ -78,7 +81,7 @@ main .titulo {
 .fotosSiguientes img {
     width: 100px;
     display: flex;
-    box-shadow: 0px 0px 20px -2px #777;
+    box-shadow: 0px 0px 35px -2px white;
     border-radius: 10px;
 }
 
@@ -108,7 +111,11 @@ details {
 
 .especificaciones h2 {
     font-size: 40px;
-    color: black;
+    color: white;
+}
+.especificaciones p {
+    font-size: 30px;
+    color: white;
 }
 
 .relacionados {
@@ -155,6 +162,14 @@ details {
 
 .agg {
     margin-bottom: 18px;
+}
+.detail{
+    color: white;
+}
+
+.linkInfo a{
+    text-decoration: none;
+    color: white;
 }
 
 /********* FIN MAIN **********/

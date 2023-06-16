@@ -55,6 +55,11 @@ background: none;
     border: none;
 }
 
+.forget{
+    text-decoration: none;
+    color: blue;
+}
+
 .box-button {
     margin: 15px 0;
 }
@@ -100,6 +105,11 @@ background: none;
 
 .text-danger {
     color: red;
+}
+
+.create{
+    text-decoration: none;
+    color: blue;
 }
 @media (min-width: 768px) {
 

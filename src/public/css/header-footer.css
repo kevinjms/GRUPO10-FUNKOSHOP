@@ -136,6 +136,19 @@ footer .footerTittle {
   color: black;
 }
 
+.footerDetalle .seguinos .fa-twitter:hover{
+  color: lightskyblue;
+}
+.footerDetalle .seguinos .fa-linkedin:hover{
+  color: blue;
+}
+.footerDetalle .seguinos .fa-facebook:hover{
+  color: blue;
+}
+.footerDetalle .seguinos .fa-instagram:hover{
+  color: orange;
+}
+
 .fa-twitter:before {
   margin: 5px;
   position: relative;
