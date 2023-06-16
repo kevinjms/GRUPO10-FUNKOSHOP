@@ -2,9 +2,9 @@
     <div>
         <div class="burger-container">
             <a href="/"> <img class="logo" src="/images/logo/logo_funko_shop.png" alt="logo"></a>
-            <div class="burger-menu">
+            <!-- <div class="burger-menu">
                 <i class="fa-solid fa-bars"></i>
-            </div>
+            </div> -->
             <div class="contenedor-de-botones">
                 <button class="botones"><a href="/users/login"><i class="fa-solid fa-user"></i> <p> <%= locals.user && locals.user.firstName %></p></a></button>
                 <button class="botones"><i class="fa-regular fa-heart"></i></button>
@@ -29,11 +29,34 @@
                         <li><a href="#">Opción 8</a></li>
                         <li><a href="#">Opción 9</a></li>
                     </ul>
-                </li> -->
+                </li>  -->
                 <li><a href="/personalized">PERSONALIZADOS</a></li>
                 <li><a href="/products">PRODUCTOS</a></li>
             </ul>
 
         </nav>
+
+        <div class="mobile-nav">
+
+            <div class="b-nav">
+                  <ul>
+                      <li><a class="b-link b-link--active" href="/">INICIO</a></li>
+                      <li><a class="b-link" href="/aboutUs">¿QUIÉNES SOMOS?</a></li>
+                      <li><a class="b-link" href="/personalized">PERSONALIZADOS</a></li>
+                      <li><a class="b-link" href="/products">PRODUCTOS</a></li>
+                  </ul>
+            </div>
+        
+                <!-- Burger-Icon -->
+                <div class="b-container">
+                  <div class="b-menu">
+                    <div class="b-bun b-bun--top"></div>
+                    <div class="b-bun b-bun--mid"></div>
+                    <div class="b-bun b-bun--bottom"></div>
+                  </div>
+                </div>
+        
+          </div>
     </div>
+    <script src="/js/burger.js"></script>
 </header>
