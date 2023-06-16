@@ -1,4 +1,4 @@
-<%- include('../partials/head', {title: 'Profile' , styles: ['profile', 'create']}) %>
+<%- include('../partials/head', {title: 'Profile' , styles: ['profile', 'create' ]}) %>
 
 
     <body>
@@ -8,31 +8,41 @@
                 <div>
                     <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
                 </div>
-                <input class="login-input" value="<%= user.avatar %>" type="file" name="avatar">
+                <input class="login-input"  id="up-img" value="<%= user.avatar %>" type="file" name="avatar">
                 <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
             </div>
             <div class="perfil-usuario">
-                <button class="create"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a></button>
+                <button class="btn-admin"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a>
+                    <P>PRODUCTO</P>
+                </button>
                 <h1 class="title">MI CUENTA</h1>
                 <div class="profile-info">
-                    <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
-                   <p>NOMBRE:  <input class="login-input" value="<%= user.firstName %>" type="text" name="firstName" required></p> 
-                   <p>APELLIDO:  <input class="login-input" value="<%= user.lastName %>" type="text" name="lastName" required></p> 
-                   <p>DIRECCIÓN:  <input class="login-input" value="<%= user.adress %>" type="text" name="adress" required></p>
-                   <p>CIUDAD:  <input class="login-input" value="<%= user.city %>" type="text" name="city" required></p> 
-                   <p>CÓDIGO POSTAL:  <input class="login-input" value="<%= user.zipCode %>" type="number" name="zipCode" required></p> 
-                   <p>NÚMERO DE CONTACTO:  <input class="login-input" value="<%= user.cell %>" type="number" name="cell" required></p> 
-                   <p>EMAIL:  <input class="login-input" value="<%= user.email %>" type="text" name="email" required></p> 
+                    <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
+                        enctype="multipart/form-data">
+                        <p>NOMBRE: <input class="login-input" value="<%= user.firstName %>" type="text" name="firstName"
+                                required></p>
+                        <p>APELLIDO: <input class="login-input" value="<%= user.lastName %>" type="text" name="lastName"
+                                required></p>
+                        <p>DIRECCIÓN: <input class="login-input" value="<%= user.adress %>" type="text" name="adress"
+                                required></p>
+                        <p>CIUDAD: <input class="login-input" value="<%= user.city %>" type="text" name="city" required>
+                        </p>
+                        <p>CÓDIGO POSTAL: <input class="login-input" value="<%= user.zipCode %>" type="number"
+                                name="zipCode" required></p>
+                        <p>NÚMERO DE CONTACTO: <input class="login-input" value="<%= user.cell %>" type="number"
+                                name="cell" required></p>
+                        <p>EMAIL: <input class="login-input" value="<%= user.email %>" type="text" name="email"
+                                required></p>
+                        <div class="close-session">
+                            <button type="submit" class="btn-add">ACTUALIZAR</button>
+                            <button class="btn-red"><a href="/">CERRAR SESIÓN</a></button>
+                        </div>
                 </div>
-                <div class="close-session">
-                    <p class="close-session3"><button type="submit">actualizar</button></p>
                 </form>
-                    <button class="close-session1"><a href="/">CERRAR SESIÓN</a></button>
-                </div>
             </div>
 
             <%- include('../partials/footer') %>
-            
+
     </body>
 
     </html>

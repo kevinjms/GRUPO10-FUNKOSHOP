@@ -765,4 +765,8 @@ footer .footerTittle {
     left: 310px;
     margin-top: -69px;
   }
+  .menu-horizontal {
+    position: relative;
+    bottom: 25px;
+  }
 }

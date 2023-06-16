@@ -11,7 +11,7 @@
 
 .avatar{
     position: relative;
-    left: 15px;
+    left: 50px;
 }
 
 .perfil-usuario{
@@ -31,26 +31,18 @@
     font-size: 15px;
     
 }
-
+#up-img {
+    position: relative;
+    left: 50px;
+}
 .close-session{
-    text-align: center;
+    display: flex;
     margin-bottom: 20px;
+    justify-content: center;
 }
 
-.close-session1 {
-    border-radius: 10px;
-    background-color: red;
-}
-
-.close-session2 {
-    border-radius: 10px;
-    background-color: blue;
-}
-
-.close-session3 button {
-    border-radius: 10px;
-    background-color: blue;
-    color: white;
+.btn-add{
+    margin-right: 20px;
 }
 
 .close-session a{
@@ -72,6 +64,12 @@
 @media (min-width: 768px) {
 .btn-admin {
     left: 560px;
+}
+.avatar {
+    position: relative;
+    top: 40px;
+    left: -280px;
+
 }
 }
 
