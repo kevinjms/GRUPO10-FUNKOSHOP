@@ -3,10 +3,10 @@
 
 body {
     font-family: 'proxima Nova';
+    background-color: black;
 }
 
 .box-about {
-    
     margin: 25px;
 }
 
@@ -56,4 +56,24 @@ textarea {
 .button-2 {
     
     background-color: lightskyblue;
+}
+
+@media (min-width: 768px) {
+    .box {
+        margin: 40px 20px 40px;
+    }
+    .box-son {
+        margin: 10px;
+        padding: 10px 50px 10px;
+    }
+}
+@media (min-width: 1024px) {
+    .box {
+    margin: 40px 80px 40px;
+    }
+}
+@media (min-width: 1440px) {
+    .box {
+    margin: 40px 100px 40px;
+    }
 }

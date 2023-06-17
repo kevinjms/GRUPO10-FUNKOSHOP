@@ -6,8 +6,12 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 .login-textarea {
-    width: 22rem;
+    width: 18rem;
     height: 5rem;
     resize: none;
     overflow: hidden;
@@ -15,9 +19,9 @@
 
 .box-login {
     background-color: white;
-    margin: 15px;
-    box-shadow: 0px 0px 10px 5px #777;
+    box-shadow: 0px 0px 30px -2px white;
     border-radius: 10px;
+    margin: 20px;
 
 }
 
@@ -27,8 +31,24 @@
     padding: 0px 20px 0px 20px;
 }
 
-.login-formulario h1 {
+.box-login h1 {
     text-align: center;
+}
+
+#btn-add-create {
+    font-size: 15px;
+    position: relative;
+    right: 100px;
+    top: 30px;
+}
+
+#btn-red-create {
+    margin-right: 20px;
+    left: 100px;
+    bottom: 40px;
+    position: relative;
+
+    font-size: 15px;
 }
 
 .grup-label {
@@ -36,11 +56,16 @@
     flex-direction: column;
 }
 
+.grup-label img {
+    width: 290px;
+}
+
 .login-input {
     margin: 5px 0 10px;
     border-radius: 7px;
     background-color: white;
     height: 30px;
+    width: 294px;
 }
 
 .login-label {
@@ -55,6 +80,9 @@
 
 .box-button {
     margin: 15px 0;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
 }
 
 .box-remember {
@@ -83,29 +111,10 @@
     margin-top: 20px;
 }
 
-.button-1 {
-    color: #FFF;
-    transition: all 0.5s;
-    position: relative;
-    border-radius: 10px;
-    background-color: red;
-    margin-bottom: 15px;
-}
-
 .login-button {
     display: flex;
     justify-content: center;
-    height: 50px;
-}
-
-.button-2 {
-    box-shadow: 0 3px 0 0 #082fa6, 0 4px 4px -1px rgb(0 0 0 / 60%), 0 4px 6px 1px rgb(0 0 0 / 30%), 0 1px 2px 1px rgb(0 0 0 / 0%) inset, 0 18px 32px -2px rgb(255 255 255 / 10%) inset;
-    background-color: #0B44EF;
-    background-image: linear-gradient(-45deg, #0B44EF, #007dfa);
-    color: #E6EAEF;
-    border-radius: 10px;
-    font-size: 16px;
-    margin-bottom: 15px;
+    height: 55px;
 }
 
 .login-button-2 {
@@ -114,20 +123,169 @@
     height: 50px;
 }
 
+.btn-red {
+    font-size: 20px;
+}
+
+.btn-add {
+
+    font-size: 20px;
+}
+
+
+@media (min-width: 425px) {
+    .grup-label img {
+        width: 340px;
+    }
+
+    .login-input {
+        width: 340px;
+    }
+
+    .login-textarea {
+        width: 21rem;
+    }
+}
+
 @media (min-width: 768px) {
     .login-textarea {
-        width: 43rem;
+        width: 31rem;
+    }
+
+    .box-login {
+        margin: 40px;
+    }
+
+    .login-formulario {
+        align-items: center;
+    }
+
+    .grup-label img {
+        width: 480px;
+    }
+
+    .login-input {
+        width: 500px;
+    }
+
+    .box-label {
+        align-items: center;
+
     }
 }
 
 @media (min-width: 1024px) {
     .login-textarea {
-        width: 58rem;
+        width: 25rem;
+    }
+
+    .box-login {
+        margin: 60px;
+    }
+
+    #box-create {
+        display: block;
+    }
+
+    .box-label {
+        display: flex;
+
+    }
+
+    .grup-label img {
+        width: 320px;
+    }
+
+    .part-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part-2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-formulario {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: nowrap;
+    }
+
+    #login-formulario-crate {
+        justify-content: space-evenly;
+    }
+
+    .boxes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .login-input {
+        width: 400px;
+
+    }
+
+    .box-button {
+        display: flex;
+        margin-bottom: 20px;
+        justify-content: center;
+    }
+
+    .btn-red {
+        margin-right: 20px;
+    }
+
+    #btn-add-create {
+        font-size: 15px;
+        position: relative;
+        right: 100px;
+        top: 36px;
+    }
+
+    #btn-red-create {
+        margin-right: 20px;
+        left: 100px;
+        bottom: 40px;
+        position: relative;
     }
 }
 
 @media (min-width: 1440px) {
     .login-textarea {
-        width: 84rem;
+        width: 34rem;
+    }
+
+    .box-login {
+        margin: 80px;
+    }
+
+    .login-input {
+        width: 550px;
+
+    }
+
+    .boxes {
+        position: relative;
+    }
+}
+
+@media (min-width: 1920px) {
+    .login-textarea {
+        width: 43rem;
+    }
+
+    .login-input {
+        width: 700px;
+    }
+
+    .header {
+        height: 1048px;
+    }
+
+    .menu-horizontal {
+        bottom: -220px;
+        width: 1800px;
     }
 }

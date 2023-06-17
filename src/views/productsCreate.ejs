@@ -3,57 +3,61 @@
     <body>
         <%- include('partials/header') %>
             <main>
-                <div class="box-login">
+                <div class="box-login" id="box-create">
                     <form action="/products" method="POST" enctype="multipart/form-data">
-                        <div class="login-formulario">
-                            <h1> CREAR PRODUCTO </h1>
+                        <h1>CREAR PRODUCTO</h1>
+                        <div class="login-formulario" id="login-formulario-crate">
                             <div class="box-label">
-                                <div class="grup-label">
-                                    <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
-                                    <input class="login-input" type="file" name="image">
-                                </div>
-                                <div class="grup-label">
-                                    <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
-                                    <input class="login-input" type="text" name="name" placeholder="Nombre del producto"
-                                        required>
-                                </div>
-                                <div class="box-label">
-                                    <label class="login-label"> AÑADA UNA DESCRIPCIÓN </label>
-                                    <div class="box-input">
-                                        <textarea class="login-textarea" name="description" placeholder="Descripción"
-                                            required></textarea>
+                                <span class="part-1">
+                                    <div class="grup-label">
+                                        <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
+                                        <input class="login-input" type="file" name="image">
                                     </div>
-                                </div>
-                                <div class="grup-label">
-                                    <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
-                                    <select name="category" class="login-input">
-                                        <option value="" selected> Categoria </option>
-                                        <% for(let i=0; i < categories.length; i++){ %>
-                                            <option value="<%= categories[i].id %>">
-                                                <%= categories[i].name %>
-                                            </option>
-                                            <% } %>
-                                    </select>
-                                </div>
-                                <div class="grup-label">
-                                    <label class="login-label"> INGRESE LA SUBCATEGORIA DEL PRODUCTO </label>
-                                    <select name="subcategory" class="login-input">
-                                        <% for(let i=0; i < subcategories.length; i++){ %>
-                                            <option value="<%= subcategories[i].id %>"
-                                                selected="<%= subcategories[i].name=='none'?'selected':'' %>">
-                                                <%= subcategories[i].name %>
-                                            </option>
-                                            <% } %>
-                                    </select>
-                                </div>
-                                <div class="grup-label">
-                                    <label class="login-label"> INDIQUE EL PRECIO </label>
-                                    <input class="login-input" type="number" name="price" required>
-                                </div>
+                                    <div class="grup-label">
+                                        <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
+                                        <input class="login-input" type="text" name="name"
+                                            placeholder="Nombre del producto" required>
+                                    </div>
+                                    <div class="box-input">
+                                        <label class="login-label"> AÑADA UNA DESCRIPCIÓN </label>
+                                        <div class="box-input"></div>
+                                            <textarea class="login-textarea" name="description" placeholder="Descripción"
+                                                required></textarea>
+                                            </div>
+                                    </div>
+                                </span>
+                                <span class="part-2">
+                                    <div class="grup-label">
+                                        <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
+                                        <select name="category" class="login-input">
+                                            <option value="" selected> Categoria </option>
+                                            <% for(let i=0; i < categories.length; i++){ %>
+                                                <option value="<%= categories[i].id %>">
+                                                    <%= categories[i].name %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                    <div class="grup-label">
+                                        <label class="login-label"> INGRESE LA SUBCATEGORIA DEL PRODUCTO </label>
+                                        <select name="subcategory" class="login-input">
+                                            <% for(let i=0; i < subcategories.length; i++){ %>
+                                                <option value="<%= subcategories[i].id %>"
+                                                    selected="<%= subcategories[i].name=='none'?'selected':'' %>">
+                                                    <%= subcategories[i].name %>
+                                                </option>
+                                                <% } %>
+                                        </select>
+                                    </div>
+                                    <div class="grup-label">
+                                        <label class="login-label"> INDIQUE EL PRECIO </label>
+                                        <input class="login-input" type="number" name="price" required>
+                                    </div>
+                                </span>
                             </div>
                             <div class="box-button">
-                                <p class="login-button"> <button class="button-1" type="reset"> BORRAR </button> </p>
-                                <p class="login-button"> <button class="button-2" type="submit"> ENVIAR </button> </p>
+                                <button class="btn-red" type="reset"> BORRAR </button>
+                                <button class="btn-add" type="submit"> CARGAR </button>
                             </div>
                         </div>
                     </form>

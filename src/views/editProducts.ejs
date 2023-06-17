@@ -5,61 +5,72 @@
             <main>
                 <div class="box-login">
                     <form action="/products/detail/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
+                        <h1>EDITAR PRODUCTO</h1>
                         <div class="login-formulario">
-                            <h1> EDITAR PRODUCTO </h1>
                             <div class="box-label">
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA IMAGEN DEL PRODUCTO </label>
-                                    <input class="login-input" value="<%= product.image %>" type="file" name="image" id="editImage">
+                                    <input class="login-input" value="<%= product.image %>" type="file" name="image"
+                                        id="editImage">
                                     <img src="/images/funkos/<%= product.images[0].url%>" width="400px" id="imageNew">
                                 </div>
+                            </div>
+                            <div class="boxes">
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE EL NOMBRE DEL PRODUCTO </label>
-                                    <input class="login-input" value="<%= product.name %>" type="text" name="name" placeholder="Nombre del producto"
-                                        required>
+                                    <input class="login-input" value="<%= product.name %>" type="text" name="name"
+                                        placeholder="Nombre del producto" required>
                                 </div>
-                                <div class="box-label">
+                                <div class="box-input">
                                     <label class="login-label"> AÑADA UNA DESCRIPCIÓN </label>
                                     <div class="box-input">
-                                        <textarea class="login-textarea" name="description"  placeholder="Descripción"
+                                        <textarea class="login-textarea" name="description" placeholder="Descripción"
                                             required><%= product.description.trim() %></textarea>
                                     </div>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INGRESE LA CATEGORIA DEL PRODUCTO </label>
                                     <select name="category" class="login-input">
-                                        <% for(let i = 0; i < categories.length; i++){ %>
-                                            <option value="<%= categories[i].id %>" <%= product.categories == categories[i].name?'selected':'' %>> <%= categories[i].name %> </option>
-                                       <% } %>
+                                        <% for(let i=0; i < categories.length; i++){ %>
+                                            <option value="<%= categories[i].id %>"
+                                                <%=product.categories==categories[i].name?'selected':'' %>> <%=
+                                                    categories[i].name %>
+                                            </option>
+                                            <% } %>
                                     </select>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INDIQUE LA SUBCATEGORIA DEL PRODUCTO </label>
                                     <select name="subcategory" class="login-input">
-                                        <% for(let i = 0; i < subcategories.length; i++){ %>
-                                            <option value="<%= subcategories[i].id %>" <%= product.subcategories == subcategories[i].name?'selected':'' %>> <%= subcategories[i].name %> </option>
-                                       <% } %>
+                                        <% for(let i=0; i < subcategories.length; i++){ %>
+                                            <option value="<%= subcategories[i].id %>"
+                                                <%=product.subcategories==subcategories[i].name?'selected':'' %>> <%=
+                                                    subcategories[i].name %>
+                                            </option>
+                                            <% } %>
                                     </select>
                                 </div>
                                 <div class="grup-label">
                                     <label class="login-label"> INDIQUE EL PRECIO </label>
-                                    <input class="login-input" value="<%= product.price %>" type="number" name="price" required>
+                                    <input class="login-input" value="<%= product.price %>" type="number" name="price"
+                                        required>
                                 </div>
                             </div>
-                            <div class="box-button">
-                                <p class="login-button"> <button class="button-2" type="submit"> ACTUALIZAR </button> </p>
-                            </div>
                         </div>
+                        <div class="box-button">
+                            <p class="login-button"> <button class="btn-add" id="btn-add-create" type="submit"> ACTUALIZAR </button> </p>
+                        </div>
+
                     </form>
-                    <form action="/products/detail/<%= product.id %>?_method=DELETE" method="POST" >
-                        <p class="login-button"> <button class="button-1" type="submit"> ELIMINAR PRODUCTO </button> </p> <!-- Para diferenciarlo del boton "Borrar" de otras views(que cumple otra función),
-                                                                                                                         se colocó otro nombre a este boton-->
+                    <form action="/products/detail/<%= product.id %>?_method=DELETE" method="POST">
+                        <p class="login-button"> <button class="btn-red" id="btn-red-create" type="submit"> ELIMINAR PRODUCTO </button>
+                        </p>
                     </form>
                 </div>
             </main>
 
             <%- include('partials/footer') %>
-            <script src="/js/editImage.js"></script>
+                <script src="/js/editImage.js"></script>
     </body>
 
     </html>

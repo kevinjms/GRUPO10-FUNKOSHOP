@@ -110,7 +110,7 @@ h2 {
 
 input {
   height: 30px;
-  width: 350px;
+  width: 300px;
   border-radius: 10px 10px 10px 10px;
 }
 
@@ -137,7 +137,8 @@ i {
   border-radius: 50px;
   margin-left: 80px;
 }
-.prod  {
+
+.prod {
   position: relative;
   width: 40px;
   height: 36px;
@@ -179,7 +180,8 @@ i {
   border-radius: 15px;
   box-shadow: 0px 0px 30px -2px white;
 }
-.destacados .contenedorDestacados .infoDestacado:hover{
+
+.destacados .contenedorDestacados .infoDestacado:hover {
   box-shadow: 0px 0px 40px -2px yellow;
 }
 
@@ -218,12 +220,14 @@ i {
   border-radius: 15px;
   box-shadow: 0px 0px 30px -2px white;
 }
-.destacados .contenedorDestacados .infoOfertas:hover{
+
+.destacados .contenedorDestacados .infoOfertas:hover {
   box-shadow: 0px 0px 40px -2px yellow;
 }
+
 .ofertas .contenedorOfertas .infoOfertas img {
   height: 200px;
-  margin-top: 15px; 
+  margin-top: 15px;
   font-size: 12px;
   font-family: "Proxima Nova";
 }
@@ -261,7 +265,8 @@ i {
   margin-bottom: 14px;
   font-size: 8px;
 }
-.prod  {
+
+.prod {
   position: relative;
   width: 40px;
   height: 60px;
@@ -270,10 +275,11 @@ i {
   bottom: 249px;
 }
 
-
-
-
-
+@media (min-width: 425px) {
+  input {
+    width: 350px;
+  }
+}
 
 @media (min-width: 768px) {
   .slider {
@@ -397,6 +403,7 @@ i {
     height: 240px;
     width: 280px;
   }
+
   .products-title {
     font-size: 40px;
   }
@@ -406,14 +413,16 @@ i {
   }
 
   input {
-    width: 870px;
-    height: 46px;
+    width: 690px;
+    height: 35px;
     font-size: 20px;
+    left: 85px;
+    position: relative;
   }
 
   .search-container button {
-    left: 820px;
-    top: -35px;
+    left: 727px;
+    top: -28px;
     font-size: 20px;
   }
 
@@ -468,12 +477,13 @@ i {
   }
 
   input {
-    width: 1300px;
+    width: 1020px;
   }
 
   .search-container button {
-    left: 1250px;
+    left: 1055px;
   }
+
 
   .search-container {
     margin-left: 100px;
@@ -482,7 +492,30 @@ i {
   .destacados .contenedorDestacados .infoDestacado {
     width: 30%;
   }
+
   .prod {
     left: 135px;
+  }
+}
+
+@media (min-width: 1534px) {
+  input {
+    left: 130px;
+  }
+
+  .search-container button {
+    left: 1090px;
+  }
+}
+
+@media (min-width: 1920px) {
+  input {
+    width: 1000px;
+    left: 340px;
+    position: relative;
+  }
+
+  .search-container button {
+    left: 1290px;
   }
 }
