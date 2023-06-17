@@ -86,12 +86,14 @@ body {
     display: flex;
     flex-direction: column;
     margin-bottom: -31px;
+    color: grey;
 }
 
 .precio1 {
     position: relative;
     left: 80px;
     bottom: 15px;
+    color: grey;
 }
 
 .envio {
