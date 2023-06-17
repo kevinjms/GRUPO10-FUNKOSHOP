@@ -1080,3 +1080,27 @@ footer .footerTittle {
     height: 838px;
   }
 }
+
+@media (min-width: 1920px) {
+  .header {
+    height: 1048px;
+  }
+
+  .menu-horizontal {
+    bottom: -220px;
+  }
+
+  .menu-horizontal {
+    bottom: -220px;
+    font-size: 35px;
+    width: 1800px;
+  }
+
+  footer .footerTittle {
+    left: 488px;
+  }
+
+  .footerDetalle .infoGeneral {
+    left: -280px;
+  }
+}
