@@ -201,3 +201,23 @@ window.onload = function () {
     }
   });
 }
+
+
+// boton de acultar contraseña
+const togglePasswordButton = document.querySelectorAll('#toggle-password');
+const passwordInput = document.querySelector('input[name="password"]');
+const confirmPasswordInput = document.querySelector('input[name="password-confirm"]');
+
+togglePasswordButton.forEach((button) => {
+    button.addEventListener('click', function() {
+        const fieldType = this.previousElementSibling.type;
+
+        if (fieldType === 'password') {
+            this.previousElementSibling.type = 'text';
+            this.innerHTML = '<i class="fa-solid fa-eye-slash"></i>';
+        } else {
+            this.previousElementSibling.type = 'password';
+            this.innerHTML = '<i class="fa-solid fa-eye"></i>';
+        }
+    });
+});

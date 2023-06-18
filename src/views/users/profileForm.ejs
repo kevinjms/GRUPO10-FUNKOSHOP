@@ -3,34 +3,36 @@
 
     <body>
         <%- include('../partials/header') %>
-
-            <div class="detalle-perfil">
-                <div>
-                    <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
+            <main>
+                <div class="box-profile">
+                    <div class="detalle-perfil">
+                        <div>
+                            <h1 class="title">MI CUENTA</h1>
+                        </div>
+                        <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
+                    </div>
+                    <div class="perfil-usuario">
+                        <div class="profile-info">
+                            <h3>NOMBRE:</h3><%= user.firstName %>
+                            <h3>APELLIDO:</h3><%= user.lastName %>
+                            <h3>DIRECCIÓN:</h3><%= user.adress %>
+                            <h3>CIUDAD:</h3><%= user.city %>
+                            <h3>CÓDIGO POSTAL:</h3><%= user.zipCode %>
+                            <h3>NÚMERO DE CONTACTO:</h3><%= user.cell %>
+                            <h3>EMAIL:</h3><%= user.email %>
+                        </div>
+                        <div class="close-session">
+                            <button class="btn-add"><a href="/users/editUser">EDITAR USUARIO</a></button>
+                            <button class="btn-red"><a href="/">CERRAR SESIÓN</a></button>
+                        </div>
+                        <button class="btn-admin"><a href="/products/create"><i
+                                    class="fa-sharp fa-solid fa-plus"></i></a>
+                            <P>PRODUCTO</P>
+                        </button>
+                    </div>
                 </div>
-                <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
-            </div>
-            <div class="perfil-usuario">
-                <button class="btn-admin"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a><P>PRODUCTO</P></button>
-                
-                <h1 class="title">MI CUENTA</h1>
-                <div class="profile-info">
-                   <p>NOMBRE: <%= user.firstName %></p> 
-                   <p>APELLIDO: <%= user.lastName %></p> 
-                   <p>DIRECCIÓN: <%= user.adress %></p>
-                   <p>CIUDAD: <%= user.city %></p> 
-                   <p>CÓDIGO POSTAL: <%= user.zipCode %></p> 
-                   <p>NÚMERO DE CONTACTO: <%= user.cell %></p> 
-                   <p>EMAIL: <%= user.email %></p> 
-                </div>
-                <div class="close-session">
-                    <button class="btn-add"><a href="/users/editUser">EDITAR USUARIO</a></button>
-                    <button class="btn-red"><a href="/">CERRAR SESIÓN</a></button>
-                </div>
-            </div>
-
-            <%- include('../partials/footer') %>
-            
-    </body>
+                <%- include('../partials/footer') %>
+            </main>
+        </body>
 
     </html>

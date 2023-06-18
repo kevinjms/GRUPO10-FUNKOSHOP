@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: black;
+}
+
 .registrarse {
     text-align: center;
     position: relative;
@@ -16,8 +20,25 @@
     font-family: 'proxima Nova';
     background-color: white;
     margin: 15px;
-    box-shadow: 0px 0px 10px 5px #777;
+    box-shadow: 0px 0px 30px -2px white;
     border-radius: 10px;
+}
+
+#toggle-password {
+    border: none;
+    background: transparent;
+}
+
+.fa-eye {
+    position: relative;
+    right: -290px;
+    top: -25px;
+}
+
+.fa-eye-slash::before {
+    position: relative;
+    left: 290px;
+    bottom: 25px;
 }
 
 /* Seccion de Nombre y Apellido */
@@ -80,12 +101,6 @@
     margin-bottom: 15px;
 }
 
-.fa-eye {
-    position: relative;
-    right: 30px;
-}
-
-
 
 /* Seccion de Aceptar terminos y condiciones */
 .cajaDeAceptarTyC {
@@ -107,7 +122,7 @@
     font-size: 8px;
 }
 
-.button-register{
+.button-register {
     text-decoration: none;
     color: white;
 }
@@ -117,11 +132,51 @@
     margin-left: 20px;
 }
 
+@media(min-width:425px) {
+    .fa-eye {
+        position: relative;
+        right: -335px;
+    }
+
+    .fa-eye-slash::before {
+        left: 335px;
+    }
+}
+
 @media(min-width:768px) {
+    .box-padre {
+        margin: 35px;
+    }
+
+    .fa-eye {
+        right: 45px;
+        top: 0px;
+    }
+
+    .fa-eye-slash::before {
+        left: -45px;
+        top: 0px;
+    }
+
+    .center {
+        position: relative;
+        top: -10px;
+        left: 282px;
+    }
 
     .mail,
     .password {
-        width: 93%;
+        width: 90%;
+    }
+
+    .btn-add {
+        width: 150px;
+        height: 40px;
+    }
+
+    .button-register {
+        font-size: 20px;
+
     }
 }
 
@@ -129,25 +184,107 @@
 @media(min-width:1024px) {
     .box-padre {
         font-size: 20px;
+        display: flex;
+        height: 500px;
+        flex-direction: column;
     }
 
-    .textoCorreoElectronico,
-    .textoContraseña {
-        font-size: 22px;
+    .mail,
+    .password,
+    .name,
+    .surname,
+    .avatar,
+    .adress,
+    .city,
+    .zipcode,
+    .cell {
+        width: 45%;
     }
 
     .mail,
     .password {
-        height: 40px;
-        width: 93%;
+        height: 30px;
+        width: 45%;
+    }
+
+    .part-1 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .part-2 {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        bottom: 317px;
+        left: 490px;
     }
 
     .cajaDeAceptarTyC {
         font-size: 18px;
+        top: -330px;
+        position: relative;
     }
 
     .fa-eye {
-        right: 35px;
+        right: -360px;
+        top: -26px;
     }
 
+    .fa-eye-slash::before {
+        left: 360px;
+        top: -26px;
+    }
+
+    .center {
+        top: -350px;
+        left: 380px;
+    }
+
+    .btn-add {
+        width: 150px;
+        height: 40px;
+    }
+
+    .button-register {
+        font-size: 20px;
+    }
+}
+
+
+@media(min-width:1440px) {
+    .part-2 {
+        left: 720px;
+    }
+    .fa-eye {
+        right: 50px;
+        top: 0;
+    }
+    .fa-eye-slash::before {
+        left: -50px;
+        top: 0;
+    }
+
+    .center {
+        left: 600px;
+    }
+}
+
+@media(min-width:1534px) {
+    .center {
+        left: 645px;
+    }
+
+    .part-2 {
+        left: 760px;
+    }
+}
+
+@media(min-width:1920px) {
+.part-2 {
+    left: 980px;
+}
+.center {
+    left: 845px;
+}
 }

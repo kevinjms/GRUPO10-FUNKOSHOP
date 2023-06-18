@@ -1,6 +1,22 @@
 @import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
 
-.title{
+* {
+    font-family: 'proxima Nova';
+
+}
+
+body {
+    background-color: black;
+}
+
+.box-profile {
+    background-color: white;
+    margin: 15px;
+    box-shadow: 0px 0px 30px -2px white;
+    border-radius: 10px;
+}
+
+.title {
     text-align: center;
     font-family: 'proxima Nova';
     font-size: 30px;
@@ -9,106 +25,266 @@
     bottom: 10px;
 }
 
-.avatar{
+.avatar {
     position: relative;
-    margin-left: 50px;
-    height: 50px;
-    width: 50px;
+    margin-left: 70px;
+    height: 200px;
+    width: 200px;
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
-.perfil-usuario{
+#avatar-edit {
+    position: relative;
+    margin-left: 40px;
+}
+
+.perfil-usuario {
     text-align: left;
     margin-left: 30px;
 }
 
-.perfil-usuario .title{
-    text-align: center;
-    font-family: 'proxima Nova';
-    font-size: 20px;    
+#perfil-usuario-edit {
+    height: 815px;
 }
 
-.profile-info p {
-    margin: 15px;
+.perfil-usuario .title {
+    text-align: center;
     font-family: 'proxima Nova';
-    font-size: 15px;
-    
+    font-size: 20px;
 }
+
+.profile-info {
+    position: relative;
+    left: 16px;
+}
+
+#profile-info-edit {
+    left: -7px;
+}
+
+
 #up-img {
     position: relative;
-    left: 50px;
 }
-.close-session{
+
+.close-session {
     display: flex;
-    margin-bottom: 20px;
+    margin-bottom: 70px;
+    left: -20px;
+    top: 80px;
+    position: relative;
     justify-content: center;
 }
 
-.btn-add{
+#close-session-edit {
+    left: -3px;
+    top: 15px;
+}
+
+.btn-add {
     margin-right: 20px;
 }
 
-.close-session a{
+#btn-add-edit {
+    font-size: 15px;
+}
+
+.close-session a {
     text-decoration: none;
     font-family: 'proxima Nova';
     font-size: 15px;
     color: white;
 }
+
 .btn-admin {
     position: relative;
-    left: 269px;
-    margin-top: 20px;
+    display: flex;
+    align-items: center;
     margin-bottom: 20px;
+    width: 130px;
+    top: -100px;
+    left: 17px;
+    justify-content: space-around;
 }
+
 .btn-admin .fa-plus {
     font-size: 30px;
     color: whitesmoke;
     position: relative;
 }
 
+@media (min-width: 425px) {
+    .avatar {
+        margin-left: 100px;
+    }
+
+    #avatar-edit {
+        position: relative;
+        margin-left: 75px;
+    }
+}
+
 @media (min-width: 768px) {
-.btn-admin {
-    left: 500px;
-}
-.avatar {
-    position: relative;
-    top: 40px;      
-}
-.title{
-    font-size: 40px;
-    
-}
-.perfil-usuario .title{
-    font-size: 30px;    
-}
-.profile-info p {
-    font-size: 20px;
-    
-}
+    .btn-admin {
+        left: 440px;
+    }
+
+    .avatar {
+        position: relative;
+        margin-left: 270px;
+    }
+
+    .profile-info {
+        left: 70px;
+    }
+
+    .box-profile {
+        margin: 40px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    #perfil-usuario-edit {
+        position: relative;
+        left: 70px;
+    }
+
+    #close-session-edit {
+        left: -90px;
+    }
+
+    .perfil-usuario .title {
+        font-size: 30px;
+    }
+
+    #avatar-edit {
+        margin-left: 150px;
+    }
+
+    .profile-info p {
+        font-size: 20px;
+    }
+
+    #btn-add-edit {
+        width: 140px;
+    }
 
 }
 
 @media (min-width: 1024px) {
     .btn-admin {
-    left: 800px;
-}
-.title{
-    font-size: 50px;
-    
-}
-.perfil-usuario .title{
-    font-size: 50px;   
-}
-.profile-info p {
-    margin-top: 10px;
-    font-size: 30px;
-    
-}
+        left: 660px;
+        top: -370px;
+    }
+
+    .title {
+        font-size: 50px;
+    }
+
+    .profile-info {
+        top: -230px;
+    }
+
+    .avatar {
+        margin-left: 625px;
+    }
+
+    #avatar-edit {
+        top: 300px;
+    }
+
+    .close-session {
+        top: -170px;
+    }
+
+    .perfil-usuario .title {
+        font-size: 50px;
+    }
+
+    #btn-add-edit {
+        width: 140px;
+    }
+
+    .box-profile {
+        height: 530px;
+    }
+
+    #box-profile-edit {
+        height: 730px;
+    }
+
+    .edit-data {
+        position: relative;
+        top: -30px;
+    }
+
+    #up-img {
+        left: 470px;
+        width: 366px;
+        top: 40px;
+    }
+
+    .profile-info p {
+        margin-top: 10px;
+        font-size: 30px;
+    }
+
+    #close-session-edit p {
+        font-size: 20px;
+        margin: 5px;
+    }
+
+    #close-session-edit {
+        top: -5px;
+    }
 }
 
 @media (min-width: 1440px) {
-.btn-admin {
-    left: 1180px;
+    .btn-admin {
+        left: 850px;
+    }
+
+    .avatar {
+        margin-left: 810px;
+    }
+
+    .box-profile {
+        margin: 40px 130px;
+    }
+
+    .profile-info {
+        left: 150px;
+    }
+
+    #avatar-edit {
+        margin-left: 345px;
+    }
+
+    #up-img {
+        left: 660px;
+    }
+
+    @media (min-width: 1534px) {
+        .box-profile {
+            margin: 40px 180px;
+        }
+    }
 }
+
+@media (min-width: 1920px) {
+
+    .box-profile {
+        margin: 40px 350px;
+    }
+
+    #up-img {
+        left: 765px;
+    }
+
+    #avatar-edit {
+        margin-left: 445px;
+    }
 }

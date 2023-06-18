@@ -71,6 +71,8 @@ window.onload = function () {
   });
 }
 
+
+// boton de acultar contraseña
 const togglePasswordButton = document.getElementById('toggle-password');
 const passwordInput = document.querySelector('input[name="password"]');
 const passwordIcon = document.querySelector('.fa-solid.fa-eye');

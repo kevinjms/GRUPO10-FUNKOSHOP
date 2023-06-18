@@ -3,43 +3,46 @@
 
     <body>
         <%- include('../partials/header') %>
-
-            <div class="detalle-perfil">
-                <div>
-                    <h1 class="title">BIENVENIDO A FUNKOSHOP</h1>
-                </div>
-            </div>
-            <div class="perfil-usuario">
-                <button class="btn-admin"><a href="/products/create"><i class="fa-sharp fa-solid fa-plus"></i></a>
-                    <P>PRODUCTO</P>
-                </button>
-                <h1 class="title">MI CUENTA</h1>
-                <div class="profile-info">
-                    <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
-                        enctype="multipart/form-data">
-                        <input class="login-input"  id="up-img" value="<%= user.avatar %>" type="file" name="avatar">
-                        <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
-                        <p>NOMBRE: <input class="login-input" value="<%= user.firstName %>" type="text" name="firstName"
-                                required></p>
-                        <p>APELLIDO: <input class="login-input" value="<%= user.lastName %>" type="text" name="lastName"
-                                required></p>
-                        <p>DIRECCIÓN: <input class="login-input" value="<%= user.adress %>" type="text" name="adress"
-                                required></p>
-                        <p>CIUDAD: <input class="login-input" value="<%= user.city %>" type="text" name="city" required>
-                        </p>
-                        <p>CÓDIGO POSTAL: <input class="login-input" value="<%= user.zipCode %>" type="number"
-                                name="zipCode" required></p>
-                        <p>NÚMERO DE CONTACTO: <input class="login-input" value="<%= user.cell %>" type="number"
-                                name="cell" required></p>
-                        <p>EMAIL: <input class="login-input" value="<%= user.email %>" type="text" name="email"
-                                required></p>
-                        <div class="close-session">
-                            <button type="submit" class="btn-add">ACTUALIZAR</button>
+            <main>
+                <div class="box-profile" id="box-profile-edit">
+                    <div class="detalle-perfil">
+                        <div>
+                            <h1 class="title">EDITAR MI CUENTA</h1>
                         </div>
+                    </div>
+                    <div class="perfil-usuario" id="perfil-usuario-edit">
+                        <div class="profile-info" id="profile-info-edit">
+                            <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
+                                enctype="multipart/form-data">
+                                <input class="login-input" id="up-img" value="<%= user.avatar %>" type="file"
+                                    name="avatar">
+                                <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar"
+                                    id="avatar-edit">
+                                <div class="edit-data">
+                                    <h3>NOMBRE:</h3> <input class="login-input" value="<%= user.firstName %>"
+                                        type="text" name="firstName" required></p>
+                                    <h3>APELLIDO:</h3> <input class="login-input" value="<%= user.lastName %>"
+                                        type="text" name="lastName" required></p>
+                                    <h3>DIRECCIÓN:</h3> <input class="login-input" value="<%= user.adress %>"
+                                        type="text" name="adress" required></p>
+                                    <h3>CIUDAD:</h3> <input class="login-input" value="<%= user.city %>" type="text"
+                                        name="city" required>
+                                    </p>
+                                    <h3>CÓDIGO POSTAL:</h3> <input class="login-input" value="<%= user.zipCode %>"
+                                        type="number" name="zipCode" required></p>
+                                    <h3>NÚMERO DE CONTACTO:</h3> <input class="login-input" value="<%= user.cell %>"
+                                        type="number" name="cell" required></p>
+                                    <h3>EMAIL:</h3> <input class="login-input" value="<%= user.email %>" type="text"
+                                        name="email" required></p>
+                                </div>
+                                <div class="close-session" id="close-session-edit">
+                                    <button type="submit" class="btn-add" id="btn-add-edit"><p> ACTUALIZAR</p></button>
+                                </div>
+                        </div>
+                        </form>
+                    </div>
                 </div>
-                </form>
-            </div>
-
+            </main>
             <%- include('../partials/footer') %>
 
     </body>

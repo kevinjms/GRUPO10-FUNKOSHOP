@@ -4,9 +4,9 @@
         <%- include('../partials/header') %>
             <main>
                 <div class="box-padre">
+                    <h1 class="registrarse"> REGISTRARSE </h1>
                     <form class="caja-formulario" action="/users" method="POST" enctype="multipart/form-data">
-                        <div>
-                            <h1 class="registrarse"> REGISTRARSE </h1>
+                        <div class="part-1">
                             <!--     Seccion de Correo y Contraseña              -->
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeContraseña">
@@ -56,7 +56,21 @@
                                         </div>
                                         <% } %>
                                 </div>
+                                <div class="correo-contraseña-container">
+                                    <div class="cajaDeContraseña">
+                                        <div class="textoContraseña"> IMAGEN </div>
+                                        <input class="avatar" type="file" name="image">
+                                        <% if (locals.errors && errors.avatar) { %>
+                                            <div class="text-danger">
+                                                <%= errors.avatar.msg %>
+                                            </div>
+                                            <% } %>
+                                                <div id="error-image" class="text-danger"></div>
+                                    </div>
+                                </div>
                             </div>
+                        </div>
+                        <div class="part-2">
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CIUDAD</div>
@@ -68,6 +82,8 @@
                                             </div>
                                             <% } %>
                                 </div>
+                            </div>
+                            <div>
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CODIGO POSTAL</div>
                                     <input class="zipcode" <%=locals.errors && errors.zipCode ? 'is-invalid' : null %>"
@@ -92,7 +108,8 @@
                             <div class="cajaDeContraseña">
                                 <div class="textoContraseña"> CONTRASEÑA </div>
                                 <input class="password <%= locals.errors && errors.password ? 'is-invalid' : null %>"
-                                    type="password" name="password"> <i class="fa-solid fa-eye"> </i>
+                                    type="password" name="password"><button id="toggle-password" type="button"><i
+                                        class="fa-solid fa-eye"></i></button>
                                 <% if (locals.errors && errors.password) { %>
                                     <div class="text-danger">
                                         <%= errors.password.msg %>
@@ -104,7 +121,8 @@
                                 <div class="textoContraseña"> CONFIRMAR CONTRASEÑA </div>
                                 <input
                                     class="password <%= locals.errors && errors.password-confirm ? 'is-invalid' : null %>"
-                                    type="password" name="password-confirm"> <i class="fa-solid fa-eye"> </i>
+                                    type="password" name="password-confirm"><button id="toggle-password"
+                                    type="button"><i class="fa-solid fa-eye"></i></button>
                                 <% if (locals.errors && errors.password-confirm) { %>
                                     <div class="text-danger">
                                         <%= errors.password-confirm.msg %>
@@ -113,25 +131,13 @@
                                         <div id="error-password-confirm" class="text-danger"></div>
                             </div>
                         </div>
-                        <div class="correo-contraseña-container">
-                            <div class="cajaDeContraseña">
-                                <div class="textoContraseña"> IMAGEN </div>
-                                <input class="avatar" type="file" name="image">
-                                <% if (locals.errors && errors.avatar) { %>
-                                    <div class="text-danger">
-                                        <%= errors.avatar.msg %>
-                                    </div>
-                                    <% } %>
-                                        <div id="error-image" class="text-danger"></div>
-                            </div>
-                        </div>
                         <!--     Seccion de Aceptar terminos y condiciones   -->
                         <section class="cajaDeAceptarTyC">
                             <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y
                                     CONDICIONES</a> </span>
                         </section>
                         <!--     Seccion final de Boton Registrarse          -->
-                        <div align="center">
+                        <div class="center">
                             <button type="submit" class="btn-add"><a class="button-register"> REGISTRARSE </a></button>
                         </div>
                     </form> <!--  Aqui termina la caja del formulario    -->
@@ -140,6 +146,7 @@
             </main>
             <%- include('../partials/footer') %>
                 <script src="/js/registerValidation.js"> </script>
+
     </body>
 
     </html>
