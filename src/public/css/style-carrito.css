@@ -1,366 +1,363 @@
-@import url('https://fonts.cdnfonts.com/css/proxima-nova-2');
+@import url("https://fonts.cdnfonts.com/css/proxima-nova-2");
 
 * {
-    font-family: "Proxima Nova";
-    margin: 0;
-    box-sizing: border-box;
+  font-family: "Proxima Nova";
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: 'proxima Nova';
-    font-size: 12px;
-    background-color: whitesmoke;
+  font-family: "proxima Nova";
+  font-size: 12px;
+  background-color: whitesmoke;
 }
-.login-button a{
-    color: white;
-    text-decoration: none;
+.login-button a {
+  color: white;
+  text-decoration: none;
 }
 
 .imagen-capitan {
-    position: absolute;
-    width: 160px;
+  position: absolute;
+  width: 160px;
 }
 
 .img-carrito {
-    height: 200px;
-    margin-top: 15px;
+  height: 200px;
+  margin-top: 15px;
 }
 
 .articulos {
-    position: relative;
-    bottom: -150px;
-    left: -50px;
-    font-size: 12px;
+  position: relative;
+  bottom: -150px;
+  left: -2px;
+  font-size: 12px;
 }
 
 .car-fav {
-    display: flex;
-    font-size: 8px;
-    border-bottom: solid 1px black;
+  display: flex;
+  font-size: 8px;
+  border-bottom: solid 1px black;
 }
 
 .descripciones {
-    display: flex;
-    position: relative;
-    left: 130px;
+  display: flex;
+  position: relative;
+  left: 130px;
 }
 
 .descripcion2 {
-    position: relative;
-    left: 30px;
+  position: relative;
+  left: 30px;
 }
 
 #cantidad {
-    height: 25px;
-    width: 25%;
-    border-radius: 6px;
-    border-right: solid;
+  height: 25px;
+  width: 25%;
+  border-radius: 6px;
+  border-right: solid;
 }
 
 .box-car {
-    margin: 30px 0 10px;
-
+  margin: 30px 0 10px;
 }
 
 .precios {
-    display: flex;
-    flex-direction: column;
-    gap: 37px;
-    font-size: 12px;
-    position: relative;
-    bottom: 200px;
-    left: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  font-size: 12px;
+  position: relative;
+  bottom: 200px;
+  left: 260px;
 }
 
 .total-carrito {
-    margin-bottom: -163px;
-    position: relative;
-    left: 1px;
+  margin-bottom: -163px;
+  position: relative;
+  left: 1px;
 }
 
-
 .precio {
-    position: relative;
-    left: 80px;
-    bottom: 53px;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: -31px;
-    color: grey;
+  position: relative;
+  left: 80px;
+  bottom: 53px;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: -31px;
+  color: white;
 }
 
 .precio1 {
-    position: relative;
-    left: 80px;
-    bottom: 15px;
-    color: grey;
+  position: relative;
+  left: 80px;
+  bottom: 15px;
+  color: white;
 }
 
 .envio {
-    position: relative;
-    bottom: 75px;
-    left: 285px;
-    font-size: 7px;
+  position: relative;
+  bottom: 75px;
+  left: 285px;
+  font-size: 7px;
 }
 
 .total {
-    position: relative;
-    left: 282px;
-    bottom: 58px;
-    font-size: 8px;
+  position: relative;
+  left: 282px;
+  bottom: 58px;
+  font-size: 8px;
 }
 
 .favoritos {
-    position: relative;
-    left: 12px;
+  position: relative;
+  left: 12px;
 }
 
 h1 {
-    font-size: 16px;
-    display: flex;
-    justify-content: space-around;
-    position: relative;
-    left: 20px;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  left: 20px;
 }
 
 .cj-general {
-    display: flex;
-    flex-direction: column;
-    width: 90%;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  align-items: center;
 }
 
 .funko-caja {
-    margin: 15px;
-    width: 93%;
+  margin: 15px;
+  width: 93%;
 }
 
 .funkos {
-    display: flex;
-    width: 90%;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    left: 22px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  left: 22px;
 }
 
 .funko-caja-carrito {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 300px;
-    width: 90%;
-    margin-top: 15px;
-    margin-bottom: 15px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 30px -2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 300px;
+  width: 90%;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px -2px white;
 }
 
 .funko-carrito {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 200px;
-    width: 60%;
-    margin-top: 15px;
-    background-color: white;
-    border-radius: 15px;
-    box-shadow: 0px 0px 30px -2px white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 200px;
+  width: 60%;
+  margin-top: 15px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0px 0px 30px -2px white;
 }
 
 .descripcion-caja {
-    font-size: 12px;
+  font-size: 12px;
 }
 
 .envio1 {
-    position: relative;
-    left: 1px;
+  position: relative;
+  left: 1px;
 }
 
 .botones1 {
-    width: 25%;
-    position: relative;
-    right: 8px;
+  width: 22%;
+  position: relative;
 }
 
-.btn{
-    width: 20px;
-    border-radius: 2px;
-    height: 18px;
+.btn {
+  width: 20px;
+  border-radius: 2px;
+  height: 18px;
 }
 
 /* Media Tablest*/
 @media (min-width: 768px) {
-    .funko-caja {
-        width: 96%;
-    }
+  .funko-caja {
+    width: 96%;
+  }
 
-    .descripciones {
-        left: 425px;
-    }
+  .descripciones {
+    left: 425px;
+  }
 
-    .descripcion2 {
-        position: relative;
-        left: 80px;
-    }
+  .descripcion2 {
+    position: relative;
+    left: 80px;
+  }
 
-    .precios {
+  .precios {
+    left: 567px;
+    display: flex;
+    position: absolute;
+    top: 478px;
+  }
 
-        left: 567px;
-        display: flex;
-        position: absolute;
-        top: 478px;
-    }
+  .box-car {
+    margin: 50px 0 50px;
+  }
 
-    .box-car {
-        margin: 50px 0 50px;
-    }
+  .precio {
+    position: relative;
+    left: 130px;
+    bottom: 38px;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: -12px;
+  }
 
-    .precio {
-        position: relative;
-        left: 130px;
-        bottom: 38px;
-        display: flex;
-        flex-direction: column;
-        margin-bottom: -12px;
-    }
+  .precio2 {
+    position: relative;
+    bottom: 52px;
+  }
 
-    .precio2 {
-        position: relative;
-        bottom: 52px;
-    }
+  .precio1 {
+    position: relative;
+    left: 130px;
+    bottom: 15px;
+  }
 
-    .precio1 {
-        position: relative;
-        left: 130px;
-        bottom: 15px;
-    }
+  .articulos {
+    position: relative;
+    bottom: 70px;
+    left: 70px;
+    font-size: 12px;
+  }
 
-    .articulos {
-        position: relative;
-        bottom: -80px;
-        left: -130px;
-        font-size: 12px;
-    }
+  .funkos {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
 
-    .funkos {
-        display: flex;
-        flex-direction: row;
-        width: 90%;
-        align-items: center;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+  .car-fav {
+    width: 740px;
+  }
 
-    .car-fav {
-        width: 740px;
-    }
+  .cj-general {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    align-items: center;
+    margin-top: 50px;
+  }
 
-    .cj-general {
-        display: flex;
-        flex-direction: column;
-        width: 90%;
-        align-items: center;
-        margin-top: 50px;
-    }
+  .funko-caja-carrito {
+    height: 290px;
+    width: 40%;
+  }
 
-    .funko-caja-carrito {
-        height: 290px;
-        width: 40%;
-    }
-
-    .botones1 {
-        width: 80%;
-        right: 6px;
-        top: 16px;
-    }
+  .botones1 {
+    width: 80%;
+    right: 6px;
+    top: 16px;
+  }
+  .imagen-capitan {
+    position: relative;
+    right: 68px;
+    top: 20px;
+  }
 }
-
 
 /*Desktop*/
-@media(min-width:1024px) {
-    .precios {
-        left: 760px;
-        top: 650px;
-    }
+@media (min-width: 1024px) {
+  .precios {
+    left: 760px;
+    top: 650px;
+  }
 
-    .precio {
-        bottom: 45px;
-        margin-bottom: -30px;
-        font-size: 24px;
-        left: 150px;
-    }
+  .precio {
+    bottom: 45px;
+    margin-bottom: -30px;
+    font-size: 24px;
+    left: 150px;
+  }
 
-    .precio1 {
-        left: 150px;
-        font-size: 24px;
-        top: -25px;
-    }
+  .precio1 {
+    left: 150px;
+    font-size: 24px;
+    top: -25px;
+  }
 
+  h1 {
+    font-size: 24px;
+  }
 
-    h1 {
-        font-size: 24px;
-    }
+  .cj-general {
+    margin-top: 70px;
+  }
 
-    .cj-general {
-        margin-top: 70px;
-    }
+  .funkos {
+    justify-content: space-between;
+  }
 
-    .funkos {
-        justify-content: space-between;
-    }
+  .funko-caja-carrito {
+    height: 290px;
+    width: 20%;
+  }
 
-    .funko-caja-carrito {
-        height: 290px;
-        width: 20%;
-    }
+  .funko-carrito {
+    width: 40%;
+  }
 
-    .funko-carrito {
-        width: 40%;
-    }
+  .descripciones {
+    left: 470px;
+  }
 
-    .descripciones {
-        left: 470px;
-    }
+  .car-fav {
+    font-size: 16px;
+    width: 100%;
+    margin-top: 30px;
+  }
 
+  .funko-caja {
+    width: 97%;
+  }
 
-    .car-fav {
-        font-size: 16px;
-        width: 100%;
-        margin-top: 30px;
-    }
+  .envio1 {
+    left: 15px;
+  }
 
-    .funko-caja {
-        width: 97%;
-    }
+  .botones1 {
+    width: 100%;
+  }
 
-    .envio1 {
-        left: 15px;
-    }
-
-    .botones1 {
-        width: 100%;
-    }
-
-    .precio2 {
-        bottom: 58px;
-    }
+  .precio2 {
+    bottom: 58px;
+  }
 }
 
-@media(min-width:1440px) {
-    .descripciones {
-        left: 880px;
-    }
+@media (min-width: 1440px) {
+  .descripciones {
+    left: 880px;
+  }
 
-    .precios {
-        left: 1175px;
-        top: 875px;
-    }
+  .precios {
+    left: 1175px;
+    top: 875px;
+  }
 
-    .funko-carrito {
-        width: 50%;
-    }
-
+  .funko-carrito {
+    width: 50%;
+  }
 }
