@@ -21,6 +21,10 @@ app.use(cookieParser());
 app.use(recordameMiddleware);
 app.use(usersMiddleware)
 
+// ****** api routes *****
+const apiProductsRouter = require('./routes/api/apiProductsRouter')
+const apiUsersRouter = require('./routes/api/apiUsersRouter')
+
 // ****** sistemas de rutas *******
 const mainRouter = require('./routes/mainRouter');
 const productsRouter = require('./routes/productsRouter');
@@ -29,6 +33,10 @@ const usersRouter = require('./routes/usersRouter');
 app.use('/', mainRouter);
 app.use('/products', productsRouter);  // Entregable Sprint 4
 app.use('/users', usersRouter) 
+
+
+app.use('/api/products', apiProductsRouter);
+app.use('/api/users', apiUsersRouter);
 
 // ****** template Engine *****
 app.set('view engine', 'ejs');
