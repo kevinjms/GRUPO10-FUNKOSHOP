@@ -11,8 +11,6 @@ Berto, Micaela: 32 años, comencé hace muy poco con la programación, ya que mi
 
 Patiño, María Camila: 22 años, soy de Colombia, Medellín. Inicié el tema de programación hace poco ya que hace mucho tiempo me ha llamado la atención pero me daba un poco de miedo, aunque es un campo totalmente diferente a todo lo que he hecho, me arriesgué, y a aunque a veces se me dificulta, me gusta aprender. 
 
-Suarez, Ricardo Javier: 25 años, Buenos Aires, Argentina. Estudiante de Lic. en Ciencias de Datos. Tuve contacto con programación relacionada a la matemática, y desde allí me llamó la atención la idea de programar algo distinto, como páginas web.
-
 Sturtz, Kevin Joel: 30 años, vivo en San Fernando, y empecé a estudiar programación proyectando un cambio en mi profesión 
 
 plataforma para organizar el trabajo: https://trello.com/b/QAOjcqrv/funko-pop
