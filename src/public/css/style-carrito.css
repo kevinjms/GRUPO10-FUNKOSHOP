@@ -188,6 +188,15 @@ h1 {
   height: 18px;
 }
 
+.login-button{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-add{
+  height: 30px;
+}
+
 /* Media Tablest*/
 @media (min-width: 768px) {
   .funko-caja {
@@ -321,7 +330,7 @@ h1 {
   }
 
   .descripciones {
-    left: 470px;
+    left: 462px;
   }
 
   .car-fav {
@@ -345,8 +354,28 @@ h1 {
   .precio2 {
     bottom: 58px;
   }
-  #cantidad{
-    left: 0;
+
+  #cantidad {
+    left: -9px;
+  }
+
+  .btn {
+    position: relative;
+    right: 10px;
+  }
+
+  .env {
+    position: relative;
+    left: 9px;
+  }
+
+  .total1 {
+    position: relative;
+    left: 6px;
+  }
+
+  .total-carrito {
+    left: 2px;
   }
 }
 
