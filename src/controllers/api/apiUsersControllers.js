@@ -3,22 +3,39 @@ const db = require('../../database/models')
 const apiUsersControllers = {
     list: (req, res) => {
         db.User.findAll()
-            .then((users) => {
-                res.json(users)
-            })
-            .catch((error) => {
-                res.send(error)
+        .then(users => {
+            let respuesta = {
+                meta: {
+                    status : 200,
+                    total: users.length,
+                    url: 'api/users'
+                },
+                data: users
+            }
+                res.json(respuesta);
             })
     },
+
     detail: (req, res) => {
         db.User.findByPk(req.params.id)
-            .then((user) => {
-                res.json(user)
-            })
-            .catch((error) => {
-                res.send(error)
-            })
+            .then(user => {
+    let respuesta = {
+        meta: {
+            status: 200,
+            total: user.length,
+            url: '/api/user/:id'
+        },
+        data: user
     }
+    res.json(respuesta);
+});
 }
+}
+
+
+
+
+
+
 
 module.exports = apiUsersControllers
