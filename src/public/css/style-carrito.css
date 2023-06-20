@@ -321,7 +321,7 @@ h1 {
   }
 
   .descripciones {
-    left: 470px;
+    left: 462px;
   }
 
   .car-fav {
@@ -344,6 +344,29 @@ h1 {
 
   .precio2 {
     bottom: 58px;
+  }
+
+  #cantidad {
+    left: -9px;
+  }
+
+  .btn {
+    position: relative;
+    right: 10px;
+  }
+
+  .env {
+    position: relative;
+    left: 9px;
+  }
+
+  .total1 {
+    position: relative;
+    left: 6px;
+  }
+
+  .total-carrito {
+    left: 2px;
   }
 }
 
