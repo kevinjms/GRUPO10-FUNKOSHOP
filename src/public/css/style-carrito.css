@@ -188,6 +188,15 @@ h1 {
   height: 18px;
 }
 
+.login-button{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.btn-add{
+  height: 30px;
+}
+
 /* Media Tablest*/
 @media (min-width: 768px) {
   .funko-caja {
