@@ -1,38 +1,41 @@
 <%- include('partials/head', {title: 'listado' , styles: ['style-index']}) %>
 
-    <body>
-        <%- include('partials/header') %>
-            <main>
-                <div class="container-main">
-                    <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
-                    <div class="search-container">
-                        <form action="/products/search" method="get">
-                            <input name="query" type="text" placeholder="Funko de...">
-                            <button type="submit"><i class="fas fa-search"></i></button></input>
-                        </form>
-                    </div>
-                    <section class="destacados">
-                        <article class="contenedorDestacados">
+<body>
+    <%- include('partials/header') %>
+        <main>
+            <div class="container-main">
+                <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
+                <div class="search-container">
+                    <form id="searchForm" action="/products/search" method="get">
+                        <input id="searchInput" name="query" type="text" placeholder="Funko de...">
+                        <button type="submit"><i class="fas fa-search"></i></button>
+                    </form>
+                </div>
+                <section class="destacados">
+                    <article class="contenedorDestacados">
+                        <% if (products.length > 0) { %>
                             <% products.forEach((product)=> { %>
                                 <div class="infoDestacado">
-                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>"
+                                    <img src="/images/funkos/<%= product.images[0] ? product.images[0].url : 'default.jpg' %>"
                                         alt="ST">
-                                    <h4>
-                                        <%= product.name %>
-                                    </h4>
-                                    <h4>$ <%= product.price %>
-                                    </h4>
-                                    <button class="btn-add"><a class='button-detalle-de-producto'
-                                        href="/products/detail/<%= product.id %>">DETALLE</a></button>
-                                <button class="btn-add prod"><i class="fa-solid fa-cart-shopping"></i>
-                                </button>
+                                    <h4><%= product.name %></h4>
+                                    <h4>$ <%= product.price %></h4>
+                                    <button class="btn-add">
+                                        <a class='button-detalle-de-producto' href="/products/detail/<%= product.id %>">DETALLE</a>
+                                    </button>
+                                    <button class="btn-add prod">
+                                        <i class="fa-solid fa-cart-shopping"></i>
+                                    </button>
                                 </div>
-                                <% }) %>
-                        </article>
-                    </section>
-                </div>
-            </main>
-            <%- include('partials/footer') %>
-    </body>
+                            <% }) %>
+                        <% } else { %>
+                            <p>No se encontraron productos.</p>
+                        <% } %>
+                    </article>
+                </section>
+            </div>
+        </main>
+        <%- include('partials/footer') %>
+</body>
 
-    </html>
+</html>
