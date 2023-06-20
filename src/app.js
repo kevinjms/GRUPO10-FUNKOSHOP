@@ -7,6 +7,7 @@ const session = require('express-session');
 const cookieParser = require('cookie-parser');
 const recordameMiddleware = require('./middlewares/cookieMiddleware')
 const usersMiddleware = require('./middlewares/usersMiddleware')
+const cors = require('cors');
 
 // ********* Express/use *****
 const app = express();
@@ -33,6 +34,10 @@ const usersRouter = require('./routes/usersRouter');
 app.use('/', mainRouter);
 app.use('/products', productsRouter);  // Entregable Sprint 4
 app.use('/users', usersRouter) 
+app.use(cors({
+    origin: 'http://localhost:5173',
+    optionsSuccessStatus: 200 // Algunos navegadores pueden requerir este código de estado para habilitar CORS
+  }));
 
 
 app.use('/api/products', apiProductsRouter);
