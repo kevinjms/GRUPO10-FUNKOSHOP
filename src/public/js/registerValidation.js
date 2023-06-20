@@ -4,7 +4,6 @@ window.onload = function () {
 
   form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(form)
         const errorsElement = document.querySelectorAll(".text-danger");
         errorsElement.forEach(element => {
             element.style.display = "none"
