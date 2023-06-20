@@ -3,7 +3,6 @@ const db = require('../../database/models')
 const apiProductsControllers = {
     list: (req, res) => {
         db.Product.findAll({ include: { model: db.Image, as: 'images' } })
-            
             .then(products => {
                 let respuesta = {
                     meta: {
