@@ -68,6 +68,13 @@ body {
     position: relative;
 }
 
+.btn-dash {
+    font-size: 40px;
+    background-color: orange;
+    position: relative;
+    left: 90%;
+}
+
 .close-session {
     display: flex;
     margin-bottom: 70px;
