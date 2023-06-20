@@ -94,12 +94,10 @@ body {
     border-radius: 7px;
     background-color: white;
     height: 30px;
+    margin-bottom: 5px;
 }
 
-.cajaDeMail,
-.cajaDeContraseña {
-    margin-bottom: 15px;
-}
+
 
 
 /* Seccion de Aceptar terminos y condiciones */
@@ -185,26 +183,15 @@ body {
     .box-padre {
         font-size: 20px;
         display: flex;
-        height: 500px;
+        height: 880px;
         flex-direction: column;
     }
 
-    .mail,
-    .password,
-    .name,
-    .surname,
-    .avatar,
-    .adress,
-    .city,
-    .zipcode,
-    .cell {
-        width: 45%;
-    }
+    
 
     .mail,
     .password {
         height: 30px;
-        width: 45%;
     }
 
     .part-1 {
@@ -216,28 +203,25 @@ body {
         display: flex;
         flex-direction: column;
         position: relative;
-        bottom: 317px;
+        bottom: 246px;
         left: 490px;
     }
 
     .cajaDeAceptarTyC {
         font-size: 18px;
-        top: -330px;
         position: relative;
     }
 
     .fa-eye {
-        right: -360px;
-        top: -26px;
+        right: 50px;
     }
 
     .fa-eye-slash::before {
-        left: 360px;
-        top: -26px;
+        right: 50px;
     }
 
     .center {
-        top: -350px;
+        top: -00px;
         left: 380px;
     }
 

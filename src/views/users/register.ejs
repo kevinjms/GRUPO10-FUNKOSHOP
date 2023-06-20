@@ -6,7 +6,6 @@
                 <div class="box-padre">
                     <h1 class="registrarse"> REGISTRARSE </h1>
                     <form class="caja-formulario" action="/users" method="POST" enctype="multipart/form-data">
-                        <div class="part-1">
                             <!--     Seccion de Correo y Contraseña              -->
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeContraseña">
@@ -69,41 +68,45 @@
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="part-2">
                             <div class="correo-contraseña-container">
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CIUDAD</div>
-                                    <input class="city" <%=locals.errors && errors.city ? 'is-invalid' : null %>"
+                                    <input class="city <%=locals.errors && errors.city ? 'is-invalid' : null %>"
                                     value="<%= locals.oldData ? oldData.city : null %>" type="text" name="city">
                                         <% if (locals.errors && errors.city) { %>
                                             <div class="text-danger">
                                                 <%= errors.city.msg %>
                                             </div>
                                             <% } %>
+                                            <div id="error-city" class="text-danger"></div>
+
                                 </div>
                             </div>
                             <div>
                                 <div class="cajaDeMail">
                                     <div class="textoCorreoElectronico">CODIGO POSTAL</div>
-                                    <input class="zipcode" <%=locals.errors && errors.zipCode ? 'is-invalid' : null %>"
+                                    <input class="zipcode <%=locals.errors && errors.zipCode ? 'is-invalid' : null %>"
                                     value="<%= locals.oldData ? oldData.zipCode : null %>" type="text" name="zipCode">
                                         <% if (locals.errors && errors.zipCode) { %>
                                             <div class="text-danger">
                                                 <%= errors.zipCode.msg %>
                                             </div>
                                             <% } %>
+                                            <div id="error-zipcode" class="text-danger"></div>
+
                                 </div>
                             </div>
                             <div class="cajaDeMail">
                                 <div class="textoCorreoElectronico">NUMERO DE CONTACTO</div>
-                                <input class="cell" <%=locals.errors && errors.cell ? 'is-invalid' : null %>" value="<%=
+                                <input class="cell <%=locals.errors && errors.cell ? 'is-invalid' : null %>" value="<%=
                                     locals.oldData ? oldData.cell : null %>" type="text" name="cell">
                                     <% if (locals.errors && errors.cell) { %>
                                         <div class="text-danger">
                                             <%= errors.cell.msg %>
                                         </div>
                                         <% } %>
+                                        <div id="error-cell" class="text-danger"></div>
+
                             </div>
                             <div class="cajaDeContraseña">
                                 <div class="textoContraseña"> CONTRASEÑA </div>
@@ -130,7 +133,6 @@
                                     <% } %>
                                         <div id="error-password-confirm" class="text-danger"></div>
                             </div>
-                        </div>
                         <!--     Seccion de Aceptar terminos y condiciones   -->
                         <section class="cajaDeAceptarTyC">
                             <input class="terms" type="checkbox"><span> ACEPTAR <a class="TyC" href="#">TÉRMINOS Y
