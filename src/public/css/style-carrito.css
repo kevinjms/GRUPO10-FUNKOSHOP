@@ -345,6 +345,9 @@ h1 {
   .precio2 {
     bottom: 58px;
   }
+  #cantidad{
+    left: 0;
+  }
 }
 
 @media (min-width: 1440px) {
