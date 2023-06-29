@@ -44,9 +44,6 @@ body {
     margin-left: 30px;
 }
 
-#perfil-usuario-edit {
-    height: 815px;
-}
 
 .perfil-usuario .title {
     text-align: center;
@@ -63,30 +60,38 @@ body {
     left: -7px;
 }
 
-
 #up-img {
     position: relative;
 }
 
 .btn-dash {
-    font-size: 40px;
-    background-color: orange;
+    font-size: 25px;
+    height: 36px;
+}
+
+.fa-chart-line {
+    color: whitesmoke;
+}
+
+.btn-administradores {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: nowrap;
     position: relative;
-    left: 90%;
 }
 
 .close-session {
     display: flex;
     margin-bottom: 70px;
-    left: -20px;
-    top: 80px;
+    top: 35px;
     position: relative;
     justify-content: center;
 }
 
 #close-session-edit {
-    left: -3px;
-    top: 15px;
+    display: flex;
+    justify-content: center;
 }
 
 .btn-add {
@@ -94,7 +99,8 @@ body {
 }
 
 #btn-add-edit {
-    font-size: 15px;
+    font-size: 20px;
+    width: 130px;
 }
 
 .close-session a {
@@ -110,13 +116,11 @@ body {
     align-items: center;
     margin-bottom: 20px;
     width: 130px;
-    top: -100px;
-    left: 17px;
-    justify-content: space-around;
+    height: 36px;
 }
 
 .btn-admin .fa-plus {
-    font-size: 30px;
+    font-size: 15px;
     color: whitesmoke;
     position: relative;
 }
@@ -133,10 +137,6 @@ body {
 }
 
 @media (min-width: 768px) {
-    .btn-admin {
-        left: 440px;
-    }
-
     .avatar {
         position: relative;
         margin-left: 270px;
@@ -160,15 +160,13 @@ body {
     }
 
     #close-session-edit {
+
+        position: relative;
         left: -90px;
     }
 
     .perfil-usuario .title {
         font-size: 30px;
-    }
-
-    #avatar-edit {
-        margin-left: 150px;
     }
 
     .profile-info p {
@@ -182,29 +180,24 @@ body {
 }
 
 @media (min-width: 1024px) {
-    .btn-admin {
-        left: 660px;
-        top: -370px;
-    }
-
     .title {
         font-size: 50px;
+        margin-bottom: 70px;
     }
 
-    .profile-info {
-        top: -230px;
+    .box-datos {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-around;
     }
 
-    .avatar {
-        margin-left: 625px;
+    .box-avatar-edit {
+        margin-left: 40px;
     }
 
-    #avatar-edit {
-        top: 300px;
-    }
-
-    .close-session {
-        top: -170px;
+    .box-datos-edit {
+        display: flex;
+        flex-direction: row-reverse;
     }
 
     .perfil-usuario .title {
@@ -215,23 +208,14 @@ body {
         width: 140px;
     }
 
-    .box-profile {
-        height: 530px;
-    }
-
-    #box-profile-edit {
-        height: 730px;
-    }
-
     .edit-data {
         position: relative;
         top: -30px;
     }
 
     #up-img {
-        left: 470px;
         width: 366px;
-        top: 40px;
+        left: 30px;
     }
 
     .profile-info p {
@@ -250,48 +234,24 @@ body {
 }
 
 @media (min-width: 1440px) {
-    .btn-admin {
-        left: 850px;
-    }
-
-    .avatar {
-        margin-left: 810px;
-    }
-
     .box-profile {
         margin: 40px 130px;
     }
 
-    .profile-info {
-        left: 150px;
-    }
-
-    #avatar-edit {
-        margin-left: 345px;
-    }
-
-    #up-img {
-        left: 660px;
-    }
-
-    @media (min-width: 1534px) {
-        .box-profile {
-            margin: 40px 180px;
-        }
+    .box-avatar-edit {
+        margin-left: 70px;
     }
 }
 
-@media (min-width: 1920px) {
-
+@media (min-width: 1534px) {
     .box-profile {
-        margin: 40px 350px;
+        margin: 40px 180px;
     }
+}
 
-    #up-img {
-        left: 765px;
-    }
 
-    #avatar-edit {
-        margin-left: 445px;
+@media (min-width: 1920px) {
+    .box-profile {
+        margin: 40px 300px;
     }
 }

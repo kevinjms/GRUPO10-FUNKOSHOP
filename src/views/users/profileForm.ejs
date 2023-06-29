@@ -5,35 +5,39 @@
         <%- include('../partials/header') %>
             <main>
                 <div class="box-profile">
-                    <div class="detalle-perfil">
-                        <div>
-                            <h1 class="title">MI CUENTA</h1>
-                            <button class="btn-dash"><a href="http://localhost:5173/" target="_blank"><i class="fa-solid fa-table-columns"></i></a></button>
+                    <h1 class="title">MI CUENTA</h1>
+                    <span class="box-datos">
+                        <div class="detalle-perfil">
+                            <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
                         </div>
-                        <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
+                        <div class="perfil-usuario">
+                            <div class="profile-info">
+                                <h3>NOMBRE:</h3><%= user.firstName %>
+                                <h3>APELLIDO:</h3><%= user.lastName %>
+                                <h3>DIRECCIÓN:</h3><%= user.adress %>
+                                <h3>CIUDAD:</h3> <%= user.city %>
+                                <h3>CÓDIGO POSTAL:</h3><%= user.zipCode %>
+                                <h3>NÚMERO DE CONTACTO:</h3><%= user.cell %>
+                                <h3>EMAIL:</h3> <%= user.email %>
+                            </div>
+                        </div>
+                    </span>
+                    <div class="close-session">
+                        <button class="btn-add"><a href="/users/editUser">EDITAR USUARIO</a></button>
+                        <button class="btn-red"><a href="/users/logout">CERRAR SESIÓN</a></button>
                     </div>
-                    <div class="perfil-usuario">
-                        <div class="profile-info">
-                            <h3>NOMBRE:</h3><%= user.firstName %>
-                            <h3>APELLIDO:</h3><%= user.lastName %>
-                            <h3>DIRECCIÓN:</h3><%= user.adress %>
-                            <h3>CIUDAD:</h3><%= user.city %>
-                            <h3>CÓDIGO POSTAL:</h3><%= user.zipCode %>
-                            <h3>NÚMERO DE CONTACTO:</h3><%= user.cell %>
-                            <h3>EMAIL:</h3><%= user.email %>
-                        </div>
-                        <div class="close-session">
-                            <button class="btn-add"><a href="/users/editUser">EDITAR USUARIO</a></button>
-                            <button class="btn-red"><a href="/">CERRAR SESIÓN</a></button>
-                        </div>
+                    <div class="btn-administradores">
+                        <button class="btn-dash"><a href="http://localhost:5173/" target="_blank"><i
+                                    class="fa-solid fa-chart-line"></i></a></button>
                         <button class="btn-admin"><a href="/products/create"><i
-                                    class="fa-sharp fa-solid fa-plus"></i></a>
-                            <P>PRODUCTO</P>
+                                    class="fa-sharp fa-solid fa-plus"> PRODUCTO</i></a>
+                            
                         </button>
                     </div>
                 </div>
+                </div>
                 <%- include('../partials/footer') %>
             </main>
-        </body>
+    </body>
 
     </html>
