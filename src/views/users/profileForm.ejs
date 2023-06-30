@@ -3,16 +3,16 @@
 
     <body>
         <%- include('../partials/header') %>
-            <main>
+            <main class="scroll">
                 <div class="box-profile">
                     <h1 class="title">MI CUENTA</h1>
                     <span class="box-datos">
                         <div class="detalle-perfil">
                             <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar">
                         </div>
-                        <div class="perfil-usuario">
+                        <div class="perfil-usuario" >
                             <div class="profile-info">
-                                <h3>NOMBRE:</h3><%= user.firstName %>
+                                <h3> NOMBRE:</h3><%= user.firstName %>
                                 <h3>APELLIDO:</h3><%= user.lastName %>
                                 <h3>DIRECCIÓN:</h3><%= user.adress %>
                                 <h3>CIUDAD:</h3> <%= user.city %>
@@ -37,6 +37,9 @@
                 </div>
                 </div>
                 <%- include('../partials/footer') %>
+                <script src="/js/scroll.js"></script>
+
+                
             </main>
     </body>
 

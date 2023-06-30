@@ -2,7 +2,7 @@
 
     <body>
         <%- include('partials/header') %>
-            <main>
+            <main class="scroll">
                 <div class="box-login">
                     <form action="/products/detail/<%= product.id %>?_method=PUT" method="POST" enctype="multipart/form-data">
                         <h1>EDITAR PRODUCTO</h1>
@@ -71,6 +71,8 @@
 
             <%- include('partials/footer') %>
                 <script src="/js/editImage.js"></script>
+                <script src="/js/scroll.js"></script>
+
     </body>
 
     </html>

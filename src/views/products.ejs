@@ -2,12 +2,12 @@
 
 <body>
     <%- include('partials/header') %>
-        <main>
+        <main class="scroll">
             <div class="container-main">
                 <h2 class="products-title">TODOS LOS PRODUCTOS</h2>
                 <div class="search-container">
                     <form id="searchForm" action="/products/search" method="get">
-                        <input id="searchInput" name="query" type="text" placeholder="Funko de...">
+                        <input id="product" name="query" type="text" placeholder="Funko de...">
                         <button type="submit"><i class="fas fa-search"></i></button>
                     </form>
                 </div>
@@ -36,6 +36,8 @@
             </div>
         </main>
         <%- include('partials/footer') %>
+        <script src="/js/scroll.js"></script>
+
 </body>
 
 </html>
