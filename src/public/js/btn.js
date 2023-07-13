@@ -47,3 +47,4 @@ function actualizarPrecios(cantidad) {
 function actualizarTituloCarrito(cantidad) {
   tituloCarrito.textContent = `CARRITO(${cantidad})`;
 }
+

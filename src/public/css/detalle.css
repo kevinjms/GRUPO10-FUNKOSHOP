@@ -93,6 +93,31 @@ main .titulo {
 
 }
 
+dialog {
+    background-color: #fff;
+    border-radius: 20px;
+    max-width: 300px;
+    margin: 35px;
+    margin-top: 300px;
+    height: 250px;
+    font-size: 20px;
+}
+
+.close {
+    background: none;
+    border: none;
+    font-size: 25px;
+}
+
+.close:hover {
+    color: red;
+}
+
+.fa-circle-xmark {
+    margin-left: 220px;
+}
+
+
 .especificaciones {
     margin: 10px;
     font-size: 20px;
@@ -170,6 +195,7 @@ details {
 
 .detail {
     color: white;
+    font-size: 24px;
 }
 
 .linkInfo a {
@@ -182,10 +208,22 @@ details {
 @media (min-width: 425px) {
     .favoritos {
         margin-left: 280px;
-}
-.compartir {
-    margin-left: 295px;
-    margin-top: 300px;
+    }
+
+    .compartir {
+        margin-left: 295px;
+        margin-top: 300px;
+    }
+
+    dialog {
+        max-width: 340px;
+        height: 330px;
+    }
+
+    .fa-circle-xmark {
+        margin-left: 260px;
+    }
+
 }
 
 @media (min-width: 768px) {
@@ -224,6 +262,16 @@ details {
 
     main .titulo {
         font-size: 50px;
+    }
+
+    dialog {
+        max-width: 482px;
+        height: 330px;
+        margin: 147px;
+    }
+
+    .fa-circle-xmark {
+        margin-left: 390px;
     }
 
     .especificaciones {
@@ -330,7 +378,17 @@ details {
         position: absolute;
         margin-top: 150px;
         margin-left: 330px;
+    }
 
+    dialog {
+        max-width: 574px;
+        height: 400px;
+        margin: auto;
+        font-size: 20px;
+    }
+
+    .fa-circle-xmark {
+        margin-left: 390px;
     }
 
     .det {
@@ -340,7 +398,7 @@ details {
 
 
 }
-}
+
 @media (min-width: 1440px) {
     .especificaciones {
         margin-left: 730px;

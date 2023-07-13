@@ -79,6 +79,10 @@ const controller = {
             });
         }
     },
+    logout : (req, res) => {
+        req.session.destroy(); // Destruye la sesión del usuario
+        res.redirect('/users/login'); // Redirige al usuario a la página de inicio de sesión
+    },
     profile: async (req, res) => {
         const user = req.session.user;
         const newUser = await db.User.findByPk(user.id)

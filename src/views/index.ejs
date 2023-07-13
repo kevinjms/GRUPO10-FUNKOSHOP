@@ -2,26 +2,34 @@
 
     <body>
         <%- include('partials/header') %>
-            <main>
+            <main class="scroll">
                 <div class="container-main">
                     <div class="slider">
                         <div class="slider-track">
                             <div class="slide"><img src="/images/marcas/funko-cabezagris-starwars.png" alt="SW"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezagris-harrypotter.png" alt="harryPotter"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezagris-breaking-bad.png" alt="breakingBad"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezagris-harrypotter.png"
+                                    alt="harryPotter"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezagris-breaking-bad.png"
+                                    alt="breakingBad"></div>
                             <div class="slide"><img src="/images/marcas/funko-cabezagris-DC.png" alt="DC"></div>
                             <div class="slide"><img src="/images/marcas/funko-cabezagris-MARVEL.png" alt="Marvel"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabeza-musica.png" alt="Musica"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-AFA.png" alt="AFA"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-GOT.png" alt="GOT"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-stanger-things.png" alt="strangerThings"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-teatro.png" alt="teatro"></div>
-                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-TWD.png" alt="TWD"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabeza-musica.png"
+                                    alt="Musica"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-AFA.png" alt="AFA">
+                            </div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-GOT.png" alt="GOT">
+                            </div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-stanger-things.png"
+                                    alt="strangerThings"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-teatro.png"
+                                    alt="teatro"></div>
+                            <div class="slide"><img src="/images/marcas/funko-cabezasgris-cabezas-TWD.png" alt="TWD">
+                            </div>
                         </div>
                     </div>
                     <div class="search-container">
                         <form action="/products/search" method="get">
-                            <input name="query" type="text" placeholder="Funko de...">
+                            <input id="product" name="query" type="text" placeholder="Funko de...">
                             <button type="submit"><i class="fas fa-search"></i></button></input>
                         </form>
                     </div>
@@ -30,7 +38,8 @@
                         <article class="contenedorDestacados">
                             <% visited.forEach((product)=> { %>
                                 <div class="infoDestacado">
-                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="ST">
+                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>"
+                                        alt="ST">
                                     <h4>
                                         <%= product.name %>
                                     </h4>
@@ -49,7 +58,8 @@
                         <article class="contenedorOfertas">
                             <% inSale.forEach((product)=> { %>
                                 <div class="infoOfertas">
-                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>" alt="C3">
+                                    <img src="/images/funkos/<%= product.images[0]?product.images[0].url:'default.jpg' %>"
+                                        alt="C3">
                                     <h4>
                                         <%= product.name %>
                                     </h4>
@@ -66,6 +76,8 @@
                 </div>
             </main>
             <%- include('partials/footer') %>
+            <script src="/js/scroll.js"></script>
     </body>
+
 
     </html>

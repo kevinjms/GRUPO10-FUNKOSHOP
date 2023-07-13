@@ -48,6 +48,9 @@
   color: black;
   text-decoration: none;
 }
+.user-name {
+  text-decoration: none; /* Quita el subrayado */
+}
 
 nav {
   display: none;

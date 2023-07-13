@@ -190,6 +190,7 @@ window.onload = function () {
 
    //Error campos vacios
     errors.forEach((error) => {
+      console.log(error)
       const errorLabel = document.getElementById("error-" + error.name);
       errorLabel.style.display = "block"
       errorLabel.innerHTML = error.message;

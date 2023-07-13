@@ -7,6 +7,7 @@ const { body } = require('express-validator')
 const authMiddleware = require('../middlewares/authMiddleware')
 const loggedMiddleware = require('../middlewares/loggedMiddleware')
 
+
 const validations= [
     body('firstName').notEmpty().withMessage('*Tienes que escribir un nombre*'),
     body('lastName').notEmpty().withMessage('*Tienes que escribir un apellido*'),
@@ -31,15 +32,17 @@ const validateLogin = [
     body('password').notEmpty().withMessage('*Tienes que escribir una contraseña*').bail().isLength({min:8}).withMessage('*La contraseña debe tener mínimo 8 caracteres*')   // Minimo 8 caracteres
 ];
 
+// Rutas de registro
 router.get('/register', usersController.register);
 router.post('/', uploadFile.single("image"), validations, usersController.registered)
 
-
-
+//Rutas de login-profile-deslogueo
 router.get('/login', loggedMiddleware, usersController.login);
 router.post('/login', validateLogin, loggedMiddleware, usersController.logged);
 router.get('/profileForm', authMiddleware, usersController.profile);
+router.get('/logout', usersController.logout);
 
+// Rutas de edicion de usuario
 router.get('/editUser', usersController.edit);
 router.put('/editUser/:id', uploadFile.single("avatar"), usersController.update)
 module.exports = router

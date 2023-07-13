@@ -3,21 +3,21 @@
 
     <body>
         <%- include('../partials/header') %>
-            <main>
+            <main class="scroll">
                 <div class="box-profile" id="box-profile-edit">
                     <div class="detalle-perfil">
-                        <div>
-                            <h1 class="title">EDITAR MI CUENTA</h1>
-                        </div>
+                        <h1 class="title">EDITAR MI CUENTA</h1>
                     </div>
                     <div class="perfil-usuario" id="perfil-usuario-edit">
-                        <div class="profile-info" id="profile-info-edit">
-                            <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
-                                enctype="multipart/form-data">
-                                <input class="login-input" id="up-img" value="<%= user.avatar %>" type="file"
-                                    name="avatar">
-                                <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar"
-                                    id="avatar-edit">
+                        <form action="/users/editUser/<%= user.id %>?_method=PUT" method="POST"
+                            enctype="multipart/form-data">
+                            <span class="box-datos-edit">
+                                <div class="box-avatar-edit">
+                                    <input class="login-input" id="up-img" value="<%= user.avatar %>" type="file"
+                                        name="avatar">
+                                    <img src="/images/users/<%= user.avatar %>" alt="Foto del usuario" class="avatar"
+                                        id="avatar-edit">
+                                </div>
                                 <div class="edit-data">
                                     <h3>NOMBRE:</h3> <input class="login-input" value="<%= user.firstName %>"
                                         type="text" name="firstName" required></p>
@@ -26,8 +26,7 @@
                                     <h3>DIRECCIÓN:</h3> <input class="login-input" value="<%= user.adress %>"
                                         type="text" name="adress" required></p>
                                     <h3>CIUDAD:</h3> <input class="login-input" value="<%= user.city %>" type="text"
-                                        name="city" required>
-                                    </p>
+                                        name="city" required></p>
                                     <h3>CÓDIGO POSTAL:</h3> <input class="login-input" value="<%= user.zipCode %>"
                                         type="number" name="zipCode" required></p>
                                     <h3>NÚMERO DE CONTACTO:</h3> <input class="login-input" value="<%= user.cell %>"
@@ -35,16 +34,19 @@
                                     <h3>EMAIL:</h3> <input class="login-input" value="<%= user.email %>" type="text"
                                         name="email" required></p>
                                 </div>
-                                <div class="close-session" id="close-session-edit">
-                                    <button type="submit" class="btn-add" id="btn-add-edit"><p> ACTUALIZAR</p></button>
-                                </div>
-                        </div>
+                            </span>
+                            <div id="close-session-edit">
+                                <button type="submit" class="btn-add" id="btn-add-edit">
+                                    <p> ACTUALIZAR</p>
+                                </button>
+                            </div>
                         </form>
                     </div>
                 </div>
             </main>
             <%- include('../partials/footer') %>
+            <script src="/js/scroll.js"></script>
 
     </body>
-
+    
     </html>

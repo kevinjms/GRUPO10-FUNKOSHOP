@@ -183,7 +183,6 @@ body {
     .box-padre {
         font-size: 20px;
         display: flex;
-        height: 880px;
         flex-direction: column;
     }
 

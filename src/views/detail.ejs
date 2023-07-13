@@ -2,7 +2,7 @@
 
     <body>
         <%- include('partials/header') %>
-            <main>
+            <main class="scroll">
 
                 <section class="detalle">
                     <div class="cajadelproducto">
@@ -35,7 +35,7 @@
 
                     <div class="especificaciones">
                         <button class="favoritos"><i class="fa-regular fa-heart"></i></button>
-                            <button class="btn-add det"><i class="fa-solid fa-cart-shopping"></i></button>
+                        <button class="btn-add det"><i class="fa-solid fa-cart-shopping"></i></button>
                         <h2>
                             $ <%= product.price %>
                         </h2>
@@ -47,17 +47,86 @@
                             </sumary>
                         </details>
                         <div class="linkInfo">
-                            <li><a href="#">Medios de pago</a></li>
-                            <li><a href="#">Envíos</a></li>
-                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#" onclick="openDialog('mediosPago')">Medios de pago</a></li>
+                            <li><a href="#" onclick="openDialog('envios')">Envíos</a></li>
+                            <li><a href="#" onclick="openDialog('terminos')">Términos y condiciones</a></li>
                             <br>
-                            <button class="btn-admin"><a href="/products/editProducts/<%= product.id %>">EDITAR</a></button>
+                            <button class="btn-admin"><a
+                                    href="/products/editProducts/<%= product.id %>">EDITAR</a></button>
                         </div>
                     </div>
                 </section>
 
             </main>
             <%- include('partials/footer') %>
+            <script src="/js/scroll.js"></script>
+
+
+                <!-- Popups -->
+                <dialog id="mediosPagoDialog">
+                    <button class="close" onclick="closeDialog('mediosPago')"><i
+                            class="fa-solid fa-circle-xmark"></i></button>
+                            <br>
+                    <h3>Medios de Pago</h3>
+                    <h4>Tarjetas de crédito/débito:</h4>
+                    <p>- Visa
+                        - Mastercard
+                        - American Express
+                        - Discover
+                    <h4>Billeteras digitales:</h4>
+                    <p>- PayPal
+                        - Apple Pay
+                        - Google Pay
+                        - Samsung Pay</p>
+                </dialog>
+                <dialog id="enviosDialog">
+                    <button class="close" onclick="closeDialog('envios')"><i
+                            class="fa-solid fa-circle-xmark"></i></button>
+                            <br>
+                    <h3>Envíos</h3>
+                    <p>-Empacamos cuidadosamente los muñecos para garantizar su protección durante el transporte.</p>
+                    <p>-Procesamos rápidamente tu pedido y verificamos la disponibilidad de los muñecos.</p>
+                    <p>-Ofrecemos diferentes opciones de envío para adaptarnos a tus necesidades.</p>
+                    <p>-Proporcionamos un número de seguimiento para que puedas rastrear tu paquete.</p>
+                    <p>-Estamos disponibles para brindarte soporte y responder a tus preguntas durante todo el proceso.</p>
+                    <p>-Nos aseguramos de que tu paquete sea entregado en la dirección indicada.</p>
+                    <p>-Apreciamos tus comentarios para mejorar nuestros servicios y garantizar tu satisfacción.</p>
+                    <p>-Si necesitas más información, no dudes en contactarnos. Estaremos encantados de ayudarte con tus
+                        envíos de muñecos.</p>
+                </dialog>
+                <dialog id="terminosDialog">
+                    <button class="close" onclick="closeDialog('terminos')"><i
+                        class="fa-solid fa-circle-xmark"></i></button>
+                        <br>
+                    <h3>Términos y condiciones</h3>
+                    -Antes de realizar una compra, es importante que leas y comprendas nuestros "Términos y Condiciones".
+                    <h4>Aquí hay un resumen de los aspectos clave:</h4>
+                    <h5>Descripciones de productos:</h5> Proveemos descripciones precisas de los Funkos Pop, pero las imágenes
+                    pueden variar ligeramente.
+                    Precios y pagos: Los precios están en moneda local y pueden cambiar sin previo aviso. Aceptamos
+                    pagos seguros.
+                    <h5>Envíos y entrega:</h5> Procesamos y enviamos a la dirección proporcionada. Los plazos de entrega pueden
+                    variar según la ubicación.
+                    <h5>Privacidad y protección de datos:</h5> Respetamos tu privacidad y protegemos tus datos personales.
+                    <h5>Cancelaciones y devoluciones:</h5> Consulta nuestra política de cancelaciones y devoluciones para más
+                    información.
+                    <h5>Propiedad intelectual:</h5> Todos los derechos de propiedad intelectual pertenecen a sus respectivos
+                    titulares.
+                    Al realizar un pedido, aceptas cumplir con nuestros términos y condiciones.
+                    Para más detalles, contáctanos. ¡Gracias por elegir nuestra tienda de Funkos Pop!
+                </dialog>
+
+                <script>
+                    function openDialog(dialogName) {
+                        const dialog = document.getElementById(dialogName + 'Dialog');
+                        dialog.showModal();
+                    }
+
+                    function closeDialog(dialogName) {
+                        const dialog = document.getElementById(dialogName + 'Dialog');
+                        dialog.close();
+                    }
+                </script>
     </body>
 
     </html>
